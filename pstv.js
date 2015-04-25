@@ -18,11 +18,20 @@
   $controls.addEventListener("click", function (e) {
 
     e.preventDefault();
-    log("Something within \"pstv\" has been clicked.");
-    log("Source element:" + e.srcElement);
-    dir("Source element id:" + e.srcElement.id);
-    //log(document.querySelector(".app-current").id);
-    //log(document.querySelector(".app-current").dataset["game"]);
+
+    //log("Something within \"pstv\" has been clicked.");
+    //log("Source element:" + e.srcElement);
+    //dir("Source element id:" + e.srcElement.id);
+
+
+    if (e.srcElement.id === "shift-apps") {
+      (function () {
+        var $app = document.querySelector(".app-current");
+        log($app.id);
+        log($app.dataset["game"]);
+        $app.classList.remove("app-current");
+      }());
+    }
 
     if (e.srcElement.id === "hide-grid") {
       document.getElementById("pstv").classList.remove("bg-grid-15");
