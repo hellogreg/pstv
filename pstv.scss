@@ -1,0 +1,235 @@
+/* Sony base blue: #003791 */
+
+
+// SASS variables
+//$mainFontFamily: "SST W01 Roman", "sst-roman", "myriad-pro", sans-serif;
+$mainFontFamily: "sst-w01", sans-serif;
+
+
+// SASS pagewide mixins
+
+@mixin flex-basic-row {
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row;
+  flex-flow: row;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+@mixin bg-grid($size) {
+  background-position: 0 0;
+  background-size: $size $size;
+  background-image: repeating-linear-gradient(0deg, #2a3568, #2a3568 1px, transparent 1px, transparent $size), repeating-linear-gradient(-90deg, #2a3568, #2a3568 1px, transparent 1px, transparent $size);
+}
+
+@mixin test-bg-color($alpha:0.5) {
+  background-color: rgba(0, 0, 0, $alpha);
+}
+
+// Bare bones reset and pagewide styles
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  padding-top: 2rem;
+  font-family: $mainFontFamily;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  background-color: #050505;
+  color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  display: block;
+  font-size: inherit;
+  font-weight: 400;
+  font-style: normal;
+  line-height: inherit;
+  opacity: 1;
+}
+
+a, a:hover, a:active, a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+// #pstv is the "screen" of the console
+
+#pstv {
+  background-color: #1a265d;
+  border: 1px solid #1a265d;
+  height: 54rem;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  width: 96rem;
+
+  > header, > footer {
+    @include flex-basic-row;
+    @include test-bg-color(0.1);
+    height: 6rem;
+    padding: 0 3rem;
+  }
+
+  main {
+    height: 42rem;
+
+    // Mixin for all apps.
+    @mixin app {
+      position: absolute;
+      top: 13.5rem;
+      > header {
+        @include test-bg-color();
+      }
+    }
+
+    // Mixin for apps next to the currently selected one.
+    @mixin app-adjacent($leftpos, $alpha:0.45) {
+      @include app;
+      left: $leftpos;
+
+      > header {
+        @include test-bg-color($alpha);
+        height: 15rem;
+        width: 15rem;
+      }
+    }
+
+    // Mixin for apps not adjacent to the currently selected one.
+    @mixin app-distant($leftpos, $alpha:0.4) {
+      @include app;
+      left: $leftpos;
+
+      > header {
+        @include test-bg-color($alpha);
+        height: 12rem;
+        width: 12rem;
+      }
+    }
+
+    .app-current {
+      @include app;
+      left: 21rem;
+
+      > header {
+        height: 18rem;
+        width: 18rem;
+      }
+
+      > footer {
+        @include test-bg-color();
+        height: 6rem;
+        left: 18rem;
+        position: absolute;
+        top: 21rem;
+        width: 51rem;
+
+        h1 {
+          font-size: 3rem;
+          line-height: 6rem;
+        }
+      }
+
+      ul {
+        list-style-type: none;
+
+        li {
+          @include test-bg-color();
+          height: 3rem;
+        }
+
+        li:nth-child(1) {
+          @include test-bg-color(.4);
+        }
+
+        li:nth-child(2) {
+          @include test-bg-color(.3);
+        }
+
+        li:nth-child(3) {
+          @include test-bg-color(.2);
+        }
+
+        li:nth-child(4) {
+          @include test-bg-color(.1);
+        }
+
+      }
+
+    }
+
+    .app-adjacent-left {
+      @include app-adjacent(6rem);
+    }
+
+    .app-adjacent-right {
+      @include app-adjacent(39rem);
+    }
+
+    .app-distant-left {
+      @include app-distant(-6rem, 0.4);
+    }
+
+    .app-distant-right-1 {
+      @include app-distant(54rem, 0.4);
+    }
+
+    .app-distant-right-2 {
+      @include app-distant(66rem, 0.3);
+    }
+
+    .app-distant-right-3 {
+      @include app-distant(78rem, 0.2);
+    }
+
+    .app-distant-right-4 {
+      @include app-distant(90rem, 0.1);
+    }
+
+  }
+
+}
+
+.bg-grid-30 {
+  @include bg-grid(30px);
+}
+
+.bg-grid-15 {
+  @include bg-grid(15px);
+}
+
+#controls {
+  border: 1px dashed #1a265d;
+  height: 6rem;
+  margin: 1.5rem auto;
+  overflow: hidden;
+  padding: 0 3rem;
+  position: relative;
+  width: 96rem;
+
+  ul {
+    @include flex-basic-row;
+  }
+
+  a, a:hover, a:active, a:visited {
+    border-bottom: 1px dotted rgba(255, 255, 255, .2);
+  }
+
+}
