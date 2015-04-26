@@ -4,6 +4,35 @@
 
   var $controls = document.getElementById("controls");
 
+  var apps = [
+    {element: document.getElementById("app1"), position: 1},
+    {element: document.getElementById("app2"), position: 2},
+    {element: document.getElementById("app3"), position: 3},
+    {element: document.getElementById("app4"), position: 4},
+    {element: document.getElementById("app5"), position: 5},
+    {element: document.getElementById("app6"), position: 6},
+    {element: document.getElementById("app7"), position: 7},
+    {element: document.getElementById("app8"), position: 8}
+  ];
+
+  var appClasses = [
+    "app-offscreen-left-5",
+    "app-offscreen-left-4",
+    "app-offscreen-left-3",
+    "app-offscreen-left-2",
+    "app-offscreen-left-1",
+    "app-distant-left",
+    "app-adjacent-left",
+    "app-current",
+    "app-adjacent-right",
+    "app-distant-right-1",
+    "app-distant-right-2",
+    "app-distant-right-3",
+    "app-distant-right-4",
+    "app-offscreen-right-1",
+    "app-offscreen-right-2"
+  ];
+
   function log(m) {
     m = (m !== undefined) ? m : "-----------------"; // If no message, output a line.
     console.log(m);
@@ -17,6 +46,40 @@
 
   $controls.addEventListener("click", function (e) {
 
+
+    function swapAppClass(app, oldClass, newClass) {
+      var el = app.element;
+      log("Shifting app: #" + el.id);
+      el.classList.remove(oldClass);
+      el.classList.add(newClass);
+    }
+
+    function shiftThisApp(app, direction) {
+      var i = 0, len = appClasses.length;
+
+      for (; i < len; i++) {
+        if (app.element.classList.contains(appClasses[i])) {
+
+          log("Element " + app.element.id + " has " + appClasses[i] + " class.");
+
+          if (direction === "left") {
+            swapAppClass(app, appClasses[i], appClasses[i - 1]);
+            break;
+          }
+
+          else if (direction === "right") {
+            swapAppClass(app, appClasses[i], appClasses[i + 1]);
+            break;
+          }
+
+        }
+      }
+
+      //swapAppPosition(document.querySelector(".app-distant-left").id, "app-distant-left", "app-offscreen-left");
+
+    }
+
+
     e.preventDefault();
 
     //log("Something within \"pstv\" has been clicked.");
@@ -24,26 +87,47 @@
     //dir("Source element id:" + e.srcElement.id);
 
 
-    if (e.srcElement.id === "shift-apps") {
+    if (e.srcElement.id === "shift-apps-left") {
       (function () {
-        var $app = document.querySelector(".app-current");
-        log($app.id);
-        log($app.dataset["game"]);
-        $app.classList.remove("app-current");
+        var i = 0, len = apps.length;
+
+        // If there's room to move the apps left, then do so!
+        if (document.querySelector(".app-adjacent-right")) {
+          for (; i < len; i++) {
+            shiftThisApp(apps[i], "left")
+          }
+        } else {
+          log("Can't shift any farther left.");
+        }
       }());
     }
 
-    if (e.srcElement.id === "hide-grid") {
+    else if (e.srcElement.id === "shift-apps-right") {
+      (function () {
+        var i = 0, len = apps.length;
+
+        // If there's room to move the apps left, then do so!
+        if (document.querySelector(".app-adjacent-left")) {
+          for (; i < len; i++) {
+            shiftThisApp(apps[i], "right");
+          }
+        } else {
+          log("Can't shift any farther right.");
+        }
+      }());
+    }
+
+    else if (e.srcElement.id === "hide-grid") {
       document.getElementById("pstv").classList.remove("bg-grid-15");
       document.getElementById("pstv").classList.remove("bg-grid-30");
     }
 
-    if (e.srcElement.id === "show-grid-15") {
+    else if (e.srcElement.id === "show-grid-15") {
       document.getElementById("pstv").classList.remove("bg-grid-30");
       document.getElementById("pstv").classList.add("bg-grid-15");
     }
 
-    if (e.srcElement.id === "show-grid-30") {
+    else if (e.srcElement.id === "show-grid-30") {
       document.getElementById("pstv").classList.remove("bg-grid-15");
       document.getElementById("pstv").classList.add("bg-grid-30");
     }

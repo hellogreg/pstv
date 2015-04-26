@@ -1,10 +1,8 @@
 /* Sony base blue: #003791 */
 
-
 // SASS variables
 //$mainFontFamily: "SST W01 Roman", "sst-roman", "myriad-pro", sans-serif;
 $mainFontFamily: "sst-w01", sans-serif;
-
 
 // SASS pagewide mixins
 
@@ -69,6 +67,14 @@ a, a:hover, a:active, a:visited {
   text-decoration: none;
 }
 
+.invisible {
+  display: none;
+}
+
+.visible {
+  display: inherit;
+}
+
 // #pstv is the "screen" of the console
 
 #pstv {
@@ -95,8 +101,15 @@ a, a:hover, a:active, a:visited {
     @mixin app {
       position: absolute;
       top: 13.5rem;
+
       > header {
         @include test-bg-color();
+        text-align: center;
+      }
+
+      // Hide footer and nav for non-selected apps
+      > footer, > nav {
+        display: none;
       }
     }
 
@@ -131,6 +144,11 @@ a, a:hover, a:active, a:visited {
       > header {
         height: 18rem;
         width: 18rem;
+      }
+
+      // Hide footer and nav for non-selected apps
+      > footer, > nav {
+        display: inherit;
       }
 
       > footer {
@@ -201,6 +219,14 @@ a, a:hover, a:active, a:visited {
 
     .app-distant-right-4 {
       @include app-distant(90rem, 0.1);
+    }
+
+    .app-offscreen-left-1, .app-offscreen-left-2, .app-offscreen-left-3, .app-offscreen-left-4, .app-offscreen-left-5 {
+      @include app-distant(-18rem, 0.01);
+    }
+
+    .app-offscreen-right-1, .app-offscreen-right-2 {
+      @include app-distant(102rem, 0.01);
     }
 
   }
