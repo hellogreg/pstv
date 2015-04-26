@@ -111,6 +111,7 @@
     else if (e.srcElement.id === "hide-grid") {
       document.getElementById("pstv").classList.remove("bg-grid-15");
       document.getElementById("pstv").classList.remove("bg-grid-30");
+      document.getElementById("pstv").classList.add("bg-vita");
     }
 
     else if (e.srcElement.id === "show-grid-15") {

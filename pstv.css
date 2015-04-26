@@ -236,6 +236,10 @@ a, a:hover, a:active, a:visited {
   background-size: 15px 15px;
   background-image: repeating-linear-gradient(0deg, #2a3568, #2a3568 1px, transparent 1px, transparent 15px), repeating-linear-gradient(-90deg, #2a3568, #2a3568 1px, transparent 1px, transparent 15px); }
 
+.bg-vita {
+  background-image: url("images/vita_homescreen.jpg");
+  background-size: 100% 100%; }
+
 #controls {
   border: 1px dashed #1a265d;
   height: 6rem;
