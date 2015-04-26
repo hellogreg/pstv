@@ -85,8 +85,7 @@
     function showMockups() {
       $prototype.classList.remove("visible");
       $prototype.classList.add("invisible");
-      $mockups.classList.remove("invisible");
-      $mockups.classList.add("visible");
+      $mockups.className = "";
     }
 
 
@@ -144,6 +143,26 @@
     else if (e.srcElement.id === "show-vita") {
       showMockups();
       $mockups.classList.add("bg-vita");
+    }
+
+    else if (e.srcElement.id === "show-xeno-scanlines") {
+      showMockups();
+      $mockups.classList.add("bg-xeno-scanlines");
+    }
+
+    else if (e.srcElement.id === "show-xeno-smooth") {
+      showMockups();
+      $mockups.classList.add("bg-xeno-smooth");
+    }
+
+    else if (e.srcElement.id === "show-ridge-scanlines") {
+      showMockups();
+      $mockups.classList.add("bg-ridge-scanlines");
+    }
+
+    else if (e.srcElement.id === "show-ridge-smooth") {
+      showMockups();
+      $mockups.classList.add("bg-ridge-smooth");
     }
 
   }, false);

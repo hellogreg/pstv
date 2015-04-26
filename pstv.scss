@@ -82,7 +82,7 @@ a, a:hover, a:active, a:visited {
 // #pstv is the "screen" of the console
 
 #pstv {
-  background-color: $bgColor;
+
   border: 1px solid $bgColor;
   height: 54rem;
   margin: 0 auto;
@@ -97,6 +97,8 @@ a, a:hover, a:active, a:visited {
   }
 
   > #prototype {
+
+    background-color: $bgColor;
 
     > header, > footer {
       @include flex-basic-row;
@@ -273,6 +275,26 @@ a, a:hover, a:active, a:visited {
 
 .bg-vita {
   background-image: url("images/vita_homescreen.jpg");
+  background-size: 100% 100%;
+}
+
+.bg-xeno-scanlines {
+  background-image: url("images/psx_xeno_scanlines.png");
+  background-size: 100% 100%;
+}
+
+.bg-xeno-smooth {
+  background-image: url("images/psx_xeno_smooth.png");
+  background-size: 100% 100%;
+}
+
+.bg-ridge-scanlines {
+  background-image: url("images/psx_ridge_scanlines.png");
+  background-size: 100% 100%;
+}
+
+.bg-ridge-smooth {
+  background-image: url("images/psx_ridge_smooth.png");
   background-size: 100% 100%;
 }
 
