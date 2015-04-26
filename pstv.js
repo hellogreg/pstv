@@ -2,6 +2,8 @@
 
   "use strict";
 
+  var $prototype = document.getElementById("prototype");
+  var $mockups = document.getElementById("mockups");
   var $controls = document.getElementById("controls");
 
   var apps = [
@@ -37,13 +39,14 @@
     m = (m !== undefined) ? m : "-----------------"; // If no message, output a line.
     console.log(m);
   }
-/*
-  function dir(o) {
-    if (o !== undefined) {
-      console.dir(o);
-    }
-  }
-*/
+
+  /*
+   function dir(o) {
+   if (o !== undefined) {
+   console.dir(o);
+   }
+   }
+   */
 
   $controls.addEventListener("click", function (e) {
 
@@ -72,6 +75,20 @@
       }
     }
 
+    function showPrototype() {
+      $mockups.classList.remove("visible");
+      $mockups.classList.add("invisible");
+      $prototype.classList.remove("invisible");
+      $prototype.classList.add("visible");
+    }
+
+    function showMockups() {
+      $prototype.classList.remove("visible");
+      $prototype.classList.add("invisible");
+      $mockups.classList.remove("invisible");
+      $mockups.classList.add("visible");
+    }
+
 
     e.preventDefault();
 
@@ -83,7 +100,6 @@
     if (e.srcElement.id === "shift-apps-left") {
       (function () {
         var i = 0, len = apps.length;
-
         if (document.querySelector(".app-adjacent-right")) {
           for (; i < len; i++) {
             shiftThisApp(apps[i].element, "left")
@@ -97,7 +113,6 @@
     else if (e.srcElement.id === "shift-apps-right") {
       (function () {
         var i = 0, len = apps.length;
-
         if (document.querySelector(".app-adjacent-left")) {
           for (; i < len; i++) {
             shiftThisApp(apps[i].element, "right");
@@ -109,19 +124,26 @@
     }
 
     else if (e.srcElement.id === "hide-grid") {
-      document.getElementById("pstv").classList.remove("bg-grid-15");
-      document.getElementById("pstv").classList.remove("bg-grid-30");
-      document.getElementById("pstv").classList.add("bg-vita");
+      showPrototype();
+      $prototype.classList.remove("bg-grid-15");
+      $prototype.classList.remove("bg-grid-30");
     }
 
     else if (e.srcElement.id === "show-grid-15") {
-      document.getElementById("pstv").classList.remove("bg-grid-30");
-      document.getElementById("pstv").classList.add("bg-grid-15");
+      showPrototype();
+      $prototype.classList.remove("bg-grid-30");
+      $prototype.classList.add("bg-grid-15");
     }
 
     else if (e.srcElement.id === "show-grid-30") {
-      document.getElementById("pstv").classList.remove("bg-grid-15");
-      document.getElementById("pstv").classList.add("bg-grid-30");
+      showPrototype();
+      $prototype.classList.remove("bg-grid-15");
+      $prototype.classList.add("bg-grid-30");
+    }
+
+    else if (e.srcElement.id === "show-vita") {
+      showMockups();
+      $mockups.classList.add("bg-vita");
     }
 
   }, false);

@@ -1,8 +1,12 @@
 /* Sony base blue: #003791 */
+// #1a265d, #2a3568
 
 // SASS variables
 //$mainFontFamily: "SST W01 Roman", "sst-roman", "myriad-pro", sans-serif;
 $mainFontFamily: "sst-w01", sans-serif;
+
+$bgColor: #1a265d;
+$bgAccentColor: #2a3568;
 
 // SASS pagewide mixins
 
@@ -20,7 +24,7 @@ $mainFontFamily: "sst-w01", sans-serif;
 @mixin bg-grid($size) {
   background-position: 0 0;
   background-size: $size $size;
-  background-image: repeating-linear-gradient(0deg, #2a3568, #2a3568 1px, transparent 1px, transparent $size), repeating-linear-gradient(-90deg, #2a3568, #2a3568 1px, transparent 1px, transparent $size);
+  background-image: repeating-linear-gradient(0deg, $bgAccentColor, $bgAccentColor 1px, transparent 1px, transparent $size), repeating-linear-gradient(-90deg, $bgAccentColor, $bgAccentColor 1px, transparent 1px, transparent $size);
 }
 
 @mixin test-bg-color($alpha:0.5) {
@@ -78,8 +82,8 @@ a, a:hover, a:active, a:visited {
 // #pstv is the "screen" of the console
 
 #pstv {
-  background-color: #1a265d;
-  border: 1px solid #1a265d;
+  background-color: $bgColor;
+  border: 1px solid $bgColor;
   height: 54rem;
   margin: 0 auto;
   overflow: hidden;
@@ -87,172 +91,176 @@ a, a:hover, a:active, a:visited {
   position: relative;
   width: 96rem;
 
-  > header, > footer {
-    @include flex-basic-row;
-    @include test-bg-color(0.0);
-    height: 6rem;
-    padding: 0 3rem;
+  > #mockups {
+    height: 100%;
+    width: 100%;
   }
 
-  > header {
+  > #prototype {
 
-    img.avatar {
-      max-height: 3rem;
-      width: auto;
-    }
-  }
-
-  > footer {
-
-    h1 {
-      font-style: italic;
-      opacity: .5;
+    > header, > footer {
+      @include flex-basic-row;
+      @include test-bg-color(0.0);
+      height: 6rem;
+      padding: 0 3rem;
     }
 
-    img.logo {
-      max-height: 3rem;
-      width: auto;
-      opacity: .5;
+    > header {
+
     }
-  }
 
-  main {
-    height: 42rem;
+    > footer {
 
-    // Mixin for all apps.
-    @mixin app {
-      position: absolute;
-      top: 13.5rem;
-
-      > header {
-        @include test-bg-color();
-        text-align: center;
+      h1 {
+        font-style: italic;
+        opacity: 1;
       }
 
-      // Hide footer and nav for non-selected apps
-      > footer, > nav {
-        display: none;
+      img.logo {
+        max-height: 2rem;
+        width: auto;
+        opacity: 1;
       }
     }
 
-    // Mixin for apps next to the currently selected one.
-    @mixin app-adjacent($leftpos, $alpha:0.45) {
-      @include app;
-      left: $leftpos;
+    main {
+      height: 42rem;
 
-      > header {
-        @include test-bg-color($alpha);
-        height: 15rem;
-        width: 15rem;
-      }
-    }
-
-    // Mixin for apps not adjacent to the currently selected one.
-    @mixin app-distant($leftpos, $alpha:0.4) {
-      @include app;
-      left: $leftpos;
-
-      > header {
-        @include test-bg-color($alpha);
-        height: 12rem;
-        width: 12rem;
-      }
-    }
-
-    .app-current {
-      @include app;
-      left: 21rem;
-
-      > header {
-        height: 18rem;
-        width: 18rem;
-      }
-
-      // Hide footer and nav for non-selected apps
-      > footer, > nav {
-        display: inherit;
-      }
-
-      > footer {
-        @include test-bg-color();
-        height: 6rem;
-        left: 18rem;
+      // Mixin for all apps.
+      @mixin app {
         position: absolute;
-        top: 21rem;
-        width: 51rem;
+        top: 13.5rem;
 
-        h1 {
-          font-size: 3rem;
-          line-height: 6rem;
-        }
-      }
-
-      ul {
-        list-style-type: none;
-
-        li {
+        > header {
           @include test-bg-color();
-          height: 3rem;
+          text-align: center;
         }
 
-        li:nth-child(1) {
-          @include test-bg-color(.4);
+        // Hide footer and nav for non-selected apps
+        > footer, > nav {
+          display: none;
+        }
+      }
+
+      // Mixin for apps next to the currently selected one.
+      @mixin app-adjacent($leftpos, $alpha:0.4) {
+        @include app;
+        left: $leftpos;
+
+        > header {
+          @include test-bg-color($alpha);
+          height: 15rem;
+          width: 15rem;
+        }
+      }
+
+      // Mixin for apps not adjacent to the currently selected one.
+      @mixin app-distant($leftpos, $alpha:0.4) {
+        @include app;
+        left: $leftpos;
+
+        > header {
+          @include test-bg-color($alpha);
+          height: 12rem;
+          width: 12rem;
+        }
+      }
+
+      .app-current {
+        @include app;
+        left: 21rem;
+
+        > header {
+          height: 18rem;
+          width: 18rem;
         }
 
-        li:nth-child(2) {
-          @include test-bg-color(.3);
+        // Hide footer and nav for non-selected apps
+        > footer, > nav {
+          display: inherit;
         }
 
-        li:nth-child(3) {
-          @include test-bg-color(.2);
+        > footer {
+          @include test-bg-color();
+          height: 6rem;
+          left: 18rem;
+          position: absolute;
+          top: 21rem;
+          width: 51rem;
+
+          h1 {
+            font-size: 3rem;
+            font-weight: 300;
+            line-height: 6rem;
+          }
         }
 
-        li:nth-child(4) {
-          @include test-bg-color(.1);
+        ul {
+          list-style-type: none;
+
+          li {
+            @include test-bg-color();
+            height: 3rem;
+          }
+
+          li:nth-child(1) {
+            @include test-bg-color(.4);
+          }
+
+          li:nth-child(2) {
+            @include test-bg-color(.3);
+          }
+
+          li:nth-child(3) {
+            @include test-bg-color(.2);
+          }
+
+          li:nth-child(4) {
+            @include test-bg-color(.1);
+          }
+
         }
 
       }
 
-    }
+      .app-adjacent-left {
+        @include app-adjacent(6rem);
+      }
 
-    .app-adjacent-left {
-      @include app-adjacent(6rem);
-    }
+      .app-adjacent-right {
+        @include app-adjacent(39rem);
+      }
 
-    .app-adjacent-right {
-      @include app-adjacent(39rem);
-    }
+      .app-distant-left {
+        @include app-distant(-6rem, 0.35);
+      }
 
-    .app-distant-left {
-      @include app-distant(-6rem, 0.4);
-    }
+      .app-distant-right-1 {
+        @include app-distant(54rem, 0.35);
+      }
 
-    .app-distant-right-1 {
-      @include app-distant(54rem, 0.4);
-    }
+      .app-distant-right-2 {
+        @include app-distant(66rem, 0.3);
+      }
 
-    .app-distant-right-2 {
-      @include app-distant(66rem, 0.3);
-    }
+      .app-distant-right-3 {
+        @include app-distant(78rem, 0.25);
+      }
 
-    .app-distant-right-3 {
-      @include app-distant(78rem, 0.2);
-    }
+      .app-distant-right-4 {
+        @include app-distant(90rem, 0.2);
+      }
 
-    .app-distant-right-4 {
-      @include app-distant(90rem, 0.1);
-    }
+      .app-offscreen-left-1, .app-offscreen-left-2, .app-offscreen-left-3, .app-offscreen-left-4, .app-offscreen-left-5 {
+        @include app-distant(-18rem, 0.01);
+      }
 
-    .app-offscreen-left-1, .app-offscreen-left-2, .app-offscreen-left-3, .app-offscreen-left-4, .app-offscreen-left-5 {
-      @include app-distant(-18rem, 0.01);
-    }
-
-    .app-offscreen-right-1, .app-offscreen-right-2 {
-      @include app-distant(102rem, 0.01);
+      .app-offscreen-right-1, .app-offscreen-right-2 {
+        @include app-distant(102rem, 0.01);
+      }
     }
 
   }
-
 }
 
 .bg-grid-30 {
@@ -268,9 +276,8 @@ a, a:hover, a:active, a:visited {
   background-size: 100% 100%;
 }
 
-
 #controls {
-  border: 1px dashed #1a265d;
+  border: 1px dashed $bgColor;
   height: 6rem;
   margin: 1.5rem auto;
   overflow: hidden;
