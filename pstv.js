@@ -37,46 +37,39 @@
     m = (m !== undefined) ? m : "-----------------"; // If no message, output a line.
     console.log(m);
   }
-
+/*
   function dir(o) {
     if (o !== undefined) {
       console.dir(o);
     }
   }
+*/
 
   $controls.addEventListener("click", function (e) {
 
 
-    function swapAppClass(app, oldClass, newClass) {
-      var el = app.element;
-      log("Shifting app: #" + el.id);
+    function swapClass(el, oldClass, newClass) {
       el.classList.remove(oldClass);
       el.classList.add(newClass);
     }
 
-    function shiftThisApp(app, direction) {
+    function shiftThisApp(el, direction) {
       var i = 0, len = appClasses.length;
 
       for (; i < len; i++) {
-        if (app.element.classList.contains(appClasses[i])) {
-
-          log("Element " + app.element.id + " has " + appClasses[i] + " class.");
+        if (el.classList.contains(appClasses[i])) {
 
           if (direction === "left") {
-            swapAppClass(app, appClasses[i], appClasses[i - 1]);
+            swapClass(el, appClasses[i], appClasses[i - 1]);
             break;
           }
 
           else if (direction === "right") {
-            swapAppClass(app, appClasses[i], appClasses[i + 1]);
+            swapClass(el, appClasses[i], appClasses[i + 1]);
             break;
           }
-
         }
       }
-
-      //swapAppPosition(document.querySelector(".app-distant-left").id, "app-distant-left", "app-offscreen-left");
-
     }
 
 
@@ -91,10 +84,9 @@
       (function () {
         var i = 0, len = apps.length;
 
-        // If there's room to move the apps left, then do so!
         if (document.querySelector(".app-adjacent-right")) {
           for (; i < len; i++) {
-            shiftThisApp(apps[i], "left")
+            shiftThisApp(apps[i].element, "left")
           }
         } else {
           log("Can't shift any farther left.");
@@ -106,10 +98,9 @@
       (function () {
         var i = 0, len = apps.length;
 
-        // If there's room to move the apps left, then do so!
         if (document.querySelector(".app-adjacent-left")) {
           for (; i < len; i++) {
-            shiftThisApp(apps[i], "right");
+            shiftThisApp(apps[i].element, "right");
           }
         } else {
           log("Can't shift any farther right.");

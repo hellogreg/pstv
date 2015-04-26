@@ -56,9 +56,16 @@ a, a:hover, a:active, a:visited {
     flex-flow: row;
     -webkit-justify-content: space-between;
     justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: transparent;
     height: 6rem;
     padding: 0 3rem; }
+  #pstv > footer h1 {
+    font-style: italic;
+    opacity: .5; }
+  #pstv > footer img.logo {
+    max-height: 3rem;
+    width: auto;
+    opacity: .5; }
   #pstv main {
     height: 42rem; }
     #pstv main .app-current {
