@@ -59,6 +59,9 @@ a, a:hover, a:active, a:visited {
     background-color: transparent;
     height: 6rem;
     padding: 0 3rem; }
+  #pstv > header img.avatar {
+    max-height: 3rem;
+    width: auto; }
   #pstv > footer h1 {
     font-style: italic;
     opacity: .5; }

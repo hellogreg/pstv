@@ -94,6 +94,14 @@ a, a:hover, a:active, a:visited {
     padding: 0 3rem;
   }
 
+  > header {
+
+    img.avatar {
+      max-height: 3rem;
+      width: auto;
+    }
+  }
+
   > footer {
 
     h1 {
