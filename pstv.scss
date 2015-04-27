@@ -101,26 +101,43 @@ a, a:hover, a:active, a:visited {
 
     > header, > footer {
       @include flex-basic-row;
-      @include test-bg-color(0.0);
+      @include test-bg-color(0);
       height: 6rem;
       padding: 0 3rem;
     }
 
     > header {
-
+      h1 {
+        background-position: .7rem .8rem;
+        background-repeat: no-repeat;
+        background-size: 1.8rem auto;
+        padding-left: 3.5rem;
+      }
+      h1.system {
+        background-image: url("images/icon_wifi.png");
+      }
+      h1.friends {
+        background-image: url("images/icon_friends.png");
+      }
+      h1.user {
+        background-image: url("images/icon_avatar.png");
+      }
+      h1.trophies {
+        background-image: url("images/icon_trophies.png");
+      }
     }
 
     > footer {
 
       h1 {
-        font-style: italic;
-        opacity: 1;
+        font-weight: 300;
+        opacity: .75;
       }
 
       img.logo {
         max-height: 2rem;
         width: auto;
-        opacity: 1;
+        opacity: .75;
       }
     }
 

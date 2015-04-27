@@ -62,13 +62,26 @@ a, a:hover, a:active, a:visited {
       background-color: transparent;
       height: 6rem;
       padding: 0 3rem; }
+    #pstv > #prototype > header h1 {
+      background-position: .7rem .8rem;
+      background-repeat: no-repeat;
+      background-size: 1.8rem auto;
+      padding-left: 3.5rem; }
+    #pstv > #prototype > header h1.system {
+      background-image: url("images/icon_wifi.png"); }
+    #pstv > #prototype > header h1.friends {
+      background-image: url("images/icon_friends.png"); }
+    #pstv > #prototype > header h1.user {
+      background-image: url("images/icon_avatar.png"); }
+    #pstv > #prototype > header h1.trophies {
+      background-image: url("images/icon_trophies.png"); }
     #pstv > #prototype > footer h1 {
-      font-style: italic;
-      opacity: 1; }
+      font-weight: 300;
+      opacity: .75; }
     #pstv > #prototype > footer img.logo {
       max-height: 2rem;
       width: auto;
-      opacity: 1; }
+      opacity: .75; }
     #pstv > #prototype main {
       height: 42rem; }
       #pstv > #prototype main .app-current {
