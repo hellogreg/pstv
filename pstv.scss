@@ -5,7 +5,7 @@
 //$mainFontFamily: "SST W01 Roman", "sst-roman", "myriad-pro", sans-serif;
 $mainFontFamily: "sst-w01", sans-serif;
 
-$bgColor: rgba(26, 38, 93, 1);
+$bgColor: rgba(26, 38, 93, .9);
 $bgAccentColor: rgba(255, 255, 255, .05);
 
 // SASS pagewide mixins
@@ -135,7 +135,7 @@ a, a:hover, a:active, a:visited {
       }
 
       img.logo {
-        max-height: 2rem;
+        max-height: 2.2rem;
         width: auto;
         opacity: .75;
       }
@@ -199,7 +199,7 @@ a, a:hover, a:active, a:visited {
         }
 
         > footer {
-          @include test-bg-color();
+          @include test-bg-color(0);
           height: 6rem;
           left: 18rem;
           position: absolute;
@@ -210,6 +210,7 @@ a, a:hover, a:active, a:visited {
             font-size: 3rem;
             font-weight: 300;
             line-height: 6rem;
+            padding-left: 3rem;
           }
         }
 

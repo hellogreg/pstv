@@ -38,7 +38,7 @@ a, a:hover, a:active, a:visited {
   display: inherit; }
 
 #pstv {
-  border: 1px solid #1a265d;
+  border: 1px solid rgba(26, 38, 93, 0.9);
   height: 54rem;
   margin: 0 auto;
   overflow: hidden;
@@ -49,7 +49,7 @@ a, a:hover, a:active, a:visited {
     height: 100%;
     width: 100%; }
   #pstv > #prototype {
-    background-color: #1a265d; }
+    background-color: rgba(26, 38, 93, 0.9); }
     #pstv > #prototype > header, #pstv > #prototype > footer {
       -webkit-align-items: center;
       align-items: center;
@@ -79,7 +79,7 @@ a, a:hover, a:active, a:visited {
       font-weight: 300;
       opacity: .75; }
     #pstv > #prototype > footer img.logo {
-      max-height: 2rem;
+      max-height: 2.2rem;
       width: auto;
       opacity: .75; }
     #pstv > #prototype main {
@@ -99,7 +99,7 @@ a, a:hover, a:active, a:visited {
         #pstv > #prototype main .app-current > footer, #pstv > #prototype main .app-current > nav {
           display: inherit; }
         #pstv > #prototype main .app-current > footer {
-          background-color: rgba(0, 0, 0, 0.5);
+          background-color: transparent;
           height: 6rem;
           left: 18rem;
           position: absolute;
@@ -108,7 +108,8 @@ a, a:hover, a:active, a:visited {
           #pstv > #prototype main .app-current > footer h1 {
             font-size: 3rem;
             font-weight: 300;
-            line-height: 6rem; }
+            line-height: 6rem;
+            padding-left: 3rem; }
         #pstv > #prototype main .app-current ul {
           list-style-type: none; }
           #pstv > #prototype main .app-current ul li {
