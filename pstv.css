@@ -1,4 +1,3 @@
-/* Sony base blue: #003791 */
 * {
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent; }
@@ -101,15 +100,23 @@ a, a:hover, a:active, a:visited {
           list-style-type: none; }
           #pstv > #prototype main .app-current ul li {
             background-color: rgba(0, 0, 0, 0.5);
-            height: 3rem; }
-          #pstv > #prototype main .app-current ul li:nth-child(1) {
-            background-color: rgba(0, 0, 0, 0.4); }
-          #pstv > #prototype main .app-current ul li:nth-child(2) {
-            background-color: rgba(0, 0, 0, 0.3); }
-          #pstv > #prototype main .app-current ul li:nth-child(3) {
-            background-color: rgba(0, 0, 0, 0.2); }
-          #pstv > #prototype main .app-current ul li:nth-child(4) {
-            background-color: rgba(0, 0, 0, 0.1); }
+            background-position: .7rem .8rem;
+            background-repeat: no-repeat;
+            background-size: 1.5rem auto;
+            height: 3rem;
+            padding-left: 3rem; }
+          #pstv > #prototype main .app-current ul li.button-x {
+            background-color: rgba(0, 0, 0, 0.4);
+            background-image: url("images/button_x.png"); }
+          #pstv > #prototype main .app-current ul li.button-triangle {
+            background-color: rgba(0, 0, 0, 0.3);
+            background-image: url("images/button_triangle.png"); }
+          #pstv > #prototype main .app-current ul li.button-square {
+            background-color: rgba(0, 0, 0, 0.2);
+            background-image: url("images/button_square.png"); }
+          #pstv > #prototype main .app-current ul li.button-circle {
+            background-color: rgba(0, 0, 0, 0.1);
+            background-image: url("images/button_circle.png"); }
       #pstv > #prototype main .app-adjacent-left {
         position: absolute;
         top: 13.5rem;
@@ -231,12 +238,12 @@ a, a:hover, a:active, a:visited {
 .bg-grid-30 {
   background-position: 0 0;
   background-size: 30px 30px;
-  background-image: repeating-linear-gradient(0deg, #2a3568, #2a3568 1px, transparent 1px, transparent 30px), repeating-linear-gradient(-90deg, #2a3568, #2a3568 1px, transparent 1px, transparent 30px); }
+  background-image: repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) 1px, transparent 1px, transparent 30px), repeating-linear-gradient(-90deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) 1px, transparent 1px, transparent 30px); }
 
 .bg-grid-15 {
   background-position: 0 0;
   background-size: 15px 15px;
-  background-image: repeating-linear-gradient(0deg, #2a3568, #2a3568 1px, transparent 1px, transparent 15px), repeating-linear-gradient(-90deg, #2a3568, #2a3568 1px, transparent 1px, transparent 15px); }
+  background-image: repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) 1px, transparent 1px, transparent 15px), repeating-linear-gradient(-90deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) 1px, transparent 1px, transparent 15px); }
 
 .bg-vita {
   background-image: url("images/vita_homescreen.jpg");
@@ -259,7 +266,10 @@ a, a:hover, a:active, a:visited {
   background-size: 100% 100%; }
 
 #controls {
-  border: 1px dashed #1a265d;
+  border: 1px dashed rgba(255, 255, 255, 0.15);
+  color: #ccc;
+  font-size: 1.3rem;
+  font-weight: 700;
   height: 6rem;
   margin: 1.5rem auto;
   overflow: hidden;
@@ -276,6 +286,6 @@ a, a:hover, a:active, a:visited {
     -webkit-justify-content: space-between;
     justify-content: space-between; }
   #controls a, #controls a:hover, #controls a:active, #controls a:visited {
-    border-bottom: 1px dotted rgba(255, 255, 255, 0.2); }
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.15); }
 
 /*# sourceMappingURL=pstv.css.map */

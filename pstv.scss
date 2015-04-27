@@ -1,12 +1,12 @@
-/* Sony base blue: #003791 */
-// #1a265d, #2a3568
+// Sony base blue: #003791
+// #1a265d [rgb(26,38,93,1)], #2a3568
 
 // SASS variables
 //$mainFontFamily: "SST W01 Roman", "sst-roman", "myriad-pro", sans-serif;
 $mainFontFamily: "sst-w01", sans-serif;
 
-$bgColor: #1a265d;
-$bgAccentColor: #2a3568;
+$bgColor: rgba(26, 38, 93, 1);
+$bgAccentColor: rgba(255, 255, 255, .05);
 
 // SASS pagewide mixins
 
@@ -82,7 +82,6 @@ a, a:hover, a:active, a:visited {
 // #pstv is the "screen" of the console
 
 #pstv {
-
   border: 1px solid $bgColor;
   height: 54rem;
   margin: 0 auto;
@@ -202,27 +201,33 @@ a, a:hover, a:active, a:visited {
 
           li {
             @include test-bg-color();
+            background-position: .7rem .8rem;
+            background-repeat: no-repeat;
+            background-size: 1.5rem auto;
             height: 3rem;
+            padding-left: 3rem;
           }
 
-          li:nth-child(1) {
+          li.button-x {
             @include test-bg-color(.4);
+            background-image: url("images/button_x.png");
           }
 
-          li:nth-child(2) {
+          li.button-triangle {
             @include test-bg-color(.3);
+            background-image: url("images/button_triangle.png");
           }
 
-          li:nth-child(3) {
+          li.button-square {
             @include test-bg-color(.2);
+            background-image: url("images/button_square.png");
           }
 
-          li:nth-child(4) {
+          li.button-circle {
             @include test-bg-color(.1);
+            background-image: url("images/button_circle.png");
           }
-
         }
-
       }
 
       .app-adjacent-left {
@@ -299,7 +304,10 @@ a, a:hover, a:active, a:visited {
 }
 
 #controls {
-  border: 1px dashed $bgColor;
+  border: 1px dashed rgba(255, 255, 255, .15);
+  color: #ccc;
+  font-size: 1.3rem;
+  font-weight: 700;
   height: 6rem;
   margin: 1.5rem auto;
   overflow: hidden;
@@ -312,7 +320,7 @@ a, a:hover, a:active, a:visited {
   }
 
   a, a:hover, a:active, a:visited {
-    border-bottom: 1px dotted rgba(255, 255, 255, .2);
+    border-bottom: 1px dotted rgba(255, 255, 255, .15);
   }
 
 }
