@@ -6,15 +6,16 @@
   var $mockups = document.getElementById("mockups");
   var $controls = document.getElementById("controls");
 
-  var apps = [
-    {element: document.getElementById("app1"), position: 1},
-    {element: document.getElementById("app2"), position: 2},
-    {element: document.getElementById("app3"), position: 3},
-    {element: document.getElementById("app4"), position: 4},
-    {element: document.getElementById("app5"), position: 5},
-    {element: document.getElementById("app6"), position: 6},
-    {element: document.getElementById("app7"), position: 7},
-    {element: document.getElementById("app8"), position: 8}
+  // TODO: Maybe push/pop/shift/unshift apps when moving to represent position.
+  var $apps = [
+    document.getElementById("app1"),
+    document.getElementById("app2"),
+    document.getElementById("app3"),
+    document.getElementById("app4"),
+    document.getElementById("app5"),
+    document.getElementById("app6"),
+    document.getElementById("app7"),
+    document.getElementById("app8")
   ];
 
   var appClasses = [
@@ -50,13 +51,18 @@
 
   $controls.addEventListener("click", function (e) {
 
+    var target = e.target || e.srcElement;
+    e.preventDefault();
+    //log("Something within \"pstv\" has been clicked.");
+    //log("Source target:" + target);
+    //dir("Source target id:" + target.id);
 
     function swapClass(el, oldClass, newClass) {
       el.classList.remove(oldClass);
       el.classList.add(newClass);
     }
 
-    function shiftThisApp(el, direction) {
+    function moveThisApp(el, direction) {
       var i = 0, len = appClasses.length;
 
       for (; i < len; i++) {
@@ -89,78 +95,71 @@
     }
 
 
-    e.preventDefault();
-
-    //log("Something within \"pstv\" has been clicked.");
-    //log("Source element:" + e.srcElement);
-    //dir("Source element id:" + e.srcElement.id);
-
-
-    if (e.srcElement.id === "shift-apps-left") {
+    if (target.id === "move-apps-left") {
       (function () {
-        var i = 0, len = apps.length;
+        var i = 0, len = $apps.length;
         if (document.querySelector(".app-adjacent-right")) {
           for (; i < len; i++) {
-            shiftThisApp(apps[i].element, "left")
+            moveThisApp($apps[i], "left")
           }
         } else {
-          log("Can't shift any farther left.");
+          log("Can't move any farther left.");
         }
       }());
     }
 
-    else if (e.srcElement.id === "shift-apps-right") {
+    else if (target.id === "move-apps-right") {
       (function () {
-        var i = 0, len = apps.length;
+        var i = 0, len = $apps.length;
         if (document.querySelector(".app-adjacent-left")) {
           for (; i < len; i++) {
-            shiftThisApp(apps[i].element, "right");
+            moveThisApp($apps[i], "right");
           }
         } else {
-          log("Can't shift any farther right.");
+          log("Can't move any farther right.");
         }
       }());
     }
 
-    else if (e.srcElement.id === "hide-grid") {
+    else if (target.id === "hide-grid") {
       showPrototype();
       $prototype.classList.remove("bg-grid-15");
       $prototype.classList.remove("bg-grid-30");
     }
 
-    else if (e.srcElement.id === "show-grid-15") {
+    else if (target.id === "show-grid-15") {
       showPrototype();
       $prototype.classList.remove("bg-grid-30");
       $prototype.classList.add("bg-grid-15");
     }
 
-    else if (e.srcElement.id === "show-grid-30") {
+    else if (target.id === "show-grid-30") {
       showPrototype();
       $prototype.classList.remove("bg-grid-15");
       $prototype.classList.add("bg-grid-30");
     }
 
-    else if (e.srcElement.id === "show-vita") {
+    else if (target.id === "show-vita") {
       showMockups();
       $mockups.classList.add("bg-vita");
     }
 
-    else if (e.srcElement.id === "show-xeno-scanlines") {
+    else if (target.id === "show-xeno-scanlines") {
       showMockups();
       $mockups.classList.add("bg-xeno-scanlines");
     }
 
-    else if (e.srcElement.id === "show-xeno-smooth") {
+    else if (target.id === "show-xeno-smooth") {
       showMockups();
       $mockups.classList.add("bg-xeno-smooth");
     }
 
-    else if (e.srcElement.id === "show-ridge-scanlines") {
+    else if (target.id === "show-ridge-scanlines") {
       showMockups();
       $mockups.classList.add("bg-ridge-scanlines");
     }
 
-    else if (e.srcElement.id === "show-ridge-smooth") {
+    else if (target.id === "show-ridge-smooth") {
       showMockups();
       $mockups.classList.add("bg-ridge-smooth");
     }
