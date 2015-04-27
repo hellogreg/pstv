@@ -5,7 +5,7 @@
 //$mainFontFamily: "SST W01 Roman", "sst-roman", "myriad-pro", sans-serif;
 $mainFontFamily: "sst-w01", sans-serif;
 
-$bgColor: rgba(26, 38, 93, .9);
+$bgColor: rgba(26, 38, 93, 1);
 $bgAccentColor: rgba(255, 255, 255, .05);
 $appTransitionSpeed: 300ms ease-out;
 
@@ -141,13 +141,13 @@ a, a:hover, a:active, a:visited {
 
       h1 {
         font-weight: 300;
-        opacity: .75;
+        opacity: 1;
       }
 
       img.logo {
         max-height: 2.2rem;
         width: auto;
-        opacity: .75;
+        opacity: 1;
       }
     }
 
@@ -316,6 +316,9 @@ a, a:hover, a:active, a:visited {
 .bg-xeno-scanlines {
   background-image: url("images/psx_xeno_scanlines.png");
   background-size: 100% 100%;
+  // Brighten to compensate for scanlines.
+  -webkit-filter: brightness(110%);
+  filter: brightness(110%);
 }
 
 .bg-xeno-smooth {
@@ -326,6 +329,9 @@ a, a:hover, a:active, a:visited {
 .bg-ridge-scanlines {
   background-image: url("images/psx_ridge_scanlines.png");
   background-size: 100% 100%;
+  // Brighten to compensate for scanlines.
+  -webkit-filter: brightness(110%);
+  filter: brightness(110%);
 }
 
 .bg-ridge-smooth {

@@ -38,7 +38,7 @@ a, a:hover, a:active, a:visited {
   display: inherit; }
 
 #pstv {
-  border: 1px solid rgba(26, 38, 93, 0.9);
+  border: 1px solid #1a265d;
   height: 54rem;
   margin: 0 auto;
   overflow: hidden;
@@ -49,7 +49,7 @@ a, a:hover, a:active, a:visited {
     height: 100%;
     width: 100%; }
   #pstv > #prototype {
-    background-color: rgba(26, 38, 93, 0.9); }
+    background-color: #1a265d; }
     #pstv > #prototype > header, #pstv > #prototype > footer {
       -webkit-align-items: center;
       align-items: center;
@@ -77,7 +77,7 @@ a, a:hover, a:active, a:visited {
       background-image: url("images/icon_trophies.png"); }
     #pstv > #prototype > footer h1 {
       font-weight: 300;
-      opacity: .75; }
+      opacity: 1; }
     #pstv > #prototype > footer img.logo {
       max-height: 2.2rem;
       width: auto;
@@ -286,7 +286,9 @@ a, a:hover, a:active, a:visited {
 
 .bg-xeno-scanlines {
   background-image: url("images/psx_xeno_scanlines.png");
-  background-size: 100% 100%; }
+  background-size: 100% 100%;
+  -webkit-filter: brightness(110%);
+  filter: brightness(110%); }
 
 .bg-xeno-smooth {
   background-image: url("images/psx_xeno_smooth.png");
@@ -294,7 +296,9 @@ a, a:hover, a:active, a:visited {
 
 .bg-ridge-scanlines {
   background-image: url("images/psx_ridge_scanlines.png");
-  background-size: 100% 100%; }
+  background-size: 100% 100%;
+  -webkit-filter: brightness(110%);
+  filter: brightness(110%); }
 
 .bg-ridge-smooth {
   background-image: url("images/psx_ridge_smooth.png");
