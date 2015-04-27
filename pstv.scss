@@ -7,6 +7,7 @@ $mainFontFamily: "sst-w01", sans-serif;
 
 $bgColor: rgba(26, 38, 93, .9);
 $bgAccentColor: rgba(255, 255, 255, .05);
+$appTransitionSpeed: 300ms ease-out;
 
 // SASS pagewide mixins
 
@@ -29,6 +30,15 @@ $bgAccentColor: rgba(255, 255, 255, .05);
 
 @mixin test-bg-color($alpha:0.5) {
   background-color: rgba(0, 0, 0, $alpha);
+}
+
+@mixin hide {
+  opacity: 0;
+}
+
+@mixin show {
+  opacity: 1;
+  transition: opacity $appTransitionSpeed;
 }
 
 // Bare bones reset and pagewide styles
@@ -148,15 +158,17 @@ a, a:hover, a:active, a:visited {
       @mixin app {
         position: absolute;
         top: 13.5rem;
+        transition: left $appTransitionSpeed;
 
         > header {
           @include test-bg-color();
+          transition: background-color $appTransitionSpeed, width $appTransitionSpeed, height $appTransitionSpeed;
           text-align: center;
         }
 
         // Hide footer and nav for non-selected apps
         > footer, > nav {
-          display: none;
+          @include hide;
         }
       }
 
@@ -195,7 +207,7 @@ a, a:hover, a:active, a:visited {
 
         // Hide footer and nav for non-selected apps
         > footer, > nav {
-          display: inherit;
+          @include show;
         }
 
         > footer {

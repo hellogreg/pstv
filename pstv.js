@@ -6,7 +6,7 @@
   var $mockups = document.getElementById("mockups");
   var $controls = document.getElementById("controls");
 
-  // TODO: Maybe push/pop/shift/unshift apps when moving to represent location.
+  // TODO: Maybe push/pop/shift/unshift $apps when moving to represent location.
   var $apps = [
     document.getElementById("app1"),
     document.getElementById("app2"),

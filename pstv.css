@@ -87,17 +87,20 @@ a, a:hover, a:active, a:visited {
       #pstv > #prototype main .app-current {
         position: absolute;
         top: 13.5rem;
+        transition: left 300ms ease-out;
         left: 21rem; }
         #pstv > #prototype main .app-current > header {
           background-color: rgba(0, 0, 0, 0.5);
+          transition: background-color 300ms ease-out, width 300ms ease-out, height 300ms ease-out;
           text-align: center; }
         #pstv > #prototype main .app-current > footer, #pstv > #prototype main .app-current > nav {
-          display: none; }
+          opacity: 0; }
         #pstv > #prototype main .app-current > header {
           height: 18rem;
           width: 18rem; }
         #pstv > #prototype main .app-current > footer, #pstv > #prototype main .app-current > nav {
-          display: inherit; }
+          opacity: 1;
+          transition: opacity 300ms ease-out; }
         #pstv > #prototype main .app-current > footer {
           background-color: transparent;
           height: 6rem;
@@ -134,12 +137,14 @@ a, a:hover, a:active, a:visited {
       #pstv > #prototype main .app-adjacent-left {
         position: absolute;
         top: 13.5rem;
+        transition: left 300ms ease-out;
         left: 6rem; }
         #pstv > #prototype main .app-adjacent-left > header {
           background-color: rgba(0, 0, 0, 0.5);
+          transition: background-color 300ms ease-out, width 300ms ease-out, height 300ms ease-out;
           text-align: center; }
         #pstv > #prototype main .app-adjacent-left > footer, #pstv > #prototype main .app-adjacent-left > nav {
-          display: none; }
+          opacity: 0; }
         #pstv > #prototype main .app-adjacent-left > header {
           background-color: rgba(0, 0, 0, 0.4);
           height: 15rem;
@@ -147,12 +152,14 @@ a, a:hover, a:active, a:visited {
       #pstv > #prototype main .app-adjacent-right {
         position: absolute;
         top: 13.5rem;
+        transition: left 300ms ease-out;
         left: 39rem; }
         #pstv > #prototype main .app-adjacent-right > header {
           background-color: rgba(0, 0, 0, 0.5);
+          transition: background-color 300ms ease-out, width 300ms ease-out, height 300ms ease-out;
           text-align: center; }
         #pstv > #prototype main .app-adjacent-right > footer, #pstv > #prototype main .app-adjacent-right > nav {
-          display: none; }
+          opacity: 0; }
         #pstv > #prototype main .app-adjacent-right > header {
           background-color: rgba(0, 0, 0, 0.4);
           height: 15rem;
@@ -160,12 +167,14 @@ a, a:hover, a:active, a:visited {
       #pstv > #prototype main .app-distant-left {
         position: absolute;
         top: 13.5rem;
+        transition: left 300ms ease-out;
         left: -6rem; }
         #pstv > #prototype main .app-distant-left > header {
           background-color: rgba(0, 0, 0, 0.5);
+          transition: background-color 300ms ease-out, width 300ms ease-out, height 300ms ease-out;
           text-align: center; }
         #pstv > #prototype main .app-distant-left > footer, #pstv > #prototype main .app-distant-left > nav {
-          display: none; }
+          opacity: 0; }
         #pstv > #prototype main .app-distant-left > header {
           background-color: rgba(0, 0, 0, 0.35);
           height: 12rem;
@@ -173,12 +182,14 @@ a, a:hover, a:active, a:visited {
       #pstv > #prototype main .app-distant-right-1 {
         position: absolute;
         top: 13.5rem;
+        transition: left 300ms ease-out;
         left: 54rem; }
         #pstv > #prototype main .app-distant-right-1 > header {
           background-color: rgba(0, 0, 0, 0.5);
+          transition: background-color 300ms ease-out, width 300ms ease-out, height 300ms ease-out;
           text-align: center; }
         #pstv > #prototype main .app-distant-right-1 > footer, #pstv > #prototype main .app-distant-right-1 > nav {
-          display: none; }
+          opacity: 0; }
         #pstv > #prototype main .app-distant-right-1 > header {
           background-color: rgba(0, 0, 0, 0.35);
           height: 12rem;
@@ -186,12 +197,14 @@ a, a:hover, a:active, a:visited {
       #pstv > #prototype main .app-distant-right-2 {
         position: absolute;
         top: 13.5rem;
+        transition: left 300ms ease-out;
         left: 66rem; }
         #pstv > #prototype main .app-distant-right-2 > header {
           background-color: rgba(0, 0, 0, 0.5);
+          transition: background-color 300ms ease-out, width 300ms ease-out, height 300ms ease-out;
           text-align: center; }
         #pstv > #prototype main .app-distant-right-2 > footer, #pstv > #prototype main .app-distant-right-2 > nav {
-          display: none; }
+          opacity: 0; }
         #pstv > #prototype main .app-distant-right-2 > header {
           background-color: rgba(0, 0, 0, 0.3);
           height: 12rem;
@@ -199,12 +212,14 @@ a, a:hover, a:active, a:visited {
       #pstv > #prototype main .app-distant-right-3 {
         position: absolute;
         top: 13.5rem;
+        transition: left 300ms ease-out;
         left: 78rem; }
         #pstv > #prototype main .app-distant-right-3 > header {
           background-color: rgba(0, 0, 0, 0.5);
+          transition: background-color 300ms ease-out, width 300ms ease-out, height 300ms ease-out;
           text-align: center; }
         #pstv > #prototype main .app-distant-right-3 > footer, #pstv > #prototype main .app-distant-right-3 > nav {
-          display: none; }
+          opacity: 0; }
         #pstv > #prototype main .app-distant-right-3 > header {
           background-color: rgba(0, 0, 0, 0.25);
           height: 12rem;
@@ -212,12 +227,14 @@ a, a:hover, a:active, a:visited {
       #pstv > #prototype main .app-distant-right-4 {
         position: absolute;
         top: 13.5rem;
+        transition: left 300ms ease-out;
         left: 90rem; }
         #pstv > #prototype main .app-distant-right-4 > header {
           background-color: rgba(0, 0, 0, 0.5);
+          transition: background-color 300ms ease-out, width 300ms ease-out, height 300ms ease-out;
           text-align: center; }
         #pstv > #prototype main .app-distant-right-4 > footer, #pstv > #prototype main .app-distant-right-4 > nav {
-          display: none; }
+          opacity: 0; }
         #pstv > #prototype main .app-distant-right-4 > header {
           background-color: rgba(0, 0, 0, 0.2);
           height: 12rem;
@@ -225,12 +242,14 @@ a, a:hover, a:active, a:visited {
       #pstv > #prototype main .app-offscreen-left-1, #pstv > #prototype main .app-offscreen-left-2, #pstv > #prototype main .app-offscreen-left-3, #pstv > #prototype main .app-offscreen-left-4, #pstv > #prototype main .app-offscreen-left-5 {
         position: absolute;
         top: 13.5rem;
+        transition: left 300ms ease-out;
         left: -18rem; }
         #pstv > #prototype main .app-offscreen-left-1 > header, #pstv > #prototype main .app-offscreen-left-2 > header, #pstv > #prototype main .app-offscreen-left-3 > header, #pstv > #prototype main .app-offscreen-left-4 > header, #pstv > #prototype main .app-offscreen-left-5 > header {
           background-color: rgba(0, 0, 0, 0.5);
+          transition: background-color 300ms ease-out, width 300ms ease-out, height 300ms ease-out;
           text-align: center; }
         #pstv > #prototype main .app-offscreen-left-1 > footer, #pstv > #prototype main .app-offscreen-left-1 > nav, #pstv > #prototype main .app-offscreen-left-2 > footer, #pstv > #prototype main .app-offscreen-left-2 > nav, #pstv > #prototype main .app-offscreen-left-3 > footer, #pstv > #prototype main .app-offscreen-left-3 > nav, #pstv > #prototype main .app-offscreen-left-4 > footer, #pstv > #prototype main .app-offscreen-left-4 > nav, #pstv > #prototype main .app-offscreen-left-5 > footer, #pstv > #prototype main .app-offscreen-left-5 > nav {
-          display: none; }
+          opacity: 0; }
         #pstv > #prototype main .app-offscreen-left-1 > header, #pstv > #prototype main .app-offscreen-left-2 > header, #pstv > #prototype main .app-offscreen-left-3 > header, #pstv > #prototype main .app-offscreen-left-4 > header, #pstv > #prototype main .app-offscreen-left-5 > header {
           background-color: rgba(0, 0, 0, 0.01);
           height: 12rem;
@@ -238,12 +257,14 @@ a, a:hover, a:active, a:visited {
       #pstv > #prototype main .app-offscreen-right-1, #pstv > #prototype main .app-offscreen-right-2 {
         position: absolute;
         top: 13.5rem;
+        transition: left 300ms ease-out;
         left: 102rem; }
         #pstv > #prototype main .app-offscreen-right-1 > header, #pstv > #prototype main .app-offscreen-right-2 > header {
           background-color: rgba(0, 0, 0, 0.5);
+          transition: background-color 300ms ease-out, width 300ms ease-out, height 300ms ease-out;
           text-align: center; }
         #pstv > #prototype main .app-offscreen-right-1 > footer, #pstv > #prototype main .app-offscreen-right-1 > nav, #pstv > #prototype main .app-offscreen-right-2 > footer, #pstv > #prototype main .app-offscreen-right-2 > nav {
-          display: none; }
+          opacity: 0; }
         #pstv > #prototype main .app-offscreen-right-1 > header, #pstv > #prototype main .app-offscreen-right-2 > header {
           background-color: rgba(0, 0, 0, 0.01);
           height: 12rem;
