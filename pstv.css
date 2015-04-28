@@ -77,11 +77,11 @@ a, a:hover, a:active, a:visited {
     #pstv > #prototype > footer h1 {
       font-size: 1.3rem;
       font-style: italic;
-      opacity: .75; }
+      opacity: .9; }
     #pstv > #prototype > footer img.logo {
       max-height: 2.2rem;
       width: auto;
-      opacity: 1; }
+      opacity: .9; }
     #pstv > #prototype main {
       height: 42rem; }
       #pstv > #prototype main .app-current {
@@ -153,7 +153,6 @@ a, a:hover, a:active, a:visited {
           opacity: 0; }
         #pstv > #prototype main .app-adjacent-left > header {
           background-color: rgba(0, 0, 0, 0.4);
-          opacity: .9;
           height: 15rem;
           width: 15rem; }
       #pstv > #prototype main .app-adjacent-right {
@@ -172,7 +171,6 @@ a, a:hover, a:active, a:visited {
           opacity: 0; }
         #pstv > #prototype main .app-adjacent-right > header {
           background-color: rgba(0, 0, 0, 0.4);
-          opacity: .9;
           height: 15rem;
           width: 15rem; }
       #pstv > #prototype main .app-distant-left {
@@ -191,7 +189,6 @@ a, a:hover, a:active, a:visited {
           opacity: 0; }
         #pstv > #prototype main .app-distant-left > header {
           background-color: rgba(0, 0, 0, 0.35);
-          opacity: .8;
           height: 12rem;
           width: 12rem; }
       #pstv > #prototype main .app-distant-right-1 {
@@ -210,7 +207,6 @@ a, a:hover, a:active, a:visited {
           opacity: 0; }
         #pstv > #prototype main .app-distant-right-1 > header {
           background-color: rgba(0, 0, 0, 0.35);
-          opacity: .8;
           height: 12rem;
           width: 12rem; }
       #pstv > #prototype main .app-distant-right-2 {
@@ -229,7 +225,6 @@ a, a:hover, a:active, a:visited {
           opacity: 0; }
         #pstv > #prototype main .app-distant-right-2 > header {
           background-color: rgba(0, 0, 0, 0.3);
-          opacity: .8;
           height: 12rem;
           width: 12rem; }
       #pstv > #prototype main .app-distant-right-3 {
@@ -248,7 +243,6 @@ a, a:hover, a:active, a:visited {
           opacity: 0; }
         #pstv > #prototype main .app-distant-right-3 > header {
           background-color: rgba(0, 0, 0, 0.25);
-          opacity: .8;
           height: 12rem;
           width: 12rem; }
       #pstv > #prototype main .app-distant-right-4 {
@@ -267,7 +261,6 @@ a, a:hover, a:active, a:visited {
           opacity: 0; }
         #pstv > #prototype main .app-distant-right-4 > header {
           background-color: rgba(0, 0, 0, 0.2);
-          opacity: .8;
           height: 12rem;
           width: 12rem; }
       #pstv > #prototype main .app-offscreen-left-1, #pstv > #prototype main .app-offscreen-left-2, #pstv > #prototype main .app-offscreen-left-3,
@@ -292,7 +285,6 @@ a, a:hover, a:active, a:visited {
         #pstv > #prototype main .app-offscreen-left-1 > header, #pstv > #prototype main .app-offscreen-left-2 > header, #pstv > #prototype main .app-offscreen-left-3 > header,
         #pstv > #prototype main .app-offscreen-left-4 > header, #pstv > #prototype main .app-offscreen-left-5 > header, #pstv > #prototype main .app-offscreen-left-6 > header {
           background-color: rgba(0, 0, 0, 0.01);
-          opacity: .8;
           height: 12rem;
           width: 12rem; }
       #pstv > #prototype main .app-offscreen-right-1, #pstv > #prototype main .app-offscreen-right-2, #pstv > #prototype main .app-offscreen-right-3 {
@@ -311,14 +303,8 @@ a, a:hover, a:active, a:visited {
           opacity: 0; }
         #pstv > #prototype main .app-offscreen-right-1 > header, #pstv > #prototype main .app-offscreen-right-2 > header, #pstv > #prototype main .app-offscreen-right-3 > header {
           background-color: rgba(0, 0, 0, 0.01);
-          opacity: .8;
           height: 12rem;
           width: 12rem; }
-
-.bg-grid-30 {
-  background-position: 0 0;
-  background-size: 30px 30px;
-  background-image: repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) 1px, transparent 1px, transparent 30px), repeating-linear-gradient(-90deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) 1px, transparent 1px, transparent 30px); }
 
 .bg-grid-15 {
   background-position: 0 0;
@@ -348,6 +334,11 @@ a, a:hover, a:active, a:visited {
 .bg-ridge-smooth {
   background-image: url("images/psx_ridge_smooth.png");
   background-size: 100% 100%; }
+
+.bg-custom {
+  background-image: url("images/bg_tlg.png");
+  background-size: 100% 100%;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.67); }
 
 #controls {
   border: 1px dashed rgba(255, 255, 255, 0.15);

@@ -127,19 +127,19 @@
     else if (target.id === "hide-grid") {
       showPrototype();
       $prototype.classList.remove("bg-grid-15");
-      $prototype.classList.remove("bg-grid-30");
+      $prototype.classList.remove("bg-custom");
     }
 
     else if (target.id === "show-grid-15") {
       showPrototype();
-      $prototype.classList.remove("bg-grid-30");
+      $prototype.classList.remove("bg-custom");
       $prototype.classList.add("bg-grid-15");
     }
 
-    else if (target.id === "show-grid-30") {
+    else if (target.id === "show-custom") {
       showPrototype();
       $prototype.classList.remove("bg-grid-15");
-      $prototype.classList.add("bg-grid-30");
+      $prototype.classList.add("bg-custom");
     }
 
     else if (target.id === "show-vita") {
