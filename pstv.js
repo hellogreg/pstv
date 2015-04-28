@@ -21,6 +21,7 @@
   ];
 
   var appClasses = [
+    "app-offscreen-left-7",
     "app-offscreen-left-6",
     "app-offscreen-left-5",
     "app-offscreen-left-4",
@@ -37,7 +38,8 @@
     "app-distant-right-4",
     "app-offscreen-right-1",
     "app-offscreen-right-2",
-    "app-offscreen-right-3"
+    "app-offscreen-right-3",
+    "app-offscreen-right-4"
   ];
 
   function log(m) {
