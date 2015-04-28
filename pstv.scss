@@ -55,7 +55,7 @@ html {
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  //text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
   padding-top: 2rem;
   font-family: $mainFontFamily;
   font-size: 1.5rem;
@@ -140,8 +140,9 @@ a, a:hover, a:active, a:visited {
     > footer {
 
       h1 {
-        font-weight: 300;
-        opacity: 1;
+        font-size: 1.3rem;
+        font-style: italic;
+        opacity: .75;
       }
 
       img.logo {
@@ -162,8 +163,13 @@ a, a:hover, a:active, a:visited {
 
         > header {
           @include test-bg-color();
-          transition: background-color $appTransitionSpeed, width $appTransitionSpeed, height $appTransitionSpeed;
+          transition: background-color $appTransitionSpeed, width $appTransitionSpeed, height $appTransitionSpeed, opacity $appTransitionSpeed;
           text-align: center;
+
+          img {
+            height: 100%;
+            width: 100%;
+          }
         }
 
         // Hide footer and nav for non-selected apps
@@ -179,6 +185,7 @@ a, a:hover, a:active, a:visited {
 
         > header {
           @include test-bg-color($alpha);
+          opacity: .9;
           height: 15rem;
           width: 15rem;
         }
@@ -191,6 +198,7 @@ a, a:hover, a:active, a:visited {
 
         > header {
           @include test-bg-color($alpha);
+          opacity: .8;
           height: 12rem;
           width: 12rem;
         }
@@ -296,6 +304,7 @@ a, a:hover, a:active, a:visited {
       .app-offscreen-right-1, .app-offscreen-right-2, .app-offscreen-right-3 {
         @include app-distant(102rem, 0.01);
       }
+
     }
 
   }
