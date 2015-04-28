@@ -239,33 +239,38 @@ a, a:hover, a:active, a:visited {
           background-color: rgba(0, 0, 0, 0.2);
           height: 12rem;
           width: 12rem; }
-      #pstv > #prototype main .app-offscreen-left-1, #pstv > #prototype main .app-offscreen-left-2, #pstv > #prototype main .app-offscreen-left-3, #pstv > #prototype main .app-offscreen-left-4, #pstv > #prototype main .app-offscreen-left-5 {
+      #pstv > #prototype main .app-offscreen-left-1, #pstv > #prototype main .app-offscreen-left-2, #pstv > #prototype main .app-offscreen-left-3,
+      #pstv > #prototype main .app-offscreen-left-4, #pstv > #prototype main .app-offscreen-left-5, #pstv > #prototype main .app-offscreen-left-6 {
         position: absolute;
         top: 13.5rem;
         transition: left 300ms ease-out;
         left: -18rem; }
-        #pstv > #prototype main .app-offscreen-left-1 > header, #pstv > #prototype main .app-offscreen-left-2 > header, #pstv > #prototype main .app-offscreen-left-3 > header, #pstv > #prototype main .app-offscreen-left-4 > header, #pstv > #prototype main .app-offscreen-left-5 > header {
+        #pstv > #prototype main .app-offscreen-left-1 > header, #pstv > #prototype main .app-offscreen-left-2 > header, #pstv > #prototype main .app-offscreen-left-3 > header,
+        #pstv > #prototype main .app-offscreen-left-4 > header, #pstv > #prototype main .app-offscreen-left-5 > header, #pstv > #prototype main .app-offscreen-left-6 > header {
           background-color: rgba(0, 0, 0, 0.5);
           transition: background-color 300ms ease-out, width 300ms ease-out, height 300ms ease-out;
           text-align: center; }
-        #pstv > #prototype main .app-offscreen-left-1 > footer, #pstv > #prototype main .app-offscreen-left-1 > nav, #pstv > #prototype main .app-offscreen-left-2 > footer, #pstv > #prototype main .app-offscreen-left-2 > nav, #pstv > #prototype main .app-offscreen-left-3 > footer, #pstv > #prototype main .app-offscreen-left-3 > nav, #pstv > #prototype main .app-offscreen-left-4 > footer, #pstv > #prototype main .app-offscreen-left-4 > nav, #pstv > #prototype main .app-offscreen-left-5 > footer, #pstv > #prototype main .app-offscreen-left-5 > nav {
+        #pstv > #prototype main .app-offscreen-left-1 > footer, #pstv > #prototype main .app-offscreen-left-1 > nav, #pstv > #prototype main .app-offscreen-left-2 > footer, #pstv > #prototype main .app-offscreen-left-2 > nav, #pstv > #prototype main .app-offscreen-left-3 > footer, #pstv > #prototype main .app-offscreen-left-3 > nav,
+        #pstv > #prototype main .app-offscreen-left-4 > footer,
+        #pstv > #prototype main .app-offscreen-left-4 > nav, #pstv > #prototype main .app-offscreen-left-5 > footer, #pstv > #prototype main .app-offscreen-left-5 > nav, #pstv > #prototype main .app-offscreen-left-6 > footer, #pstv > #prototype main .app-offscreen-left-6 > nav {
           opacity: 0; }
-        #pstv > #prototype main .app-offscreen-left-1 > header, #pstv > #prototype main .app-offscreen-left-2 > header, #pstv > #prototype main .app-offscreen-left-3 > header, #pstv > #prototype main .app-offscreen-left-4 > header, #pstv > #prototype main .app-offscreen-left-5 > header {
+        #pstv > #prototype main .app-offscreen-left-1 > header, #pstv > #prototype main .app-offscreen-left-2 > header, #pstv > #prototype main .app-offscreen-left-3 > header,
+        #pstv > #prototype main .app-offscreen-left-4 > header, #pstv > #prototype main .app-offscreen-left-5 > header, #pstv > #prototype main .app-offscreen-left-6 > header {
           background-color: rgba(0, 0, 0, 0.01);
           height: 12rem;
           width: 12rem; }
-      #pstv > #prototype main .app-offscreen-right-1, #pstv > #prototype main .app-offscreen-right-2 {
+      #pstv > #prototype main .app-offscreen-right-1, #pstv > #prototype main .app-offscreen-right-2, #pstv > #prototype main .app-offscreen-right-3 {
         position: absolute;
         top: 13.5rem;
         transition: left 300ms ease-out;
         left: 102rem; }
-        #pstv > #prototype main .app-offscreen-right-1 > header, #pstv > #prototype main .app-offscreen-right-2 > header {
+        #pstv > #prototype main .app-offscreen-right-1 > header, #pstv > #prototype main .app-offscreen-right-2 > header, #pstv > #prototype main .app-offscreen-right-3 > header {
           background-color: rgba(0, 0, 0, 0.5);
           transition: background-color 300ms ease-out, width 300ms ease-out, height 300ms ease-out;
           text-align: center; }
-        #pstv > #prototype main .app-offscreen-right-1 > footer, #pstv > #prototype main .app-offscreen-right-1 > nav, #pstv > #prototype main .app-offscreen-right-2 > footer, #pstv > #prototype main .app-offscreen-right-2 > nav {
+        #pstv > #prototype main .app-offscreen-right-1 > footer, #pstv > #prototype main .app-offscreen-right-1 > nav, #pstv > #prototype main .app-offscreen-right-2 > footer, #pstv > #prototype main .app-offscreen-right-2 > nav, #pstv > #prototype main .app-offscreen-right-3 > footer, #pstv > #prototype main .app-offscreen-right-3 > nav {
           opacity: 0; }
-        #pstv > #prototype main .app-offscreen-right-1 > header, #pstv > #prototype main .app-offscreen-right-2 > header {
+        #pstv > #prototype main .app-offscreen-right-1 > header, #pstv > #prototype main .app-offscreen-right-2 > header, #pstv > #prototype main .app-offscreen-right-3 > header {
           background-color: rgba(0, 0, 0, 0.01);
           height: 12rem;
           width: 12rem; }
@@ -329,6 +334,6 @@ a, a:hover, a:active, a:visited {
 
 @media (max-width: 520px) {
   @viewport {
-    width: 96px; } }
+    width: 960px; } }
 
 /*# sourceMappingURL=pstv.css.map */
