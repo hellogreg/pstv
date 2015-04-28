@@ -360,3 +360,9 @@ a, a:hover, a:active, a:visited {
   }
 
 }
+
+@media (max-width: 520px) {
+  @viewport {
+    width: 1000px;
+  }
+}

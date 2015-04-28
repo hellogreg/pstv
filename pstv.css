@@ -81,7 +81,7 @@ a, a:hover, a:active, a:visited {
     #pstv > #prototype > footer img.logo {
       max-height: 2.2rem;
       width: auto;
-      opacity: .75; }
+      opacity: 1; }
     #pstv > #prototype main {
       height: 42rem; }
       #pstv > #prototype main .app-current {
@@ -326,5 +326,9 @@ a, a:hover, a:active, a:visited {
     justify-content: space-between; }
   #controls a, #controls a:hover, #controls a:active, #controls a:visited {
     border-bottom: 1px dotted rgba(255, 255, 255, 0.15); }
+
+@media (max-width: 520px) {
+  @viewport {
+    width: 1000px; } }
 
 /*# sourceMappingURL=pstv.css.map */
