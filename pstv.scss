@@ -289,11 +289,11 @@ a, a:hover, a:active, a:visited {
       }
 
       .app-offscreen-left-1, .app-offscreen-left-2, .app-offscreen-left-3,
-      .app-offscreen-left-4, .app-offscreen-left-5, .app-offscreen-left-6, .app-offscreen-left-7 {
+      .app-offscreen-left-4, .app-offscreen-left-5, .app-offscreen-left-6 {
         @include app-distant(-18rem, 0.01);
       }
 
-      .app-offscreen-right-1, .app-offscreen-right-2, .app-offscreen-right-3, .app-offscreen-right-4 {
+      .app-offscreen-right-1, .app-offscreen-right-2, .app-offscreen-right-3 {
         @include app-distant(102rem, 0.01);
       }
     }

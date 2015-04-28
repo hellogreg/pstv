@@ -16,12 +16,10 @@
     document.getElementById("app6"),
     document.getElementById("app7"),
     document.getElementById("app8"),
-    document.getElementById("app9"),
-    document.getElementById("app10")
+    document.getElementById("app9")
   ];
 
   var appClasses = [
-    "app-offscreen-left-7",
     "app-offscreen-left-6",
     "app-offscreen-left-5",
     "app-offscreen-left-4",
@@ -38,8 +36,7 @@
     "app-distant-right-4",
     "app-offscreen-right-1",
     "app-offscreen-right-2",
-    "app-offscreen-right-3",
-    "app-offscreen-right-4"
+    "app-offscreen-right-3"
   ];
 
   function log(m) {
