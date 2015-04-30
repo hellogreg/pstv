@@ -20,23 +20,23 @@
   ];
 
   var appClasses = [
-    "app-offscreen-left-6",
-    "app-offscreen-left-5",
-    "app-offscreen-left-4",
-    "app-offscreen-left-3",
-    "app-offscreen-left-2",
-    "app-offscreen-left-1",
-    "app-distant-left",
-    "app-adjacent-left",
-    "app-current",
-    "app-adjacent-right",
-    "app-distant-right-1",
-    "app-distant-right-2",
-    "app-distant-right-3",
-    "app-distant-right-4",
-    "app-offscreen-right-1",
-    "app-offscreen-right-2",
-    "app-offscreen-right-3"
+    "offscreen-left-6",
+    "offscreen-left-5",
+    "offscreen-left-4",
+    "offscreen-left-3",
+    "offscreen-left-2",
+    "offscreen-left-1",
+    "distant-left",
+    "adjacent-left",
+    "current",
+    "adjacent-right",
+    "distant-right-1",
+    "distant-right-2",
+    "distant-right-3",
+    "distant-right-4",
+    "offscreen-right-1",
+    "offscreen-right-2",
+    "offscreen-right-3"
   ];
 
   function log(m) {
@@ -71,12 +71,12 @@
       for (; i < len; i++) {
         if (el.classList.contains(appClasses[i])) {
 
-          if (direction === "left") {
+          if (direction === "right") {
             swapClass(el, appClasses[i], appClasses[i - 1]);
             break;
           }
 
-          else if (direction === "right") {
+          else if (direction === "left") {
             swapClass(el, appClasses[i], appClasses[i + 1]);
             break;
           }
@@ -101,9 +101,9 @@
     if (target.id === "move-apps-left") {
       (function () {
         var i = 0, len = $apps.length;
-        if (document.querySelector(".app-adjacent-right")) {
+        if (document.querySelector(".adjacent-left")) {
           for (; i < len; i++) {
-            moveThisApp($apps[i], "left")
+            moveThisApp($apps[i], "left");
           }
         } else {
           log("Can't move any farther left.");
@@ -114,9 +114,9 @@
     else if (target.id === "move-apps-right") {
       (function () {
         var i = 0, len = $apps.length;
-        if (document.querySelector(".app-adjacent-left")) {
+        if (document.querySelector(".adjacent-right")) {
           for (; i < len; i++) {
-            moveThisApp($apps[i], "right");
+            moveThisApp($apps[i], "right")
           }
         } else {
           log("Can't move any farther right.");

@@ -179,7 +179,7 @@ a, a:hover, a:active, a:visited {
       }
 
       // Mixin for apps next to the currently selected one.
-      @mixin app-adjacent($leftpos, $alpha:0.4) {
+      @mixin adjacent($leftpos, $alpha:0.4) {
         @include app;
         left: $leftpos;
 
@@ -191,7 +191,7 @@ a, a:hover, a:active, a:visited {
       }
 
       // Mixin for apps not adjacent to the currently selected one.
-      @mixin app-distant($leftpos, $alpha:0.4) {
+      @mixin distant($leftpos, $alpha:0.4) {
         @include app;
         left: $leftpos;
 
@@ -202,7 +202,7 @@ a, a:hover, a:active, a:visited {
         }
       }
 
-      .app-current {
+      .current {
         @include app;
         left: 21rem;
 
@@ -266,41 +266,41 @@ a, a:hover, a:active, a:visited {
         }
       }
 
-      .app-adjacent-left {
-        @include app-adjacent(6rem);
+      .adjacent-left {
+        @include adjacent(6rem);
       }
 
-      .app-adjacent-right {
-        @include app-adjacent(39rem);
+      .adjacent-right {
+        @include adjacent(39rem);
       }
 
-      .app-distant-left {
-        @include app-distant(-6rem, 0.35);
+      .distant-left {
+        @include distant(-6rem, 0.35);
       }
 
-      .app-distant-right-1 {
-        @include app-distant(54rem, 0.35);
+      .distant-right-1 {
+        @include distant(54rem, 0.35);
       }
 
-      .app-distant-right-2 {
-        @include app-distant(66rem, 0.3);
+      .distant-right-2 {
+        @include distant(66rem, 0.3);
       }
 
-      .app-distant-right-3 {
-        @include app-distant(78rem, 0.25);
+      .distant-right-3 {
+        @include distant(78rem, 0.25);
       }
 
-      .app-distant-right-4 {
-        @include app-distant(90rem, 0.2);
+      .distant-right-4 {
+        @include distant(90rem, 0.2);
       }
 
-      .app-offscreen-left-1, .app-offscreen-left-2, .app-offscreen-left-3,
-      .app-offscreen-left-4, .app-offscreen-left-5, .app-offscreen-left-6 {
-        @include app-distant(-18rem, 0.01);
+      .offscreen-left-1, .offscreen-left-2, .offscreen-left-3,
+      .offscreen-left-4, .offscreen-left-5, .offscreen-left-6 {
+        @include distant(-18rem, 0.01);
       }
 
-      .app-offscreen-right-1, .app-offscreen-right-2, .app-offscreen-right-3 {
-        @include app-distant(102rem, 0.01);
+      .offscreen-right-1, .offscreen-right-2, .offscreen-right-3 {
+        @include distant(102rem, 0.01);
       }
 
     }
