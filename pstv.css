@@ -89,101 +89,112 @@ a, a:hover, a:active, a:visited {
         -moz-backface-visibility: hidden;
         backface-visibility: hidden;
         position: absolute;
-        top: 13.5rem; }
-        #pstv > #prototype main .app > header, #pstv > #prototype main .app > footer, #pstv > #prototype main .app > nav {
+        top: 13.5rem;
+        -webkit-transform: translate(21rem, 0) scale(1);
+        transform: translate(21rem, 0) scale(1);
+        -webkit-transition: -webkit-transform 300ms;
+        transition: transform 300ms; }
+        #pstv > #prototype main .app > header, #pstv > #prototype main .app > nav, #pstv > #prototype main .app > footer {
           -webkit-backface-visibility: inherit;
-          width: 18rem; }
+          position: inherit; }
         #pstv > #prototype main .app > header {
           height: 18rem;
-          -webkit-transform: translate(0) scale(0.8);
-          -webkit-transition: -webkit-transform 400ms;
+          -webkit-transform: translate(0) scale(1);
           transform: translate(0) scale(1);
-          transition: transform 400ms; }
+          width: 18rem; }
           #pstv > #prototype main .app > header img {
             height: 100%;
             width: 100%; }
-        #pstv > #prototype main .app > footer, #pstv > #prototype main .app > nav {
+        #pstv > #prototype main .app > nav, #pstv > #prototype main .app > footer {
           opacity: 0; }
+        #pstv > #prototype main .app nav {
+          -webkit-transform: translate(0rem, 18rem) scale(1);
+          transform: translate(0rem, 18rem) scale(1); }
+          #pstv > #prototype main .app nav ul {
+            list-style-type: none; }
+            #pstv > #prototype main .app nav ul li {
+              background-color: rgba(0, 0, 0, 0.5);
+              background-position: .7rem .8rem;
+              background-repeat: no-repeat;
+              background-size: 1.5rem auto;
+              height: 3rem;
+              padding-left: 3rem;
+              width: 18rem; }
+            #pstv > #prototype main .app nav ul li.button-x {
+              background-color: rgba(0, 0, 0, 0.4);
+              background-image: url("images/button_x.png"); }
+            #pstv > #prototype main .app nav ul li.button-triangle {
+              background-color: rgba(0, 0, 0, 0.3);
+              background-image: url("images/button_triangle.png"); }
+            #pstv > #prototype main .app nav ul li.button-square {
+              background-color: rgba(0, 0, 0, 0.2);
+              background-image: url("images/button_square.png"); }
+            #pstv > #prototype main .app nav ul li.button-circle {
+              background-color: rgba(0, 0, 0, 0.1);
+              background-image: url("images/button_circle.png"); }
+        #pstv > #prototype main .app > footer {
+          background-color: transparent;
+          height: 6rem;
+          -webkit-transform: translate(18rem, 21rem) scale(1);
+          transform: translate(18rem, 21rem) scale(1);
+          width: 75rem; }
+          #pstv > #prototype main .app > footer h1 {
+            font-size: 3rem;
+            font-weight: 300;
+            line-height: 6rem;
+            padding-left: 3rem; }
       #pstv > #prototype main .current > header {
-        background-color: rgba(0, 0, 0, 0.5);
-        -webkit-transform: translate(4.5rem, 0) scale(1);
-        transform: translate(21rem, 0) scale(1); }
+        background-color: rgba(0, 0, 0, 0.5); }
       #pstv > #prototype main .current > footer, #pstv > #prototype main .current > nav {
         opacity: 1;
-        transition: opacity 400ms; }
-      #pstv > #prototype main .current > footer {
-        background-color: transparent;
-        height: 6rem;
-        left: 18rem;
-        position: absolute;
-        top: 21rem;
-        transform: translate(21rem, 0) scale(1);
-        width: 75rem; }
-        #pstv > #prototype main .current > footer h1 {
-          font-size: 3rem;
-          font-weight: 300;
-          line-height: 6rem;
-          padding-left: 3rem; }
-      #pstv > #prototype main .current nav {
-        transform: translate(21rem, 0) scale(1); }
-        #pstv > #prototype main .current nav ul {
-          list-style-type: none; }
-          #pstv > #prototype main .current nav ul li {
-            background-color: rgba(0, 0, 0, 0.5);
-            background-position: .7rem .8rem;
-            background-repeat: no-repeat;
-            background-size: 1.5rem auto;
-            height: 3rem;
-            padding-left: 3rem; }
-          #pstv > #prototype main .current nav ul li.button-x {
-            background-color: rgba(0, 0, 0, 0.4);
-            background-image: url("images/button_x.png"); }
-          #pstv > #prototype main .current nav ul li.button-triangle {
-            background-color: rgba(0, 0, 0, 0.3);
-            background-image: url("images/button_triangle.png"); }
-          #pstv > #prototype main .current nav ul li.button-square {
-            background-color: rgba(0, 0, 0, 0.2);
-            background-image: url("images/button_square.png"); }
-          #pstv > #prototype main .current nav ul li.button-circle {
-            background-color: rgba(0, 0, 0, 0.1);
-            background-image: url("images/button_circle.png"); }
-      #pstv > #prototype main .adjacent-left > header {
-        background-color: rgba(0, 0, 0, 0.4);
-        -webkit-transform: translate(4.5rem, -1.5rem) scale(calc(15 / 18));
-        transform: translate(4.5rem, -1.5rem) scale(calc(15 / 18)); }
-      #pstv > #prototype main .adjacent-right > header {
-        background-color: rgba(0, 0, 0, 0.4);
-        -webkit-transform: translate(22.5rem, -1.5rem) scale(calc(15 / 18));
-        transform: translate(37.5rem, -1.5rem) scale(calc(15 / 18)); }
-      #pstv > #prototype main .distant-left > header {
-        background-color: rgba(0, 0, 0, 0.35);
-        -webkit-transform: translate(-9rem, -3rem) scale(calc(12 / 18));
-        transform: translate(-9rem, -3rem) scale(calc(12 / 18)); }
-      #pstv > #prototype main .distant-right-1 > header {
-        background-color: rgba(0, 0, 0, 0.35);
-        -webkit-transform: translate(51rem, -3rem) scale(calc(12 / 18));
-        transform: translate(51rem, -3rem) scale(calc(12 / 18)); }
-      #pstv > #prototype main .distant-right-2 > header {
-        background-color: rgba(0, 0, 0, 0.35);
-        -webkit-transform: translate(63rem, -3rem) scale(calc(12 / 18));
-        transform: translate(63rem, -3rem) scale(calc(12 / 18)); }
-      #pstv > #prototype main .distant-right-3 > header {
-        background-color: rgba(0, 0, 0, 0.35);
-        -webkit-transform: translate(75rem, -3rem) scale(calc(12 / 18));
-        transform: translate(75rem, -3rem) scale(calc(12 / 18)); }
-      #pstv > #prototype main .distant-right-4 > header {
-        background-color: rgba(0, 0, 0, 0.35);
-        -webkit-transform: translate(87rem, -3rem) scale(calc(12 / 18));
-        transform: translate(87rem, -3rem) scale(calc(12 / 18)); }
-      #pstv > #prototype main .offscreen-left-1 > header, #pstv > #prototype main .offscreen-left-2 > header, #pstv > #prototype main .offscreen-left-3 > header,
-      #pstv > #prototype main .offscreen-left-4 > header, #pstv > #prototype main .offscreen-left-5 > header, #pstv > #prototype main .offscreen-left-6 > header {
-        background-color: rgba(0, 0, 0, 0.35);
-        -webkit-transform: translate(-21rem, -3rem) scale(calc(12 / 18));
-        transform: translate(-21rem, -3rem) scale(calc(12 / 18)); }
-      #pstv > #prototype main .offscreen-right-1 > header, #pstv > #prototype main .offscreen-right-2 > header, #pstv > #prototype main .offscreen-right-3 > header {
-        background-color: rgba(0, 0, 0, 0.35);
-        -webkit-transform: translate(99rem, -3rem) scale(calc(12 / 18));
-        transform: translate(99rem, -3rem) scale(calc(12 / 18)); }
+        transition: opacity 300ms; }
+      #pstv > #prototype main .adjacent-left {
+        -webkit-transform: translate(6rem, 0rem) scale(calc(15 / 18));
+        transform: translate(6rem, 0rem) scale(calc(15 / 18)); }
+        #pstv > #prototype main .adjacent-left > header {
+          background-color: rgba(0, 0, 0, 0.4); }
+      #pstv > #prototype main .adjacent-right {
+        -webkit-transform: translate(39rem, 0rem) scale(calc(15 / 18));
+        transform: translate(39rem, 0rem) scale(calc(15 / 18)); }
+        #pstv > #prototype main .adjacent-right > header {
+          background-color: rgba(0, 0, 0, 0.4); }
+      #pstv > #prototype main .distant-left {
+        -webkit-transform: translate(-6rem, 0rem) scale(calc(12 / 18));
+        transform: translate(-6rem, 0rem) scale(calc(12 / 18)); }
+        #pstv > #prototype main .distant-left > header {
+          background-color: rgba(0, 0, 0, 0.35); }
+      #pstv > #prototype main .distant-right-1 {
+        -webkit-transform: translate(54rem, 0rem) scale(calc(12 / 18));
+        transform: translate(54rem, 0rem) scale(calc(12 / 18)); }
+        #pstv > #prototype main .distant-right-1 > header {
+          background-color: rgba(0, 0, 0, 0.35); }
+      #pstv > #prototype main .distant-right-2 {
+        -webkit-transform: translate(66rem, 0rem) scale(calc(12 / 18));
+        transform: translate(66rem, 0rem) scale(calc(12 / 18)); }
+        #pstv > #prototype main .distant-right-2 > header {
+          background-color: rgba(0, 0, 0, 0.35); }
+      #pstv > #prototype main .distant-right-3 {
+        -webkit-transform: translate(78rem, 0rem) scale(calc(12 / 18));
+        transform: translate(78rem, 0rem) scale(calc(12 / 18)); }
+        #pstv > #prototype main .distant-right-3 > header {
+          background-color: rgba(0, 0, 0, 0.35); }
+      #pstv > #prototype main .distant-right-4 {
+        -webkit-transform: translate(90rem, 0rem) scale(calc(12 / 18));
+        transform: translate(90rem, 0rem) scale(calc(12 / 18)); }
+        #pstv > #prototype main .distant-right-4 > header {
+          background-color: rgba(0, 0, 0, 0.35); }
+      #pstv > #prototype main .offscreen-left-1, #pstv > #prototype main .offscreen-left-2, #pstv > #prototype main .offscreen-left-3,
+      #pstv > #prototype main .offscreen-left-4, #pstv > #prototype main .offscreen-left-5, #pstv > #prototype main .offscreen-left-6 {
+        -webkit-transform: translate(-18rem, 0rem) scale(calc(12 / 18));
+        transform: translate(-18rem, 0rem) scale(calc(12 / 18)); }
+        #pstv > #prototype main .offscreen-left-1 > header, #pstv > #prototype main .offscreen-left-2 > header, #pstv > #prototype main .offscreen-left-3 > header,
+        #pstv > #prototype main .offscreen-left-4 > header, #pstv > #prototype main .offscreen-left-5 > header, #pstv > #prototype main .offscreen-left-6 > header {
+          background-color: rgba(0, 0, 0, 0.35); }
+      #pstv > #prototype main .offscreen-right-1, #pstv > #prototype main .offscreen-right-2, #pstv > #prototype main .offscreen-right-3 {
+        -webkit-transform: translate(102rem, 0rem) scale(calc(12 / 18));
+        transform: translate(102rem, 0rem) scale(calc(12 / 18)); }
+        #pstv > #prototype main .offscreen-right-1 > header, #pstv > #prototype main .offscreen-right-2 > header, #pstv > #prototype main .offscreen-right-3 > header {
+          background-color: rgba(0, 0, 0, 0.35); }
 
 .bg-grid-15 {
   background-position: 0 0;

@@ -7,7 +7,7 @@ $mainFontFamily: "sst-w01", sans-serif;
 
 $bgColor: rgba(26, 38, 93, 1);
 $bgAccentColor: rgba(255, 255, 255, .05);
-$appTransitionSpeed: 400ms;
+$appTransitionSpeed: 300ms;
 
 // SASS pagewide mixins
 
@@ -160,15 +160,22 @@ a, a:hover, a:active, a:visited {
     main {
       height: 42rem;
 
+      $scaleCurrent: 1;
       $scaleAdjacent: calc(15 / 18);
       $scaleDistant: calc(12 / 18);
 
       @mixin adjacent {
-        @include test-bg-color(.4);
+        //display: none; //Used for testing only.
+        > header {
+          @include test-bg-color(.4);
+        }
       }
 
       @mixin distant {
-        @include test-bg-color(.35);
+        //display: none; //Used for testing only.
+        > header {
+          @include test-bg-color(.35);
+        }
       }
 
       .app {
@@ -177,18 +184,21 @@ a, a:hover, a:active, a:visited {
         backface-visibility: hidden;
         position: absolute;
         top: 13.5rem;
+        -webkit-transform: translate(21rem, 0) scale($scaleCurrent);
+        transform: translate(21rem, 0) scale($scaleCurrent);
+        -webkit-transition: -webkit-transform $appTransitionSpeed;
+        transition: transform $appTransitionSpeed;
 
-        > header, > footer, > nav {
+        > header, > nav, > footer {
           -webkit-backface-visibility: inherit;
-          width: 18rem;
+          position: inherit;
         }
 
         > header {
           height: 18rem;
-          -webkit-transform: translate(0) scale(.80);
-          -webkit-transition: -webkit-transform $appTransitionSpeed;
-          transform: translate(0) scale(1);
-          transition: transform $appTransitionSpeed;
+          -webkit-transform: translate(0) scale($scaleCurrent);
+          transform: translate(0) scale($scaleCurrent);
+          width: 18rem;
 
           img {
             height: 100%;
@@ -198,45 +208,13 @@ a, a:hover, a:active, a:visited {
         }
 
         // Hide footer and nav for non-selected apps
-        > footer, > nav {
+        > nav, > footer {
           @include hide;
         }
 
-      }
-
-      .current {
-
-        > header {
-          @include test-bg-color(.5);
-          $scale: 1;
-          -webkit-transform: translate(4.5rem, 0) scale($scale);
-          transform: translate(21rem, 0) scale($scale);
-        }
-
-        // Hide footer and nav for non-selected apps
-        > footer, > nav {
-          @include show;
-        }
-
-        > footer {
-          @include test-bg-color(0);
-          height: 6rem;
-          left: 18rem;
-          position: absolute;
-          top: 21rem;
-          transform: translate(21rem, 0) scale(1);
-          width: 75rem;
-
-          h1 {
-            font-size: 3rem;
-            font-weight: 300;
-            line-height: 6rem;
-            padding-left: 3rem;
-          }
-        }
-
         nav {
-          transform: translate(21rem, 0) scale(1);
+          -webkit-transform: translate(0rem, 18rem) scale($scaleCurrent);
+          transform: translate(0rem, 18rem) scale($scaleCurrent);
 
           ul {
             list-style-type: none;
@@ -248,6 +226,7 @@ a, a:hover, a:active, a:visited {
               background-size: 1.5rem auto;
               height: 3rem;
               padding-left: 3rem;
+              width: 18rem;
             }
 
             li.button-x {
@@ -272,79 +251,89 @@ a, a:hover, a:active, a:visited {
           }
         }
 
+        > footer {
+          @include test-bg-color(0);
+          height: 6rem;
+          -webkit-transform: translate(18rem, 21rem) scale($scaleCurrent);
+          transform: translate(18rem, 21rem) scale($scaleCurrent);
+          width: 75rem;
+
+          h1 {
+            font-size: 3rem;
+            font-weight: 300;
+            line-height: 6rem;
+            padding-left: 3rem;
+          }
+        }
+
+      }
+
+      .current {
+
+        > header {
+          @include test-bg-color(.5);
+        }
+
+        // Hide footer and nav for non-selected apps
+        > footer, > nav {
+          @include show;
+        }
+
       }
 
       .adjacent-left {
-        > header {
-          @include adjacent;
-          -webkit-transform: translate(4.5rem, -1.5rem) scale($scaleAdjacent);
-          transform: translate(4.5rem, -1.5rem) scale($scaleAdjacent);
-        }
+        @include adjacent;
+        -webkit-transform: translate(6rem, 0rem) scale($scaleAdjacent);
+        transform: translate(6rem, 0rem) scale($scaleAdjacent);
       }
 
       .adjacent-right {
-        > header {
-          @include adjacent;
-          -webkit-transform: translate(22.5rem, -1.5rem) scale($scaleAdjacent);
-          transform: translate(37.5rem, -1.5rem) scale($scaleAdjacent);
-        }
+        @include adjacent;
+        -webkit-transform: translate(39rem, 0rem) scale($scaleAdjacent);
+        transform: translate(39rem, 0rem) scale($scaleAdjacent);
       }
 
       .distant-left {
-        > header {
-          @include distant;
-          -webkit-transform: translate(-9rem, -3rem) scale($scaleDistant);
-          transform: translate(-9rem, -3rem) scale($scaleDistant);
-        }
+        @include distant;
+        -webkit-transform: translate(-6rem, 0rem) scale($scaleDistant);
+        transform: translate(-6rem, 0rem) scale($scaleDistant);
       }
 
       .distant-right-1 {
-        > header {
           @include distant;
-          -webkit-transform: translate(51rem, -3rem) scale($scaleDistant);
-          transform: translate(51rem, -3rem) scale($scaleDistant);
-        }
+          -webkit-transform: translate(54rem, 0rem) scale($scaleDistant);
+          transform: translate(54rem, 0rem) scale($scaleDistant);
       }
 
       .distant-right-2 {
-        > header {
           @include distant;
-          -webkit-transform: translate(63rem, -3rem) scale($scaleDistant);
-          transform: translate(63rem, -3rem) scale($scaleDistant);
-        }
+          -webkit-transform: translate(66rem, 0rem) scale($scaleDistant);
+          transform: translate(66rem, 0rem) scale($scaleDistant);
       }
 
       .distant-right-3 {
-        > header {
           @include distant;
-          -webkit-transform: translate(75rem, -3rem) scale($scaleDistant);
-          transform: translate(75rem, -3rem) scale($scaleDistant);
-        }
+          -webkit-transform: translate(78rem, 0rem) scale($scaleDistant);
+          transform: translate(78rem, 0rem) scale($scaleDistant);
       }
 
       .distant-right-4 {
-        > header {
           @include distant;
-          -webkit-transform: translate(87rem, -3rem) scale($scaleDistant);
-          transform: translate(87rem, -3rem) scale($scaleDistant);
-        }
+          -webkit-transform: translate(90rem, 0rem) scale($scaleDistant);
+          transform: translate(90rem, 0rem) scale($scaleDistant);
       }
 
       .offscreen-left-1, .offscreen-left-2, .offscreen-left-3,
       .offscreen-left-4, .offscreen-left-5, .offscreen-left-6 {
-        > header {
           @include distant;
-          -webkit-transform: translate(-21rem, -3rem) scale($scaleDistant);
-          transform: translate(-21rem, -3rem) scale($scaleDistant);
-        }
+          -webkit-transform: translate(-18rem, 0rem) scale($scaleDistant);
+          transform: translate(-18rem, 0rem) scale($scaleDistant);
       }
 
       .offscreen-right-1, .offscreen-right-2, .offscreen-right-3 {
-        > header {
           @include distant;
-          -webkit-transform: translate(99rem, -3rem) scale($scaleDistant);
-          transform: translate(99rem, -3rem) scale($scaleDistant);
-        }
+          -webkit-transform: translate(102rem, 0rem) scale($scaleDistant);
+          transform: translate(102rem, 0rem) scale($scaleDistant);
       }
 
     }
