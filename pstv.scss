@@ -7,7 +7,7 @@ $mainFontFamily: "sst-w01", sans-serif;
 
 $bgColor: rgba(26, 38, 93, 1);
 $bgAccentColor: rgba(255, 255, 255, .05);
-$appTransitionSpeed: 300ms ease-out;
+$appTransitionSpeed: 400ms;
 
 // SASS pagewide mixins
 
@@ -56,7 +56,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   //text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
-  padding-top: 2rem;
+  padding-top: 1rem;
   font-family: $mainFontFamily;
   font-size: 1.5rem;
   line-height: 3rem;
@@ -152,23 +152,48 @@ a, a:hover, a:active, a:visited {
       }
     }
 
+    ///////////////////////////////////////////////////////
+    //
+    // APP SECTION
+    //
+
     main {
       height: 42rem;
 
-      // Mixin for all apps.
-      @mixin app {
+      $scaleAdjacent: calc(15 / 18);
+      $scaleDistant: calc(12 / 18);
+
+      @mixin adjacent {
+        @include test-bg-color(.4);
+      }
+
+      @mixin distant {
+        @include test-bg-color(.35);
+      }
+
+      .app {
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        backface-visibility: hidden;
         position: absolute;
         top: 13.5rem;
-        transition: left $appTransitionSpeed;
+
+        > header, > footer, > nav {
+          -webkit-backface-visibility: inherit;
+          width: 18rem;
+        }
 
         > header {
-          @include test-bg-color();
-          transition: background-color $appTransitionSpeed, width $appTransitionSpeed, height $appTransitionSpeed, opacity $appTransitionSpeed;
-          text-align: center;
+          height: 18rem;
+          -webkit-transform: translate(0) scale(.80);
+          -webkit-transition: -webkit-transform $appTransitionSpeed;
+          transform: translate(0) scale(1);
+          transition: transform $appTransitionSpeed;
 
           img {
             height: 100%;
             width: 100%;
+            //display: none;
           }
         }
 
@@ -176,39 +201,16 @@ a, a:hover, a:active, a:visited {
         > footer, > nav {
           @include hide;
         }
-      }
 
-      // Mixin for apps next to the currently selected one.
-      @mixin adjacent($leftpos, $alpha:0.4) {
-        @include app;
-        left: $leftpos;
-
-        > header {
-          @include test-bg-color($alpha);
-          height: 15rem;
-          width: 15rem;
-        }
-      }
-
-      // Mixin for apps not adjacent to the currently selected one.
-      @mixin distant($leftpos, $alpha:0.4) {
-        @include app;
-        left: $leftpos;
-
-        > header {
-          @include test-bg-color($alpha);
-          height: 12rem;
-          width: 12rem;
-        }
       }
 
       .current {
-        @include app;
-        left: 21rem;
 
         > header {
-          height: 18rem;
-          width: 18rem;
+          @include test-bg-color(.5);
+          $scale: 1;
+          -webkit-transform: translate(4.5rem, 0) scale($scale);
+          transform: translate(21rem, 0) scale($scale);
         }
 
         // Hide footer and nav for non-selected apps
@@ -222,6 +224,7 @@ a, a:hover, a:active, a:visited {
           left: 18rem;
           position: absolute;
           top: 21rem;
+          transform: translate(21rem, 0) scale(1);
           width: 75rem;
 
           h1 {
@@ -232,80 +235,127 @@ a, a:hover, a:active, a:visited {
           }
         }
 
-        ul {
-          list-style-type: none;
+        nav {
+          transform: translate(21rem, 0) scale(1);
 
-          li {
-            @include test-bg-color();
-            background-position: .7rem .8rem;
-            background-repeat: no-repeat;
-            background-size: 1.5rem auto;
-            height: 3rem;
-            padding-left: 3rem;
-          }
+          ul {
+            list-style-type: none;
 
-          li.button-x {
-            @include test-bg-color(.4);
-            background-image: url("images/button_x.png");
-          }
+            li {
+              @include test-bg-color();
+              background-position: .7rem .8rem;
+              background-repeat: no-repeat;
+              background-size: 1.5rem auto;
+              height: 3rem;
+              padding-left: 3rem;
+            }
 
-          li.button-triangle {
-            @include test-bg-color(.3);
-            background-image: url("images/button_triangle.png");
-          }
+            li.button-x {
+              @include test-bg-color(.4);
+              background-image: url("images/button_x.png");
+            }
 
-          li.button-square {
-            @include test-bg-color(.2);
-            background-image: url("images/button_square.png");
-          }
+            li.button-triangle {
+              @include test-bg-color(.3);
+              background-image: url("images/button_triangle.png");
+            }
 
-          li.button-circle {
-            @include test-bg-color(.1);
-            background-image: url("images/button_circle.png");
+            li.button-square {
+              @include test-bg-color(.2);
+              background-image: url("images/button_square.png");
+            }
+
+            li.button-circle {
+              @include test-bg-color(.1);
+              background-image: url("images/button_circle.png");
+            }
           }
         }
+
       }
 
       .adjacent-left {
-        @include adjacent(6rem);
+        > header {
+          @include adjacent;
+          -webkit-transform: translate(4.5rem, -1.5rem) scale($scaleAdjacent);
+          transform: translate(4.5rem, -1.5rem) scale($scaleAdjacent);
+        }
       }
 
       .adjacent-right {
-        @include adjacent(39rem);
+        > header {
+          @include adjacent;
+          -webkit-transform: translate(22.5rem, -1.5rem) scale($scaleAdjacent);
+          transform: translate(37.5rem, -1.5rem) scale($scaleAdjacent);
+        }
       }
 
       .distant-left {
-        @include distant(-6rem, 0.35);
+        > header {
+          @include distant;
+          -webkit-transform: translate(-9rem, -3rem) scale($scaleDistant);
+          transform: translate(-9rem, -3rem) scale($scaleDistant);
+        }
       }
 
       .distant-right-1 {
-        @include distant(54rem, 0.35);
+        > header {
+          @include distant;
+          -webkit-transform: translate(51rem, -3rem) scale($scaleDistant);
+          transform: translate(51rem, -3rem) scale($scaleDistant);
+        }
       }
 
       .distant-right-2 {
-        @include distant(66rem, 0.3);
+        > header {
+          @include distant;
+          -webkit-transform: translate(63rem, -3rem) scale($scaleDistant);
+          transform: translate(63rem, -3rem) scale($scaleDistant);
+        }
       }
 
       .distant-right-3 {
-        @include distant(78rem, 0.25);
+        > header {
+          @include distant;
+          -webkit-transform: translate(75rem, -3rem) scale($scaleDistant);
+          transform: translate(75rem, -3rem) scale($scaleDistant);
+        }
       }
 
       .distant-right-4 {
-        @include distant(90rem, 0.2);
+        > header {
+          @include distant;
+          -webkit-transform: translate(87rem, -3rem) scale($scaleDistant);
+          transform: translate(87rem, -3rem) scale($scaleDistant);
+        }
       }
 
       .offscreen-left-1, .offscreen-left-2, .offscreen-left-3,
       .offscreen-left-4, .offscreen-left-5, .offscreen-left-6 {
-        @include distant(-18rem, 0.01);
+        > header {
+          @include distant;
+          -webkit-transform: translate(-21rem, -3rem) scale($scaleDistant);
+          transform: translate(-21rem, -3rem) scale($scaleDistant);
+        }
       }
 
       .offscreen-right-1, .offscreen-right-2, .offscreen-right-3 {
-        @include distant(102rem, 0.01);
+        > header {
+          @include distant;
+          -webkit-transform: translate(99rem, -3rem) scale($scaleDistant);
+          transform: translate(99rem, -3rem) scale($scaleDistant);
+        }
       }
 
     }
 
   }
+
+  //
+  // END APP SECTION
+  //
+  ///////////////////////////////////////////////////////
+
 }
 
 .bg-grid-15 {
@@ -346,7 +396,7 @@ a, a:hover, a:active, a:visited {
 .bg-custom {
   background-image: url("images/bg_tlg.png");
   background-size: 100% 100%;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.67);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 
 #controls {
