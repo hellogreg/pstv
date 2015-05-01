@@ -89,9 +89,8 @@ a, a:hover, a:active, a:visited {
         -moz-backface-visibility: hidden;
         backface-visibility: hidden;
         position: absolute;
-        top: 13.5rem;
-        -webkit-transform: translate(21rem, 0) scale(1);
-        transform: translate(21rem, 0) scale(1);
+        -webkit-transform: translate(21rem, 7.5rem) scale(1);
+        transform: translate(21rem, 7.5rem) scale(1);
         -webkit-transition: -webkit-transform 300ms;
         transition: transform 300ms;
         -webkit-transition-timing-function: ease-out;
@@ -100,6 +99,7 @@ a, a:hover, a:active, a:visited {
           -webkit-backface-visibility: inherit;
           position: inherit; }
         #pstv > #prototype main .app > header {
+          background-color: rgba(0, 0, 0, 0.6);
           height: 18rem;
           -webkit-transform: translate(0) scale(1);
           transform: translate(0) scale(1);
@@ -145,64 +145,42 @@ a, a:hover, a:active, a:visited {
             font-weight: 300;
             line-height: 6rem;
             padding-left: 3rem; }
-      #pstv > #prototype main .current > header {
-        background-color: rgba(0, 0, 0, 0.5); }
       #pstv > #prototype main .current > footer, #pstv > #prototype main .current > nav {
         opacity: 1;
         transition: opacity 300ms; }
       #pstv > #prototype main .adjacent-left {
-        -webkit-transform: translate(6rem, 0rem) scale(0.83333);
-        transform: translate(6rem, 0rem) scale(0.83333); }
-        #pstv > #prototype main .adjacent-left > header {
-          background-color: rgba(0, 0, 0, 0.4); }
+        -webkit-transform: translate(6rem, 7.5rem) scale(0.83333);
+        transform: translate(6rem, 7.5rem) scale(0.83333); }
       #pstv > #prototype main .adjacent-right {
-        -moz-transform: translate(39rem, 0rem) scale(0.83333);
-        -webkit-transform: translate(39rem, 0rem) scale(0.83333);
-        transform: translate(39rem, 0rem) scale(0.83333); }
-        #pstv > #prototype main .adjacent-right > header {
-          background-color: rgba(0, 0, 0, 0.4); }
+        -webkit-transform: translate(39rem, 7.5rem) scale(0.83333);
+        transform: translate(39rem, 7.5rem) scale(0.83333); }
       #pstv > #prototype main .distant-left {
-        -webkit-transform: translate(-6rem, 0rem) scale(0.66667);
-        transform: translate(-6rem, 0rem) scale(0.66667); }
-        #pstv > #prototype main .distant-left > header {
-          background-color: rgba(0, 0, 0, 0.35); }
+        -webkit-transform: translate(-6rem, 7.5rem) scale(0.66667);
+        transform: translate(-6rem, 7.5rem) scale(0.66667); }
       #pstv > #prototype main .distant-right-1 {
-        -webkit-transform: translate(54rem, 0rem) scale(0.66667);
-        transform: translate(54rem, 0rem) scale(0.66667); }
-        #pstv > #prototype main .distant-right-1 > header {
-          background-color: rgba(0, 0, 0, 0.35); }
+        -webkit-transform: translate(54rem, 7.5rem) scale(0.66667);
+        transform: translate(54rem, 7.5rem) scale(0.66667); }
       #pstv > #prototype main .distant-right-2 {
-        -webkit-transform: translate(66rem, 0rem) scale(0.66667);
-        transform: translate(66rem, 0rem) scale(0.66667); }
-        #pstv > #prototype main .distant-right-2 > header {
-          background-color: rgba(0, 0, 0, 0.35); }
+        -webkit-transform: translate(66rem, 7.5rem) scale(0.66667);
+        transform: translate(66rem, 7.5rem) scale(0.66667); }
       #pstv > #prototype main .distant-right-3 {
-        -webkit-transform: translate(78rem, 0rem) scale(0.66667);
-        transform: translate(78rem, 0rem) scale(0.66667); }
-        #pstv > #prototype main .distant-right-3 > header {
-          background-color: rgba(0, 0, 0, 0.35); }
+        -webkit-transform: translate(78rem, 7.5rem) scale(0.66667);
+        transform: translate(78rem, 7.5rem) scale(0.66667); }
       #pstv > #prototype main .distant-right-4 {
-        -webkit-transform: translate(90rem, 0rem) scale(0.66667);
-        transform: translate(90rem, 0rem) scale(0.66667); }
-        #pstv > #prototype main .distant-right-4 > header {
-          background-color: rgba(0, 0, 0, 0.35); }
+        -webkit-transform: translate(90rem, 7.5rem) scale(0.66667);
+        transform: translate(90rem, 7.5rem) scale(0.66667); }
       #pstv > #prototype main .offscreen-left-1, #pstv > #prototype main .offscreen-left-2, #pstv > #prototype main .offscreen-left-3,
       #pstv > #prototype main .offscreen-left-4, #pstv > #prototype main .offscreen-left-5, #pstv > #prototype main .offscreen-left-6 {
-        -webkit-transform: translate(-18rem, 0rem) scale(0.66667);
-        transform: translate(-18rem, 0rem) scale(0.66667); }
-        #pstv > #prototype main .offscreen-left-1 > header, #pstv > #prototype main .offscreen-left-2 > header, #pstv > #prototype main .offscreen-left-3 > header,
-        #pstv > #prototype main .offscreen-left-4 > header, #pstv > #prototype main .offscreen-left-5 > header, #pstv > #prototype main .offscreen-left-6 > header {
-          background-color: rgba(0, 0, 0, 0.35); }
+        -webkit-transform: translate(-18rem, 7.5rem) scale(0.66667);
+        transform: translate(-18rem, 7.5rem) scale(0.66667); }
       #pstv > #prototype main .offscreen-right-1, #pstv > #prototype main .offscreen-right-2, #pstv > #prototype main .offscreen-right-3 {
-        -webkit-transform: translate(102rem, 0rem) scale(0.66667);
-        transform: translate(102rem, 0rem) scale(0.66667); }
-        #pstv > #prototype main .offscreen-right-1 > header, #pstv > #prototype main .offscreen-right-2 > header, #pstv > #prototype main .offscreen-right-3 > header {
-          background-color: rgba(0, 0, 0, 0.35); }
+        -webkit-transform: translate(102rem, 7.5rem) scale(0.66667);
+        transform: translate(102rem, 7.5rem) scale(0.66667); }
 
-.bg-grid-15 {
+.bg-grid {
   background-position: 0 0;
-  background-size: 15px 15px;
-  background-image: repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) 1px, transparent 1px, transparent 15px), repeating-linear-gradient(-90deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) 1px, transparent 1px, transparent 15px); }
+  background-size: 1rem 1rem;
+  background-image: repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) 1px, transparent 1px, transparent 1rem), repeating-linear-gradient(-90deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) 1px, transparent 1px, transparent 1rem); }
 
 .bg-vita {
   background-image: url("images/vita_homescreen.jpg");
@@ -255,6 +233,13 @@ a, a:hover, a:active, a:visited {
     justify-content: space-between; }
   #controls a, #controls a:hover, #controls a:active, #controls a:visited {
     border-bottom: 1px dotted rgba(255, 255, 255, 0.2); }
+
+.preloader {
+  background-image: url("images/bg_tlg.png"), url("images/psx_ridge_smooth.png"), url("images/psx_ridge_scanlines.png"), url("images/psx_xeno_smooth.png"), url("images/psx_xeno_scanlines.png"), url("images/vita_homescreen.jpg");
+  background-repeat: no-repeat;
+  width: 0;
+  height: 0;
+  display: none; }
 
 @media (max-width: 520px) {
   @viewport {

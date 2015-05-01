@@ -165,18 +165,19 @@ a, a:hover, a:active, a:visited {
       $scaleCurrent: 1;
       $scaleAdjacent: 15/18;
       $scaleDistant: 12/18;
+      $offsetTop: 7.5rem;
 
       @mixin adjacent {
         //display: none; // Used for testing only.
         > header {
-          @include test-bg-color(.4);
+          //@include test-bg-color(.6);// Used for testing only.
         }
       }
 
       @mixin distant {
         //display: none; // Used for testing only.
         > header {
-          @include test-bg-color(.35);
+          //@include test-bg-color(.6);// Used for testing only.
         }
       }
 
@@ -185,9 +186,8 @@ a, a:hover, a:active, a:visited {
         -moz-backface-visibility: hidden;
         backface-visibility: hidden;
         position: absolute;
-        top: 13.5rem;
-        -webkit-transform: translate(21rem, 0) scale($scaleCurrent);
-        transform: translate(21rem, 0) scale($scaleCurrent);
+        -webkit-transform: translate(21rem, $offsetTop) scale($scaleCurrent);
+        transform: translate(21rem, $offsetTop) scale($scaleCurrent);
         -webkit-transition: -webkit-transform $appTransitionSpeed;
         transition: transform $appTransitionSpeed;
         -webkit-transition-timing-function: ease-out;
@@ -199,6 +199,7 @@ a, a:hover, a:active, a:visited {
         }
 
         > header {
+          @include test-bg-color(.6);
           height: 18rem;
           -webkit-transform: translate(0) scale($scaleCurrent);
           transform: translate(0) scale($scaleCurrent);
@@ -274,10 +275,6 @@ a, a:hover, a:active, a:visited {
 
       .current {
 
-        > header {
-          @include test-bg-color(.5);
-        }
-
         // Hide footer and nav for non-selected apps
         > footer, > nav {
           @include show;
@@ -287,58 +284,57 @@ a, a:hover, a:active, a:visited {
 
       .adjacent-left {
         @include adjacent;
-        -webkit-transform: translate(6rem, 0rem) scale($scaleAdjacent);
-        transform: translate(6rem, 0rem) scale($scaleAdjacent);
+        -webkit-transform: translate(6rem, $offsetTop) scale($scaleAdjacent);
+        transform: translate(6rem, $offsetTop) scale($scaleAdjacent);
       }
 
       .adjacent-right {
         @include adjacent;
-        -moz-transform: translate(39rem, 0rem) scale($scaleAdjacent);
-        -webkit-transform: translate(39rem, 0rem) scale($scaleAdjacent);
-        transform: translate(39rem, 0rem) scale($scaleAdjacent);
+        -webkit-transform: translate(39rem, $offsetTop) scale($scaleAdjacent);
+        transform: translate(39rem, $offsetTop) scale($scaleAdjacent);
       }
 
       .distant-left {
         @include distant;
-        -webkit-transform: translate(-6rem, 0rem) scale($scaleDistant);
-        transform: translate(-6rem, 0rem) scale($scaleDistant);
+        -webkit-transform: translate(-6rem, $offsetTop) scale($scaleDistant);
+        transform: translate(-6rem, $offsetTop) scale($scaleDistant);
       }
 
       .distant-right-1 {
         @include distant;
-        -webkit-transform: translate(54rem, 0rem) scale($scaleDistant);
-        transform: translate(54rem, 0rem) scale($scaleDistant);
+        -webkit-transform: translate(54rem, $offsetTop) scale($scaleDistant);
+        transform: translate(54rem, $offsetTop) scale($scaleDistant);
       }
 
       .distant-right-2 {
         @include distant;
-        -webkit-transform: translate(66rem, 0rem) scale($scaleDistant);
-        transform: translate(66rem, 0rem) scale($scaleDistant);
+        -webkit-transform: translate(66rem, $offsetTop) scale($scaleDistant);
+        transform: translate(66rem, $offsetTop) scale($scaleDistant);
       }
 
       .distant-right-3 {
         @include distant;
-        -webkit-transform: translate(78rem, 0rem) scale($scaleDistant);
-        transform: translate(78rem, 0rem) scale($scaleDistant);
+        -webkit-transform: translate(78rem, $offsetTop) scale($scaleDistant);
+        transform: translate(78rem, $offsetTop) scale($scaleDistant);
       }
 
       .distant-right-4 {
         @include distant;
-        -webkit-transform: translate(90rem, 0rem) scale($scaleDistant);
-        transform: translate(90rem, 0rem) scale($scaleDistant);
+        -webkit-transform: translate(90rem, $offsetTop) scale($scaleDistant);
+        transform: translate(90rem, $offsetTop) scale($scaleDistant);
       }
 
       .offscreen-left-1, .offscreen-left-2, .offscreen-left-3,
       .offscreen-left-4, .offscreen-left-5, .offscreen-left-6 {
         @include distant;
-        -webkit-transform: translate(-18rem, 0rem) scale($scaleDistant);
-        transform: translate(-18rem, 0rem) scale($scaleDistant);
+        -webkit-transform: translate(-18rem, $offsetTop) scale($scaleDistant);
+        transform: translate(-18rem, $offsetTop) scale($scaleDistant);
       }
 
       .offscreen-right-1, .offscreen-right-2, .offscreen-right-3 {
         @include distant;
-        -webkit-transform: translate(102rem, 0rem) scale($scaleDistant);
-        transform: translate(102rem, 0rem) scale($scaleDistant);
+        -webkit-transform: translate(102rem, $offsetTop) scale($scaleDistant);
+        transform: translate(102rem, $offsetTop) scale($scaleDistant);
       }
 
     }
@@ -352,8 +348,8 @@ a, a:hover, a:active, a:visited {
 
 }
 
-.bg-grid-15 {
-  @include bg-grid(15px);
+.bg-grid {
+  @include bg-grid(1rem);
 }
 
 .bg-vita {
@@ -413,6 +409,15 @@ a, a:hover, a:active, a:visited {
     border-bottom: 1px dotted rgba(255, 255, 255, .20);
   }
 
+}
+
+// Lazy loading for our big background images.
+.preloader {
+  background-image: url("images/bg_tlg.png"), url("images/psx_ridge_smooth.png"), url("images/psx_ridge_scanlines.png"), url("images/psx_xeno_smooth.png"), url("images/psx_xeno_scanlines.png"), url("images/vita_homescreen.jpg");
+  background-repeat: no-repeat;
+  width: 0;
+  height: 0;
+  display: none;
 }
 
 @media (max-width: 520px) {
