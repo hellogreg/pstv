@@ -157,22 +157,24 @@ a, a:hover, a:active, a:visited {
     // APP SECTION
     //
 
+    // TODO: Positioning with translate() not working in forefox!
+
     main {
       height: 42rem;
 
       $scaleCurrent: 1;
-      $scaleAdjacent: calc(15 / 18);
-      $scaleDistant: calc(12 / 18);
+      $scaleAdjacent: 15/18;
+      $scaleDistant: 12/18;
 
       @mixin adjacent {
-        //display: none; //Used for testing only.
+        //display: none; // Used for testing only.
         > header {
           @include test-bg-color(.4);
         }
       }
 
       @mixin distant {
-        //display: none; //Used for testing only.
+        //display: none; // Used for testing only.
         > header {
           @include test-bg-color(.35);
         }
@@ -205,7 +207,7 @@ a, a:hover, a:active, a:visited {
           img {
             height: 100%;
             width: 100%;
-            //display: none;
+            //display: none; // Used for testing only.
           }
         }
 
@@ -291,6 +293,7 @@ a, a:hover, a:active, a:visited {
 
       .adjacent-right {
         @include adjacent;
+        -moz-transform: translate(39rem, 0rem) scale($scaleAdjacent);
         -webkit-transform: translate(39rem, 0rem) scale($scaleAdjacent);
         transform: translate(39rem, 0rem) scale($scaleAdjacent);
       }
@@ -302,40 +305,40 @@ a, a:hover, a:active, a:visited {
       }
 
       .distant-right-1 {
-          @include distant;
-          -webkit-transform: translate(54rem, 0rem) scale($scaleDistant);
-          transform: translate(54rem, 0rem) scale($scaleDistant);
+        @include distant;
+        -webkit-transform: translate(54rem, 0rem) scale($scaleDistant);
+        transform: translate(54rem, 0rem) scale($scaleDistant);
       }
 
       .distant-right-2 {
-          @include distant;
-          -webkit-transform: translate(66rem, 0rem) scale($scaleDistant);
-          transform: translate(66rem, 0rem) scale($scaleDistant);
+        @include distant;
+        -webkit-transform: translate(66rem, 0rem) scale($scaleDistant);
+        transform: translate(66rem, 0rem) scale($scaleDistant);
       }
 
       .distant-right-3 {
-          @include distant;
-          -webkit-transform: translate(78rem, 0rem) scale($scaleDistant);
-          transform: translate(78rem, 0rem) scale($scaleDistant);
+        @include distant;
+        -webkit-transform: translate(78rem, 0rem) scale($scaleDistant);
+        transform: translate(78rem, 0rem) scale($scaleDistant);
       }
 
       .distant-right-4 {
-          @include distant;
-          -webkit-transform: translate(90rem, 0rem) scale($scaleDistant);
-          transform: translate(90rem, 0rem) scale($scaleDistant);
+        @include distant;
+        -webkit-transform: translate(90rem, 0rem) scale($scaleDistant);
+        transform: translate(90rem, 0rem) scale($scaleDistant);
       }
 
       .offscreen-left-1, .offscreen-left-2, .offscreen-left-3,
       .offscreen-left-4, .offscreen-left-5, .offscreen-left-6 {
-          @include distant;
-          -webkit-transform: translate(-18rem, 0rem) scale($scaleDistant);
-          transform: translate(-18rem, 0rem) scale($scaleDistant);
+        @include distant;
+        -webkit-transform: translate(-18rem, 0rem) scale($scaleDistant);
+        transform: translate(-18rem, 0rem) scale($scaleDistant);
       }
 
       .offscreen-right-1, .offscreen-right-2, .offscreen-right-3 {
-          @include distant;
-          -webkit-transform: translate(102rem, 0rem) scale($scaleDistant);
-          transform: translate(102rem, 0rem) scale($scaleDistant);
+        @include distant;
+        -webkit-transform: translate(102rem, 0rem) scale($scaleDistant);
+        transform: translate(102rem, 0rem) scale($scaleDistant);
       }
 
     }
@@ -407,7 +410,7 @@ a, a:hover, a:active, a:visited {
   }
 
   a, a:hover, a:active, a:visited {
-    border-bottom: 1px dotted rgba(255, 255, 255, .15);
+    border-bottom: 1px dotted rgba(255, 255, 255, .20);
   }
 
 }

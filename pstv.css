@@ -151,50 +151,51 @@ a, a:hover, a:active, a:visited {
         opacity: 1;
         transition: opacity 300ms; }
       #pstv > #prototype main .adjacent-left {
-        -webkit-transform: translate(6rem, 0rem) scale(calc(15 / 18));
-        transform: translate(6rem, 0rem) scale(calc(15 / 18)); }
+        -webkit-transform: translate(6rem, 0rem) scale(0.83333);
+        transform: translate(6rem, 0rem) scale(0.83333); }
         #pstv > #prototype main .adjacent-left > header {
           background-color: rgba(0, 0, 0, 0.4); }
       #pstv > #prototype main .adjacent-right {
-        -webkit-transform: translate(39rem, 0rem) scale(calc(15 / 18));
-        transform: translate(39rem, 0rem) scale(calc(15 / 18)); }
+        -moz-transform: translate(39rem, 0rem) scale(0.83333);
+        -webkit-transform: translate(39rem, 0rem) scale(0.83333);
+        transform: translate(39rem, 0rem) scale(0.83333); }
         #pstv > #prototype main .adjacent-right > header {
           background-color: rgba(0, 0, 0, 0.4); }
       #pstv > #prototype main .distant-left {
-        -webkit-transform: translate(-6rem, 0rem) scale(calc(12 / 18));
-        transform: translate(-6rem, 0rem) scale(calc(12 / 18)); }
+        -webkit-transform: translate(-6rem, 0rem) scale(0.66667);
+        transform: translate(-6rem, 0rem) scale(0.66667); }
         #pstv > #prototype main .distant-left > header {
           background-color: rgba(0, 0, 0, 0.35); }
       #pstv > #prototype main .distant-right-1 {
-        -webkit-transform: translate(54rem, 0rem) scale(calc(12 / 18));
-        transform: translate(54rem, 0rem) scale(calc(12 / 18)); }
+        -webkit-transform: translate(54rem, 0rem) scale(0.66667);
+        transform: translate(54rem, 0rem) scale(0.66667); }
         #pstv > #prototype main .distant-right-1 > header {
           background-color: rgba(0, 0, 0, 0.35); }
       #pstv > #prototype main .distant-right-2 {
-        -webkit-transform: translate(66rem, 0rem) scale(calc(12 / 18));
-        transform: translate(66rem, 0rem) scale(calc(12 / 18)); }
+        -webkit-transform: translate(66rem, 0rem) scale(0.66667);
+        transform: translate(66rem, 0rem) scale(0.66667); }
         #pstv > #prototype main .distant-right-2 > header {
           background-color: rgba(0, 0, 0, 0.35); }
       #pstv > #prototype main .distant-right-3 {
-        -webkit-transform: translate(78rem, 0rem) scale(calc(12 / 18));
-        transform: translate(78rem, 0rem) scale(calc(12 / 18)); }
+        -webkit-transform: translate(78rem, 0rem) scale(0.66667);
+        transform: translate(78rem, 0rem) scale(0.66667); }
         #pstv > #prototype main .distant-right-3 > header {
           background-color: rgba(0, 0, 0, 0.35); }
       #pstv > #prototype main .distant-right-4 {
-        -webkit-transform: translate(90rem, 0rem) scale(calc(12 / 18));
-        transform: translate(90rem, 0rem) scale(calc(12 / 18)); }
+        -webkit-transform: translate(90rem, 0rem) scale(0.66667);
+        transform: translate(90rem, 0rem) scale(0.66667); }
         #pstv > #prototype main .distant-right-4 > header {
           background-color: rgba(0, 0, 0, 0.35); }
       #pstv > #prototype main .offscreen-left-1, #pstv > #prototype main .offscreen-left-2, #pstv > #prototype main .offscreen-left-3,
       #pstv > #prototype main .offscreen-left-4, #pstv > #prototype main .offscreen-left-5, #pstv > #prototype main .offscreen-left-6 {
-        -webkit-transform: translate(-18rem, 0rem) scale(calc(12 / 18));
-        transform: translate(-18rem, 0rem) scale(calc(12 / 18)); }
+        -webkit-transform: translate(-18rem, 0rem) scale(0.66667);
+        transform: translate(-18rem, 0rem) scale(0.66667); }
         #pstv > #prototype main .offscreen-left-1 > header, #pstv > #prototype main .offscreen-left-2 > header, #pstv > #prototype main .offscreen-left-3 > header,
         #pstv > #prototype main .offscreen-left-4 > header, #pstv > #prototype main .offscreen-left-5 > header, #pstv > #prototype main .offscreen-left-6 > header {
           background-color: rgba(0, 0, 0, 0.35); }
       #pstv > #prototype main .offscreen-right-1, #pstv > #prototype main .offscreen-right-2, #pstv > #prototype main .offscreen-right-3 {
-        -webkit-transform: translate(102rem, 0rem) scale(calc(12 / 18));
-        transform: translate(102rem, 0rem) scale(calc(12 / 18)); }
+        -webkit-transform: translate(102rem, 0rem) scale(0.66667);
+        transform: translate(102rem, 0rem) scale(0.66667); }
         #pstv > #prototype main .offscreen-right-1 > header, #pstv > #prototype main .offscreen-right-2 > header, #pstv > #prototype main .offscreen-right-3 > header {
           background-color: rgba(0, 0, 0, 0.35); }
 
@@ -253,7 +254,7 @@ a, a:hover, a:active, a:visited {
     -webkit-justify-content: space-between;
     justify-content: space-between; }
   #controls a, #controls a:hover, #controls a:active, #controls a:visited {
-    border-bottom: 1px dotted rgba(255, 255, 255, 0.15); }
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.2); }
 
 @media (max-width: 520px) {
   @viewport {
