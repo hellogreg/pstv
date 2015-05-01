@@ -188,6 +188,8 @@ a, a:hover, a:active, a:visited {
         transform: translate(21rem, 0) scale($scaleCurrent);
         -webkit-transition: -webkit-transform $appTransitionSpeed;
         transition: transform $appTransitionSpeed;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
 
         > header, > nav, > footer {
           -webkit-backface-visibility: inherit;

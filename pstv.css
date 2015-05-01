@@ -93,7 +93,9 @@ a, a:hover, a:active, a:visited {
         -webkit-transform: translate(21rem, 0) scale(1);
         transform: translate(21rem, 0) scale(1);
         -webkit-transition: -webkit-transform 300ms;
-        transition: transform 300ms; }
+        transition: transform 300ms;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out; }
         #pstv > #prototype main .app > header, #pstv > #prototype main .app > nav, #pstv > #prototype main .app > footer {
           -webkit-backface-visibility: inherit;
           position: inherit; }
