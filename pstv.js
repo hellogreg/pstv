@@ -2,6 +2,7 @@
 
   "use strict";
 
+  var $pstv = document.getElementById("pstv");
   var $prototype = document.getElementById("prototype");
   var $mockups = document.getElementById("mockups");
   var $controls = document.getElementById("controls");
@@ -85,6 +86,7 @@
     }
 
     function showPrototype() {
+      $pstv.classList.remove("border-neutral");
       $mockups.classList.remove("visible");
       $mockups.classList.add("invisible");
       $prototype.classList.remove("invisible");
@@ -92,6 +94,7 @@
     }
 
     function showMockups() {
+      $pstv.classList.add("border-neutral");
       $prototype.classList.remove("visible");
       $prototype.classList.add("invisible");
       $mockups.className = "";
@@ -126,18 +129,21 @@
 
     else if (target.id === "hide-grid") {
       showPrototype();
+      $pstv.classList.remove("border-neutral");
       $prototype.classList.remove("bg-grid");
       $prototype.classList.remove("bg-custom");
     }
 
     else if (target.id === "show-grid-15") {
       showPrototype();
+      $pstv.classList.remove("border-neutral");
       $prototype.classList.remove("bg-custom");
       $prototype.classList.add("bg-grid");
     }
 
     else if (target.id === "show-custom") {
       showPrototype();
+      $pstv.classList.add("border-neutral");
       $prototype.classList.remove("bg-grid");
       $prototype.classList.add("bg-custom");
     }

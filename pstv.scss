@@ -118,10 +118,11 @@ a, a:hover, a:active, a:visited {
 
     > header {
       h1 {
-        background-position: .7rem .8rem;
-        background-repeat: no-repeat;
+        background: .5rem .7rem no-repeat;
         background-size: 1.8rem auto;
-        padding-left: 3.5rem;
+        //border: 1px solid #fc9;
+        padding-left: 3rem;
+        flex: 0 1 auto;
       }
       h1.system {
         background-image: url("images/icon_wifi.png");
@@ -135,11 +136,18 @@ a, a:hover, a:active, a:visited {
       h1.trophies {
         background-image: url("images/icon_trophies.png");
       }
+      h1:last-child {
+        //background-color: lime;
+        padding-left: 0;
+        text-align: right;
+      }
     }
 
     > footer {
 
       h1 {
+        //border: 1px solid #fc9;
+        flex: 1 0 auto;
         font-size: 1.3rem;
         font-style: italic;
         opacity: .9;
@@ -226,8 +234,7 @@ a, a:hover, a:active, a:visited {
 
             li {
               @include test-bg-color();
-              background-position: .7rem .8rem;
-              background-repeat: no-repeat;
+              background: .7rem .8rem no-repeat;
               background-size: 1.5rem auto;
               height: 3rem;
               padding-left: 3rem;
@@ -387,6 +394,10 @@ a, a:hover, a:active, a:visited {
   background-image: url("images/bg_tlg.png");
   background-size: 100% 100%;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+#pstv.border-neutral {
+  border: 1px solid #333;
 }
 
 #controls {
