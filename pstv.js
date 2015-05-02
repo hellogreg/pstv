@@ -130,14 +130,16 @@
     else if (target.id === "hide-grid") {
       showPrototype();
       $pstv.classList.remove("border-neutral");
-      $prototype.classList.remove("bg-grid");
       $prototype.classList.remove("bg-custom");
+      $prototype.classList.remove("bg-grid");
+      $prototype.classList.add("bg-nogrid");
     }
 
     else if (target.id === "show-grid-15") {
       showPrototype();
       $pstv.classList.remove("border-neutral");
       $prototype.classList.remove("bg-custom");
+      $prototype.classList.remove("bg-nogrid");
       $prototype.classList.add("bg-grid");
     }
 
@@ -145,6 +147,7 @@
       showPrototype();
       $pstv.classList.add("border-neutral");
       $prototype.classList.remove("bg-grid");
+      $prototype.classList.remove("bg-nogrid");
       $prototype.classList.add("bg-custom");
     }
 
