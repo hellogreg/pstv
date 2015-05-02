@@ -45,13 +45,33 @@
     console.log(m);
   }
 
-  /*
-   function dir(o) {
-   if (o !== undefined) {
-   console.dir(o);
-   }
-   }
-   */
+  function startTime() {
+
+    var d = new Date();
+    var hr = d.getHours();
+    var min = d.getMinutes();
+    if (min < 10) {
+      min = "0" + min;
+    }
+    var ampm = hr < 12 ? "AM" : "PM";
+    if (hr > 12) {
+      hr = hr - 12;
+    }
+    if (hr === 0) {
+      hr = 12;
+    }
+    var date = d.getDate();
+    var month = d.getMonth() + 1;
+    var year = d.getFullYear().toString().slice(-2);
+    var x = document.getElementById("clock");
+    x.innerHTML = month + "/" + date + "/" + year + " " + hr + ":" + min + " " + ampm + "";
+
+    var timer = setTimeout(function () {
+      startTime()
+    }, 5000);
+  }
+
+  startTime();
 
   $controls.addEventListener("click", function (e) {
 
@@ -59,7 +79,6 @@
     e.preventDefault();
     //log("Something within \"pstv\" has been clicked.");
     //log("Source target:" + target);
-    //dir("Source target id:" + target.id);
 
     function swapClass(el, oldClass, newClass) {
       el.classList.remove(oldClass);

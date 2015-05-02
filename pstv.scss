@@ -56,6 +56,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   //text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  margin: 0;
   padding-top: 1rem;
   font-family: $mainFontFamily;
   font-size: 1.5rem;
@@ -148,10 +149,11 @@ a, a:hover, a:active, a:visited {
       h1.trophies {
         //background-image: url("images/icon_trophies.png");
       }
-      h1:last-child {
-        //background-color: lime;
-        text-align: right;
+      h1.clock {
+        //background-color: #999;
+        text-align: center;
         text-indent: 0;
+        //width: 4.5rem;
       }
     }
 
@@ -372,15 +374,15 @@ a, a:hover, a:active, a:visited {
 }
 
 .bg-nogrid {
-/*
-  background: -moz-linear-gradient(-45deg,  #032548 0%, #1a265d 100%);
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#032548), color-stop(100%,#1a265d));
-  background: -webkit-linear-gradient(-45deg,  #032548 0%,#1a265d 100%);
-  background: -o-linear-gradient(-45deg,  #032548 0%,#1a265d 100%);
-  background: -ms-linear-gradient(-45deg,  #032548 0%,#1a265d 100%);
-  background: linear-gradient(135deg,  #032548 0%,#1a265d 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#032548', endColorstr='#1a265d',GradientType=1 );
-*/
+
+  background: -moz-linear-gradient(-45deg, #032548 0%, #1a265d 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #032548), color-stop(100%, #1a265d));
+  background: -webkit-linear-gradient(-45deg, #032548 0%, #1a265d 100%);
+  background: -o-linear-gradient(-45deg, #032548 0%, #1a265d 100%);
+  background: -ms-linear-gradient(-45deg, #032548 0%, #1a265d 100%);
+  background: linear-gradient(135deg, rgba(0, 0, 0, .2) 0%, rgba(255, 255, 255, .2) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#032548', endColorstr='#1a265d', GradientType=1);
+
 }
 
 .bg-vita {
@@ -415,14 +417,15 @@ a, a:hover, a:active, a:visited {
 }
 
 .bg-custom {
-  background-image: url("images/bg_tlg.png");
+  background-image: url("images/bg_tlg4.png");
   background-size: 100% 100%;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
 
   > header img {
-    -webkit-filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.8));
-    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.8));
+    -webkit-filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.9));
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.9));
   }
+
 }
 
 #pstv.border-neutral {
@@ -430,30 +433,22 @@ a, a:hover, a:active, a:visited {
 }
 
 #controls {
-  border: 1px dashed rgba(255, 255, 255, .15);
-  color: #ccc;
-  font-size: 1.3rem;
-  font-weight: 700;
-  height: 6rem;
-  margin: 1.5rem auto;
-  overflow: hidden;
-  padding: 0 3rem;
+  background-color: #222;
+  border: 0;
+  border-radius: 5px;
+  margin: 1rem auto;
+  padding: 0 3rem .4rem 3rem;
   position: relative;
   width: 96rem;
 
   ul {
     @include flex-basic-row;
   }
-
-  a, a:hover, a:active, a:visited {
-    border-bottom: 1px dotted rgba(255, 255, 255, .20);
-  }
-
 }
 
 // Lazy loading for our big background images.
 .preloader {
-  background-image: url("images/bg_tlg.png"), url("images/psx_ridge_smooth.png"), url("images/psx_ridge_scanlines.png"), url("images/psx_xeno_smooth.png"), url("images/psx_xeno_scanlines.png"), url("images/vita_homescreen.jpg");
+  background-image: url("images/bg_tlg4.png"), url("images/psx_ridge_smooth.png"), url("images/psx_ridge_scanlines.png"), url("images/psx_xeno_smooth.png"), url("images/psx_xeno_scanlines.png"), url("images/vita_homescreen.jpg");
   background-repeat: no-repeat;
   width: 0;
   height: 0;
@@ -463,5 +458,17 @@ a, a:hover, a:active, a:visited {
 @media (max-width: 520px) {
   @viewport {
     width: 960px;
+  }
+
+  #controls {
+    ul {
+      @include flex-basic-row;
+      -webkit-flex-flow: row wrap;
+      flex-flow: row wrap;
+
+      li {
+        width: 33%;
+      }
+    }
   }
 }

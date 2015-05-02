@@ -14,9 +14,10 @@
     <header>
       <h1 class="system"><img src="images/icon_wifi.png" alt="Wifi"/>PSTV</h1>
       <h1 class="friends"><img src="images/icon_friends.png" alt="Friends"/>3 online</h1>
-      <h1 class="user"><img src="images/icon_avatar.png" alt="User"/>hellogreg<img src="images/icon_plus.png" alt="Plus" class="plus"/></h1>
+      <h1 class="user"><img src="images/icon_avatar.png" alt="User"/>hellogreg<img src="images/icon_plus.png" alt="Plus"
+                                                                                   class="plus"/></h1>
       <h1 class="trophies"><img src="images/icon_trophies.png" alt="Trophies"/>10</h1>
-      <h1 class="clock">6:32 pm</h1>
+      <h1 id="clock" class="clock">6:32 pm</h1>
     </header>
 
     <main>
@@ -138,9 +139,12 @@
     </main>
 
     <footer>
-      <h1 class="marquee">Final Fantasy XII Remastered comes to PlayStation TV this fall...
-        Download The Last Guardian theme today...
-      </h1>
+      <div class="marquee">
+        <div>
+          <h1>Final Fantasy XII Remastered comes to PlayStation TV this fall...&nbsp;&nbsp;
+            Download The Last Guardian theme today... </h1>
+        </div>
+      </div>
       <img src="images/logo_pstv.png" alt="PlayStation TV" class="logo"/>
     </footer>
   </section>
@@ -149,16 +153,16 @@
 
 <div id="controls">
   <ul>
-    <li><a href="#" id="move-apps-left">Left</a></li>
-    <li><a href="#" id="move-apps-right">Right</a></li>
-    <li><a href="#" id="show-grid-15">15px</a></li>
-    <li><a href="#" id="hide-grid">No Grid</a></li>
-    <li><a href="#" id="show-custom">Custom</a></li>
-    <li><a href="#" id="show-vita">Vita</a></li>
-    <li><a href="#" id="show-xeno-scanlines">Xeno Scan</a></li>
-    <li><a href="#" id="show-xeno-smooth">Xeno Smooth</a></li>
-    <li><a href="#" id="show-ridge-scanlines">Ridge Scan</a></li>
-    <li><a href="#" id="show-ridge-smooth">Ridge Smooth</a></li>
+    <li><button id="move-apps-left">Left</button></li>
+    <li><button id="move-apps-right">Right</button></li>
+    <li><button id="show-grid-15">15px</button></li>
+    <li><button id="hide-grid">No Grid</button></li>
+    <li><button id="show-custom">Custom</button></li>
+    <li><button id="show-vita">Vita</button></li>
+    <li><button id="show-xeno-scanlines">Xeno Scan</button></li>
+    <li><button id="show-xeno-smooth">Xeno Smooth</button></li>
+    <li><button id="show-ridge-scanlines">Ridge Scan</button></li>
+    <li><button id="show-ridge-smooth">Ridge Smooth</button></li>
   </ul>
 </div>
 

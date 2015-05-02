@@ -8,6 +8,7 @@ html {
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
   padding-top: 1rem;
   font-family: "sst-w01", sans-serif;
   font-size: 1.5rem;
@@ -72,8 +73,8 @@ a, a:hover, a:active, a:visited {
     #pstv > #prototype > header h1.user img.plus {
       max-height: 1.5rem;
       top: .3rem; }
-    #pstv > #prototype > header h1:last-child {
-      text-align: right;
+    #pstv > #prototype > header h1.clock {
+      text-align: center;
       text-indent: 0; }
     #pstv > #prototype > footer h1 {
       flex: 1 0 auto;
@@ -184,15 +185,13 @@ a, a:hover, a:active, a:visited {
   background-image: repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) 1px, transparent 1px, transparent 1rem), repeating-linear-gradient(-90deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) 1px, transparent 1px, transparent 1rem); }
 
 .bg-nogrid {
-  /*
-    background: -moz-linear-gradient(-45deg,  #032548 0%, #1a265d 100%);
-    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#032548), color-stop(100%,#1a265d));
-    background: -webkit-linear-gradient(-45deg,  #032548 0%,#1a265d 100%);
-    background: -o-linear-gradient(-45deg,  #032548 0%,#1a265d 100%);
-    background: -ms-linear-gradient(-45deg,  #032548 0%,#1a265d 100%);
-    background: linear-gradient(135deg,  #032548 0%,#1a265d 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#032548', endColorstr='#1a265d',GradientType=1 );
-  */ }
+  background: -moz-linear-gradient(-45deg, #032548 0%, #1a265d 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #032548), color-stop(100%, #1a265d));
+  background: -webkit-linear-gradient(-45deg, #032548 0%, #1a265d 100%);
+  background: -o-linear-gradient(-45deg, #032548 0%, #1a265d 100%);
+  background: -ms-linear-gradient(-45deg, #032548 0%, #1a265d 100%);
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#032548', endColorstr='#1a265d', GradientType=1); }
 
 .bg-vita {
   background-image: url("images/vita_homescreen.jpg");
@@ -219,25 +218,22 @@ a, a:hover, a:active, a:visited {
   background-size: 100% 100%; }
 
 .bg-custom {
-  background-image: url("images/bg_tlg.png");
+  background-image: url("images/bg_tlg4.png");
   background-size: 100% 100%;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); }
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9); }
   .bg-custom > header img {
-    -webkit-filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.8));
-    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.8)); }
+    -webkit-filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.9));
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.9)); }
 
 #pstv.border-neutral {
   border: 1px solid #333; }
 
 #controls {
-  border: 1px dashed rgba(255, 255, 255, 0.15);
-  color: #ccc;
-  font-size: 1.3rem;
-  font-weight: 700;
-  height: 6rem;
-  margin: 1.5rem auto;
-  overflow: hidden;
-  padding: 0 3rem;
+  background-color: #222;
+  border: 0;
+  border-radius: 5px;
+  margin: 1rem auto;
+  padding: 0 3rem .4rem 3rem;
   position: relative;
   width: 96rem; }
   #controls ul {
@@ -249,11 +245,9 @@ a, a:hover, a:active, a:visited {
     flex-flow: row;
     -webkit-justify-content: space-between;
     justify-content: space-between; }
-  #controls a, #controls a:hover, #controls a:active, #controls a:visited {
-    border-bottom: 1px dotted rgba(255, 255, 255, 0.2); }
 
 .preloader {
-  background-image: url("images/bg_tlg.png"), url("images/psx_ridge_smooth.png"), url("images/psx_ridge_scanlines.png"), url("images/psx_xeno_smooth.png"), url("images/psx_xeno_scanlines.png"), url("images/vita_homescreen.jpg");
+  background-image: url("images/bg_tlg4.png"), url("images/psx_ridge_smooth.png"), url("images/psx_ridge_scanlines.png"), url("images/psx_xeno_smooth.png"), url("images/psx_xeno_scanlines.png"), url("images/vita_homescreen.jpg");
   background-repeat: no-repeat;
   width: 0;
   height: 0;
@@ -261,6 +255,19 @@ a, a:hover, a:active, a:visited {
 
 @media (max-width: 520px) {
   @viewport {
-    width: 960px; } }
+    width: 960px; }
+  #controls ul {
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row;
+    flex-flow: row;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap; }
+    #controls ul li {
+      width: 33%; } }
 
 /*# sourceMappingURL=pstv.css.map */
