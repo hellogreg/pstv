@@ -46,7 +46,7 @@
   }
 
   (function updateClock() {
-    var d,hr,min,ampm,date,month,year,el,timer;
+    var d, hr, min, ampm, date, month, year, el, timer;
     d = new Date();
     hr = d.getHours();
     min = d.getMinutes();
