@@ -45,7 +45,7 @@
     console.log(m);
   }
 
-  function startTime() {
+  (function updateClock() {
 
     var d = new Date();
     var hr = d.getHours();
@@ -67,11 +67,9 @@
     x.innerHTML = month + "/" + date + "/" + year + " " + hr + ":" + min + " " + ampm + "";
 
     var timer = setTimeout(function () {
-      startTime()
+      updateClock()
     }, 5000);
-  }
-
-  startTime();
+  }());
 
   $controls.addEventListener("click", function (e) {
 

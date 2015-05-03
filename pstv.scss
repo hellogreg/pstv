@@ -436,6 +436,7 @@ a, a:hover, a:active, a:visited {
   background-color: #222;
   border: 0;
   border-radius: 5px;
+  font-family: sans-serif;
   margin: 1rem auto;
   padding: 0 3rem .4rem 3rem;
   position: relative;
@@ -443,6 +444,21 @@ a, a:hover, a:active, a:visited {
 
   ul {
     @include flex-basic-row;
+    li {
+      flex: 1 0 auto;
+      padding: 0 .1rem;
+      text-align: center;
+      button {
+        width: 100%;
+      }
+
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+    }
   }
 }
 
@@ -461,6 +477,7 @@ a, a:hover, a:active, a:visited {
   }
 
   #controls {
+    font-family: sans-serif;
     ul {
       @include flex-basic-row;
       -webkit-flex-flow: row wrap;

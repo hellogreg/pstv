@@ -232,6 +232,7 @@ a, a:hover, a:active, a:visited {
   background-color: #222;
   border: 0;
   border-radius: 5px;
+  font-family: sans-serif;
   margin: 1rem auto;
   padding: 0 3rem .4rem 3rem;
   position: relative;
@@ -245,6 +246,16 @@ a, a:hover, a:active, a:visited {
     flex-flow: row;
     -webkit-justify-content: space-between;
     justify-content: space-between; }
+    #controls ul li {
+      flex: 1 0 auto;
+      padding: 0 .1rem;
+      text-align: center; }
+      #controls ul li button {
+        width: 100%; }
+      #controls ul li:first-child {
+        padding-left: 0; }
+      #controls ul li:last-child {
+        padding-right: 0; }
 
 .preloader {
   background-image: url("images/bg_tlg4.png"), url("images/psx_ridge_smooth.png"), url("images/psx_ridge_scanlines.png"), url("images/psx_xeno_smooth.png"), url("images/psx_xeno_scanlines.png"), url("images/vita_homescreen.jpg");
@@ -256,18 +267,20 @@ a, a:hover, a:active, a:visited {
 @media (max-width: 520px) {
   @viewport {
     width: 960px; }
-  #controls ul {
-    -webkit-align-items: center;
-    align-items: center;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-flow: row;
-    flex-flow: row;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
-    -webkit-flex-flow: row wrap;
-    flex-flow: row wrap; }
-    #controls ul li {
-      width: 33%; } }
+  #controls {
+    font-family: sans-serif; }
+    #controls ul {
+      -webkit-align-items: center;
+      align-items: center;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row;
+      flex-flow: row;
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
+      -webkit-flex-flow: row wrap;
+      flex-flow: row wrap; }
+      #controls ul li {
+        width: 33%; } }
 
 /*# sourceMappingURL=pstv.css.map */
