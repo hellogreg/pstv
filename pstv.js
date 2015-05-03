@@ -46,27 +46,26 @@
   }
 
   (function updateClock() {
-
-    var d = new Date();
-    var hr = d.getHours();
-    var min = d.getMinutes();
+    var d,hr,min,ampm,date,month,year,el,timer;
+    d = new Date();
+    hr = d.getHours();
+    min = d.getMinutes();
     if (min < 10) {
       min = "0" + min;
     }
-    var ampm = hr < 12 ? "AM" : "PM";
+    ampm = hr < 12 ? "AM" : "PM";
     if (hr > 12) {
       hr = hr - 12;
     }
     if (hr === 0) {
       hr = 12;
     }
-    var date = d.getDate();
-    var month = d.getMonth() + 1;
-    var year = d.getFullYear().toString().slice(-2);
-    var x = document.getElementById("clock");
-    x.innerHTML = month + "/" + date + "/" + year + " " + hr + ":" + min + " " + ampm + "";
-
-    var timer = setTimeout(function () {
+    date = d.getDate();
+    month = d.getMonth() + 1;
+    year = d.getFullYear().toString().slice(-2);
+    el = document.getElementById("clock");
+    el.innerHTML = month + "/" + date + "/" + year + " " + hr + ":" + min + " " + ampm + "";
+    timer = setTimeout(function () {
       updateClock()
     }, 5000);
   }());
@@ -75,8 +74,6 @@
 
     var target = e.target || e.srcElement;
     e.preventDefault();
-    //log("Something within \"pstv\" has been clicked.");
-    //log("Source target:" + target);
 
     function swapClass(el, oldClass, newClass) {
       el.classList.remove(oldClass);

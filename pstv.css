@@ -75,7 +75,8 @@ a, a:hover, a:active, a:visited {
       top: .3rem; }
     #pstv > #prototype > header h1.clock {
       text-align: center;
-      text-indent: 0; }
+      text-indent: 0;
+      min-width: 13.5rem; }
     #pstv > #prototype > footer h1 {
       flex: 1 0 auto;
       font-size: 1.3rem;
@@ -181,17 +182,11 @@ a, a:hover, a:active, a:visited {
 
 .bg-grid {
   background-position: 0 0;
-  background-size: 1rem 1rem;
-  background-image: repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) 1px, transparent 1px, transparent 1rem), repeating-linear-gradient(-90deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) 1px, transparent 1px, transparent 1rem); }
+  background-size: 1.5rem 1.5rem;
+  background-image: repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) 1px, transparent 1px, transparent 1.5rem), repeating-linear-gradient(-90deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) 1px, transparent 1px, transparent 1.5rem); }
 
 .bg-nogrid {
-  background: -moz-linear-gradient(-45deg, #032548 0%, #1a265d 100%);
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #032548), color-stop(100%, #1a265d));
-  background: -webkit-linear-gradient(-45deg, #032548 0%, #1a265d 100%);
-  background: -o-linear-gradient(-45deg, #032548 0%, #1a265d 100%);
-  background: -ms-linear-gradient(-45deg, #032548 0%, #1a265d 100%);
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#032548', endColorstr='#1a265d', GradientType=1); }
+  background: linear-gradient(135deg, transparent 0%, rgba(255, 255, 255, 0) 100%); }
 
 .bg-vita {
   background-image: url("images/vita_homescreen.jpg");

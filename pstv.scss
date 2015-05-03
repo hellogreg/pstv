@@ -119,8 +119,6 @@ a, a:hover, a:active, a:visited {
 
     > header {
       h1 {
-        //background: .5rem .7rem no-repeat;
-        //background-size: 1.8rem auto;
         //border: 1px solid #fc9;
         flex: 0 1 auto;
 
@@ -133,12 +131,6 @@ a, a:hover, a:active, a:visited {
         }
 
       }
-      h1.system {
-        //background-image: url("images/icon_wifi.png");
-      }
-      h1.friends {
-        //background-image: url("images/icon_friends.png");
-      }
       h1.user {
         //background-image: url("images/icon_avatar.png");
         img.plus {
@@ -146,14 +138,11 @@ a, a:hover, a:active, a:visited {
           top: .3rem;
         }
       }
-      h1.trophies {
-        //background-image: url("images/icon_trophies.png");
-      }
       h1.clock {
         //background-color: #999;
         text-align: center;
         text-indent: 0;
-        //width: 4.5rem;
+        min-width: 13.5rem;
       }
     }
 
@@ -370,19 +359,11 @@ a, a:hover, a:active, a:visited {
 }
 
 .bg-grid {
-  @include bg-grid(1rem);
+  @include bg-grid(1.5rem);
 }
 
 .bg-nogrid {
-
-  background: -moz-linear-gradient(-45deg, #032548 0%, #1a265d 100%);
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #032548), color-stop(100%, #1a265d));
-  background: -webkit-linear-gradient(-45deg, #032548 0%, #1a265d 100%);
-  background: -o-linear-gradient(-45deg, #032548 0%, #1a265d 100%);
-  background: -ms-linear-gradient(-45deg, #032548 0%, #1a265d 100%);
-  background: linear-gradient(135deg, rgba(0, 0, 0, .2) 0%, rgba(255, 255, 255, .2) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#032548', endColorstr='#1a265d', GradientType=1);
-
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 .bg-vita {
