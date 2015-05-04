@@ -11,18 +11,20 @@
 <div id="pstv">
   <section id="mockups" class="invisible"></section>
   <section id="prototype" class="bg-grid">
+
     <header>
       <h1 class="system"><img src="images/icon_wifi.png" alt="Wifi"/>MyPSTV</h1>
+      <h1 class="user"><img src="images/icon_avatar.png" alt="User"/>hellogreg
+        <img src="images/icon_plus.png" alt="Plus" class="plus"/>
+      </h1>
       <h1 class="friends"><img src="images/icon_friends.png" alt="Friends"/>3 online</h1>
-      <h1 class="user"><img src="images/icon_avatar.png" alt="User"/>hellogreg<img src="images/icon_plus.png" alt="Plus"
-                                                                                   class="plus"/></h1>
       <h1 class="trophies"><img src="images/icon_trophies.png" alt="Trophies"/>10</h1>
       <h1 id="clock" class="clock">6:32 PM</h1>
     </header>
 
     <main>
 
-      <section class="app distant-left" id="app1">
+      <article class="app distant-left" id="app1">
         <header><img src="images/app_store.png" alt="PlayStation Store"/></header>
         <nav>
           <ul>
@@ -30,9 +32,9 @@
           </ul>
         </nav>
         <footer><h1>PlayStation Store</h1></footer>
-      </section>
+      </article>
 
-      <section class="app adjacent-left" id="app2">
+      <article class="app adjacent-left" id="app2">
         <header><img src="images/app_danganronpa.jpg" alt="DanganRonpa"/></header>
         <nav>
           <ul>
@@ -43,9 +45,9 @@
           </ul>
         </nav>
         <footer><h1>Danganronpa: Trigger Happy Havoc</h1></footer>
-      </section>
+      </article>
 
-      <section class="app current" id="app3">
+      <article class="app current" id="app3">
         <header><img src="images/app_persona.jpg" alt="P4G"/></header>
         <nav>
           <ul>
@@ -56,9 +58,9 @@
           </ul>
         </nav>
         <footer><h1>Persona 4 Golden</h1></footer>
-      </section>
+      </article>
 
-      <section class="app adjacent-right" id="app4">
+      <article class="app adjacent-right" id="app4">
         <header><img src="images/app_ffvii.jpg" alt="FFVII"/></header>
         <nav>
           <ul>
@@ -69,9 +71,9 @@
           </ul>
         </nav>
         <footer><h1>Final Fantasy VII</h1></footer>
-      </section>
+      </article>
 
-      <section class="app distant-right-1" id="app5">
+      <article class="app distant-right-1" id="app5">
         <header><img src="images/app_broken_age.jpg" alt="Broken Age"/></header>
         <nav>
           <ul>
@@ -82,9 +84,9 @@
           </ul>
         </nav>
         <footer><h1>Broken Age</h1></footer>
-      </section>
+      </article>
 
-      <section class="app distant-right-2" id="app6">
+      <article class="app distant-right-2" id="app6">
         <header><img src="images/app_pix.jpg" alt="Pix"/></header>
         <nav>
           <ul>
@@ -95,9 +97,9 @@
           </ul>
         </nav>
         <footer><h1>Pix the Cat</h1></footer>
-      </section>
+      </article>
 
-      <section class="app distant-right-3" id="app7">
+      <article class="app distant-right-3" id="app7">
         <header><img src="images/app_hulu.jpg" alt="Hulu"/></header>
         <nav>
           <ul>
@@ -108,9 +110,9 @@
           </ul>
         </nav>
         <footer><h1>Hulu Plus</h1></footer>
-      </section>
+      </article>
 
-      <section class="app distant-right-4" id="app8">
+      <article class="app distant-right-4" id="app8">
         <header><img src="images/app_shovel.jpg" alt="Shovel Knight"/></header>
         <nav>
           <ul>
@@ -121,9 +123,9 @@
           </ul>
         </nav>
         <footer><h1>Shovel Knight</h1></footer>
-      </section>
+      </article>
 
-      <section class="app offscreen-right-1" id="app9">
+      <article class="app offscreen-right-1" id="app9">
         <header><img src="images/app_spotify.png" alt="Spotify"/></header>
         <nav>
           <ul>
@@ -134,33 +136,56 @@
           </ul>
         </nav>
         <footer><h1>Spotify</h1></footer>
-      </section>
+      </article>
 
     </main>
 
     <footer>
-      <div class="marquee">
-        <div>
-          <h1>Final Fantasy XII Remastered comes to PlayStation TV this fall...&nbsp;&nbsp;
-            Download The Last Guardian theme today... </h1>
-        </div>
-      </div>
-      <img src="images/logo_pstv.png" alt="PlayStation TV" class="logo"/>
+      <h1 id="announcements"><span>Final Fantasy XII Remastered comes to PlayStation TV&reg; this fall&hellip;&nbsp;&nbsp;
+            Download The Last Guardian theme today&hellip;&nbsp;&nbsp;</span></h1>
+      <h1 class="pstvlogo">Playstation TV&reg;</h1>
     </footer>
+
+    <div id="overlay" class="overlay hide">
+      <section class="folder">
+        <h1>PS1 Games</h1>
+        <ul class="folder-apps">
+          <li>Game 1</li>
+          <li>Game 2</li>
+          <li>Game 3</li>
+          <li>Game 4</li>
+          <li>Game 5</li>
+          <li>Game 6</li>
+        </ul>
+        <nav>
+          <ul>
+            <li class="button-x">X - Start App</li>
+            <li class="button-circle">O - Close folder</li>
+          </ul>
+        </nav>
+      </section>
+    </div>
+
   </section>
 
 </div>
 
 <div id="controls">
   <ul>
-    <li>Nav:</li>
+    <li>Interface:</li>
     <li>
-      <button id="move-apps-left">&lt;&lt;&lt;</button>
+      <button id="move-apps-left">&lt;&lt;</button>
     </li>
     <li>
-      <button id="move-apps-right">&gt;&gt;&gt;</button>
+      <button id="move-apps-right">&gt;&gt;</button>
     </li>
-    <li>BG:</li>
+    <li>
+      <button id="toggle-folder">Expand Folder</button>
+    </li>
+    <li>
+      <button id="toggle-marquee">Marquee</button>
+    </li>
+    <li>Backgrounds:</li>
     <li>
       <button id="show-grid-15">15px</button>
     </li>
@@ -168,11 +193,13 @@
       <button id="hide-grid">No Grid</button>
     </li>
     <li>
-      <button id="show-custom">Custom</button>
+      <button id="show-custom">Custom BG</button>
     </li>
     <li>
       <button id="show-vita">Current PSTV</button>
     </li>
+  </ul>
+  <ul>
     <li>Retro:</li>
     <li>
       <button id="show-xeno-smooth">Current Xeno</button>
@@ -186,7 +213,6 @@
     <li>
       <button id="show-ridge-scanlines">Retro Mode Ridge</button>
     </li>
-
   </ul>
 </div>
 

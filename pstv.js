@@ -6,6 +6,8 @@
   var $prototype = document.getElementById("prototype");
   var $mockups = document.getElementById("mockups");
   var $controls = document.getElementById("controls");
+  var $announcements = document.getElementById("announcements");
+  var $overlay = document.getElementById("overlay");
 
   // TODO: Maybe push/pop/shift/unshift $apps when moving to represent location.
   var $apps = [
@@ -63,8 +65,7 @@
     date = d.getDate();
     month = d.getMonth() + 1;
     year = d.getFullYear().toString().slice(-2);
-    el = document.getElementById("clock");
-    el.innerHTML = month + "/" + date + "/" + year + " " + hr + ":" + min + " " + ampm + "";
+    document.getElementById("clock").innerHTML = month + "/" + date + "/" + year + " " + hr + ":" + min + " " + ampm + "";
     timer = setTimeout(function () {
       updateClock()
     }, 5000);
@@ -139,6 +140,14 @@
           log("Can't move any farther right.");
         }
       }());
+    }
+
+    else if (target.id === "toggle-folder") {
+      $overlay.classList.toggle("show");
+    }
+
+    else if (target.id === "toggle-marquee") {
+      $announcements.classList.toggle("marquee");
     }
 
     else if (target.id === "hide-grid") {
