@@ -66,6 +66,7 @@
     month = d.getMonth() + 1;
     year = d.getFullYear().toString().slice(-2);
     document.getElementById("clock").innerHTML = month + "/" + date + "/" + year + " " + hr + ":" + min + " " + ampm + "";
+    //noinspection JSUnusedAssignment
     timer = setTimeout(function () {
       updateClock();
     }, 5000);
