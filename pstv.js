@@ -48,7 +48,7 @@
   }
 
   (function updateClock() {
-    var d, hr, min, ampm, date, month, year, el, timer;
+    var d, hr, min, ampm, date, month, year, timer;
     d = new Date();
     hr = d.getHours();
     min = d.getMinutes();
@@ -69,6 +69,16 @@
     timer = setTimeout(function () {
       updateClock()
     }, 5000);
+  }());
+
+
+  // Set Background images with data-image attributes via JS, since CSS can't do it, yet!
+  (function addFolderBgImages() {
+    var $list = document.querySelectorAll("li[data-image]");
+    var i = 0, len = $list.length;
+    for (; i < len; i++) {
+      $list[i].style.backgroundImage = "url(\"" + $list[i].getAttribute("data-image") + "\")";
+    }
   }());
 
   $controls.addEventListener("click", function (e) {

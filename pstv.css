@@ -98,24 +98,19 @@ a, a:hover, a:active, a:visited {
             background-image: url("images/app_chrono.jpg"); }
           #pstv > #prototype .overlay .folder .folder-apps li:nth-child(2) {
             left: 15rem;
-            top: 3rem;
-            background-image: url("images/app_umjammer.jpg"); }
+            top: 3rem; }
           #pstv > #prototype .overlay .folder .folder-apps li:nth-child(3) {
             left: 27rem;
-            top: 3rem;
-            background-image: url("images/app_vagrant.jpg"); }
+            top: 3rem; }
           #pstv > #prototype .overlay .folder .folder-apps li:nth-child(4) {
             left: 3rem;
-            top: 15rem;
-            background-image: url("images/app_tekken2.jpg"); }
+            top: 15rem; }
           #pstv > #prototype .overlay .folder .folder-apps li:nth-child(5) {
             left: 15rem;
-            top: 15rem;
-            background-image: url("images/app_xenogears.jpg"); }
+            top: 15rem; }
           #pstv > #prototype .overlay .folder .folder-apps li:nth-child(6) {
             left: 27rem;
-            top: 15rem;
-            background-image: url("images/app_parasite.jpg"); }
+            top: 15rem; }
         #pstv > #prototype .overlay .folder nav {
           background-color: #011227;
           height: 3rem;
