@@ -67,7 +67,7 @@
     year = d.getFullYear().toString().slice(-2);
     document.getElementById("clock").innerHTML = month + "/" + date + "/" + year + " " + hr + ":" + min + " " + ampm + "";
     timer = setTimeout(function () {
-      updateClock()
+      updateClock();
     }, 5000);
   }());
 
