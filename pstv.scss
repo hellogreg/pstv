@@ -174,7 +174,7 @@ a, a:hover, a:active, a:visited {
             width: 9rem;
           }
           li:first-child {
-            @include position-folder-app(1,1,"true");
+            @include position-folder-app(1, 1, "true");
             background-image: url("images/app_chrono.jpg");
           }
           li:nth-child(2) {
