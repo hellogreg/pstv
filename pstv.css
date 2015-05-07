@@ -46,11 +46,43 @@ a, a:hover, a:active, a:visited {
   padding: 0;
   position: relative;
   width: 96rem; }
+  #pstv.border-neutral {
+    border: 1px solid #333; }
   #pstv > #mockups {
     height: 100%;
     width: 100%; }
+    #pstv > #mockups.bg-vita {
+      background-image: url("images/vita_homescreen.jpg");
+      background-size: 100% 100%; }
+    #pstv > #mockups.bg-xeno-scanlines {
+      background-image: url("images/psx_xeno_scanlines.png");
+      background-size: 100% 100%;
+      -webkit-filter: brightness(115%);
+      filter: brightness(115%); }
+    #pstv > #mockups.bg-xeno-smooth {
+      background-image: url("images/psx_xeno_smooth.png");
+      background-size: 100% 100%; }
+    #pstv > #mockups.bg-ridge-scanlines {
+      background-image: url("images/psx_ridge_scanlines.png");
+      background-size: 100% 100%;
+      -webkit-filter: brightness(115%);
+      filter: brightness(115%); }
+    #pstv > #mockups.bg-ridge-smooth {
+      background-image: url("images/psx_ridge_smooth.png");
+      background-size: 100% 100%; }
   #pstv > #prototype {
     background-color: #032f64; }
+    #pstv > #prototype.bg-custom {
+      background-image: url("images/bg_tlg4.png");
+      background-size: 100% 100%;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9); }
+      #pstv > #prototype.bg-custom > header img {
+        -webkit-filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.9));
+        filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.9)); }
+    #pstv > #prototype.bg-grid {
+      background-position: 0 0;
+      background-size: 1.5rem 1.5rem;
+      background-image: repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) 1px, transparent 1px, transparent 1.5rem), repeating-linear-gradient(-90deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) 1px, transparent 1px, transparent 1.5rem); }
     #pstv > #prototype .overlay {
       opacity: 0;
       background-color: rgba(0, 0, 0, 0.35);
@@ -63,7 +95,7 @@ a, a:hover, a:active, a:visited {
       #pstv > #prototype .overlay .folder {
         background-color: #032f64;
         -webkit-box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.5);
-        box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.75);
+        box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.5);
         height: 36rem;
         left: 28.5rem;
         overflow: hidden;
@@ -336,48 +368,6 @@ a, a:hover, a:active, a:visited {
       #pstv > #prototype main .offscreen-right-1, #pstv > #prototype main .offscreen-right-2, #pstv > #prototype main .offscreen-right-3 {
         -webkit-transform: translate(102rem, 7.5rem) scale(0.66667);
         transform: translate(102rem, 7.5rem) scale(0.66667); }
-  #pstv.border-neutral {
-    border: 1px solid #333; }
-
-.bg-grid {
-  background-position: 0 0;
-  background-size: 1.5rem 1.5rem;
-  background-image: repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) 1px, transparent 1px, transparent 1.5rem), repeating-linear-gradient(-90deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) 1px, transparent 1px, transparent 1.5rem); }
-
-.bg-nogrid {
-  background: linear-gradient(135deg, transparent 0%, rgba(255, 255, 255, 0) 100%); }
-
-.bg-vita {
-  background-image: url("images/vita_homescreen.jpg");
-  background-size: 100% 100%; }
-
-.bg-xeno-scanlines {
-  background-image: url("images/psx_xeno_scanlines.png");
-  background-size: 100% 100%;
-  -webkit-filter: brightness(115%);
-  filter: brightness(115%); }
-
-.bg-xeno-smooth {
-  background-image: url("images/psx_xeno_smooth.png");
-  background-size: 100% 100%; }
-
-.bg-ridge-scanlines {
-  background-image: url("images/psx_ridge_scanlines.png");
-  background-size: 100% 100%;
-  -webkit-filter: brightness(115%);
-  filter: brightness(115%); }
-
-.bg-ridge-smooth {
-  background-image: url("images/psx_ridge_smooth.png");
-  background-size: 100% 100%; }
-
-.bg-custom {
-  background-image: url("images/bg_tlg4.png");
-  background-size: 100% 100%;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9); }
-  .bg-custom > header img {
-    -webkit-filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.9));
-    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.9)); }
 
 #controls {
   background-color: #222;
