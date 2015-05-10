@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
   #pstv > #prototype {
     background-color: #032f64; }
     #pstv > #prototype.bg-custom {
-      background-image: url("images/bg_tlg4.png");
+      background-image: url("../images/bg_tlg4.png");
       background-size: 100% 100%;
       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9); }
       #pstv > #prototype.bg-custom > header img {
@@ -197,13 +197,13 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
             width: 13rem; }
           #pstv > #prototype .overlay .folder nav li.folder-button-x {
             left: 0;
-            background-image: url("images/button_x.png"); }
+            background-image: url("../images/button_x.png"); }
           #pstv > #prototype .overlay .folder nav li.folder-button-triangle {
             left: 13rem;
-            background-image: url("images/button_triangle.png"); }
+            background-image: url("../images/button_triangle.png"); }
           #pstv > #prototype .overlay .folder nav li.folder-button-circle {
             left: 26rem;
-            background-image: url("images/button_circle.png"); }
+            background-image: url("../images/button_circle.png"); }
     #pstv > #prototype .overlay.show {
       opacity: 1;
       transition: opacity 250ms; }
@@ -244,7 +244,7 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
       -moz-backface-visibility: hidden;
       backface-visibility: hidden;
       background: right 0 no-repeat;
-      background-image: url("images/logo_pstv.png");
+      background-image: url("../images/logo_pstv.png");
       background-size: auto 2.2rem;
       height: 2.2rem;
       padding-left: 3rem;
@@ -311,16 +311,16 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
               width: 18rem; }
             #pstv > #prototype main .app nav ul li.button-x {
               background-color: rgba(0, 0, 0, 0.4);
-              background-image: url("images/button_x.png"); }
+              background-image: url("../images/button_x.png"); }
             #pstv > #prototype main .app nav ul li.button-triangle {
               background-color: rgba(0, 0, 0, 0.3);
-              background-image: url("images/button_triangle.png"); }
+              background-image: url("../images/button_triangle.png"); }
             #pstv > #prototype main .app nav ul li.button-square {
               background-color: rgba(0, 0, 0, 0.2);
-              background-image: url("images/button_square.png"); }
+              background-image: url("../images/button_square.png"); }
             #pstv > #prototype main .app nav ul li.button-circle {
               background-color: rgba(0, 0, 0, 0.1);
-              background-image: url("images/button_circle.png"); }
+              background-image: url("../images/button_circle.png"); }
         #pstv > #prototype main .app > footer {
           background-color: transparent;
           height: 6rem;

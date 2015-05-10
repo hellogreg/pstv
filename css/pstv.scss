@@ -2,7 +2,7 @@
 // Our blue: #1a265d [rgb(26,38,93,1)], #2a3568
 
 
-@import "css/reset";
+@import "reset";
 
 
 $bgColor: rgba(3, 47, 100, 1);
@@ -71,14 +71,14 @@ $appTransitionSpeed: 250ms;
     border: 1px solid #333;
   }
 
-  @import "css/mockups";
+  @import "mockups";
 
   > #prototype {
 
     background-color: $bgColor;
 
     &.bg-custom {
-      background-image: url("images/bg_tlg4.png");
+      background-image: url("../images/bg_tlg4.png");
       background-size: 100% 100%;
       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
       > header img {
@@ -217,15 +217,15 @@ $appTransitionSpeed: 250ms;
           }
           li.folder-button-x {
             left: 0;
-            background-image: url("images/button_x.png");
+            background-image: url("../images/button_x.png");
           }
           li.folder-button-triangle {
             left: 13rem;
-            background-image: url("images/button_triangle.png");
+            background-image: url("../images/button_triangle.png");
           }
           li.folder-button-circle {
             left: 26rem;
-            background-image: url("images/button_circle.png");
+            background-image: url("../images/button_circle.png");
           }
         }
 
@@ -285,7 +285,7 @@ $appTransitionSpeed: 250ms;
         -moz-backface-visibility: hidden;
         backface-visibility: hidden;
         background: right 0 no-repeat;
-        background-image: url("images/logo_pstv.png");
+        background-image: url("../images/logo_pstv.png");
         background-size: auto 2.2rem;
         height: 2.2rem;
         padding-left: 3rem;
@@ -410,22 +410,22 @@ $appTransitionSpeed: 250ms;
 
             li.button-x {
               @include test-bg-color(.4);
-              background-image: url("images/button_x.png");
+              background-image: url("../images/button_x.png");
             }
 
             li.button-triangle {
               @include test-bg-color(.3);
-              background-image: url("images/button_triangle.png");
+              background-image: url("../images/button_triangle.png");
             }
 
             li.button-square {
               @include test-bg-color(.2);
-              background-image: url("images/button_square.png");
+              background-image: url("../images/button_square.png");
             }
 
             li.button-circle {
               @include test-bg-color(.1);
-              background-image: url("images/button_circle.png");
+              background-image: url("../images/button_circle.png");
             }
           }
         }
@@ -553,7 +553,7 @@ $appTransitionSpeed: 250ms;
   }
 }
 
-@import "css/preloader";
+@import "preloader";
 
 @media (max-width: 520px) {
   @viewport {
