@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  margin: 0;
+  padding-top: 1rem;
+  font-family: "sst-w01", sans-serif;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  background-color: #050505;
+  color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  display: block;
+  font-size: inherit;
+  font-weight: normal;
+  font-style: normal;
+  line-height: inherit;
+  opacity: 1;
+}

@@ -1,0 +1,13 @@
+// Lazy loading for our big background images.
+.preloader {
+  background-image: url("images/bg_tlg4.png"),
+  url("images/psx_ridge_smooth.png"),
+  url("images/psx_ridge_scanlines.png"),
+  url("images/psx_xeno_smooth.png"),
+  url("images/psx_xeno_scanlines.png"),
+  url("images/vita_homescreen.jpg");
+  background-repeat: no-repeat;
+  width: 0;
+  height: 0;
+  display: none;
+}

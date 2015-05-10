@@ -1,9 +1,9 @@
 // Sony base blue: #003791 alt: #032f64 (3,47,100,1)
 // Our blue: #1a265d [rgb(26,38,93,1)], #2a3568
 
-// SASS variables
-//$mainFontFamily: "SST W01 Roman", "sst-roman", "myriad-pro", sans-serif;
-$mainFontFamily: "sst-w01", sans-serif;
+
+@import "css/reset";
+
 
 $bgColor: rgba(3, 47, 100, 1);
 $bgAccentColor: rgba(255, 255, 255, .05);
@@ -47,44 +47,6 @@ $appTransitionSpeed: 250ms;
 
 // Bare bones reset and pagewide styles
 
-* {
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
-  margin: 0;
-  padding-top: 1rem;
-  font-family: $mainFontFamily;
-  font-size: 1.5rem;
-  line-height: 3rem;
-  background-color: #050505;
-  color: #fff;
-}
-
-h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
-  margin: 0;
-  padding: 0;
-  vertical-align: baseline;
-  display: block;
-  font-size: inherit;
-  font-weight: normal;
-  font-style: normal;
-  line-height: inherit;
-  opacity: 1;
-}
-
-a, a:hover, a:active, a:visited {
-  color: inherit;
-  text-decoration: none;
-}
 
 .invisible {
   display: none;
@@ -109,41 +71,7 @@ a, a:hover, a:active, a:visited {
     border: 1px solid #333;
   }
 
-  > #mockups {
-    height: 100%;
-    width: 100%;
-
-    &.bg-vita {
-      background-image: url("images/vita_homescreen.jpg");
-      background-size: 100% 100%;
-    }
-
-    &.bg-xeno-scanlines {
-      background-image: url("images/psx_xeno_scanlines.png");
-      background-size: 100% 100%;
-      // Brighten to compensate for scanlines.
-      -webkit-filter: brightness(115%);
-      filter: brightness(115%);
-    }
-
-    &.bg-xeno-smooth {
-      background-image: url("images/psx_xeno_smooth.png");
-      background-size: 100% 100%;
-    }
-
-    &.bg-ridge-scanlines {
-      background-image: url("images/psx_ridge_scanlines.png");
-      background-size: 100% 100%;
-      // Brighten to compensate for scanlines.
-      -webkit-filter: brightness(115%);
-      filter: brightness(115%);
-    }
-
-    &.bg-ridge-smooth {
-      background-image: url("images/psx_ridge_smooth.png");
-      background-size: 100% 100%;
-    }
-  }
+  @import "css/mockups";
 
   > #prototype {
 
@@ -625,14 +553,7 @@ a, a:hover, a:active, a:visited {
   }
 }
 
-// Lazy loading for our big background images.
-.preloader {
-  background-image: url("images/bg_tlg4.png"), url("images/psx_ridge_smooth.png"), url("images/psx_ridge_scanlines.png"), url("images/psx_xeno_smooth.png"), url("images/psx_xeno_scanlines.png"), url("images/vita_homescreen.jpg");
-  background-repeat: no-repeat;
-  width: 0;
-  height: 0;
-  display: none;
-}
+@import "css/preloader";
 
 @media (max-width: 520px) {
   @viewport {
