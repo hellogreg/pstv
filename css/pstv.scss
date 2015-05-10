@@ -1,9 +1,9 @@
-// Sony base blue: #003791 alt: #032f64 (3,47,100,1)
-// Our blue: #1a265d [rgb(26,38,93,1)], #2a3568
+// Sony base blues: #003791, #032f64 (3,47,100,1)
+// Alt blues: #1a265d [rgb(26,38,93,1)], #2a3568
 
 
+// Bare bones reset and pagewide styles
 @import "reset";
-
 
 $bgColor: rgba(3, 47, 100, 1);
 $bgAccentColor: rgba(255, 255, 255, .05);
@@ -44,8 +44,6 @@ $appTransitionSpeed: 250ms;
   opacity: 1;
   transition: opacity $appTransitionSpeed;
 }
-
-// Bare bones reset and pagewide styles
 
 
 .invisible {
@@ -332,8 +330,6 @@ $appTransitionSpeed: 250ms;
     // APP SECTION
     //
 
-    // TODO: Positioning with translate() not working in forefox!
-
     main {
       height: 42rem;
 
@@ -523,35 +519,7 @@ $appTransitionSpeed: 250ms;
 
 }
 
-#controls {
-  background-color: #222;
-  border: 0;
-  border-radius: 5px;
-  font-family: sans-serif;
-  margin: 1rem auto;
-  padding: 0 3rem .4rem 3rem;
-  position: relative;
-  width: 96rem;
-
-  ul {
-    @include flex-basic-row;
-    li {
-      flex: 1 0 auto;
-      padding: 0 .1rem;
-      text-align: center;
-      button {
-        width: 100%;
-      }
-
-      &:first-child {
-        padding-left: 0;
-      }
-      &:last-child {
-        padding-right: 0;
-      }
-    }
-  }
-}
+@import "controls";
 
 @import "preloader";
 
