@@ -6,7 +6,6 @@
 @import "reset";
 
 $bgColor: rgba(3, 47, 100, 1);
-$bgAccentColor: rgba(255, 255, 255, .05);
 $appTransitionSpeed: 250ms;
 
 // SASS pagewide mixins
@@ -20,12 +19,6 @@ $appTransitionSpeed: 250ms;
   flex-flow: row;
   -webkit-justify-content: space-between;
   justify-content: space-between;
-}
-
-@mixin bg-grid($size) {
-  background-position: 0 0;
-  background-size: $size $size;
-  background-image: repeating-linear-gradient(0deg, $bgAccentColor, $bgAccentColor 1px, transparent 1px, transparent $size), repeating-linear-gradient(-90deg, $bgAccentColor, $bgAccentColor 1px, transparent 1px, transparent $size);
 }
 
 @mixin test-bg-color($alpha:0.5) {
@@ -44,7 +37,6 @@ $appTransitionSpeed: 250ms;
   opacity: 1;
   transition: opacity $appTransitionSpeed;
 }
-
 
 .invisible {
   display: none;
@@ -86,11 +78,16 @@ $appTransitionSpeed: 250ms;
     }
 
     &.bg-grid {
-      @include bg-grid(1.5rem);
+      $size: 1.5rem;
+      $gridColor: rgba(255, 255, 255, .05);
+      background-position: 0 0;
+      background-size: $size $size;
+      background-image: repeating-linear-gradient(0deg, $gridColor, $gridColor 1px, transparent 1px, transparent $size),
+      repeating-linear-gradient(-90deg, $gridColor, $gridColor 1px, transparent 1px, transparent $size);
     }
 
     &.bg-nogrid {
-      //background-image: linear-gradient(135deg, rgba(0, 0, 0, .05) 0%, rgba(255, 255, 255, .25) 100%);
+      //background-image: linear-gradient(135deg, rgba(0, 0, 0, .05) 0%, rgba(255, 255, 255, .15) 100%);
     }
 
     .overlay {
