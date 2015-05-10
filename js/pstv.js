@@ -8,6 +8,8 @@
   var $controls = document.getElementById("controls");
   var $announcements = document.getElementById("announcements");
   var $overlay = document.getElementById("overlay");
+  var $folder = document.getElementById("folder");
+  var $folderAppImage = document.getElementById("folder-app-image");
 
   // TODO: Maybe push/pop/shift/unshift $apps when moving to represent location.
   var $apps = [
@@ -154,7 +156,14 @@
     }
 
     else if (target.id === "toggle-folder") {
-      $overlay.classList.toggle("show");
+      // if document.querySelector("#app6.app.current") {} // Do only if folder app is current
+      if (document.querySelector("#app6.app.current")) {
+        $overlay.classList.toggle("show");
+        $folder.classList.toggle("shrink");
+        document.querySelector("#app6.app.current header img").classList.toggle("hide");
+        document.querySelector("#app6.app.current nav").classList.toggle("hide");
+        document.querySelector("#app6.app.current footer").classList.toggle("hide");
+      }
     }
 
     else if (target.id === "toggle-marquee") {

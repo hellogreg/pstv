@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transform-style: preserve-3d; }
 
 html {
   font-size: 62.5%; }
@@ -79,134 +80,176 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
       background-position: 0 0;
       background-size: 1.5rem 1.5rem;
       background-image: repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) 1px, transparent 1px, transparent 1.5rem), repeating-linear-gradient(-90deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) 1px, transparent 1px, transparent 1.5rem); }
-    #pstv > #prototype .overlay {
-      opacity: 0;
+    #pstv > #prototype #overlay {
+      -webkit-transition: all 200ms ease-out;
+      transition: all 200ms ease-out;
       background-color: rgba(0, 0, 0, 0.35);
-      height: 100%;
-      width: 100%;
+      height: 54rem;
       left: 0;
+      opacity: 0;
       position: absolute;
       top: 0;
-      z-index: 2; }
-      #pstv > #prototype .overlay .folder {
-        background-color: #032f64;
-        -webkit-box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.5);
-        box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.5);
-        height: 36rem;
-        left: 28.5rem;
-        overflow: hidden;
-        position: absolute;
-        top: 9rem;
-        width: 39rem;
-        z-index: 3; }
-        #pstv > #prototype .overlay .folder h1 {
-          background-color: #011227;
-          font-size: 3rem;
-          font-weight: 300;
-          height: 6rem;
-          line-height: 6rem;
-          text-indent: 1.5rem;
-          white-space: nowrap; }
-        #pstv > #prototype .overlay .folder .folder-apps {
-          left: 0;
-          position: absolute;
-          top: 6rem; }
-          #pstv > #prototype .overlay .folder .folder-apps li {
-            background-color: inherit;
-            background: 0 0 no-repeat;
-            background-size: 100% 100%;
-            height: 9rem;
-            position: absolute;
-            text-indent: -500rem;
-            width: 9rem; }
-          #pstv > #prototype .overlay .folder .folder-apps li:first-child {
-            left: 3rem;
-            top: 3rem; }
-            #pstv > #prototype .overlay .folder .folder-apps li:first-child.highlighted {
-              -webkit-box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.75);
-              box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.75);
-              height: 12rem;
-              left: 1.5rem;
-              top: 1.5rem;
-              width: 12rem; }
-          #pstv > #prototype .overlay .folder .folder-apps li:nth-child(2) {
-            left: 15rem;
-            top: 3rem; }
-            #pstv > #prototype .overlay .folder .folder-apps li:nth-child(2).highlighted {
-              -webkit-box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.75);
-              box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.75);
-              height: 12rem;
-              left: 13.5rem;
-              top: 1.5rem;
-              width: 12rem; }
-          #pstv > #prototype .overlay .folder .folder-apps li:nth-child(3) {
-            left: 27rem;
-            top: 3rem; }
-            #pstv > #prototype .overlay .folder .folder-apps li:nth-child(3).highlighted {
-              -webkit-box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.75);
-              box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.75);
-              height: 12rem;
-              left: 25.5rem;
-              top: 1.5rem;
-              width: 12rem; }
-          #pstv > #prototype .overlay .folder .folder-apps li:nth-child(4) {
-            left: 3rem;
-            top: 15rem; }
-            #pstv > #prototype .overlay .folder .folder-apps li:nth-child(4).highlighted {
-              -webkit-box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.75);
-              box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.75);
-              height: 12rem;
-              left: 1.5rem;
-              top: 13.5rem;
-              width: 12rem; }
-          #pstv > #prototype .overlay .folder .folder-apps li:nth-child(5) {
-            left: 15rem;
-            top: 15rem; }
-            #pstv > #prototype .overlay .folder .folder-apps li:nth-child(5).highlighted {
-              -webkit-box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.75);
-              box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.75);
-              height: 12rem;
-              left: 13.5rem;
-              top: 13.5rem;
-              width: 12rem; }
-          #pstv > #prototype .overlay .folder .folder-apps li:nth-child(6) {
-            left: 27rem;
-            top: 15rem; }
-            #pstv > #prototype .overlay .folder .folder-apps li:nth-child(6).highlighted {
-              -webkit-box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.75);
-              box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.75);
-              height: 12rem;
-              left: 25.5rem;
-              top: 13.5rem;
-              width: 12rem; }
-        #pstv > #prototype .overlay .folder nav {
-          background-color: #011227;
+      width: 96rem; }
+      #pstv > #prototype #overlay.show {
+        opacity: 1; }
+    #pstv > #prototype .folder {
+      -webkit-box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.5);
+      box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.5);
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      -webkit-transition: all 200ms ease-out;
+      transition: all 200ms ease-out;
+      background: #032f64;
+      height: 36rem;
+      left: calc(96rem / 2);
+      overflow: hidden;
+      position: absolute;
+      top: calc(54rem / 2);
+      width: 36rem; }
+      #pstv > #prototype .folder h1 {
+        background-color: rgba(0, 0, 0, 0.6);
+        font-size: 3rem;
+        font-weight: 300;
+        height: 6rem;
+        left: 0;
+        line-height: 6rem;
+        position: inherit;
+        text-indent: 1.5rem;
+        top: 0;
+        white-space: nowrap;
+        width: 100%; }
+      #pstv > #prototype .folder .icon {
+        background-color: #aaa;
+        height: 30rem;
+        left: calc(36rem / 2);
+        opacity: 0;
+        position: inherit;
+        top: calc(36rem / 2);
+        width: 33rem;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); }
+      #pstv > #prototype .folder .folder-apps {
+        position: inherit; }
+        #pstv > #prototype .folder .folder-apps li {
+          -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          -webkit-transition: all 200ms ease-out;
+          transition: all 200ms ease-out;
+          -webkit-backface-visibility: hidden;
+          -moz-backface-visibility: hidden;
+          backface-visibility: hidden;
+          background-color: #999;
+          background-size: 100% 100%;
+          height: 9rem;
+          position: inherit;
+          text-indent: -500rem;
+          width: 9rem; }
+          #pstv > #prototype .folder .folder-apps li:hover {
+            -webkit-box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.3);
+            box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.3);
+            -webkit-transition: all 50ms ease-out;
+            transition: all 50ms ease-out;
+            height: 11rem;
+            width: 11rem; }
+          #pstv > #prototype .folder .folder-apps li:nth-child(1) {
+            left: 6rem;
+            top: 13.5rem; }
+          #pstv > #prototype .folder .folder-apps li:nth-child(2) {
+            left: 18rem;
+            top: 13.5rem; }
+          #pstv > #prototype .folder .folder-apps li:nth-child(3) {
+            left: 30rem;
+            top: 13.5rem; }
+          #pstv > #prototype .folder .folder-apps li:nth-child(4) {
+            left: 6rem;
+            top: 25.5rem; }
+          #pstv > #prototype .folder .folder-apps li:nth-child(5) {
+            left: 18rem;
+            top: 25.5rem; }
+          #pstv > #prototype .folder .folder-apps li:nth-child(6) {
+            left: 30rem;
+            top: 25.5rem; }
+      #pstv > #prototype .folder nav {
+        background-color: rgba(0, 0, 0, 0.6);
+        height: 3rem;
+        left: 0;
+        position: inherit;
+        top: calc(36rem - 3rem);
+        width: 100%; }
+        #pstv > #prototype .folder nav li {
+          background-color: inherit;
+          background: 1.5rem .9rem no-repeat;
+          background-size: 1.3rem auto;
           height: 3rem;
-          left: 0;
           position: absolute;
-          top: 33rem;
-          width: 100%; }
-          #pstv > #prototype .overlay .folder nav li {
-            background-color: inherit;
-            background: 1.5rem .9rem no-repeat;
-            background-size: 1.3rem auto;
-            height: 3rem;
-            position: absolute;
-            text-indent: 3.75rem;
-            top: 0;
-            width: 13rem; }
-          #pstv > #prototype .overlay .folder nav li.folder-button-x {
+          text-indent: 3.75rem;
+          top: 0;
+          width: calc(36rem / 3); }
+          #pstv > #prototype .folder nav li.folder-button-x {
             left: 0;
             background-image: url("../images/button_x.png"); }
-          #pstv > #prototype .overlay .folder nav li.folder-button-triangle {
-            left: 13rem;
+          #pstv > #prototype .folder nav li.folder-button-triangle {
+            left: calc(36rem / 3);
             background-image: url("../images/button_triangle.png"); }
-          #pstv > #prototype .overlay .folder nav li.folder-button-circle {
-            left: 26rem;
+          #pstv > #prototype .folder nav li.folder-button-circle {
+            left: calc(2 * 36rem / 3);
             background-image: url("../images/button_circle.png"); }
-    #pstv > #prototype .overlay.show {
-      opacity: 1;
-      transition: opacity 250ms; }
+      #pstv > #prototype .folder.shrink {
+        -webkit-transform: translate(-36rem, -22.5rem) translateZ(0) scale(0.5);
+        transform: translate(-36rem, -22.5rem) translateZ(0) scale(0.5);
+        opacity: 0;
+    /*
+          .folder-apps {
+            @mixin folder-app($row, $col) {
+              left: 7rem + (($col - 1) * 11rem);
+              top: 14rem + (($row - 1) * 11rem);
+            }
+
+            li {
+              height: 11rem;
+              width: 11rem;
+
+              &.loadclass {
+                -webkit-backface-visibility: visible;
+                -moz-backface-visibility: visible;
+                backface-visibility: visible;
+              }
+
+              &:nth-child(1) {
+                @include folder-app(1, 1);
+              }
+
+              &:nth-child(2) {
+                @include folder-app(1, 2);
+              }
+
+              &:nth-child(3) {
+                @include folder-app(1, 3);
+              }
+
+              &:nth-child(4) {
+                @include folder-app(2, 1);
+              }
+
+              &:nth-child(5) {
+                @include folder-app(2, 2);
+              }
+
+              &:nth-child(6) {
+                @include folder-app(2, 3);
+              }
+            }
+          }
+
+
+    */ }
+        #pstv > #prototype .folder.shrink nav, #pstv > #prototype .folder.shrink h1 {
+          opacity: 0; }
+        #pstv > #prototype .folder.shrink .icon {
+          opacity: 1; }
+      #pstv > #prototype .folder > * {
+        -webkit-transition: all 200ms ease-out;
+        transition: all 200ms ease-out; }
     #pstv > #prototype > header, #pstv > #prototype > footer {
       -webkit-align-items: center;
       align-items: center;
@@ -335,6 +378,9 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
             white-space: nowrap; }
       #pstv > #prototype main .current > footer, #pstv > #prototype main .current > nav {
         opacity: 1;
+        transition: opacity 250ms; }
+      #pstv > #prototype main .current > footer.hide, #pstv > #prototype main .current > nav.hide, #pstv > #prototype main .current > header img.hide {
+        opacity: 0;
         transition: opacity 250ms; }
       #pstv > #prototype main .adjacent-left {
         -webkit-transform: translate(6rem, 7.5rem) scale(0.83333);

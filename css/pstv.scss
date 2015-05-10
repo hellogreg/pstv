@@ -1,7 +1,5 @@
 // Sony base blues: #003791, #032f64 (3,47,100,1)
 // Alt blues: #1a265d [rgb(26,38,93,1)], #2a3568
-
-
 // Bare bones reset and pagewide styles
 @import "reset";
 
@@ -21,7 +19,7 @@ $appTransitionSpeed: 250ms;
   justify-content: space-between;
 }
 
-@mixin test-bg-color($alpha:0.5) {
+@mixin bg-darkened-color($alpha:0.5) {
   background-color: rgba(0, 0, 0, $alpha);
 }
 
@@ -45,6 +43,7 @@ $appTransitionSpeed: 250ms;
 .visible {
   display: inherit;
 }
+
 
 // #pstv is the "screen" of the console
 
@@ -90,151 +89,12 @@ $appTransitionSpeed: 250ms;
       //background-image: linear-gradient(135deg, rgba(0, 0, 0, .05) 0%, rgba(255, 255, 255, .15) 100%);
     }
 
-    .overlay {
-      @mixin folder-base-bg-color($alpha:1) {
-        background-color: rgba(1, 18, 39, $alpha);
-      }
-
-      @include hide;
-      background-color: rgba(0, 0, 0, .35);
-      height: 100%;
-      width: 100%;
-      left: 0;
-      position: absolute;
-      top: 0;
-      z-index: 2;
-
-      .folder {
-        background-color: $bgColor;
-        -webkit-box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.5);
-        box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.5);
-        height: 36rem;
-        left: 28.5rem;
-        overflow: hidden;
-        position: absolute;
-        top: 9rem;
-        width: 39rem;
-        z-index: 3;
-
-        h1 {
-          background-color: rgba(1, 18, 39, 1);
-          //background-color: rgba(0, 0, 0, .6);
-          font-size: 3rem;
-          font-weight: 300;
-          height: 6rem;
-          line-height: 6rem;
-          text-indent: 1.5rem;
-          white-space: nowrap;
-        }
-
-        .folder-apps {
-
-          @mixin position-folder-app($row, $col, $selected: "false") {
-            @if $selected == "true" {
-              -webkit-box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.75);
-              box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.75);
-              height: 12rem;
-              left: 1.5rem + (($col - 1) * 12rem);
-              top: 1.5rem + (($row - 1) * 12rem);
-              width: 12rem;
-            } @else {
-              left: 3rem + (($col - 1) * 12rem);
-              top: 3rem + (($row - 1) * 12rem);
-            }
-          }
-
-          left: 0;
-          position: absolute;
-          top: 6rem;
-          li {
-            background-color: inherit;
-            background: 0 0 no-repeat;
-            background-size: 100% 100%;
-            height: 9rem;
-            position: absolute;
-            text-indent: -500rem;
-            width: 9rem;
-          }
-          li:first-child {
-            @include position-folder-app(1, 1);
-            &.highlighted {
-              @include position-folder-app(1, 1, "true");
-            }
-          }
-          li:nth-child(2) {
-            @include position-folder-app(1, 2);
-            &.highlighted {
-              @include position-folder-app(1, 2, "true");
-            }
-          }
-          li:nth-child(3) {
-            @include position-folder-app(1, 3);
-            &.highlighted {
-              @include position-folder-app(1, 3, "true");
-            }
-          }
-          li:nth-child(4) {
-            @include position-folder-app(2, 1);
-            &.highlighted {
-              @include position-folder-app(2, 1, "true");
-            }
-          }
-          li:nth-child(5) {
-            @include position-folder-app(2, 2);
-            &.highlighted {
-              @include position-folder-app(2, 2, "true");
-            }
-          }
-          li:nth-child(6) {
-            @include position-folder-app(2, 3);
-            &.highlighted {
-              @include position-folder-app(2, 3, "true");
-            }
-          }
-        }
-
-        nav {
-          background-color: rgba(1, 18, 39, 1);
-          height: 3rem;
-          left: 0;
-          position: absolute;
-          top: 33rem;
-          width: 100%;
-          li {
-            background-color: inherit;
-            background: 1.5rem .9rem no-repeat;
-            background-size: 1.3rem auto;
-            height: 3rem;
-            position: absolute;
-            text-indent: 3.75rem;
-            top: 0;
-            width: 13rem;
-          }
-          li.folder-button-x {
-            left: 0;
-            background-image: url("../images/button_x.png");
-          }
-          li.folder-button-triangle {
-            left: 13rem;
-            background-image: url("../images/button_triangle.png");
-          }
-          li.folder-button-circle {
-            left: 26rem;
-            background-image: url("../images/button_circle.png");
-          }
-        }
-
-      }
-
-    }
-
-    .overlay.show {
-      @include show;
-    }
+    //TODO: Folder
+    @import "folder";
 
     > header, > footer {
       @include flex-basic-row;
-      @include test-bg-color(0);
+      @include bg-darkened-color(0);
       height: 6rem;
       padding: 0 3rem;
     }
@@ -338,14 +198,14 @@ $appTransitionSpeed: 250ms;
       @mixin adjacent {
         //display: none; // Used for testing only.
         > header {
-          //@include test-bg-color(.6);// Used for testing only.
+          //@include bg-darkened-color(.6);// Used for testing only.
         }
       }
 
       @mixin distant {
         //display: none; // Used for testing only.
         > header {
-          //@include test-bg-color(.6);// Used for testing only.
+          //@include bg-darkened-color(.6);// Used for testing only.
         }
       }
 
@@ -367,7 +227,7 @@ $appTransitionSpeed: 250ms;
         }
 
         > header {
-          @include test-bg-color(.6);
+          @include bg-darkened-color(.6);
           height: 18rem;
           -webkit-transform: translate(0) scale($scaleCurrent);
           transform: translate(0) scale($scaleCurrent);
@@ -393,7 +253,7 @@ $appTransitionSpeed: 250ms;
             list-style-type: none;
 
             li {
-              @include test-bg-color();
+              @include bg-darkened-color();
               background: .8rem .9rem no-repeat;
               background-size: 1.3rem auto;
               height: 3rem;
@@ -402,29 +262,29 @@ $appTransitionSpeed: 250ms;
             }
 
             li.button-x {
-              @include test-bg-color(.4);
+              @include bg-darkened-color(.4);
               background-image: url("../images/button_x.png");
             }
 
             li.button-triangle {
-              @include test-bg-color(.3);
+              @include bg-darkened-color(.3);
               background-image: url("../images/button_triangle.png");
             }
 
             li.button-square {
-              @include test-bg-color(.2);
+              @include bg-darkened-color(.2);
               background-image: url("../images/button_square.png");
             }
 
             li.button-circle {
-              @include test-bg-color(.1);
+              @include bg-darkened-color(.1);
               background-image: url("../images/button_circle.png");
             }
           }
         }
 
         > footer {
-          @include test-bg-color(0);
+          @include bg-darkened-color(0);
           height: 6rem;
           -webkit-transform: translate(18rem, 21rem) scale($scaleCurrent);
           transform: translate(18rem, 21rem) scale($scaleCurrent);
@@ -446,6 +306,11 @@ $appTransitionSpeed: 250ms;
         // Show footer and nav for selected apps
         > footer, > nav {
           @include show;
+        }
+
+        > footer.hide, > nav.hide, > header img.hide {
+          @include hide;
+          transition: opacity $appTransitionSpeed;
         }
 
       }
