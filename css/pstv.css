@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
       background-image: url("../images/vita_homescreen.jpg"); }
     #pstv > #mockups.bg-xeno-scanlines {
       background-size: 100% 100%;
-      -webkit-filter: brightness(115%);
+      -webkit-filter: brightness(116%);
       filter: brightness(115%);
       background-image: url("../images/psx_xeno_scanlines.png"); }
     #pstv > #mockups.bg-xeno-smooth {
@@ -61,7 +61,7 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
       background-image: url("../images/psx_xeno_smooth.png"); }
     #pstv > #mockups.bg-ridge-scanlines {
       background-size: 100% 100%;
-      -webkit-filter: brightness(115%);
+      -webkit-filter: brightness(116%);
       filter: brightness(115%);
       background-image: url("../images/psx_ridge_scanlines.png"); }
     #pstv > #mockups.bg-ridge-smooth {

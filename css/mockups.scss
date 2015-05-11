@@ -6,7 +6,7 @@
   @mixin mockup-bg($brighten: false) {
     background-size: 100% 100%;
     @if $brighten == true {
-      -webkit-filter: brightness(115%);
+      -webkit-filter: brightness(116%);
       filter: brightness(115%);
     }
   }
