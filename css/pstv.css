@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
   #pstv.border-neutral {
     border: 1px solid #333; }
   #pstv > #mockups {
-    height: 99%;
+    height: 100%;
     width: 100%; }
     #pstv > #mockups.bg-vita {
       background-size: 100% 100%;
