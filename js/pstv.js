@@ -9,7 +9,6 @@
   var $announcements = document.getElementById("announcements");
   var $overlay = document.getElementById("overlay");
   var $folder = document.getElementById("folder");
-  var $folderAppImage = document.getElementById("folder-app-image");
 
   // TODO: Maybe push/pop/shift/unshift $apps when moving to represent location.
   var $apps = [
@@ -18,7 +17,7 @@
     document.getElementById("app3"),
     document.getElementById("app4"),
     document.getElementById("app5"),
-    document.getElementById("app6"),
+    document.getElementById("app-ps1-folder"),
     document.getElementById("app7"),
     document.getElementById("app8"),
     document.getElementById("app9")
@@ -156,13 +155,13 @@
     }
 
     else if (target.id === "toggle-folder") {
-      // if document.querySelector("#app6.app.current") {} // Do only if folder app is current
-      if (document.querySelector("#app6.app.current")) {
+      // Do only if folder app is current
+      if (document.querySelector("#app-ps1-folder.app.current")) {
         $overlay.classList.toggle("show");
         $folder.classList.toggle("shrink");
-        document.querySelector("#app6.app.current header img").classList.toggle("hide");
-        document.querySelector("#app6.app.current nav").classList.toggle("hide");
-        document.querySelector("#app6.app.current footer").classList.toggle("hide");
+        document.querySelector("#app-ps1-folder.app.current header img").classList.toggle("hide");
+        document.querySelector("#app-ps1-folder.app.current nav").classList.toggle("hide");
+        document.querySelector("#app-ps1-folder.app.current footer").classList.toggle("hide");
       }
     }
 
