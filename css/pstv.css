@@ -50,23 +50,23 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
     width: 100%; }
     #pstv > #mockups.bg-vita {
       background-size: 100% 100%;
-      background-image: url("images/vita_homescreen.jpg"); }
+      background-image: url("../images/vita_homescreen.jpg"); }
     #pstv > #mockups.bg-xeno-scanlines {
       background-size: 100% 100%;
       -webkit-filter: brightness(115%);
       filter: brightness(115%);
-      background-image: url("images/psx_xeno_scanlines.png"); }
+      background-image: url("../images/psx_xeno_scanlines.png"); }
     #pstv > #mockups.bg-xeno-smooth {
       background-size: 100% 100%;
-      background-image: url("images/psx_xeno_smooth.png"); }
+      background-image: url("../images/psx_xeno_smooth.png"); }
     #pstv > #mockups.bg-ridge-scanlines {
       background-size: 100% 100%;
       -webkit-filter: brightness(115%);
       filter: brightness(115%);
-      background-image: url("images/psx_ridge_scanlines.png"); }
+      background-image: url("../images/psx_ridge_scanlines.png"); }
     #pstv > #mockups.bg-ridge-smooth {
       background-size: 100% 100%;
-      background-image: url("images/psx_ridge_smooth.png"); }
+      background-image: url("../images/psx_ridge_smooth.png"); }
   #pstv > #prototype {
     background-color: #032f64; }
     #pstv > #prototype.bg-custom {

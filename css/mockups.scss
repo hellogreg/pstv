@@ -13,26 +13,26 @@
 
   &.bg-vita {
     @include mockup-bg();
-    background-image: url("images/vita_homescreen.jpg");
+    background-image: url("../images/vita_homescreen.jpg");
   }
 
   &.bg-xeno-scanlines {
     @include mockup-bg(true);
-    background-image: url("images/psx_xeno_scanlines.png");
+    background-image: url("../images/psx_xeno_scanlines.png");
   }
 
   &.bg-xeno-smooth {
     @include mockup-bg();
-    background-image: url("images/psx_xeno_smooth.png");
+    background-image: url("../images/psx_xeno_smooth.png");
   }
 
   &.bg-ridge-scanlines {
     @include mockup-bg(true);
-    background-image: url("images/psx_ridge_scanlines.png");
+    background-image: url("../images/psx_ridge_scanlines.png");
   }
 
   &.bg-ridge-smooth {
     @include mockup-bg();
-    background-image: url("images/psx_ridge_smooth.png");
+    background-image: url("../images/psx_ridge_smooth.png");
   }
 }
