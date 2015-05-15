@@ -7,7 +7,6 @@
   var $prototype = document.getElementById("prototype");
   var $mockups = document.getElementById("mockups");
   var $controls = document.getElementById("controls");
-  var $announcements = document.getElementById("announcements");
   var $clock = document.getElementById("clock");
 
   // Other pagewide vars
@@ -99,7 +98,6 @@
 
         // Toggle isFolderOpen var
         isFolderOpen = !isFolderOpen;
-        log("isFolderOpen: " + isFolderOpen);
 
         $appImage = $folderCurrent.querySelector("header img");
         document.getElementById("overlay").classList.toggle("show");
@@ -131,78 +129,57 @@
           } else if (direction === "left") {
             newClassIndex++;
           }
-
           // If a folder is open, close it when moving apps.
-          if (isFolderOpen) {
-            toggleFolder();
-          }
-
+          (isFolderOpen) && toggleFolder();
           swapClass(el, appClasses[i], appClasses[newClassIndex]);
           break;
+
+        }
+      }
+    }
+
+    function moveAllApps(direction) {
+      var i = 0, len = $apps.length;
+      var adjacentClass = direction ? ".adjacent-" + direction : null;
+
+      if (adjacentClass) {
+        if (document.querySelector(adjacentClass)) {
+          for (; i < len; i++) {
+            moveThisApp($apps[i], direction);
+          }
+        } else {
+          log("Can't move any farther " + direction + ".");
         }
       }
     }
 
     function showPrototype(bgClass) {
-
-      $mockups.classList.add("invisible");
-      $prototype.classList.remove("invisible");
-
       if (bgClass != "bg-custom") {
         $pstv.classList.remove("border-neutral");
-        $prototype.classList.remove("bg-custom");
       } else {
         $pstv.classList.add("border-neutral");
       }
-
-      if (bgClass != "bg-nogrid") {
-        $prototype.classList.remove("bg-nogrid");
-      }
-
-      if (bgClass != "bg-grid") {
-        $prototype.classList.remove("bg-grid");
-      }
-
+      $mockups.classList.add("invisible");
+      $prototype.className = "";
       $prototype.classList.add(bgClass);
     }
 
     function showMockups(bgClass) {
-
       $pstv.classList.add("border-neutral");
       $prototype.classList.add("invisible");
       $mockups.className = "";
-
-      if (bgClass) {
-        $mockups.classList.add(bgClass);
-      }
+      $mockups.classList.add(bgClass);
     }
+
 
     switch (target.id) {
 
       case "move-apps-left":
-        (function () {
-          var i = 0, len = $apps.length;
-          if (document.querySelector(".adjacent-left")) {
-            for (; i < len; i++) {
-              moveThisApp($apps[i], "left");
-            }
-          } else {
-            log("Can't move any farther left.");
-          }
-        }());
+        moveAllApps("left");
         break;
 
       case "move-apps-right":
-        (function () {
-          var i = 0, len = $apps.length;
-          if (document.querySelector(".adjacent-right")) {
-            for (; i < len; i++) {
-              moveThisApp($apps[i], "right")
-            }
-          } else {
-            log("Can't move any farther right.");
-          }
-        }());
+        moveAllApps("right");
         break;
 
       case "toggle-folder":
@@ -210,7 +187,7 @@
         break;
 
       case "toggle-marquee":
-        $announcements.classList.toggle("marquee");
+        document.getElementById("announcements").classList.toggle("marquee");
         break;
 
       case "hide-grid":

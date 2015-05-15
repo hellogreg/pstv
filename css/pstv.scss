@@ -66,7 +66,7 @@ $appTransitionSpeed: 250ms;
     background-color: $bgColor;
 
     &.bg-custom {
-      background-image: url("../images/bg_tlg4.png");
+      background-image: url(../images/bg_tlg4.png);
       background-size: 100% 100%;
       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
       > header img {
@@ -139,7 +139,7 @@ $appTransitionSpeed: 250ms;
         -moz-backface-visibility: hidden;
         backface-visibility: hidden;
         background: right 0 no-repeat;
-        background-image: url("../images/logo_pstv.png");
+        background-image: url(../images/logo_pstv.png);
         background-size: auto 2.2rem;
         height: 2.2rem;
         padding-left: 3rem;
@@ -157,8 +157,8 @@ $appTransitionSpeed: 250ms;
         display: inline-block;
         padding-left: 100%;
         text-indent: 0;
-        -webkit-animation: marquee 30s linear infinite;
-        animation: marquee 30s linear infinite;
+        -webkit-animation: marquee 25s linear infinite;
+        animation: marquee 25s linear infinite;
       }
 
       @-webkit-keyframes marquee {
@@ -262,22 +262,22 @@ $appTransitionSpeed: 250ms;
 
             li.button-x {
               @include bg-darkened-color(.4);
-              background-image: url("../images/button_x.png");
+              background-image: url(../images/button_x.png);
             }
 
             li.button-triangle {
               @include bg-darkened-color(.3);
-              background-image: url("../images/button_triangle.png");
+              background-image: url(../images/button_triangle.png);
             }
 
             li.button-square {
               @include bg-darkened-color(.2);
-              background-image: url("../images/button_square.png");
+              background-image: url(../images/button_square.png);
             }
 
             li.button-circle {
               @include bg-darkened-color(.1);
-              background-image: url("../images/button_circle.png");
+              background-image: url(../images/button_circle.png);
             }
           }
         }

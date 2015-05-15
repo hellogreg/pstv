@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
   #pstv > #prototype {
     background-color: #032f64; }
     #pstv > #prototype.bg-custom {
-      background-image: url("../images/bg_tlg4.png");
+      background-image: url(../images/bg_tlg4.png);
       background-size: 100% 100%;
       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9); }
       #pstv > #prototype.bg-custom > header img {
@@ -260,7 +260,7 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
       -moz-backface-visibility: hidden;
       backface-visibility: hidden;
       background: right 0 no-repeat;
-      background-image: url("../images/logo_pstv.png");
+      background-image: url(../images/logo_pstv.png);
       background-size: auto 2.2rem;
       height: 2.2rem;
       padding-left: 3rem;
@@ -274,8 +274,8 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
       display: inline-block;
       padding-left: 100%;
       text-indent: 0;
-      -webkit-animation: marquee 30s linear infinite;
-      animation: marquee 30s linear infinite; }
+      -webkit-animation: marquee 25s linear infinite;
+      animation: marquee 25s linear infinite; }
 @-webkit-keyframes marquee {
   0% {
     -webkit-transform: translate(0, 0); }
@@ -327,16 +327,16 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
               width: 18rem; }
             #pstv > #prototype main .app nav ul li.button-x {
               background-color: rgba(0, 0, 0, 0.4);
-              background-image: url("../images/button_x.png"); }
+              background-image: url(../images/button_x.png); }
             #pstv > #prototype main .app nav ul li.button-triangle {
               background-color: rgba(0, 0, 0, 0.3);
-              background-image: url("../images/button_triangle.png"); }
+              background-image: url(../images/button_triangle.png); }
             #pstv > #prototype main .app nav ul li.button-square {
               background-color: rgba(0, 0, 0, 0.2);
-              background-image: url("../images/button_square.png"); }
+              background-image: url(../images/button_square.png); }
             #pstv > #prototype main .app nav ul li.button-circle {
               background-color: rgba(0, 0, 0, 0.1);
-              background-image: url("../images/button_circle.png"); }
+              background-image: url(../images/button_circle.png); }
         #pstv > #prototype main .app > footer {
           background-color: transparent;
           height: 6rem;
@@ -414,7 +414,7 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
         padding-right: 0; }
 
 .preloader {
-  background-image: url("../images/bg_tlg4.png"), url("../images/psx_ridge_smooth.png"), url("../images/psx_ridge_scanlines.png"), url("../images/psx_xeno_smooth.png"), url("../images/psx_xeno_scanlines.png"), url("../images/vita_homescreen.jpg");
+  background-image: url(../images/bg_tlg4.png), url(../images/app_folder_empty.png), url(../images/psx_ridge_smooth.png), url(../images/psx_ridge_scanlines.png), url(../images/psx_xeno_smooth.png), url(../images/psx_xeno_scanlines.png), url(../images/vita_homescreen.jpg);
   background-repeat: no-repeat;
   width: 0;
   height: 0;
