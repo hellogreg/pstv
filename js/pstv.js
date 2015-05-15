@@ -14,7 +14,6 @@
   var isFolderOpen = false;
 
 
-
   // TODO: Maybe push/pop/shift/unshift $apps when moving to represent location.
   var $apps = [
     document.getElementById("app1"),
@@ -91,6 +90,30 @@
     var target = e.target || e.srcElement;
     e.preventDefault();
 
+    function toggleFolder() {
+      var $folderCurrent = document.querySelector("#app-ps1-folder.app.current");
+      var $appImage;
+
+      // Do everything below only if the folder app is currently selected
+      if ($folderCurrent) {
+
+        // Toggle isFolderOpen var
+        isFolderOpen = !isFolderOpen;
+        log("isFolderOpen: " + isFolderOpen);
+
+        $appImage = $folderCurrent.querySelector("header img");
+        document.getElementById("overlay").classList.toggle("show");
+        document.getElementById("folder").classList.toggle("shrink");
+        if ($appImage.src.indexOf("images/app_folder.png") != -1) {
+          $appImage.src = "images/app_folder_empty.png";
+        } else {
+          $appImage.src = "images/app_folder.png";
+        }
+        $folderCurrent.querySelector("nav").classList.toggle("hide");
+        $folderCurrent.querySelector("footer").classList.toggle("hide");
+      }
+    }
+
     function swapClass(el, oldClass, newClass) {
       el.classList.remove(oldClass);
       el.classList.add(newClass);
@@ -108,6 +131,12 @@
           } else if (direction === "left") {
             newClassIndex++;
           }
+
+          // If a folder is open, close it when moving apps.
+          if (isFolderOpen) {
+            toggleFolder();
+          }
+
           swapClass(el, appClasses[i], appClasses[newClassIndex]);
           break;
         }
@@ -140,7 +169,6 @@
     function showMockups(bgClass) {
 
       $pstv.classList.add("border-neutral");
-      $mockups.classList.remove("invisible");
       $prototype.classList.add("invisible");
       $mockups.className = "";
 
@@ -149,94 +177,77 @@
       }
     }
 
-    function toggleFolder(el) {
-      var $folderCurrent = document.querySelector("#" + el + ".app.current");
-      var $appImage;
+    switch (target.id) {
 
-      // Toggle isFolderOpen var
-      isFolderOpen = !isFolderOpen;
-      log("isFolderOpen: " + isFolderOpen);
-
-      // Do everything below only if the folder app is currently selected
-      if ($folderCurrent) {
-        $appImage = $folderCurrent.querySelector("header img");
-        document.getElementById("overlay").classList.toggle("show");
-        document.getElementById("folder").classList.toggle("shrink");
-        if ($appImage.src.indexOf("images/app_folder.png") != -1) {
-          $appImage.src = "images/app_folder_empty.png";
-        } else {
-          $appImage.src = "images/app_folder.png";
-        }
-        $folderCurrent.querySelector("nav").classList.toggle("hide");
-        $folderCurrent.querySelector("footer").classList.toggle("hide");
-      }
-    }
-
-
-    if (target.id === "move-apps-left") {
-      (function () {
-        var i = 0, len = $apps.length;
-        if (document.querySelector(".adjacent-left")) {
-          for (; i < len; i++) {
-            moveThisApp($apps[i], "left");
+      case "move-apps-left":
+        (function () {
+          var i = 0, len = $apps.length;
+          if (document.querySelector(".adjacent-left")) {
+            for (; i < len; i++) {
+              moveThisApp($apps[i], "left");
+            }
+          } else {
+            log("Can't move any farther left.");
           }
-        } else {
-          log("Can't move any farther left.");
-        }
-      }());
-    }
+        }());
+        break;
 
-    else if (target.id === "move-apps-right") {
-      (function () {
-        var i = 0, len = $apps.length;
-        if (document.querySelector(".adjacent-right")) {
-          for (; i < len; i++) {
-            moveThisApp($apps[i], "right")
+      case "move-apps-right":
+        (function () {
+          var i = 0, len = $apps.length;
+          if (document.querySelector(".adjacent-right")) {
+            for (; i < len; i++) {
+              moveThisApp($apps[i], "right")
+            }
+          } else {
+            log("Can't move any farther right.");
           }
-        } else {
-          log("Can't move any farther right.");
-        }
-      }());
-    }
+        }());
+        break;
 
-    else if (target.id === "toggle-folder") {
-      toggleFolder("app-ps1-folder");
-    }
+      case "toggle-folder":
+        toggleFolder();
+        break;
 
-    else if (target.id === "toggle-marquee") {
-      $announcements.classList.toggle("marquee");
-    }
+      case "toggle-marquee":
+        $announcements.classList.toggle("marquee");
+        break;
 
-    else if (target.id === "hide-grid") {
-      showPrototype("bg-nogrid");
-    }
+      case "hide-grid":
+        showPrototype("bg-nogrid");
+        break;
 
-    else if (target.id === "show-grid-15") {
-      showPrototype("bg-grid");
-    }
+      case "show-grid-15":
+        showPrototype("bg-grid");
+        break;
 
-    else if (target.id === "show-custom") {
-      showPrototype("bg-custom");
-    }
+      case "show-custom":
+        showPrototype("bg-custom");
+        break;
 
-    else if (target.id === "show-vita") {
-      showMockups("bg-vita");
-    }
+      case "show-vita":
+        showMockups("bg-vita");
+        break;
 
-    else if (target.id === "show-xeno-scanlines") {
-      showMockups("bg-xeno-scanlines");
-    }
+      case "show-xeno-scanlines":
+        showMockups("bg-xeno-scanlines");
+        break;
 
-    else if (target.id === "show-xeno-smooth") {
-      showMockups("bg-xeno-smooth");
-    }
+      case "show-xeno-smooth":
+        showMockups("bg-xeno-smooth");
+        break;
 
-    else if (target.id === "show-ridge-scanlines") {
-      showMockups("bg-ridge-scanlines");
-    }
+      case "show-ridge-scanlines":
+        showMockups("bg-ridge-scanlines");
+        break;
 
-    else if (target.id === "show-ridge-smooth") {
-      showMockups("bg-ridge-smooth");
+      case "show-ridge-smooth":
+        showMockups("bg-ridge-smooth");
+        break;
+
+      default:
+        log("The clicked target doesn't have any currently associated actions.");
+
     }
 
   }, false);
