@@ -2,13 +2,18 @@
 
   "use strict";
 
+  // Document elements, prefixed with $, jQuery-style.
   var $pstv = document.getElementById("pstv");
   var $prototype = document.getElementById("prototype");
   var $mockups = document.getElementById("mockups");
   var $controls = document.getElementById("controls");
   var $announcements = document.getElementById("announcements");
-  var $overlay = document.getElementById("overlay");
-  var $folder = document.getElementById("folder");
+  var $clock = document.getElementById("clock");
+
+  // Other pagewide vars
+  var isFolderOpen = false;
+
+
 
   // TODO: Maybe push/pop/shift/unshift $apps when moving to represent location.
   var $apps = [
@@ -48,25 +53,21 @@
     console.log(m);
   }
 
+  // After page load, update PSTV clock every five seconds.
   (function updateClock() {
-    var d, hr, min, ampm, date, month, year, timer;
+    var d, hour, minute, ampm, date, month, year, formattedDate, timer;
     d = new Date();
-    hr = d.getHours();
-    min = d.getMinutes();
-    if (min < 10) {
-      min = "0" + min;
-    }
-    ampm = hr < 12 ? "AM" : "PM";
-    if (hr > 12) {
-      hr = hr - 12;
-    }
-    if (hr === 0) {
-      hr = 12;
-    }
-    date = d.getDate();
     month = d.getMonth() + 1;
+    date = d.getDate();
     year = d.getFullYear().toString().slice(-2);
-    document.getElementById("clock").innerHTML = month + "/" + date + "/" + year + " " + hr + ":" + min + " " + ampm + "";
+    hour = d.getHours();
+    minute = d.getMinutes();
+    minute = minute < 10 ? "0" + minute : minute;
+    ampm = hour < 12 ? "AM" : "PM";
+    hour = hour > 12 ? hour - 12 : hour;
+    hour = hour === 0 ? 12 : hour;
+    formattedDate = month + "/" + date + "/" + year + " " + hour + ":" + minute + " " + ampm;
+    $clock.innerHTML = formattedDate;
     //noinspection JSUnusedAssignment
     timer = setTimeout(function () {
       updateClock();
@@ -74,7 +75,7 @@
   }());
 
 
-  // Set Background images with data-image attributes via JS, since CSS can't do it, yet!
+  // Set background images with data-image attributes via JS, since CSS can't do it, yet!
   (function addFolderBgImages() {
     var $list = document.querySelectorAll("li[data-image]");
     var i = 0, len = $list.length;
@@ -83,6 +84,8 @@
     }
   }());
 
+
+  // Event listeners for all buttons in the #controls element.
   $controls.addEventListener("click", function (e) {
 
     var target = e.target || e.srcElement;
@@ -95,36 +98,78 @@
 
     function moveThisApp(el, direction) {
       var i = 0, len = appClasses.length;
+      var newClassIndex;
 
       for (; i < len; i++) {
         if (el.classList.contains(appClasses[i])) {
-
+          newClassIndex = i;
           if (direction === "right") {
-            swapClass(el, appClasses[i], appClasses[i - 1]);
-            break;
+            newClassIndex--;
+          } else if (direction === "left") {
+            newClassIndex++;
           }
-
-          else if (direction === "left") {
-            swapClass(el, appClasses[i], appClasses[i + 1]);
-            break;
-          }
+          swapClass(el, appClasses[i], appClasses[newClassIndex]);
+          break;
         }
       }
     }
 
-    function showPrototype() {
-      $pstv.classList.remove("border-neutral");
-      $mockups.classList.remove("visible");
+    function showPrototype(bgClass) {
+
       $mockups.classList.add("invisible");
       $prototype.classList.remove("invisible");
-      $prototype.classList.add("visible");
+
+      if (bgClass != "bg-custom") {
+        $pstv.classList.remove("border-neutral");
+        $prototype.classList.remove("bg-custom");
+      } else {
+        $pstv.classList.add("border-neutral");
+      }
+
+      if (bgClass != "bg-nogrid") {
+        $prototype.classList.remove("bg-nogrid");
+      }
+
+      if (bgClass != "bg-grid") {
+        $prototype.classList.remove("bg-grid");
+      }
+
+      $prototype.classList.add(bgClass);
     }
 
-    function showMockups() {
+    function showMockups(bgClass) {
+
       $pstv.classList.add("border-neutral");
-      $prototype.classList.remove("visible");
+      $mockups.classList.remove("invisible");
       $prototype.classList.add("invisible");
       $mockups.className = "";
+
+      if (bgClass) {
+        $mockups.classList.add(bgClass);
+      }
+    }
+
+    function toggleFolder(el) {
+      var $folderCurrent = document.querySelector("#" + el + ".app.current");
+      var $appImage;
+
+      // Toggle isFolderOpen var
+      isFolderOpen = !isFolderOpen;
+      log("isFolderOpen: " + isFolderOpen);
+
+      // Do everything below only if the folder app is currently selected
+      if ($folderCurrent) {
+        $appImage = $folderCurrent.querySelector("header img");
+        document.getElementById("overlay").classList.toggle("show");
+        document.getElementById("folder").classList.toggle("shrink");
+        if ($appImage.src.indexOf("images/app_folder.png") != -1) {
+          $appImage.src = "images/app_folder_empty.png";
+        } else {
+          $appImage.src = "images/app_folder.png";
+        }
+        $folderCurrent.querySelector("nav").classList.toggle("hide");
+        $folderCurrent.querySelector("footer").classList.toggle("hide");
+      }
     }
 
 
@@ -155,14 +200,7 @@
     }
 
     else if (target.id === "toggle-folder") {
-      // Do only if folder app is current
-      if (document.querySelector("#app-ps1-folder.app.current")) {
-        $overlay.classList.toggle("show");
-        $folder.classList.toggle("shrink");
-        document.querySelector("#app-ps1-folder.app.current header img").classList.toggle("hide");
-        document.querySelector("#app-ps1-folder.app.current nav").classList.toggle("hide");
-        document.querySelector("#app-ps1-folder.app.current footer").classList.toggle("hide");
-      }
+      toggleFolder("app-ps1-folder");
     }
 
     else if (target.id === "toggle-marquee") {
@@ -170,52 +208,35 @@
     }
 
     else if (target.id === "hide-grid") {
-      showPrototype();
-      $pstv.classList.remove("border-neutral");
-      $prototype.classList.remove("bg-custom");
-      $prototype.classList.remove("bg-grid");
-      $prototype.classList.add("bg-nogrid");
+      showPrototype("bg-nogrid");
     }
 
     else if (target.id === "show-grid-15") {
-      showPrototype();
-      $pstv.classList.remove("border-neutral");
-      $prototype.classList.remove("bg-custom");
-      $prototype.classList.remove("bg-nogrid");
-      $prototype.classList.add("bg-grid");
+      showPrototype("bg-grid");
     }
 
     else if (target.id === "show-custom") {
-      showPrototype();
-      $pstv.classList.add("border-neutral");
-      $prototype.classList.remove("bg-grid");
-      $prototype.classList.remove("bg-nogrid");
-      $prototype.classList.add("bg-custom");
+      showPrototype("bg-custom");
     }
 
     else if (target.id === "show-vita") {
-      showMockups();
-      $mockups.classList.add("bg-vita");
+      showMockups("bg-vita");
     }
 
     else if (target.id === "show-xeno-scanlines") {
-      showMockups();
-      $mockups.classList.add("bg-xeno-scanlines");
+      showMockups("bg-xeno-scanlines");
     }
 
     else if (target.id === "show-xeno-smooth") {
-      showMockups();
-      $mockups.classList.add("bg-xeno-smooth");
+      showMockups("bg-xeno-smooth");
     }
 
     else if (target.id === "show-ridge-scanlines") {
-      showMockups();
-      $mockups.classList.add("bg-ridge-scanlines");
+      showMockups("bg-ridge-scanlines");
     }
 
     else if (target.id === "show-ridge-smooth") {
-      showMockups();
-      $mockups.classList.add("bg-ridge-smooth");
+      showMockups("bg-ridge-smooth");
     }
 
   }, false);
