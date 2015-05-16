@@ -425,11 +425,10 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
       #pstv > #prototype main .farthest-right {
         -webkit-transform: translate(90rem, 7.5rem) scale(0.66667);
         transform: translate(90rem, 7.5rem) scale(0.66667); }
-      #pstv > #prototype main .offscreen-left-1, #pstv > #prototype main .offscreen-left-2, #pstv > #prototype main .offscreen-left-3,
-      #pstv > #prototype main .offscreen-left-4, #pstv > #prototype main .offscreen-left-5, #pstv > #prototype main .offscreen-left-6 {
+      #pstv > #prototype main .offscreen-left {
         -webkit-transform: translate(-18rem, 7.5rem) scale(0.66667);
         transform: translate(-18rem, 7.5rem) scale(0.66667); }
-      #pstv > #prototype main .offscreen-right-1, #pstv > #prototype main .offscreen-right-2, #pstv > #prototype main .offscreen-right-3 {
+      #pstv > #prototype main .offscreen-right {
         -webkit-transform: translate(102rem, 7.5rem) scale(0.66667);
         transform: translate(102rem, 7.5rem) scale(0.66667); }
 

@@ -407,14 +407,13 @@ $appTransitionSpeed: 250ms;
         transform: translate(90rem, $offsetTop) scale($scaleDistant);
       }
 
-      .offscreen-left-1, .offscreen-left-2, .offscreen-left-3,
-      .offscreen-left-4, .offscreen-left-5, .offscreen-left-6 {
+      .offscreen-left {
         @include distant;
         -webkit-transform: translate(-18rem, $offsetTop) scale($scaleDistant);
         transform: translate(-18rem, $offsetTop) scale($scaleDistant);
       }
 
-      .offscreen-right-1, .offscreen-right-2, .offscreen-right-3 {
+      .offscreen-right {
         @include distant;
         -webkit-transform: translate(102rem, $offsetTop) scale($scaleDistant);
         transform: translate(102rem, $offsetTop) scale($scaleDistant);

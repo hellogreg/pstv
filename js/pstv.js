@@ -18,7 +18,7 @@
 
   var getOffscreenRightApps = function (apps) {
     var arr = [];
-    var i = 8;
+    var i = 8; // 8 is the max number of apps that will fit onscreen.
     var len = apps.length;
 
     if (len > i) {
@@ -30,7 +30,7 @@
   };
 
 
-  // Vars
+  // Pagewide vars
   //
 
   // Document elements, prefixed with $, jQuery-style.
@@ -49,12 +49,7 @@
 
 
   var appClasses = [
-    "offscreen-left-6",
-    "offscreen-left-5",
-    "offscreen-left-4",
-    "offscreen-left-3",
-    "offscreen-left-2",
-    "offscreen-left-1",
+    "offscreen-left",
     "farthest-left",
     "adjacent-left",
     "current",
@@ -63,14 +58,15 @@
     "distant-right-2",
     "distant-right-3",
     "farthest-right",
-    "offscreen-right-1",
-    "offscreen-right-2",
-    "offscreen-right-3"
+    "offscreen-right"
   ];
+
 
   // Other pagewide vars
   var isFolderOpen = false;
 
+
+  // Console functions: log() and dir().
   function log(m) {
     m = (m !== undefined) ? m : "-----------------"; // If no message, output a line.
     console.log(m);
@@ -81,92 +77,102 @@
   }
 
 
-  // Swap an old class out for a new one
   //
+  // Page-wide, non-self-executing helper functions
+  //
+
+
+  // Swap an old class out for a new one
   function swapClass(el, oldClass, newClass) {
     el.classList.remove(oldClass);
     el.classList.add(newClass);
   }
 
 
-  // Show/hide the folder contents if the folder app is currently selected
-  //
+  // Expand or contract the folder contents if the folder app is currently selected
   function toggleFolder() {
+
     var $appImage;
 
-    //el.classList.contains(appClasses[i]))
-    // TODO: if bg is custom, then change the class of the folder so its colors change.
-
     if ($selectedFolderApp) {
-      isFolderOpen = !isFolderOpen;
       $appImage = $selectedFolderApp.querySelector("header img");
+      isFolderOpen = !isFolderOpen;
       document.getElementById("overlay").classList.toggle("show");
       $folder.classList.toggle("shrink");
+
       if ($appImage.src.indexOf("images/app_folder.png") != -1) {
         $appImage.src = "images/app_folder_empty.png";
       } else {
         $appImage.src = "images/app_folder.png";
       }
+
       $selectedFolderApp.querySelector("nav").classList.toggle("hide");
       $selectedFolderApp.querySelector("footer").classList.toggle("hide");
     }
   }
 
 
-  // Slide a particular app right or left.
-  //
-  function moveThisApp(el, direction) {
-    var i = 0, len = appClasses.length;
+  // Slide a particular app right or left. Includes apps sliding offscreen or back onscreen
+  function moveThisApp(el, direction, nearestOffLeftAppId, nearestOffRightAppId) {
+
+    var i = 1, len = appClasses.length - 1;
     var newClassIndex;
 
-    for (; i < len; i++) {
-      if (el.classList.contains(appClasses[i])) {
-        newClassIndex = i;
-        if (direction === "right") {
-          newClassIndex--;
-        } else if (direction === "left") {
-          newClassIndex++;
+
+    if (el.classList.contains("offscreen-left")
+        && (nearestOffLeftAppId === el.id)
+        && (direction === "left")) {
+
+      // Redisplay this .offscreen-left app.
+      $appsOffscreenLeft.pop();
+      swapClass(el, "offscreen-left", "farthest-left");
+
+
+    } else if (el.classList.contains("offscreen-right")
+        && (nearestOffRightAppId === el.id)
+        && (direction === "right")) {
+
+      // Redisplay this .offscreen-right app.
+      $appsOffscreenRight.pop();
+      swapClass(el, "offscreen-right", "farthest-right");
+
+    } else {
+      for (; i < len; i++) {
+        if (el.classList.contains(appClasses[i])) {
+          newClassIndex = i;
+          if (direction === "right") {
+            newClassIndex--;
+          } else if (direction === "left") {
+            newClassIndex++;
+          }
+
+          swapClass(el, appClasses[i], appClasses[newClassIndex]);
+
+          if (appClasses[i] === "farthest-left"
+              && appClasses[newClassIndex] === "offscreen-left") {
+            $appsOffscreenLeft.push(el);
+          } else if (appClasses[i] === "farthest-right"
+              && appClasses[newClassIndex] === "offscreen-right") {
+            $appsOffscreenRight.push(el);
+          }
+
+          break;
         }
-
-        //
-        swapClass(el, appClasses[i], appClasses[newClassIndex]);
-
-        if (appClasses[i] === "farthest-left" && appClasses[newClassIndex] === "offscreen-left-1") {
-          $appsOffscreenLeft.push(el);
-        } else if (appClasses[newClassIndex] === "farthest-left" && appClasses[i] === "offscreen-left-1") {
-          $appsOffscreenLeft.pop();
-        }
-
-        if (appClasses[i] === "farthest-right" && appClasses[newClassIndex] === "offscreen-right-1") {
-          $appsOffscreenRight.push(el);
-        } else if (appClasses[newClassIndex] === "farthest-right" && appClasses[i] === "offscreen-right-1") {
-          $appsOffscreenRight.pop();
-        }
-
-        break;
-
       }
     }
   }
 
 
   // Slide all apps left or right.
-  //
   function moveAllApps(direction) {
     var i = 0, len = $apps.length;
     var adjacentClass = direction ? ".adjacent-" + direction : null;
 
     var offLeftLen = $appsOffscreenLeft.length;
-    var $latestOffscreenLeftApp = (offLeftLen > 0) ? $appsOffscreenLeft[offLeftLen - 1].id : null;
+    var nearestOffLeftAppId = (offLeftLen > 0) ? $appsOffscreenLeft[offLeftLen - 1].id : null;
 
     var offRightLen = $appsOffscreenRight.length;
-    var $latestOffscreenRightApp = (offRightLen > 0) ? $appsOffscreenRight[offRightLen - 1].id : null;
-
-    log("Latest offscreen left app (before apps move):");
-    log($latestOffscreenLeftApp);
-    log("Latest offscreen right app (before apps move):");
-    log($latestOffscreenRightApp);
-    log();
+    var nearestOffRightAppId = (offRightLen > 0) ? $appsOffscreenRight[offRightLen - 1].id : null;
 
     // If we can move this direction, then do so.
     if ((adjacentClass) && (document.querySelector(adjacentClass))) {
@@ -176,30 +182,16 @@
 
       // Move each app.
       for (; i < len; i++) {
-        moveThisApp($apps[i], direction);
+        moveThisApp($apps[i], direction, nearestOffLeftAppId, nearestOffRightAppId);
       }
 
-      // Disable the folder expand button, unless the folder app is the currently selected one.
+      // Disable the folder expansion button, unless the folder app is the currently selected one.
       document.getElementById("toggle-folder").disabled = !($selectedFolderApp);
-
     }
-
-
-    offLeftLen = $appsOffscreenLeft.length;
-    $latestOffscreenLeftApp = (offLeftLen > 0) ? $appsOffscreenLeft[offLeftLen - 1].id : null;
-    offRightLen = $appsOffscreenRight.length;
-    $latestOffscreenRightApp = (offRightLen > 0) ? $appsOffscreenRight[offRightLen - 1].id : null;
-
-    log("Latest offscreen left app (after apps move):");
-    log($latestOffscreenLeftApp);
-    log("Latest offscreen right app (after apps move):");
-    log($latestOffscreenRightApp);
-    log();
   }
 
 
   // Stop showing the static mockup screen and show the interactive prototype instead.
-  //
   function showPrototype(bgClass) {
     if (bgClass != "bg-custom") {
       $pstv.classList.remove("border-neutral");
@@ -215,7 +207,6 @@
 
 
   // Stop showing the interactive prototype and show a mockup screen instead.
-  //
   function showMockups(bgClass) {
     $pstv.classList.add("border-neutral");
     $prototype.classList.add("invisible");
@@ -224,9 +215,15 @@
   }
 
 
+  //
+  // Self-executing init functions.
+  //
+
   // On load, update PSTV clock every five seconds.
   (function updateClock() {
+
     var d, hour, minute, ampm, date, month, year, formattedDate;
+
     d = new Date();
     month = d.getMonth() + 1;
     date = d.getDate();
@@ -238,7 +235,9 @@
     hour = hour > 12 ? hour - 12 : hour;
     hour = hour === 0 ? 12 : hour;
     formattedDate = month + "/" + date + "/" + year + " " + hour + ":" + minute + " " + ampm;
+
     $clock.innerHTML = formattedDate;
+
     setTimeout(function () {
       updateClock();
     }, 5000);
@@ -247,8 +246,10 @@
 
   // On load, set background images with data-image attributes via JS, since CSS can't do it yet!
   (function addFolderBgImages() {
+
     var $list = document.querySelectorAll("li[data-image]");
     var i = 0, len = $list.length;
+
     for (; i < len; i++) {
       $list[i].style.backgroundImage = "url(\"" + $list[i].getAttribute("data-image") + "\")";
     }
