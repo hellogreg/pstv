@@ -1,7 +1,6 @@
 // Sony base blues: #003791, #032f64 (3,47,100,1)
-// Alt blues: #1a265d [rgb(26,38,93,1)], #2a3568
-// PS Store uses: #01439a and #363636 for text.
-
+// Alt blues: #1a265d [rgba(26,38,93,1)], #2a3568
+// PS Store uses: #01439a [rbga(1,67,154,1)] -- and #363636 for text.
 // Bare bones reset and pagewide styles
 @import "reset";
 
@@ -50,11 +49,14 @@ $appTransitionSpeed: 250ms;
 
 #pstv {
   border: 1px solid $bgColor;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   height: 54rem;
   margin: 0 auto;
   overflow: hidden;
   padding: 0;
   position: relative;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
   width: 96rem;
 
   &.border-neutral {
@@ -87,10 +89,57 @@ $appTransitionSpeed: 250ms;
     }
 
     &.bg-nogrid {
-      //background-image: linear-gradient(135deg, rgba(0, 0, 0, .05) 0%, rgba(255, 255, 255, .15) 100%);
+      //background-image: linear-gradient(135deg, rgba(0, 0, 0, .15) 0%, rgba(255, 255, 255, .15) 100%);
+
+      /*
+
+      //Animating the background looks cool, but slows all other animations!
+
+      background-image: linear-gradient(318deg, rgba(255, 255, 255, .25), rgba(3, 47, 100, .25));
+      background-size: 400% 400%;
+
+      -webkit-animation: bgAnimation 30s ease infinite;
+      -moz-animation: bgAnimation 30s ease infinite;
+      animation: bgAnimation 30s ease infinite;
+
+      @-webkit-keyframes bgAnimation {
+        0% {
+          background-position: 0% 2%
+        }
+        50% {
+          background-position: 100% 99%
+        }
+        100% {
+          background-position: 0% 2%
+        }
+      }
+      @-moz-keyframes bgAnimation {
+        0% {
+          background-position: 0% 2%
+        }
+        50% {
+          background-position: 100% 99%
+        }
+        100% {
+          background-position: 0% 2%
+        }
+      }
+      @keyframes bgAnimation {
+        0% {
+          background-position: 0% 2%
+        }
+        50% {
+          background-position: 100% 99%
+        }
+        100% {
+          background-position: 0% 2%
+        }
+      }
+
+      */
+
     }
 
-    //TODO: Folder
     @import "folder";
 
     > header, > footer {
@@ -328,7 +377,7 @@ $appTransitionSpeed: 250ms;
         transform: translate(39rem, $offsetTop) scale($scaleAdjacent);
       }
 
-      .distant-left {
+      .farthest-left {
         @include distant;
         -webkit-transform: translate(-6rem, $offsetTop) scale($scaleDistant);
         transform: translate(-6rem, $offsetTop) scale($scaleDistant);
@@ -352,7 +401,7 @@ $appTransitionSpeed: 250ms;
         transform: translate(78rem, $offsetTop) scale($scaleDistant);
       }
 
-      .distant-right-4 {
+      .farthest-right {
         @include distant;
         -webkit-transform: translate(90rem, $offsetTop) scale($scaleDistant);
         transform: translate(90rem, $offsetTop) scale($scaleDistant);

@@ -28,7 +28,7 @@
 
     <main>
 
-      <article class="app distant-left" id="app-ps-store">
+      <article class="app farthest-left" id="app-ps-store">
         <header><img src="images/app_store.png" alt="PlayStation Store"/></header>
         <nav>
           <ul>
@@ -114,7 +114,7 @@
         <footer><h1>Hulu Plus</h1></footer>
       </article>
 
-      <article class="app distant-right-4" id="app-shovel-knight">
+      <article class="app farthest-right" id="app-shovel-knight">
         <header><img src="images/app_shovel.jpg" alt="Shovel Knight"/></header>
         <nav>
           <ul>
@@ -178,7 +178,7 @@
 
 <div id="controls">
   <ul>
-    <li>Interface:</li>
+    <li>Navigation:</li>
     <li>
       <button id="move-apps-left">&lt;&lt;</button>
     </li>
@@ -186,38 +186,41 @@
       <button id="move-apps-right">&gt;&gt;</button>
     </li>
     <li>
-      <button id="toggle-folder">Open/Close Folder</button>
+      <button id="toggle-folder" disabled="disabled">Open/Close Folder</button>
+    </li>
+  </ul>
+  <ul>
+    <li>Interface:</li>
+    <li>
+      <button id="show-grid-15">Grid Background</button>
     </li>
     <li>
-      <button id="toggle-marquee">Toggle Marquee</button>
-    </li>
-    <li>Backgrounds:</li>
-    <li>
-      <button id="show-grid-15">15px Grid</button>
+      <button id="hide-grid">Plain Background</button>
     </li>
     <li>
-      <button id="hide-grid">No Grid</button>
+      <button id="show-custom">Custom Background</button>
     </li>
     <li>
-      <button id="show-custom">Custom BG</button>
+      <button id="toggle-marquee">Animated Marquee</button>
     </li>
     <li>
       <button id="show-vita">Current PSTV Homescreen</button>
     </li>
   </ul>
   <ul>
-    <li>Retro:</li>
+    <li>Current PlayStation Upscaling:</li>
     <li>
-      <button id="show-xeno-smooth">Smoothed Xenogears</button>
+      <button id="show-xeno-smooth">Xenogears</button>
     </li>
     <li>
-      <button id="show-xeno-scanlines">Retro Mode Xenogears</button>
+      <button id="show-ridge-smooth">Ridge Racer</button>
+    </li>
+    <li>Proposed 240p Retro Mode:</li>
+    <li>
+      <button id="show-xeno-scanlines">Xenogears</button>
     </li>
     <li>
-      <button id="show-ridge-smooth">Smoothed Ridge Racer</button>
-    </li>
-    <li>
-      <button id="show-ridge-scanlines">Retro Mode Ridge Racer</button>
+      <button id="show-ridge-scanlines">Ridge Racer</button>
     </li>
   </ul>
 </div>

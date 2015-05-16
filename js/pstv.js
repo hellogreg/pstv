@@ -6,7 +6,7 @@
   // Functions that assist with initial variable assignment.
   //
 
-  var getArrayFromNodeList = function(nl) {
+  var getArrayFromNodeList = function (nl) {
     var arr = [];
     var i = 0;
     var len = arr.length = nl.length;
@@ -16,7 +16,7 @@
     return arr;
   };
 
-  var getOffscreenRightApps = function(apps) {
+  var getOffscreenRightApps = function (apps) {
     var arr = [];
     var i = 8;
     var len = apps.length;
@@ -37,6 +37,8 @@
   var $pstv = document.getElementById("pstv");
   var $prototype = document.getElementById("prototype");
   var $mockups = document.getElementById("mockups");
+  var $folder = document.getElementById("folder");
+  var $selectedFolderApp = document.querySelector("#app-ps1-folder.app.current");
   var $controls = document.getElementById("controls");
   var $clock = document.getElementById("clock");
 
@@ -53,14 +55,14 @@
     "offscreen-left-3",
     "offscreen-left-2",
     "offscreen-left-1",
-    "distant-left",
+    "farthest-left",
     "adjacent-left",
     "current",
     "adjacent-right",
     "distant-right-1",
     "distant-right-2",
     "distant-right-3",
-    "distant-right-4",
+    "farthest-right",
     "offscreen-right-1",
     "offscreen-right-2",
     "offscreen-right-3"
@@ -90,24 +92,23 @@
   // Show/hide the folder contents if the folder app is currently selected
   //
   function toggleFolder() {
-    var $folderCurrent = document.querySelector("#app-ps1-folder.app.current");
     var $appImage;
 
     //el.classList.contains(appClasses[i]))
     // TODO: if bg is custom, then change the class of the folder so its colors change.
 
-    if ($folderCurrent) {
+    if ($selectedFolderApp) {
       isFolderOpen = !isFolderOpen;
-      $appImage = $folderCurrent.querySelector("header img");
+      $appImage = $selectedFolderApp.querySelector("header img");
       document.getElementById("overlay").classList.toggle("show");
-      document.getElementById("folder").classList.toggle("shrink");
+      $folder.classList.toggle("shrink");
       if ($appImage.src.indexOf("images/app_folder.png") != -1) {
         $appImage.src = "images/app_folder_empty.png";
       } else {
         $appImage.src = "images/app_folder.png";
       }
-      $folderCurrent.querySelector("nav").classList.toggle("hide");
-      $folderCurrent.querySelector("footer").classList.toggle("hide");
+      $selectedFolderApp.querySelector("nav").classList.toggle("hide");
+      $selectedFolderApp.querySelector("footer").classList.toggle("hide");
     }
   }
 
@@ -126,19 +127,19 @@
         } else if (direction === "left") {
           newClassIndex++;
         }
-        // If a folder is open, close it when moving apps.
-        (isFolderOpen) && toggleFolder();
+
+        //
         swapClass(el, appClasses[i], appClasses[newClassIndex]);
 
-        if (appClasses[i] === "distant-left" && appClasses[newClassIndex] === "offscreen-left-1") {
+        if (appClasses[i] === "farthest-left" && appClasses[newClassIndex] === "offscreen-left-1") {
           $appsOffscreenLeft.push(el);
-        } else if (appClasses[newClassIndex] === "distant-left" && appClasses[i] === "offscreen-left-1") {
+        } else if (appClasses[newClassIndex] === "farthest-left" && appClasses[i] === "offscreen-left-1") {
           $appsOffscreenLeft.pop();
         }
 
-        if (appClasses[i] === "distant-right-4" && appClasses[newClassIndex] === "offscreen-right-1") {
+        if (appClasses[i] === "farthest-right" && appClasses[newClassIndex] === "offscreen-right-1") {
           $appsOffscreenRight.push(el);
-        } else if (appClasses[newClassIndex] === "distant-right-4" && appClasses[i] === "offscreen-right-1") {
+        } else if (appClasses[newClassIndex] === "farthest-right" && appClasses[i] === "offscreen-right-1") {
           $appsOffscreenRight.pop();
         }
 
@@ -155,20 +156,45 @@
     var i = 0, len = $apps.length;
     var adjacentClass = direction ? ".adjacent-" + direction : null;
 
-    if (adjacentClass) {
-      if (document.querySelector(adjacentClass)) {
-        for (; i < len; i++) {
-          moveThisApp($apps[i], direction);
-        }
-      } else {
-        log("Can't move any farther " + direction + ".");
+    var offLeftLen = $appsOffscreenLeft.length;
+    var $latestOffscreenLeftApp = (offLeftLen > 0) ? $appsOffscreenLeft[offLeftLen - 1].id : null;
+
+    var offRightLen = $appsOffscreenRight.length;
+    var $latestOffscreenRightApp = (offRightLen > 0) ? $appsOffscreenRight[offRightLen - 1].id : null;
+
+    log("Latest offscreen left app (before apps move):");
+    log($latestOffscreenLeftApp);
+    log("Latest offscreen right app (before apps move):");
+    log($latestOffscreenRightApp);
+    log();
+
+    // If we can move this direction, then do so.
+    if ((adjacentClass) && (document.querySelector(adjacentClass))) {
+
+      // If a folder is open, close it before moving apps.
+      (isFolderOpen) && toggleFolder();
+
+      // Move each app.
+      for (; i < len; i++) {
+        moveThisApp($apps[i], direction);
       }
+
+      // Disable the folder expand button, unless the folder app is the currently selected one.
+      document.getElementById("toggle-folder").disabled = !($selectedFolderApp);
+
     }
 
-    log("Offscreen left apps:");
-    dir($appsOffscreenLeft);
-    log("Offscreen right apps:");
-    dir($appsOffscreenRight);
+
+    offLeftLen = $appsOffscreenLeft.length;
+    $latestOffscreenLeftApp = (offLeftLen > 0) ? $appsOffscreenLeft[offLeftLen - 1].id : null;
+    offRightLen = $appsOffscreenRight.length;
+    $latestOffscreenRightApp = (offRightLen > 0) ? $appsOffscreenRight[offRightLen - 1].id : null;
+
+    log("Latest offscreen left app (after apps move):");
+    log($latestOffscreenLeftApp);
+    log("Latest offscreen right app (after apps move):");
+    log($latestOffscreenRightApp);
+    log();
   }
 
 
@@ -177,8 +203,10 @@
   function showPrototype(bgClass) {
     if (bgClass != "bg-custom") {
       $pstv.classList.remove("border-neutral");
+      $folder.classList.remove("bg-neutral");
     } else {
       $pstv.classList.add("border-neutral");
+      $folder.classList.add("bg-neutral");
     }
     $mockups.classList.add("invisible");
     $prototype.className = "";
