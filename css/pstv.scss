@@ -1,8 +1,43 @@
 // Sony base blues: #003791, #032f64 (3,47,100,1)
 // Alt blues: #1a265d [rgba(26,38,93,1)], #2a3568
 // PS Store uses: #01439a [rbga(1,67,154,1)] -- and #363636 for text.
+
 // Bare bones reset and pagewide styles
-@import "reset";
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform-style: preserve-3d;
+}
+
+html {
+  font-size: 62.5%; // 10px rem base.
+}
+
+body {
+
+  margin: 0;
+  padding-top: .5rem;
+  font-family: "sst-w01", sans-serif;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  background-color: #050505;
+  color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  display: block;
+  font-size: inherit;
+  font-weight: normal;
+  font-style: normal;
+  line-height: inherit;
+  opacity: 1;
+}
+
+// SASS pagewide variables.
 
 $bgColor: rgba(3, 47, 100, 1);
 $appTransitionSpeed: 250ms;
@@ -63,7 +98,45 @@ $appTransitionSpeed: 250ms;
     border: 1px solid #333;
   }
 
-  @import "mockups";
+  > #mockups {
+    height: 100%;
+    width: 100%;
+
+    @mixin mockup-bg($brighten: false) {
+      background-size: 100% 100%;
+      // Compensate for scanlines darkening the mockup.
+      @if $brighten == true {
+        -webkit-filter: brightness(115%);
+        filter: brightness(115%);
+      }
+    }
+
+    &.bg-vita {
+      @include mockup-bg();
+      background-image: url("../images/vita_homescreen.jpg");
+    }
+
+    &.bg-xeno-smooth {
+      @include mockup-bg();
+      background-image: url("../images/psx_xeno_smooth.png");
+    }
+
+    &.bg-xeno-scanlines {
+      @include mockup-bg(true);
+      background-image: url("../images/psx_xeno_scanlines.png");
+    }
+
+    &.bg-ridge-smooth {
+      @include mockup-bg();
+      background-image: url("../images/psx_ridge_smooth.png");
+    }
+
+    &.bg-ridge-scanlines {
+      @include mockup-bg(true);
+      background-image: url("../images/psx_ridge_scanlines.png");
+    }
+
+  }
 
   > #prototype {
 
@@ -78,6 +151,7 @@ $appTransitionSpeed: 250ms;
       opacity: 0;
     }
 
+    // Add background image to the theme.
     &.bg-custom {
       background-image: url(../images/bg_tlg4.png);
       background-size: 100% 100%;
@@ -88,6 +162,7 @@ $appTransitionSpeed: 250ms;
       }
     }
 
+    // Add 15px grid to theme.
     &.bg-grid > .underlay {
       $size: 1.5rem;
       $gridColor: rgba(255, 255, 255, .05);
@@ -98,11 +173,13 @@ $appTransitionSpeed: 250ms;
       opacity: 1;
     }
 
+    // Plain background theme.
     &.bg-nogrid {
       // No styling at the moment.
+      //background-image: url(../images/bg_ps4.jpg);
     }
 
-    // NOT USED YET. Not happy with the effects these transitions have on other animations.
+    // Animated theme. NOT USED YET. Not happy with the effects these transitions have on other animations.
     &.bg-animated {
       background-image: -webkit-radial-gradient(center, ellipse cover, rgba(3, 47, 100, 1) 0%, rgba(255, 255, 255, .5) 100%);
       background-image: radial-gradient(ellipse at center, rgba(3, 47, 100, 1) 0%, rgba(3, 47, 100, .5) 100%);
@@ -110,8 +187,8 @@ $appTransitionSpeed: 250ms;
       > .underlay {
         -webkit-animation: bgAnimation 10s ease infinite;
         animation: bgAnimation 10s ease infinite;
-        background-image: linear-gradient(135deg, rgba(255, 255, 255, .5), rgba(0, 0, 0, .0));
-        opacity: 0;
+        background-image: linear-gradient(315deg, rgba(255, 255, 255, .25), rgba(0, 0, 0, .25));
+        opacity: 1;
 
         @-webkit-keyframes bgAnimation {
           0% {
@@ -119,8 +196,8 @@ $appTransitionSpeed: 250ms;
             transform: translate(0) scale(1);
           }
           50% {
-            -webkit-transform: translate(0) scale(2);
-            transform: translate(0) scale(2);
+            -webkit-transform: translate(0, 0) scale(2);
+            transform: translate(0, 0) scale(2);
           }
           100% {
             -webkit-transform: translate(0) scale(1);
@@ -406,9 +483,52 @@ $appTransitionSpeed: 250ms;
 
 }
 
-@import "controls";
+#controls {
+  background-color: #222;
+  border: 0;
+  border-radius: 5px;
+  margin: .5rem auto;
+  padding: 0 3rem .2rem 3rem;
+  position: relative;
+  width: 96rem;
 
-@import "preloader";
+  ul {
+    @include flex-basic-row;
+    font-size: 13px;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    li {
+      flex: 0 1 auto;
+      min-width: 10rem;
+      padding: 0 .25rem;
+      button {
+        width: 100%;
+      }
+
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+// Lazy loading for our bigger background images.
+.preloader {
+  background-image: url(../images/bg_tlg4.png),
+  url(../images/app_folder_empty.png),
+  url(../images/psx_ridge_smooth.png),
+  url(../images/psx_ridge_scanlines.png),
+  url(../images/psx_xeno_smooth.png),
+  url(../images/psx_xeno_scanlines.png),
+  url(../images/vita_homescreen.jpg);
+  background-repeat: no-repeat;
+  width: 0;
+  height: 0;
+  display: none;
+}
 
 @media (max-width: 520px) {
   @viewport {

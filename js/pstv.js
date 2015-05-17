@@ -22,6 +22,7 @@
   };
 
   var getInitialOffscreenRightApps = function (apps) {
+
     var arr = [];
     var i = 8; // 8 is the max number of apps that will fit onscreen.
     var len = apps.length;
@@ -72,12 +73,14 @@
     m = (m !== undefined) ? m : "-----------------"; // If no message, output a separator line.
     console.log(m);
   }
+
   log("log() ready.");
 
   function dir(m) {
     m && console.dir(m);
   }
-  dir({ "status" : "dir() ready."});
+
+  dir({"status": "dir() ready."});
 
 
   //
@@ -170,12 +173,11 @@
 
   // Slide all apps left or right.
   function moveAllApps(direction) {
+
     var i = 0, len = $apps.length;
     var adjacentClass = direction ? ".adjacent-" + direction : null;
-
     var offLeftLen = $appsOffscreenLeft.length;
     var nearestOffLeftAppId = (offLeftLen > 0) ? $appsOffscreenLeft[offLeftLen - 1].id : null;
-
     var offRightLen = $appsOffscreenRight.length;
     var nearestOffRightAppId = (offRightLen > 0) ? $appsOffscreenRight[offRightLen - 1].id : null;
 
@@ -190,7 +192,7 @@
         moveThisApp($apps[i], direction, nearestOffLeftAppId, nearestOffRightAppId);
       }
 
-      // Disable the folder expansion button, unless the folder app is the currently selected one.
+      // Disable the folder expand/contract button, unless the folder app is the currently selected one.
       document.getElementById("toggle-folder").disabled = !(document.querySelector("#app-ps1-folder.app.current"));
     }
   }
@@ -249,12 +251,10 @@
   }());
 
 
-  // On load, set background images with data-image attributes via JS, since CSS can't do it yet!
+  // On load, set folder background images with data-image attributes via JS, since CSS can't do it yet!
   (function addFolderBgImages() {
-
     var $list = document.querySelectorAll("li[data-image]");
     var i = 0, len = $list.length;
-
     for (; i < len; i++) {
       $list[i].style.backgroundImage = "url(\"" + $list[i].getAttribute("data-image") + "\")";
     }
