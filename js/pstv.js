@@ -16,7 +16,12 @@
     return arr;
   };
 
-  var getOffscreenRightApps = function (apps) {
+  var getInitialOffscreenLeftApps = function () {
+    // No apps begin offscreen left in this version, so return an empty array.
+    return [];
+  };
+
+  var getInitialOffscreenRightApps = function (apps) {
     var arr = [];
     var i = 8; // 8 is the max number of apps that will fit onscreen.
     var len = apps.length;
@@ -41,8 +46,8 @@
   var $controls = document.getElementById("controls");
   var $clock = document.getElementById("clock");
   var $apps = getArrayFromNodeList(document.getElementsByClassName("app"));
-  var $appsOffscreenLeft = []; // None offscreen at start
-  var $appsOffscreenRight = getOffscreenRightApps($apps);
+  var $appsOffscreenLeft = getInitialOffscreenLeftApps($apps);
+  var $appsOffscreenRight = getInitialOffscreenRightApps($apps);
 
   var appClasses = [
     "offscreen-left",
@@ -67,10 +72,12 @@
     m = (m !== undefined) ? m : "-----------------"; // If no message, output a separator line.
     console.log(m);
   }
+  log("log() ready.");
 
   function dir(m) {
     m && console.dir(m);
   }
+  dir({ "status" : "dir() ready."});
 
 
   //

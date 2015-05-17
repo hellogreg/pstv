@@ -10,7 +10,7 @@
 <body>
 <div id="pstv">
   <section id="mockups" class="invisible"></section>
-  <section id="prototype" class="bg-nogrid">
+  <section id="prototype" class="bg-grid">
 
     <div class="underlay"></div>
 
@@ -37,7 +37,7 @@
             <li class="button-x">Enter</li>
           </ul>
         </nav>
-        <footer><h1>PlayStation&reg; Store</h1></footer>
+        <footer><h1>PlayStation Store</h1></footer>
       </article>
 
       <article class="app adjacent-left" id="app-danganronpa">
@@ -116,8 +116,19 @@
         <footer><h1>Hulu Plus</h1></footer>
       </article>
 
-      <article class="app farthest-right" id="app-shovel-knight">
-        <header><img src="images/app_shovel.jpg" alt="Shovel Knight"/></header>
+      <article class="app farthest-right" id="app-ps4">
+        <header><img src="images/app_ps4_connect.png" alt="PlayStation 4  Link"/></header>
+        <nav>
+          <ul>
+            <li class="button-x">Connect To System</li>
+            <li class="button-triangle">Options</li>
+          </ul>
+        </nav>
+        <footer><h1>PlayStation 4 Link</h1></footer>
+      </article>
+
+      <article class="app offscreen-right" id="app-hotline-2">
+        <header><img src="images/app_hotline_2.jpg" alt="Hotline Miami 2"/></header>
         <nav>
           <ul>
             <li class="button-x">Start Game</li>
@@ -126,7 +137,7 @@
             <li class="button-circle">Uninstall</li>
           </ul>
         </nav>
-        <footer><h1>Shovel Knight</h1></footer>
+        <footer><h1>Hotline Miami 2: Wrong Number</h1></footer>
       </article>
 
       <article class="app offscreen-right" id="app-spotify">
@@ -140,6 +151,19 @@
           </ul>
         </nav>
         <footer><h1>Spotify</h1></footer>
+      </article>
+
+      <article class="app offscreen-right" id="app-grim">
+        <header><img src="images/app_grim_fandango.jpg" alt="Grim Fandango Remastered"/></header>
+        <nav>
+          <ul>
+            <li class="button-x">Start Game</li>
+            <li class="button-triangle">Options</li>
+            <li class="button-square">View in Store</li>
+            <li class="button-circle">Uninstall</li>
+          </ul>
+        </nav>
+        <footer><h1>Grim Fandango Remastered</h1></footer>
       </article>
 
       <article class="app offscreen-right" id="app-netflix">
@@ -203,9 +227,6 @@
     <li>
       <button id="toggle-folder" disabled="disabled">Open/Close Folder</button>
     </li>
-  </ul>
-  <ul>
-    <li>Interface:</li>
     <li>
       <button id="show-grid-15">Grid Background</button>
     </li>
@@ -218,24 +239,23 @@
     <li>
       <button id="toggle-marquee">Animated Marquee</button>
     </li>
-    <li>
-      <button id="show-vita">Current PSTV Homescreen</button>
-    </li>
   </ul>
   <ul>
-    <li>Current PlayStation Upscaling:</li>
+    <li>Static Screens:</li>
     <li>
-      <button id="show-xeno-smooth">Xenogears</button>
+      <button id="show-vita">PSTV Homescreen (Current)</button>
     </li>
     <li>
-      <button id="show-ridge-smooth">Ridge Racer</button>
-    </li>
-    <li>Proposed 240p Retro Mode:</li>
-    <li>
-      <button id="show-xeno-scanlines">Xenogears</button>
+      <button id="show-xeno-smooth">Xenogears (Current)</button>
     </li>
     <li>
-      <button id="show-ridge-scanlines">Ridge Racer</button>
+      <button id="show-xeno-scanlines">Xenogears (Retro Mode)</button>
+    </li>
+    <li>
+      <button id="show-ridge-smooth">Ridge Racer (Current)</button>
+    </li>
+    <li>
+      <button id="show-ridge-scanlines">Ridge Racer (Retro Mode)</button>
     </li>
   </ul>
 </div>

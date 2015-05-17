@@ -88,14 +88,14 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
       background-size: 1.5rem 1.5rem;
       background-image: repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) 1px, transparent 1px, transparent 1.5rem), repeating-linear-gradient(-90deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) 1px, transparent 1px, transparent 1.5rem);
       opacity: 1; }
-    #pstv > #prototype.bg-nogrid {
-      /*
-      background: -webkit-radial-gradient(center, ellipse cover, rgba(3,47,100,1) 0%, rgba(255,255,255,.5) 100%);
-      background: radial-gradient(ellipse at center, rgba(3,47,100,1) 0%, rgba(3,47,100,.5) 100%);
-      */ }
-    #pstv > #prototype.bg-nogrid > .underlay {
-      background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.5), transparent);
-      opacity: 0; }
+    #pstv > #prototype.bg-animated {
+      background-image: -webkit-radial-gradient(center, ellipse cover, #032f64 0%, rgba(255, 255, 255, 0.5) 100%);
+      background-image: radial-gradient(ellipse at center, #032f64 0%, rgba(3, 47, 100, 0.5) 100%); }
+      #pstv > #prototype.bg-animated > .underlay {
+        -webkit-animation: bgAnimation 10s ease infinite;
+        animation: bgAnimation 10s ease infinite;
+        background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.5), transparent);
+        opacity: 0; }
 @-webkit-keyframes bgAnimation {
   0% {
     -webkit-transform: translate(0) scale(1);
@@ -426,7 +426,7 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
   border: 0;
   border-radius: 5px;
   margin: .5rem auto;
-  padding: 0 3rem .4rem 3rem;
+  padding: 0 3rem .2rem 3rem;
   position: relative;
   width: 96rem; }
   #controls ul {
@@ -441,7 +441,7 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
     justify-content: flex-start; }
     #controls ul li {
       flex: 0 1 auto;
-      min-width: 12rem;
+      min-width: 10rem;
       padding: 0 .25rem; }
       #controls ul li button {
         width: 100%; }
