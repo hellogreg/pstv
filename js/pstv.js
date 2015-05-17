@@ -33,20 +33,16 @@
   // Pagewide vars
   //
 
-  // Document elements, prefixed with $, jQuery-style.
+  // Document elements and element arrays, prefixed with $.
   var $pstv = document.getElementById("pstv");
   var $prototype = document.getElementById("prototype");
   var $mockups = document.getElementById("mockups");
   var $folder = document.getElementById("folder");
-  var $selectedFolderApp = document.querySelector("#app-ps1-folder.app.current");
   var $controls = document.getElementById("controls");
   var $clock = document.getElementById("clock");
-
-  // TODO: Maybe push/pop/shift/unshift $apps when moving to represent location.
   var $apps = getArrayFromNodeList(document.getElementsByClassName("app"));
   var $appsOffscreenLeft = []; // None offscreen at start
   var $appsOffscreenRight = getOffscreenRightApps($apps);
-
 
   var appClasses = [
     "offscreen-left",
@@ -68,7 +64,7 @@
 
   // Console functions: log() and dir().
   function log(m) {
-    m = (m !== undefined) ? m : "-----------------"; // If no message, output a line.
+    m = (m !== undefined) ? m : "-----------------"; // If no message, output a separator line.
     console.log(m);
   }
 
@@ -91,6 +87,8 @@
 
   // Expand or contract the folder contents if the folder app is currently selected
   function toggleFolder() {
+
+    var $selectedFolderApp = document.querySelector("#app-ps1-folder.app.current");
 
     var $appImage;
 
@@ -186,7 +184,7 @@
       }
 
       // Disable the folder expansion button, unless the folder app is the currently selected one.
-      document.getElementById("toggle-folder").disabled = !($selectedFolderApp);
+      document.getElementById("toggle-folder").disabled = !(document.querySelector("#app-ps1-folder.app.current"));
     }
   }
 
@@ -261,6 +259,8 @@
 
     var target = e.target || e.srcElement;
     e.preventDefault();
+
+    log("\"" + target.id + "\" pressed.");
 
     switch (target.id) {
 

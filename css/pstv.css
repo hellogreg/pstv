@@ -69,6 +69,13 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
       background-image: url("../images/psx_ridge_smooth.png"); }
   #pstv > #prototype {
     background-color: #032f64; }
+    #pstv > #prototype > .underlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0; }
     #pstv > #prototype.bg-custom {
       background-image: url(../images/bg_tlg4.png);
       background-size: 100% 100%;
@@ -76,57 +83,39 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
       #pstv > #prototype.bg-custom > header img {
         -webkit-filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.9));
         filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.9)); }
-    #pstv > #prototype.bg-grid {
+    #pstv > #prototype.bg-grid > .underlay {
       background-position: 0 0;
       background-size: 1.5rem 1.5rem;
-      background-image: repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) 1px, transparent 1px, transparent 1.5rem), repeating-linear-gradient(-90deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) 1px, transparent 1px, transparent 1.5rem); }
+      background-image: repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) 1px, transparent 1px, transparent 1.5rem), repeating-linear-gradient(-90deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) 1px, transparent 1px, transparent 1.5rem);
+      opacity: 1; }
     #pstv > #prototype.bg-nogrid {
       /*
-
-      //Animating the background looks cool, but slows all other animations!
-
-      background-image: linear-gradient(318deg, rgba(255, 255, 255, .25), rgba(3, 47, 100, .25));
-      background-size: 400% 400%;
-
-      -webkit-animation: bgAnimation 30s ease infinite;
-      -moz-animation: bgAnimation 30s ease infinite;
-      animation: bgAnimation 30s ease infinite;
-
-      @-webkit-keyframes bgAnimation {
-        0% {
-          background-position: 0% 2%
-        }
-        50% {
-          background-position: 100% 99%
-        }
-        100% {
-          background-position: 0% 2%
-        }
-      }
-      @-moz-keyframes bgAnimation {
-        0% {
-          background-position: 0% 2%
-        }
-        50% {
-          background-position: 100% 99%
-        }
-        100% {
-          background-position: 0% 2%
-        }
-      }
-      @keyframes bgAnimation {
-        0% {
-          background-position: 0% 2%
-        }
-        50% {
-          background-position: 100% 99%
-        }
-        100% {
-          background-position: 0% 2%
-        }
-      }
-
+      background: -webkit-radial-gradient(center, ellipse cover, rgba(3,47,100,1) 0%, rgba(255,255,255,.5) 100%);
+      background: radial-gradient(ellipse at center, rgba(3,47,100,1) 0%, rgba(3,47,100,.5) 100%);
       */ }
+    #pstv > #prototype.bg-nogrid > .underlay {
+      background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.5), transparent);
+      opacity: 0; }
+@-webkit-keyframes bgAnimation {
+  0% {
+    -webkit-transform: translate(0) scale(1);
+    transform: translate(0) scale(1); }
+  50% {
+    -webkit-transform: translate(0) scale(2);
+    transform: translate(0) scale(2); }
+  100% {
+    -webkit-transform: translate(0) scale(1);
+    transform: translate(0) scale(1); } }
+@keyframes bgAnimation {
+  0% {
+    -webkit-transform: translate(0) scale(1);
+    transform: translate(0) scale(1); }
+  50% {
+    -webkit-transform: translate(0) scale(2);
+    transform: translate(0) scale(2); }
+  100% {
+    -webkit-transform: translate(0) scale(1);
+    transform: translate(0) scale(1); } }
     #pstv > #prototype #overlay {
       -webkit-transition: all 200ms ease-out;
       transition: all 200ms ease-out;
