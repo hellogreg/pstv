@@ -250,27 +250,17 @@ $appTransitionSpeed: 250ms;
       $scaleDistant: 12/18;
       $offsetTop: 7.5rem;
 
-      @mixin adjacent {
-        //display: none; // Used for testing only.
-        > header {
-          //@include bg-darkened-color(.6);// Used for testing only.
-        }
-      }
-
-      @mixin distant {
-        //display: none; // Used for testing only.
-        > header {
-          //@include bg-darkened-color(.6);// Used for testing only.
-        }
+      @mixin appLocationAndScale($offsetLeft:21rem, $scale: $scaleCurrent) {
+        -webkit-transform: translate($offsetLeft, $offsetTop) scale($scale);
+        transform: translate($offsetLeft, $offsetTop) scale($scale);
       }
 
       .app {
+        @include appLocationAndScale();
         -webkit-backface-visibility: hidden;
         -moz-backface-visibility: hidden;
         backface-visibility: hidden;
         position: absolute;
-        -webkit-transform: translate(21rem, $offsetTop) scale($scaleCurrent);
-        transform: translate(21rem, $offsetTop) scale($scaleCurrent);
         -webkit-transition: -webkit-transform $appTransitionSpeed;
         transition: transform $appTransitionSpeed;
         -webkit-transition-timing-function: ease-out;
@@ -291,7 +281,6 @@ $appTransitionSpeed: 250ms;
           img {
             height: 100%;
             width: 100%;
-            //display: none; // Used for testing only.
           }
         }
 
@@ -370,58 +359,40 @@ $appTransitionSpeed: 250ms;
 
       }
 
-      .adjacent-left {
-        @include adjacent;
-        -webkit-transform: translate(6rem, $offsetTop) scale($scaleAdjacent);
-        transform: translate(6rem, $offsetTop) scale($scaleAdjacent);
-      }
-
-      .adjacent-right {
-        @include adjacent;
-        -webkit-transform: translate(39rem, $offsetTop) scale($scaleAdjacent);
-        transform: translate(39rem, $offsetTop) scale($scaleAdjacent);
+      .offscreen-left {
+        @include appLocationAndScale(-18rem, $scaleDistant);
       }
 
       .farthest-left {
-        @include distant;
-        -webkit-transform: translate(-6rem, $offsetTop) scale($scaleDistant);
-        transform: translate(-6rem, $offsetTop) scale($scaleDistant);
+        @include appLocationAndScale(-6rem, $scaleDistant);
+      }
+
+      .adjacent-left {
+        @include appLocationAndScale(6rem, $scaleAdjacent);
+      }
+
+      .adjacent-right {
+        @include appLocationAndScale(39rem, $scaleAdjacent);
       }
 
       .distant-right-1 {
-        @include distant;
-        -webkit-transform: translate(54rem, $offsetTop) scale($scaleDistant);
-        transform: translate(54rem, $offsetTop) scale($scaleDistant);
+        @include appLocationAndScale(54rem, $scaleDistant);
       }
 
       .distant-right-2 {
-        @include distant;
-        -webkit-transform: translate(66rem, $offsetTop) scale($scaleDistant);
-        transform: translate(66rem, $offsetTop) scale($scaleDistant);
+        @include appLocationAndScale(66rem, $scaleDistant);
       }
 
       .distant-right-3 {
-        @include distant;
-        -webkit-transform: translate(78rem, $offsetTop) scale($scaleDistant);
-        transform: translate(78rem, $offsetTop) scale($scaleDistant);
+        @include appLocationAndScale(78rem, $scaleDistant);
       }
 
       .farthest-right {
-        @include distant;
-        -webkit-transform: translate(90rem, $offsetTop) scale($scaleDistant);
-        transform: translate(90rem, $offsetTop) scale($scaleDistant);
-      }
-
-      .offscreen-left {
-        @include distant;
-        -webkit-transform: translate(-18rem, $offsetTop) scale($scaleDistant);
-        transform: translate(-18rem, $offsetTop) scale($scaleDistant);
+        @include appLocationAndScale(90rem, $scaleDistant);
       }
 
       .offscreen-right {
-        @include distant;
-        -webkit-transform: translate(102rem, $offsetTop) scale($scaleDistant);
-        transform: translate(102rem, $offsetTop) scale($scaleDistant);
+        @include appLocationAndScale(102rem, $scaleDistant);
       }
 
     }

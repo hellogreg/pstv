@@ -23,7 +23,7 @@
 
     if (len > i) {
       for (; i < len; i++) {
-        arr.push(apps[i]);
+        arr.unshift(apps[i]);
       }
     }
     return arr;

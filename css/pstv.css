@@ -327,12 +327,12 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
     #pstv > #prototype main {
       height: 42rem; }
       #pstv > #prototype main .app {
+        -webkit-transform: translate(21rem, 7.5rem) scale(1);
+        transform: translate(21rem, 7.5rem) scale(1);
         -webkit-backface-visibility: hidden;
         -moz-backface-visibility: hidden;
         backface-visibility: hidden;
         position: absolute;
-        -webkit-transform: translate(21rem, 7.5rem) scale(1);
-        transform: translate(21rem, 7.5rem) scale(1);
         -webkit-transition: -webkit-transform 250ms;
         transition: transform 250ms;
         -webkit-transition-timing-function: ease-out;
@@ -393,15 +393,18 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
       #pstv > #prototype main .current > footer.hide, #pstv > #prototype main .current > nav.hide, #pstv > #prototype main .current > header img.hide {
         opacity: 0;
         transition: opacity 250ms; }
+      #pstv > #prototype main .offscreen-left {
+        -webkit-transform: translate(-18rem, 7.5rem) scale(0.66667);
+        transform: translate(-18rem, 7.5rem) scale(0.66667); }
+      #pstv > #prototype main .farthest-left {
+        -webkit-transform: translate(-6rem, 7.5rem) scale(0.66667);
+        transform: translate(-6rem, 7.5rem) scale(0.66667); }
       #pstv > #prototype main .adjacent-left {
         -webkit-transform: translate(6rem, 7.5rem) scale(0.83333);
         transform: translate(6rem, 7.5rem) scale(0.83333); }
       #pstv > #prototype main .adjacent-right {
         -webkit-transform: translate(39rem, 7.5rem) scale(0.83333);
         transform: translate(39rem, 7.5rem) scale(0.83333); }
-      #pstv > #prototype main .farthest-left {
-        -webkit-transform: translate(-6rem, 7.5rem) scale(0.66667);
-        transform: translate(-6rem, 7.5rem) scale(0.66667); }
       #pstv > #prototype main .distant-right-1 {
         -webkit-transform: translate(54rem, 7.5rem) scale(0.66667);
         transform: translate(54rem, 7.5rem) scale(0.66667); }
@@ -414,9 +417,6 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
       #pstv > #prototype main .farthest-right {
         -webkit-transform: translate(90rem, 7.5rem) scale(0.66667);
         transform: translate(90rem, 7.5rem) scale(0.66667); }
-      #pstv > #prototype main .offscreen-left {
-        -webkit-transform: translate(-18rem, 7.5rem) scale(0.66667);
-        transform: translate(-18rem, 7.5rem) scale(0.66667); }
       #pstv > #prototype main .offscreen-right {
         -webkit-transform: translate(102rem, 7.5rem) scale(0.66667);
         transform: translate(102rem, 7.5rem) scale(0.66667); }
