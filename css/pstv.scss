@@ -36,12 +36,12 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
   opacity: 1;
 }
 
-// SASS pagewide variables.
+// Sass pagewide variables.
 
 $bgColor: rgba(3, 47, 100, 1);
 $appTransitionSpeed: 250ms;
 
-// SASS pagewide mixins
+// Sass pagewide mixins
 
 @mixin flex-basic-row {
   -webkit-align-items: center;
@@ -180,6 +180,9 @@ $appTransitionSpeed: 250ms;
 
     // Animated theme. NOT USED YET. Not happy with the effects these transitions have on other animations.
     &.bg-animated {
+
+      /*
+
       background-image: -webkit-radial-gradient(center, ellipse cover, rgba(3, 47, 100, 1) 0%, rgba(255, 255, 255, .5) 100%);
       background-image: radial-gradient(ellipse at center, rgba(3, 47, 100, 1) 0%, rgba(3, 47, 100, .5) 100%);
 
@@ -219,6 +222,7 @@ $appTransitionSpeed: 250ms;
           }
         }
       }
+      */
     }
 
     @import "folder";
