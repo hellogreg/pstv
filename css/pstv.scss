@@ -152,7 +152,7 @@ $appTransitionSpeed: 250ms;
 
     // Add background image to the theme.
     &.bg-custom {
-      background-image: url(../images/bg_tlg4.png);
+      background-image: url(../images/bg_tlg4.jpg);
       background-size: 100% 100%;
       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
       > header img {
@@ -497,7 +497,7 @@ $appTransitionSpeed: 250ms;
 
   ul {
     @include flex-basic-row;
-    font-size: 13px;
+    font-size: 1.3rem;
     -webkit-justify-content: flex-start;
     justify-content: flex-start;
 
@@ -507,6 +507,11 @@ $appTransitionSpeed: 250ms;
       padding: 0 .25rem;
 
       button {
+        background: #eee;
+        border: 1px solid #060606;
+        border-radius: 5px;
+        font-family: "sst-w01", sans-serif;
+        font-size: 1.1rem;
         width: 100%;
       }
 
@@ -523,7 +528,7 @@ $appTransitionSpeed: 250ms;
 
 // Lazy loading for our bigger background images.
 .preloader {
-  background-image: url(../images/bg_tlg4.png),
+  background-image: url(../images/bg_tlg4.jpg),
   url(../images/app_folder_empty.png),
   url(../images/psx_ridge_smooth.png),
   url(../images/psx_ridge_scanlines.png),
