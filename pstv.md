@@ -8,7 +8,7 @@ But...
 ## Fixing the PSTV's UI
 
 > **View my PSTV homescreen prototype here:**
-> ***http://hellogreg.github.io/pstv***
+***http://hellogreg.github.io/pstv***
 
 The user interface is just a part of user experience, and a device's homescreen is just a sliver of the user interface. But you have to start somewhere! So, I've redesigned the PSTV's homescreen to accomplish the following:
 
