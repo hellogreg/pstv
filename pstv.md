@@ -1,18 +1,8 @@
 # Reimagineering the PSTV
 
+Let's get this out of the way, first thing. I love the PlayStation TV. Or at least I really want to. I was ready to love it from [the moment Sony announced it back in September, 2013](https://www.youtube.com/watch?v=rG5l78gbvpU).
 
-
-
-
-## User Interface
-
-UX is solving problems! (Identify the problems...)
-
-User interfaces are just a part of user experience, and a device's homescreen is just a sliver of the user interface. But you have to start somewhere! So, I've redesigned the PSTV's homescreen to solve the following problems:
-
-- Visually brand it more closely to the current generation of Sony products. The PS3 and the PSP shared the XMB interface, but the PSTV's homescreen interface has almost nothing in common with the PS4's navigation -- despite the PSTV's close relationship with its big brother. This redesign brings it more in line with the PS4 and other Sony interfaces (e.g., Bravia TVs, the PlayStation mobile app, the PlayStation Store's web interface, etc.).
-- Reestablish the PSTV as something other than "just a Vita" -- primarily by replacing the touch interface with a more controller-oriented one. Items should be arranged in a true grid, and not diagonally. Buttons should consistently have the same role (e.g., no more Circle, PS Button, hold Circle to exit Settings). Touch commands and animations (like peeling a page to close an app) should be used sparingly, if at all.s
-
+But...
 
 
 ## Fixing the PSTV's UI
@@ -22,8 +12,8 @@ User interfaces are just a part of user experience, and a device's homescreen is
 
 The user interface is just a part of user experience, and a device's homescreen is just a sliver of the user interface. But you have to start somewhere! So, I've redesigned the PSTV's homescreen to accomplish the following:
 
-- Update it to share the same visual brand language as the current generation of Sony products.
-- Establish PSTV as something other than just a Vita on a bigger screen.
+- Update it to share the same visual brand language as the current generation of Sony products (PS4, Bravia TVs, PlayStation mobile app, etc.).
+- Reframe the PSTV as something other than just a Vita on a bigger screen.
 
 
 ### If It Quacks Like a Vita...
@@ -42,33 +32,35 @@ I'm sure this saved on design and development costs. But, as a result, the brand
 
 The biggest issue with the Vita interface is that it was designed for touchscreen navigation, and not a controller, as the PSTV requires. This becomes an obstacle as soon as you turn the console on and reach the homescreen.
 
-For a controller-navigated interface, items should be in a grid. This makes directional pad and analog stick navigation logical and predictable. Up, down, left, and right all correspond to d-pad button presses or analog movements. On a touchscreen, a grid is less important.
+For a controller-navigated interface, items should be in a line or a  grid. This makes directional pad and analog stick navigation logical and predictable. Up, down, left, and right all correspond to d-pad button presses or analog movements. 
 
-On the current PSTV homescreen, application icons appear diagonally, from row to row:
+On a touchscreen like the Vita, a grid is less important. That's how we wound up with the current PSTV homescreen, where application icons appear diagonally, from row to row:
 
--0-0-0-
-0-0-0-0
--0-0-0-
+-- 0 -- 0 -- 0 --
+0 -- 0 -- 0 -- 0
+-- 0 -- 0 -- 0 --
 
-Moving the cursor from row to row is not only unpredictable, but it actually may move in the opposite horizontal direction from what’s intended.
+With the apps organized like this, trying to move the cursor from row to row is not only unpredictable, but it actually may move in the opposite horizontal direction from what’s intended.
 
-Say you have the top left application selected. If you press down on the d-pad or analog stick, which second-row app will be selected? It’s the leftmost one, but you’d have no way of knowing that until you actually try it.
+Say you have the top-left application selected. If you press down on the d-pad or analog stick, which second-row app will be selected? It’s the leftmost one, but you’d have no way of knowing that until you actually tried it.
 
-When moving down from the top row, the cursor moves left. When moving down from the middle row, the cursor moves right. Moving up from the bottom, the cursor moves left. And moving up from the middle, the cursor moves right.
+When moving down from the top row, the cursor moves left. When moving down from the middle row, the cursor then moves right. Moving up from the bottom, the cursor moves left. And moving up from the middle, the cursor moves right.
 
-This means there’s no way to select the rightmost app directly from either the top or bottom row. “Unless you use the analog stick,” you may think — as I thought, myself. But that’s not the case.
+This means there’s no way to select the middle row's rightmost app directly from either the top or bottom row. “Unless you use the analog stick,” you may think — as I thought. But that’s not the case.
 
 As mentioned above, if you pull straight down from the top row, the cursor will move to the app down one row and to the left. But if you pull down and to the right… the cursor will also move down and to the left!
 
-Even though the icons aren’t placed in a grid, the PSTV (or Vita) thinks they are. It thinks the leftmost icons from each row are in a vertical line — and the second from each row, and the third. So, even if you pull down and at at angle, the cursor moves as if you’d just pulled straight down. This renders that fourth icon in the middle row accessible only by moving right from the third icon in that row.
+Even though the icons aren’t placed in a strict vertical/horizontal grid, the PSTV (or Vita) thinks they are. It thinks the leftmost icons from each row are in a vertical line — and the second from each row, and the third. So, even if you pull down and at a bit of an angle, the cursor moves as if you’d just pulled straight down. This renders that fourth icon in the middle row accessible only by moving right from the third icon in that row.
 
-It makes more sense to actually put the icons in either a true grid (like the PS3’s XMB had) or a straight line (like the PS4 has).
+###The PSTV Homescreen, Redesigned
 
-I’ve made an HTML proof of concept of what I’d consider for a PSTV homescreen redesign. The look is very much like that of the PS4, though the options for each app have been simplified from their PS4 counterparts. You navigate right or left and press the button appropriate for the action you wish to take.
+It makes more sense to actually put the icons in either a true grid (like the PS3’s XMB had) or a straight line (like the PS4 has). In [my PSTV homescreen proof of concept](http://hellogreg.github.io/pstv), the look is very much like that of the PS4, though the options for each app have been simplified from their PS4 counterparts. Navigate right or left, and then press the button appropriate for the action you wish to take.
 
 I’ve sized and placed the interface elements on a grid that splits the screen into 64 units horizontally and 36 units vertically. You can view the grid by clicking the “Grid Background” button below the prototype. There are a few more aesthetic options to play with.
 
 I’ve also kept one feature that the PSTV already has that the PS4 doesn’t: folders. When the folder app icon is selected, you can expand it to choose an app within.
+
+
 
 ### Other UI updates
 
@@ -110,9 +102,7 @@ This process is another artifact from the Vita. The page peeling makes a lot mor
 
 # NOTES
 
-Let's get this out of the way, first thing. I love the PlayStation TV. I was ready to love it from the moment Sony announced it back in September, 2013.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rG5l78gbvpU" frameborder="0" allowfullscreen></iframe>
 
 But Sony doesn't seem to love it. I can see why they think it's a tough sell.
 
