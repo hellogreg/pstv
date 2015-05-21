@@ -1,6 +1,6 @@
 # Reimagining the PSTV
 
-> **If you want to skip right to viewing my PSTV homescreen proof of concept, here it is:**
+> **To skip right to viewing my PSTV homescreen proof of concept, it's here:**
 > ***http://hellogreg.github.io/pstv***
 
 Let's get this out of the way, first. I've loved the idea of the PlayStation TV from [the moment Sony announced it](https://www.youtube.com/watch?v=rG5l78gbvpU). I was excited to finally play Persona 4 Golden and Danganronpa: Trigger Happy Havoc. (My wife and I usually play games together, so we rarely use handhelds.)
