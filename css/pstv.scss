@@ -39,6 +39,7 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
 // Sass pagewide variables.
 
 $bgColor: rgba(0, 83, 157, 1);
+$borderColor: rgba(0, 46, 108, 1);
 $appTransitionSpeed: 250ms;
 
 // Sass pagewide mixins
@@ -82,7 +83,7 @@ $appTransitionSpeed: 250ms;
 // #pstv is the "screen" of the console
 
 #pstv {
-  border: 1px solid $bgColor;
+  border: 1px solid $borderColor;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 54rem;
