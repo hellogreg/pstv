@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
 
 #pstv {
   border: 1px solid #002e6c;
-  border-radius: .5rem;
+  border-radius: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 54rem;
