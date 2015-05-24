@@ -84,6 +84,7 @@ $appTransitionSpeed: 250ms;
 
 #pstv {
   border: 1px solid $borderColor;
+  border-radius: .5rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 54rem;
@@ -492,7 +493,7 @@ $appTransitionSpeed: 250ms;
 #controls {
   background-color: #222;
   border: 0;
-  border-radius: 5px;
+  border-radius: .5rem;
   margin: .5rem auto;
   padding: 0 3rem .2rem 3rem;
   position: relative;
