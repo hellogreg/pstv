@@ -120,7 +120,7 @@ This process is another artifact from the Vita. The page peeling makes a lot mor
 - Are there games for sale that I can't actually play!? (Check this to verify.)
 
 
-## Other Feature Additions (And One Subtraction)
+## Other Feature Additions (And A Couple Subtractions)
 
 ### Where's Netflix (and Spotify)?
 The PSTV doesn’t need to be an Apple TV or Amazon Fire or even a Chromecast. But it does need to have Netflix.
@@ -131,7 +131,7 @@ Maybe I don't. But the PSTV needs it, in part for the same reason some hotels ha
 
 Also, it is nice to have -- just in case. Being able to switch right from a game to movie without turning off my device or changing inputs on my TV is a nice little perk. Plus, Sony has the best Netflix interface.
 
-For my summer vacation, I’m taking one portable media device with me. If the PSTV had Netflix and Spotify, it’d be a no-brainer. But I’m bringing the Amazon Fire TV Stick, because I can use it to watch Netflix and listen to Prime Music on the road.
+For my summer vacation, I’m taking one portable media device with me. If the PSTV had Netflix and Spotify, it’d be a no-brainer. But instead, I’m bringing the Amazon Fire TV Stick, because I can use it to watch Netflix and listen to Prime Music on the road.
 
 
 ### PlayStation Retro Mode
@@ -141,12 +141,16 @@ For my summer vacation, I’m taking one portable media device with me. If the P
 
 This is more of a wishlist thing, but I think it would be a natural fit to make the PSTV the best way to experience (or re-experience) PlayStation Classics, since so many of them are available for the platform.
 
-Nowadays, more and more people (like me) are spending hundreds of dollars to import devices like [the Framemeister](http://retrogaming.hazard-city.de/framemeister.html), which optimize old CRT-era games for display on HDTVs. Rather than stretching and blurring the games, these devices upscale them faithfully -- keeping all the color, detail, and pixelation that have inspired the new retro-style games of today. The devices even give the option of adding scanlines, to make the game look more like it would have on a classic CRT screen.
+Nowadays, more and more people (like me) are spending hundreds of dollars to import devices like [the Framemeister](http://retrogaming.hazard-city.de/framemeister.html), which optimize old CRT-era games for display on HDTVs. Rather than stretching and blurring the games, these devices upscale them faithfully -- maintaining the aspect ratio and keeping all the color and detail that have inspired the new retro-style games of today. These devices even give the option of adding scanlines, to make the game look more like it would have on a classic CRT screen.
 
-The PSTV could take these old 320x240 pixel PlayStation games and upscale them to 960x720 (pillarboxed on a 720p TV) or 1280x960 (windowboxed on a 1080p set), depending on TV resolution. There's obviously a market in appealing to gamers' nostalgia. And I know I'd love to have a way to play digital versions of all my old favorites on a console I already have connected to my main TV.
+The PSTV could take the old 320x240 pixel PlayStation Classics and upscale them to 960x720 (pillarboxed on a 720p TV) or 1280x960 (windowboxed on a 1080p set), depending on TV resolution. There's obviously a market in appealing to gamers' nostalgia. And I know I'd love to have a way to play digital versions of all my old favorites on a console I already have connected to my main TV.
 
 
-### Get rid of the PSTV Whitelist
+### Dump the PSTV Whitelist
 
 Give users an option (maybe as an opt-in, so users know the risks) to render *all* Vita games playable -- or at least attempt-able! Just give a clear warning upon purchase or startup that they may not work correctly.
+
+### Delete the "Featured" Page
+
+I don't know if anyone ever does anything except skip right past this page. It also breaks the natural navigational flow; you don't see it when entering apps, but it's always there when you leave them. Plus, it looks like too much like it's the store, even though it's not. I would prefer if it were, or if it at least had a store search function.
 

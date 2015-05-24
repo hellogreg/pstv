@@ -1,6 +1,6 @@
 // Sony base blues: #003791, #032f64 (3,47,100,1)
-// Alt blues: #1a265d [rgba(26,38,93,1)], #2a3568
-// PS Store uses: #01439a [rbga(1,67,154,1)] -- and #363636 for text.
+// Alt blue: #00539d rgba(0,83,157,1)
+// PS Store uses: #01439a [rgba(1,67,154,1)] -- and #363636 for text.
 
 // Bare bones reset and pagewide styles
 
@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
 
 // Sass pagewide variables.
 
-$bgColor: rgba(3, 47, 100, 1);
+$bgColor: rgba(0, 83, 157, 1);
 $appTransitionSpeed: 250ms;
 
 // Sass pagewide mixins
@@ -59,7 +59,7 @@ $appTransitionSpeed: 250ms;
 }
 
 @mixin bg-color-alpha($alpha:1) {
-  background-color: rgba(3, 47, 100, $alpha);
+  background-color: rgba(0, 83, 157, $alpha);
 }
 
 @mixin hide {
@@ -164,18 +164,20 @@ $appTransitionSpeed: 250ms;
     // Add 15px grid to theme.
     &.bg-grid > .underlay {
       $size: 1.5rem;
-      $gridColor: rgba(255, 255, 255, .05);
+      $gridColor: rgba(255, 255, 255, .06);
       background-position: 0 0;
-      background-size: $size $size;
+      background-size: $size $size, $size $size, 100% 100%;
       background-image: repeating-linear-gradient(0deg, $gridColor, $gridColor 1px, transparent 1px, transparent $size),
-      repeating-linear-gradient(-90deg, $gridColor, $gridColor 1px, transparent 1px, transparent $size);
+      repeating-linear-gradient(-90deg, $gridColor, $gridColor 1px, transparent 1px, transparent $size),
+      url(../images/1920x1080bg.png);
       opacity: 1;
     }
 
     // Plain background theme.
     &.bg-nogrid {
       // No styling at the moment.
-      //background-image: url(../images/bg_ps4.jpg);
+      background-image: url(../images/1920x1080bg.png);
+      background-size: 100% 100%;
     }
 
     // Animated theme. NOT USED YET. Not happy with the effects these transitions have on other animations.

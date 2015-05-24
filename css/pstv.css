@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
   display: inherit; }
 
 #pstv {
-  border: 1px solid #032f64;
+  border: 1px solid #00539d;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 54rem;
@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
       filter: brightness(115%);
       background-image: url("../images/psx_ridge_scanlines.png"); }
   #pstv > #prototype {
-    background-color: #032f64; }
+    background-color: #00539d; }
     #pstv > #prototype > .underlay {
       position: absolute;
       top: 0;
@@ -85,9 +85,12 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
         filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.9)); }
     #pstv > #prototype.bg-grid > .underlay {
       background-position: 0 0;
-      background-size: 1.5rem 1.5rem;
-      background-image: repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) 1px, transparent 1px, transparent 1.5rem), repeating-linear-gradient(-90deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) 1px, transparent 1px, transparent 1.5rem);
+      background-size: 1.5rem 1.5rem, 1.5rem 1.5rem, 100% 100%;
+      background-image: repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.06) 1px, transparent 1px, transparent 1.5rem), repeating-linear-gradient(-90deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.06) 1px, transparent 1px, transparent 1.5rem), url(../images/1920x1080bg.png);
       opacity: 1; }
+    #pstv > #prototype.bg-nogrid {
+      background-image: url(../images/1920x1080bg.png);
+      background-size: 100% 100%; }
     #pstv > #prototype.bg-animated {
       /*
 
@@ -150,7 +153,7 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
       transform: translate(-50%, -50%);
       -webkit-transition: all 200ms ease-out;
       transition: all 200ms ease-out;
-      background: #032f64;
+      background: #00539d;
       height: 36rem;
       left: calc(96rem / 2);
       overflow: hidden;
