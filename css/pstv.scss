@@ -182,53 +182,6 @@ $appTransitionSpeed: 250ms;
       background-size: 100% 100%;
     }
 
-    // Animated theme. NOT USED YET. Not happy with the effects these transitions have on other animations.
-    &.bg-animated {
-
-      /*
-
-      background-image: -webkit-radial-gradient(center, ellipse cover, rgba(3, 47, 100, 1) 0%, rgba(255, 255, 255, .5) 100%);
-      background-image: radial-gradient(ellipse at center, rgba(3, 47, 100, 1) 0%, rgba(3, 47, 100, .5) 100%);
-
-      > .underlay {
-        -webkit-animation: bgAnimation 10s ease infinite;
-        animation: bgAnimation 10s ease infinite;
-        background-image: linear-gradient(315deg, rgba(255, 255, 255, .25), rgba(0, 0, 0, .25));
-        opacity: 1;
-
-        @-webkit-keyframes bgAnimation {
-          0% {
-            -webkit-transform: translate(0) scale(1);
-            transform: translate(0) scale(1);
-          }
-          50% {
-            -webkit-transform: translate(0, 0) scale(2);
-            transform: translate(0, 0) scale(2);
-          }
-          100% {
-            -webkit-transform: translate(0) scale(1);
-            transform: translate(0) scale(1);
-          }
-        }
-
-        @keyframes bgAnimation {
-          0% {
-            -webkit-transform: translate(0) scale(1);
-            transform: translate(0) scale(1);
-          }
-          50% {
-            -webkit-transform: translate(0) scale(2);
-            transform: translate(0) scale(2);
-          }
-          100% {
-            -webkit-transform: translate(0) scale(1);
-            transform: translate(0) scale(1);
-          }
-        }
-      }
-      */
-    }
-
     @import "folder";
 
     > header, > footer {
@@ -241,6 +194,7 @@ $appTransitionSpeed: 250ms;
     > header {
       h1 {
         flex: 0 1 auto;
+        //background-color: #f93; // For testing only.
 
         img {
           max-height: 1.8rem;
@@ -251,12 +205,23 @@ $appTransitionSpeed: 250ms;
         }
 
       }
+
+      h1.system {
+      }
+
       h1.user {
         img.plus {
           max-height: 1.5rem;
           top: .3rem;
         }
       }
+
+      h1.friends {
+      }
+
+      h1.trophies {
+      }
+
       h1.clock {
         text-align: center;
         text-indent: 0;
