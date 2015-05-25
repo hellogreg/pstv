@@ -150,6 +150,9 @@ The PSTV could take the old 320x240 pixel PlayStation Classics and upscale them 
 
 Give users an option (maybe as an opt-in, so users know the risks) to render *all* Vita games playable -- or at least attempt-able! Just give a clear warning upon purchase or startup that they may not work correctly.
 
+(*I understand that this may be a matter of licensing from third-party publishers. If that's the case, it could be a little trickier to nix the whitelist for those titles. Still, all first-party games should be exempt.*)
+
+
 ### Delete the "Featured" Page
 
 I don't know if anyone ever does anything except skip right past this page. It also breaks the natural navigational flow; you don't see it when entering apps, but it's always there when you leave them. Plus, it looks like too much like it's the store, even though it's not. I would prefer if it were, or if it at least had a store search function.

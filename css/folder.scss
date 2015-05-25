@@ -98,9 +98,11 @@ $folderHeight: 36rem;
       text-indent: -500rem;
       width: 9rem;
 
-      &:hover {
+      &.selected {
         @include boxShadow(.3);
         @include transitionSettings(50ms);
+        border: 2px solid rgba(255, 250, 245, .75);
+        border-radius: 2px;
         height: 11rem;
         width: 11rem;
       }

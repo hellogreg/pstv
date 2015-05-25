@@ -158,11 +158,13 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
           position: inherit;
           text-indent: -500rem;
           width: 9rem; }
-          #pstv > #prototype .folder .folder-apps li:hover {
+          #pstv > #prototype .folder .folder-apps li.selected {
             -webkit-box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.3);
             box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.3);
             -webkit-transition: all 50ms ease-out;
             transition: all 50ms ease-out;
+            border: 2px solid rgba(255, 250, 245, 0.75);
+            border-radius: 2px;
             height: 11rem;
             width: 11rem; }
           #pstv > #prototype .folder .folder-apps li:nth-child(1) {
