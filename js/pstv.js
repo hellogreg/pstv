@@ -40,6 +40,7 @@
   //
 
   // Document elements and element arrays, prefixed with $.
+  // (We're not using jQuery, but the $ style is familiar.)
   var $pstv = document.getElementById("pstv");
   var $prototype = document.getElementById("prototype");
   var $mockups = document.getElementById("mockups");
@@ -259,11 +260,12 @@
       $list[i].style.backgroundImage = "url(\"" + $list[i].getAttribute("data-image") + "\")";
     }
 
+    // Add event listener for "selecting" the games in this folder by hovering over them.
     $folder.addEventListener("mouseover", function (e) {
       var $defaultFolderApp = $folder.querySelector(".selected");
       var target = e.target || e.srcElement;
       e.preventDefault();
-      if ($defaultFolderApp && target.classList.contains("folder-app")) {
+      if (isFolderOpen && $defaultFolderApp && target.classList.contains("folder-app")) {
         $defaultFolderApp.classList.remove("selected");
         target.classList.add("selected");
       }

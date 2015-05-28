@@ -3,26 +3,22 @@
 > **To skip right to viewing my PSTV homescreen proof of concept, it's here:**
 > ***http://hellogreg.github.io/pstv***
 
-Let's get this out of the way, first. I've loved the idea of the PlayStation TV from [the moment Sony announced it](https://www.youtube.com/watch?v=rG5l78gbvpU). I was excited to finally play Persona 4 Golden and Danganronpa: Trigger Happy Havoc. (My wife and I usually play games together, so we rarely use handhelds.)
+I've loved the idea of the PlayStation TV from [the moment Sony announced it](https://www.youtube.com/watch?v=rG5l78gbvpU). I was excited to play Persona 4 Golden and Danganronpa: Trigger Happy Havoc. (My wife and I usually play games together, so we rarely use handhelds.) It would finally give me a chance to play early PlayStation games (like Final Fantasy VII) with an analog stick, and not just the directional pad. And it sounded like the perfect device to bring on long trips: a way to bring your games and streaming media accounts on the road and make any hotel or guest room feel a little like home.
 
-But Sony never seemed to share my PSTV enthusiasm. The console's operating system hasn't been updated from its last-gen, handheld roots. It's hardly been marketed in the US. It gets last billing (behind the PS4, PS3, and Vita) under "Systems" at [Sony's own site](https://www.playstation.com/en-us/). And with all the price cuts it's received since releasing in the US just last fall, the whole thing has just seemed like an inventory dump from Japanese overstock.
+But Sony never seemed to share my PSTV enthusiasm. The console's operating system hasn't been updated from its last-gen, handheld roots. The gaming library and streaming media options seem arbitrarily limited. It's hardly been marketed in the US. It gets last billing (behind the PS4, PS3, and Vita) under "Systems" at [Sony's own site](https://www.playstation.com/en-us/). And with all the price cuts it's received at various stores since releasing in the US just last fall, the whole thing has just seemed like an inventory dump. Even SCEI President and Group CEO Andrew House already refers to the device as a "[legacy platform](http://www.gamesindustry.biz/articles/2015-05-27-sony-admits-first-party-lineup-a-little-sparse)"
 
-Maybe Sony thought, "We'll put it out there, just in case it catches on, but otherwise pretend the whole thing never happened." By giving the console no expectations, Sony is inoculated against any criticisms that the system underperformed.
+Maybe Sony thought, "We'll put it out there on the off chance it catches on, but otherwise pretend the whole thing never happened." By giving the console no expectations, Sony is inoculated against criticism that the system underperformed. I understand that. And I can see why they think it's a tough sell. It's not the most high-concept of devices. What does it do? What niche does it fill? Who is it for?
 
-I understand that. And I can see why they think it's a tough sell. It's not the most high-concept of devices. What does it do? What niche does it fill? Who is it for?
-
-I want to help. I want to make the PSTV better. I want to help improve how it looks and works. I want to let people know that it exists, and then show them why they need it.
+I want to help. I want to make the PSTV better. I want to improve how it looks and works. I want to let people know that it exists, and then show them why they need it.
 
 The PSTV can (and should) be...
-- The ultimate gaming and streaming media travel companion.
-- A great starter console, for infrequent gamers or parents nervous about spending too much money on a first gaming machine for their family.
-- The Swiss Army knife of PlayStations, allowing gamers to play titles from every Sony console and handheld ever made: PS4 via Remote play, PS3 and PS2 via PlayStation Now, and Vita/PSP/PS1 games natively.
+- The Swiss Army knife of PlayStations, allowing gamers to play titles from nearly every Sony console and handheld ever made: PS4 via Remote play, PS3 via PlayStation Now (with PS2 games [on the way](http://blog.us.playstation.com/2015/01/05/playstation-now-subscription-program-all-the-details/)), and Vita/PSP/PS1 games natively.
+- A great starter console for infrequent gamers or parents nervous about spending too much money on a first gaming machine for their family.
+- The ideal gaming and streaming media travel companion.
 
-It already is some of those things. It just needs a little help with the others.
+It already is some of those things. It just needs a little help with the others. It's very possible Sony's thought of much of this already. Maybe they just don't think it's worth investing too much time or money on something they considered dead on arrival.
 
-Now, I'm sure Sony's thought of much of this already. Maybe they just don't think it's worth investing too much time or money on something they considered dead on arrival.
-
-But I think it's at least worth the risk of paying one person to be its champion -- for a couple of years, anyway. Re-frame the PSTV the way the Apple viewed the Apple TV. Call it "a hobby" for several years and slowly build its userbase, while still remaining free from sales expectations.
+But I think it's at least worth the risk of paying one person to be its champion -- for a couple of years, anyway. Re-frame the PSTV the way the Apple framed the Apple TV. Call it "a hobby" for several years and slowly build its userbase, while still remaining mostly free from sales expectations.
 
 
 ## Fixing the PSTV's User Interface
@@ -127,11 +123,11 @@ The PSTV doesn’t need to be an Apple TV or Amazon Fire or even a Chromecast. B
 
 I've got a half-dozen devices in my house on which I can watch Netflix. So why do I need another?
 
-Maybe I don't. But the PSTV needs it, in part for the same reason some hotels have pools they know will rarely be used. People often make decisions based on what they think they might do. If you take away an option, you could lose them as customers.
+Maybe I don't. But the PSTV needs it, in part for the same reason some hotels have pools they know will rarely be used. People often make decisions based on what they think they might do. If you take away an option, you could lose potential customers.
 
-Also, it is nice to have -- just in case. Being able to switch right from a game to movie without turning off my device or changing inputs on my TV is a nice little perk. Plus, Sony has the best Netflix interface.
+Also, it is nice to have -- just in case. Being able to switch right from a game to movie without turning off my device or changing inputs on my TV is a nice little perk. Plus, Sony has the best Netflix interface. I know that it's up to Netflix to make their PSTV app, but I'm sure that Sony, if they wanted, could persuade/pay them to get it done -- even if it's just a matter of making the Vita version compatible.
 
-For my summer vacation, I’m taking one portable media device with me. If the PSTV had Netflix and Spotify, it’d be a no-brainer. But instead, I’m bringing the Amazon Fire TV Stick, because I can use it to watch Netflix and listen to Prime Music on the road.
+For my summer vacation, I’m taking one portable media device with me. If the PSTV had Netflix (and/or Spotify and/or YouTube), it’d be a no-brainer to take it. But instead, I’m bringing the Amazon Fire TV Stick, because I can use it to watch Netflix and listen to Prime Music on the road.
 
 
 ### PlayStation Retro Mode
@@ -150,10 +146,10 @@ The PSTV could take the old 320x240 pixel PlayStation Classics and upscale them 
 
 Give users an option (maybe as an opt-in, so users know the risks) to render *all* Vita games playable -- or at least attempt-able! Just give a clear warning upon purchase or startup that they may not work correctly.
 
-(*I understand that this may be a matter of licensing from third-party publishers. If that's the case, it could be a little trickier to nix the whitelist for those titles. Still, all first-party games should be exempt.*)
+I understand that there could be issues with licensing from third-party publishers. If that's the case, it could be a little trickier to nix the whitelist for those titles. Still, all first-party games should be exempt.
 
 
-### Delete the "Featured" Page
+### Delete the "Featured" Tab
 
-I don't know if anyone ever does anything except skip right past this page. It also breaks the natural navigational flow; you don't see it when entering apps, but it's always there when you leave them. Plus, it looks like too much like it's the store, even though it's not. I would prefer if it were, or if it at least had a store search function.
+I don't know if anyone ever does anything except skip right past this tab. It also breaks the natural navigational flow; you don't see it when entering apps, but it's always there when you leave them. Plus, it looks like too much like it's the store, even though it's not. I would prefer if it were, or if it at least had a store search function.
 
