@@ -194,7 +194,7 @@ $appTransitionSpeed: 250ms;
     > header {
       h1 {
         flex: 0 1 auto;
-        //background-color: #f93; // For testing only.
+        z-index: 1;
 
         img {
           max-height: 1.8rem;
