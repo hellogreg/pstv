@@ -167,6 +167,6 @@ These are another relic of a touch-based interface, which are unnecessary when y
 
 ## Who am I?
 
-I'm Greg Gibson, a developer/designer based in Illinois. Back in the early 2000s, I led the web development and design for Electronic Arts' experimental online game, Majestic. I now run/am the web department for a large school district (30,000 students and 3,000 employees) in the Chicago area. I occasionally provide box office analytics and charts for my wife's Hindi movie site, http://accessbollywood.com. And I sometimes release weird, ambient music and field recordings at https://soundcloud.com/hellogreg. 
+I'm Greg Gibson, a developer/designer based in Illinois. Back in the early 2000s, I led the web development and design for Electronic Arts' experimental online game, Majestic. I now run/am the web department for a large school district (30,000 students and 3,000 employees) in the Chicago area. I occasionally provide box office analysis and charts for my wife's Hindi movie site, http://accessbollywood.com. And I sometimes release weird, ambient music and field recordings at https://soundcloud.com/hellogreg. 
 
 I'm on Twitter at @elfneedsfood, or you can email me at hellogreg@gmail.com. 

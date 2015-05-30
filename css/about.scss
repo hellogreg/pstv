@@ -1,3 +1,31 @@
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  src: url(merriweather400.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  font-style: italic;
+  font-weight: 400;
+  src: url(merriweather400italic.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 700;
+  src: url(merriweather700.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  font-style: italic;
+  font-weight: 700;
+  src: url(merriweather700italic.woff) format('woff');
+}
+
 * {
   box-sizing: border-box;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -9,7 +37,7 @@ html {
 }
 
 body {
-  font-family: "sst-w01", sans-serif;
+  font-family: "Merriweather", Georgia, serif;
   background-color: #ddd;
   color: #444;
   margin: 0;
@@ -18,7 +46,7 @@ body {
 .container {
   background-color: #fff;
   font-size: 1.8rem;
-  line-height: 3rem;
+  line-height: 3.6rem;
   margin: 0 auto;
   padding: .5rem 8rem;
   width: 96rem;
