@@ -458,9 +458,9 @@ body > header {
 @media (max-width: 520px) {
   @viewport {
     width: 960px; }
-  #controls * {
+  #controls {
     font-size: 200%; }
-    #controls * ul li {
-      min-width: 30%; } }
+    #controls ul li {
+      min-width: 30rem; } }
 
 /*# sourceMappingURL=pstv.css.map */
