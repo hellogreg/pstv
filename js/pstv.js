@@ -101,6 +101,7 @@
 
     var $selectedFolderApp = document.querySelector("#app-ps1-folder.app.current");
     var $appImage;
+
     if ($selectedFolderApp) {
       $appImage = $selectedFolderApp.querySelector("header img");
       isFolderOpen = !isFolderOpen;
