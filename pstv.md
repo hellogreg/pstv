@@ -20,6 +20,8 @@ It already is some of those things. It just needs a little help with the others.
 
 But I think it's at least worth the risk of paying one person to be its champion -- for a couple of years, anyway. Re-frame the PSTV the way the Apple framed the Apple TV. Call it "a hobby" for several years and slowly build its userbase, while still remaining mostly free from sales expectations.
 
+Note: This isn't a wish list of every change that could or should be made to the PSTV (e.g., support for cheaper memory cards, better network connections to the PS4). I'm just covering some of the software issues where I think I could help, personally -- even as a one-man team with no budget. That's how I work now, at my current job, so I'm used to it.
+
 
 ## Fixing the PSTV's User Interface
 
