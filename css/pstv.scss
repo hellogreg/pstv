@@ -80,6 +80,25 @@ $appTransitionSpeed: 250ms;
   display: inherit;
 }
 
+body > header {
+  color: #888;
+  font-family: georgia, serif;
+  margin: 0 auto;
+  position: relative;
+  width: 96rem;
+
+  a {
+    color: #aaa;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+  }
+
+}
+
 // #pstv is the "screen" of the console
 
 #pstv {
@@ -517,5 +536,10 @@ $appTransitionSpeed: 250ms;
 
   #controls {
     font-size: 200%;
+
+    ul li {
+      min-width: 30%;
+    }
+
   }
 }

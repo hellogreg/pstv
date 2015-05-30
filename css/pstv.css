@@ -32,6 +32,18 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
 .visible {
   display: inherit; }
 
+body > header {
+  color: #888;
+  font-family: georgia, serif;
+  margin: 0 auto;
+  position: relative;
+  width: 96rem; }
+  body > header a {
+    color: #aaa;
+    text-decoration: none; }
+    body > header a:hover {
+      text-decoration: underline; }
+
 #pstv {
   border: 1px solid #002e6c;
   border-radius: 0;
@@ -447,6 +459,8 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
   @viewport {
     width: 960px; }
   #controls {
-    font-size: 200%; } }
+    font-size: 200%; }
+    #controls ul li {
+      min-width: 30%; } }
 
 /*# sourceMappingURL=pstv.css.map */
