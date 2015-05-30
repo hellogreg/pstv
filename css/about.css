@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transform-style: preserve-3d; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "sst-w01", sans-serif;
+  background-color: #fff;
+  margin: 0; }
+
+.container {
+  font-size: 1.5rem;
+  line-height: 3rem;
+  margin: .5rem auto;
+  padding: 0 8rem;
+  width: 96rem; }
+
+/*# sourceMappingURL=about.css.map */
