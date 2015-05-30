@@ -100,7 +100,6 @@
   function toggleFolder() {
 
     var $selectedFolderApp = document.querySelector("#app-ps1-folder.app.current");
-
     var $appImage;
 
     if ($selectedFolderApp) {
@@ -253,14 +252,15 @@
 
 
   // On load, set folder background images with data-image attributes via JS, since CSS can't do it yet!
-  (function addFolderBgImages() {
+  // Add event listener for "selecting" the games in this folder by hovering over them.
+  (function loadAndInitFolder() {
+
     var $list = document.querySelectorAll("li[data-image]");
     var i = 0, len = $list.length;
     for (; i < len; i++) {
       $list[i].style.backgroundImage = "url(\"" + $list[i].getAttribute("data-image") + "\")";
     }
 
-    // Add event listener for "selecting" the games in this folder by hovering over them.
     $folder.addEventListener("mouseover", function (e) {
       var $defaultFolderApp = $folder.querySelector(".selected");
       var target = e.target || e.srcElement;
@@ -270,11 +270,10 @@
         target.classList.add("selected");
       }
     });
-
   }());
 
 
-  // On load, starts event listeners for all buttons in the #controls element.
+  // On load, start event listeners for all buttons in the #controls element.
   $controls.addEventListener("click", function (e) {
 
     var target = e.target || e.srcElement;

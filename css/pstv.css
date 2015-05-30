@@ -445,6 +445,8 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
 
 @media (max-width: 520px) {
   @viewport {
-    width: 960px; } }
+    width: 960px; }
+  #controls {
+    font-size: 200%; } }
 
 /*# sourceMappingURL=pstv.css.map */

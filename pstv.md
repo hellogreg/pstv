@@ -43,6 +43,8 @@ I'm sure this saved on design and development costs. But, as a result, its brand
 
 ### It's Too Touchy
 
+*The Vita was designed so it could be navigated solely by touch, meaning the controller buttons are largely ignored. In no single case does this break functionality on the PSTV. But the cumulative effect is annoying.*
+
 My biggest issue with the Vita interface is that it was designed for touchscreen navigation, and not a controller, as the PSTV requires. This becomes an obstacle as soon as you reach the console's homescreen.
 
 For a controller-navigated interface, items should be in a line or a grid. This makes directional pad and analog stick navigation logical and predictable. Up, down, left, and right all correspond to d-pad button presses or analog movements. 
@@ -63,7 +65,7 @@ This means there’s no way to select the middle row's rightmost app directly fr
 
 As mentioned above, if you pull straight down from the top row, the cursor will move to the app down one row and to the left. But if you pull down and to the right… the cursor will also move down and to the left!
 
-Even though the icons aren’t placed in a strict vertical/horizontal grid, the PSTV (or Vita) thinks they are. It thinks the leftmost icons from each row are in a vertical line — and the second from each row, and the third. So, even if you pull down and at a bit of an angle, the cursor moves as if you’d just pulled straight down. This renders that fourth icon in the middle row accessible only by moving right from the third icon in that row. It makes more sense to actually put the icons in either a true grid (like the PS3’s XMB had) or a line (like the PS4 has).
+Even though the icons aren’t placed in a strict vertical/horizontal grid, the PSTV (or Vita) thinks they are. It thinks the leftmost icons from each row are in a vertical line — and the second from each row, and the third. So, even if you pull down and at a bit of an angle, the cursor moves as if you’d just pulled straight down. This makes it extremely difficult to access the fourth icon in the middle row directly from either the top or bottom row (which each only have three icons). It makes more sense to actually put the icons in either a true grid, like the PS3’s XMB had, or a line, like the PS4 has.
 
 ### The PSTV Homescreen, Redesigned
 
@@ -149,7 +151,14 @@ Give users an option (maybe as an opt-in, so users know the risks) to render *al
 I understand that there could be issues with licensing from third-party publishers. If that's the case, it could be a little trickier to nix the whitelist for those titles. Still, all first-party games should be exempt.
 
 
-### Delete the "Featured" Tab
+### Get Rid of the "Featured" Tab
 
 I don't know if anyone ever does anything except skip right past this tab. It also breaks the natural navigational flow; you don't see it when entering apps, but it's always there when you leave them. Plus, it looks like too much like it's the store, even though it's not. I would prefer if it were, or if it at least had a store search function.
 
+### Hell, Get Rid of All the Tabs...
+
+They work better for swipe-able interfaces. Instead of tabs, use activity spinners like the PS4 does for currently active games and apps.
+
+### ...and the Interstitial Start Screens that live on them.
+
+These are another relic of a touch-based interface, which are unnecessary when you can use multiple controller buttons on the homescreen.
