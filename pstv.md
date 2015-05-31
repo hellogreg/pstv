@@ -16,7 +16,7 @@ But Sony never seemed to share my PSTV enthusiasm.
 - It gets last billing (behind the PS4, PS3, and Vita) under "Systems" at [Sony's own site](https://www.playstation.com/en-us/).
 - And with all the price cuts it's received at various stores since releasing in the US just last fall, the whole thing has just seemed like an inventory dump.
  
-Even SCEI President and Group CEO Andrew House recently referred to the device as a "[legacy platform](http://www.gamesindustry.biz/articles/2015-05-27-sony-admits-first-party-lineup-a-little-sparse)" -- though the company later walked that back.
+Even SCEI President and Group CEO Andrew House recently referred to the device as a "[legacy platform](http://www.gamesindustry.biz/articles/2015-05-27-sony-admits-first-party-lineup-a-little-sparse)" -- though the company later walked that back a little.
 
 Maybe Sony thought, "We'll put it out there on the off chance it catches on, but otherwise pretend the whole thing never happened." By giving the console no expectations, Sony is inoculated against criticism that the system underperformed. I understand that. And I can see why they think it's a tough sell. It's not the most high-concept of devices. What does it do? What niche does it fill? Who is it for?
 
