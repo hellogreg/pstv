@@ -1,13 +1,22 @@
 # Reimagining the PSTV
 
-> **To skip right to viewing my PSTV homescreen proof of concept, it's here:**
-> **http://hellogreg.github.io/pstv**
+> **To skip right to viewing my PSTV homescreen proof of concept, it's here:
+> http://hellogreg.github.io/pstv**
 
 I've loved the idea of the PlayStation TV from [the moment Sony announced it](https://www.youtube.com/watch?v=rG5l78gbvpU). I was excited to play Persona 4 Golden and Danganronpa: Trigger Happy Havoc. (My wife and I usually play games together, so we rarely use handhelds.) It would finally give me a chance to play early PlayStation games (like Final Fantasy VII) with an analog stick, and not just the directional pad. And it sounded like the perfect device to bring on long trips: a way to bring your games and streaming media accounts on the road and make any hotel or guest room feel a little like home.
 
 *Tell why is HAS succeeded, so they believe I love it -- because I do!*
 
-But Sony never seemed to share my PSTV enthusiasm. The console's operating system hasn't been updated from its last-gen, handheld roots. The gaming library and streaming media options seem arbitrarily limited. It's hardly been marketed in the US. It gets last billing (behind the PS4, PS3, and Vita) under "Systems" at [Sony's own site](https://www.playstation.com/en-us/). And with all the price cuts it's received at various stores since releasing in the US just last fall, the whole thing has just seemed like an inventory dump. Even SCEI President and Group CEO Andrew House recently referred to the device as a "[legacy platform](http://www.gamesindustry.biz/articles/2015-05-27-sony-admits-first-party-lineup-a-little-sparse)" -- though the company later walked that back.
+*Talk about how Sony makes great hardware and pride themselves on interface. But the software in this case is compromised and half-assed, because it's just a straight Vita port.*
+
+But Sony never seemed to share my PSTV enthusiasm. 
+- The console's operating system hasn't been updated from its last-gen, handheld roots.
+- The gaming library and streaming media options seem arbitrarily limited.
+- It's hardly been marketed in the US.
+- It gets last billing (behind the PS4, PS3, and Vita) under "Systems" at [Sony's own site](https://www.playstation.com/en-us/).
+- And with all the price cuts it's received at various stores since releasing in the US just last fall, the whole thing has just seemed like an inventory dump.
+ 
+Even SCEI President and Group CEO Andrew House recently referred to the device as a "[legacy platform](http://www.gamesindustry.biz/articles/2015-05-27-sony-admits-first-party-lineup-a-little-sparse)" -- though the company later walked that back.
 
 Maybe Sony thought, "We'll put it out there on the off chance it catches on, but otherwise pretend the whole thing never happened." By giving the console no expectations, Sony is inoculated against criticism that the system underperformed. I understand that. And I can see why they think it's a tough sell. It's not the most high-concept of devices. What does it do? What niche does it fill? Who is it for?
 
@@ -29,7 +38,7 @@ Note: This isn't a wish list of every change that could or should be made to the
 
 The user interface is just a part of user experience, and a device's homescreen is just a sliver of the user interface. But you have to start somewhere! So, I've redesigned the PSTV's homescreen to accomplish the following:
 
-- Update it to share the same visual brand language as the current generation of Sony products (PS4, Bravia TVs, PlayStation mobile app, etc.).
+- Update it to share the same visual branding language as the current generation of Sony products (PS4, Bravia TVs, PlayStation mobile app, etc.).
 - Reframe the PSTV as something other than just a Vita on a bigger screen.
 
 
@@ -37,7 +46,7 @@ The user interface is just a part of user experience, and a device's homescreen 
 
 The PSTV’s internals are basically those of a Vita. But a device is not what makes it up. A device is how it’s used.
 
-When the iPad was announced, it was ridiculed as just a big iPhone or iPod touch. Technically, that was true. Its internals were about the same, it shared the same OS, and it ran the same apps. But calling it a big iPhone was also wrong. The iPad was something different, because it’s used differently.
+When the iPad was announced, it was ridiculed as just a big iPhone or iPod touch. Technically, that was true. Its internals were about the same, it shared the same OS, and it ran the same apps. But calling it a big iPhone was also wrong. The iPad was something different, because a tablet is used differently from a phone.
 
 The PSTV is often referred to as just a Vita that plugs into your TV. And again, technically, that’s true, but wrong. Because the PSTV isn’t used in the same places or manner as a Vita, it’s not a Vita. It's not more or less. It's something else.
 
@@ -47,9 +56,9 @@ I'm sure this saved on design and development costs. But, as a result, its brand
 
 ### It's Too Touchy
 
-*The Vita was designed so it could be navigated solely by touch, meaning the controller buttons are largely ignored. In no single case does this break functionality on the PSTV. But the cumulative effect is annoying.*
+My biggest issue with the Vita interface is that it was designed for touchscreen navigation, and not a controller, as the PSTV requires. 
 
-My biggest issue with the Vita interface is that it was designed for touchscreen navigation, and not a controller, as the PSTV requires. This becomes an obstacle as soon as you reach the console's homescreen.
+Button and stick functions change from screen to screen, making them seem like their use was tacked on as an afterthought. In no single case does this break functionality on the PSTV. But the cumulative effect is annoying. This becomes an obstacle as soon as you reach the console's homescreen.
 
 For a controller-navigated interface, items should be in a line or a grid. This makes directional pad and analog stick navigation logical and predictable. Up, down, left, and right all correspond to d-pad button presses or analog movements. 
 
