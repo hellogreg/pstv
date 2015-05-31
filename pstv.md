@@ -44,10 +44,10 @@ Where I can help directly:
 - Redesign the store for controller interfaces
 - Tout its capabilities (unlike Chromecast, can work on hotel wifi)
 
-Where I can help indirectly:
+Where I can help indirectly (or would need help):
 - Add Netflix
 - Get rid of the whitelist
-- Add PS1 upscale options (even if it's just the current Vita)
+- Add PS1 upscale options (even if it's just the current Vita options)
 
 
 ## Fixing the PSTV's User Interface
