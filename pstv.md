@@ -3,7 +3,7 @@
 > To skip right to viewing my PSTV homescreen proof of concept, it's here:
 > http://hellogreg.github.io/pstv
 
-I've loved the idea of the PlayStation TV from [the moment Sony announced it](https://www.youtube.com/watch?v=rG5l78gbvpU). I was excited to play Persona 4 Golden and Danganronpa: Trigger Happy Havoc. (My wife and I usually play games together, so we rarely use handhelds.) It would finally give me a chance to play early PlayStation games (like Final Fantasy VII) with an analog stick, and not just the directional pad. And it sounded like the perfect device to bring on long trips: a way to bring your games and streaming media accounts on the road and make any hotel or guest room feel a little like home.
+I've loved the idea of the PlayStation TV from [the moment Sony announced it](https://www.youtube.com/watch?v=rG5l78gbvpU). I was excited to play *Persona 4 Golden* and D*anganronpa: Trigger Happy Havoc*. (My wife and I usually play games together, so we rarely use handhelds.) It would finally give me a chance to play early PlayStation games (like *Final Fantasy VII*) with an analog stick, and not just with the directional pad. And it sounded like the perfect device to bring on long trips: a way to bring your games and streaming media accounts on the road and make any hotel or guest room feel a little like home.
 
 *Tell why is HAS succeeded, so they believe I love it -- because I do!*
 
@@ -141,7 +141,7 @@ This process is another artifact from the Vita. The page peeling makes a lot mor
 - How do we easily get to the search button and the ellipses at the bottom right? Again, the interface was made for touch and quick scrolling. Should have a left-hand menu, like the other TV-based PlayStation consoles. You always know moving left takes you back to a higher level in the hierarchy.
 - Only show games I can download in my download list.
 - Highlight the PS+ games and discounts
-- Are there games for sale that I can't actually play!? (Yes. Verified with Touch My Katamari.)
+- Are there games for sale that I can't actually play!? (Yes. Verified with *Touch My Katamari*.)
 
 
 ## Other Additions (And A Couple Subtractions)

@@ -98,12 +98,9 @@ img, video {
 }
 
 .container {
-  background-color: #fff;
-  background-image: url(../images/pstvConsole.png);
+  background: #fff url(../images/pstvConsole.png) no-repeat 0 -18rem;
   background-size: 100% auto;
-  background-repeat: no-repeat;
-  background-position: 0 -18rem;
-  color: #4b4b4b;
+  color: #484848;
   font-size: $baseFontSize;
   line-height: $baseLineHeight;
   margin: 0 auto;
