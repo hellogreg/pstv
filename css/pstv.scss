@@ -342,6 +342,11 @@ body > header {
         transition-timing-function: ease-out;
 
         @import "suspendedAnimation";
+        .suspended,
+        .suspended:before,
+        .suspended:after {
+          opacity: .75;
+        }
 
         > header, > nav, > footer {
           -webkit-backface-visibility: inherit;
@@ -423,6 +428,12 @@ body > header {
       }
 
       .current {
+
+        .suspended,
+        .suspended:before,
+        .suspended:after {
+          opacity: 1;
+        }
 
         // Show footer and nav for selected apps
         > footer, > nav {

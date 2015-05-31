@@ -39,6 +39,7 @@ $mobileHeaderLineHeight: 4.2rem;
 $sonyBlue: rgba(0, 83, 157, 1);
 $sonyBlueFaded: rgba(0, 83, 157, .5);
 $sonyBlueLight: rgba(0, 83, 157, .25);
+$sonyBlueTranslucent: rgba(0, 83, 157, .075);
 
 html {
   font-size: 62.5%; // 10px rem base.
@@ -46,7 +47,7 @@ html {
 
 body {
   font-family: "Merriweather", Georgia, serif;
-  background-color: #ddd;
+  background-color: #ccc;
   margin: 0;
 }
 
@@ -59,7 +60,7 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav, blockquot
 }
 
 ul, ol, blockquote {
-  border-left: 2px solid #ddd;
+  border-left: .3rem solid #ccc;
 }
 
 li {
@@ -71,6 +72,7 @@ ul li, ol li {
 }
 
 blockquote {
+  background-color: $sonyBlueTranslucent;
   padding-left: $baseLineHeight;
 }
 
@@ -97,11 +99,15 @@ img, video {
 
 .container {
   background-color: #fff;
+  background-image: url(../images/pstvConsole.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: 0 -6rem;
   color: #4b4b4b;
   font-size: $baseFontSize;
   line-height: $baseLineHeight;
   margin: 0 auto;
-  padding: .5rem 8rem;
+  padding: 25rem 8rem .5rem 8rem;
   width: 96rem;
   max-width: 98%;
 }

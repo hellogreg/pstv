@@ -1,7 +1,7 @@
-# Reimagining the PSTV
+# Reimagining the PSTV (a bit)
 
-> **To skip right to viewing my PSTV homescreen proof of concept, it's here:
-> http://hellogreg.github.io/pstv**
+> To skip right to viewing my PSTV homescreen proof of concept, it's here:
+> http://hellogreg.github.io/pstv
 
 I've loved the idea of the PlayStation TV from [the moment Sony announced it](https://www.youtube.com/watch?v=rG5l78gbvpU). I was excited to play Persona 4 Golden and Danganronpa: Trigger Happy Havoc. (My wife and I usually play games together, so we rarely use handhelds.) It would finally give me a chance to play early PlayStation games (like Final Fantasy VII) with an analog stick, and not just the directional pad. And it sounded like the perfect device to bring on long trips: a way to bring your games and streaming media accounts on the road and make any hotel or guest room feel a little like home.
 
@@ -160,8 +160,7 @@ For my summer vacation, I’m taking one portable media device with me. If the P
 
 ### PlayStation Retro Mode
 
-> To see how a PlayStation retro mode might look, I made a couple of mockup screens for my PSTV prototype to demonstrate current and proposed retro looks for *Xenogears* and *Ridge Racer*:
-> ***http://hellogreg.github.io/pstv***
+> To see how a PlayStation retro mode might look with nearest-neighbor upscaling and scanlines, I made a couple of mockup screens to demonstrate current and proposed retro looks for *Xenogears* and *Ridge Racer*: http://hellogreg.github.io/pstv
 
 I think it would be a natural fit to make the PSTV the best way to experience (or re-experience) PlayStation Classics, since so many of them are available for the platform.
 

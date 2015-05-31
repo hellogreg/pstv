@@ -1,11 +1,17 @@
+// Thanks to Luke Haas's CSS spinner page for the genesis of this code!
+// http://lukehaas.me
+
+$barColor: #fafafa;
+
 .suspended,
 .suspended:before,
 .suspended:after {
-  background: #FFF;
   -webkit-animation: suspendedAnim 1s infinite ease-in-out;
   animation: suspendedAnim 1s infinite ease-in-out;
-  width: .2rem;
+  background: $barColor;
   height: 2rem;
+  opacity: 1;
+  width: .2rem;
 }
 
 .suspended:before,
@@ -24,7 +30,7 @@
 .suspended {
   text-indent: -9999rem;
   position: absolute;
-  top: 16.5rem;
+  top: 16.3rem;
   left: 16.4rem;
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
@@ -41,11 +47,11 @@
   0%,
   80%,
   100% {
-    box-shadow: 0 0 #FFF;
+    box-shadow: 0 0 $barColor;
     height: .8rem;
   }
   40% {
-    box-shadow: 0 -.6em #ffffff;
+    box-shadow: 0 -.6em $barColor;
     height: 1rem;
   }
 }
@@ -54,11 +60,11 @@
   0%,
   80%,
   100% {
-    box-shadow: 0 0 #FFF;
+    box-shadow: 0 0 $barColor;
     height: .8rem;
   }
   40% {
-    box-shadow: 0 -.6em #ffffff;
+    box-shadow: 0 -.6em $barColor;
     height: 1rem;
   }
 }
