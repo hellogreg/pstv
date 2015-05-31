@@ -34,6 +34,22 @@ But I think it's at least worth the risk of paying one person to be its champion
 Note: This isn't a wish list of every change that could or should be made to the PSTV (e.g., support for cheaper memory cards, better network connections to the PS4). I'm just covering some of the software issues where I think I could help, personally -- even as a one-man team with no budget. That's how I work now, at my current job, so I'm used to it.
 
 
+*Given my professional experience, here are areas where I think I can help -- and help quickly...*
+
+Where I can help directly:
+- Fix the homescreen interface
+- Get rid of the Featured tab
+- Replace the "Start" pages
+- Get rid of the whitelist
+- Redesign the store for controller interfaces
+- Tout its capabilities (unlike Chromecast, can work on hotel wifi)
+
+Where I can help indirectly:
+- Add Netflix
+- Get rid of the whitelist
+- Add PS1 upscale options (even if it's just the current Vita)
+
+
 ## Fixing the PSTV's User Interface
 
 The user interface is just a part of user experience, and a device's homescreen is just a sliver of the user interface. But you have to start somewhere! So, I've redesigned the PSTV's homescreen to accomplish the following:
