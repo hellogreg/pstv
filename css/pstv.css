@@ -329,58 +329,6 @@ body > header {
         transition: transform 250ms;
         -webkit-transition-timing-function: ease-out;
         transition-timing-function: ease-out; }
-        #pstv > #prototype main .app .suspended,
-        #pstv > #prototype main .app .suspended:before,
-        #pstv > #prototype main .app .suspended:after {
-          -webkit-animation: suspendedAnim 1s infinite ease-in-out;
-          animation: suspendedAnim 1s infinite ease-in-out;
-          background: #fafafa;
-          height: 2rem;
-          opacity: 1;
-          width: .2rem; }
-        #pstv > #prototype main .app .suspended:before,
-        #pstv > #prototype main .app .suspended:after {
-          position: absolute;
-          top: 0;
-          content: ''; }
-        #pstv > #prototype main .app .suspended:before {
-          left: -.4rem;
-          -webkit-animation-delay: -0.32s;
-          animation-delay: -0.32s; }
-        #pstv > #prototype main .app .suspended {
-          text-indent: -9999rem;
-          position: absolute;
-          top: 16.3rem;
-          left: 16.4rem;
-          -webkit-transform: translateZ(0);
-          -ms-transform: translateZ(0);
-          transform: translateZ(0);
-          -webkit-animation-delay: -0.16s;
-          animation-delay: -0.16s; }
-        #pstv > #prototype main .app .suspended:after {
-          left: .4rem; }
-@-webkit-keyframes suspendedAnim {
-  0%,
-  80%,
-  100% {
-    box-shadow: 0 0 #fafafa;
-    height: .8rem; }
-  40% {
-    box-shadow: 0 -0.6em #fafafa;
-    height: 1rem; } }
-@keyframes suspendedAnim {
-  0%,
-  80%,
-  100% {
-    box-shadow: 0 0 #fafafa;
-    height: .8rem; }
-  40% {
-    box-shadow: 0 -0.6em #fafafa;
-    height: 1rem; } }
-        #pstv > #prototype main .app .suspended,
-        #pstv > #prototype main .app .suspended:before,
-        #pstv > #prototype main .app .suspended:after {
-          opacity: .75; }
         #pstv > #prototype main .app > header, #pstv > #prototype main .app > nav, #pstv > #prototype main .app > footer {
           -webkit-backface-visibility: inherit;
           position: inherit; }
@@ -434,7 +382,51 @@ body > header {
       #pstv > #prototype main .current .suspended,
       #pstv > #prototype main .current .suspended:before,
       #pstv > #prototype main .current .suspended:after {
-        opacity: 1; }
+        -webkit-animation: suspendedAnim 1s infinite ease-in-out;
+        animation: suspendedAnim 1s infinite ease-in-out;
+        background: #fafafa;
+        height: 2rem;
+        opacity: 1;
+        width: .2rem; }
+      #pstv > #prototype main .current .suspended:before,
+      #pstv > #prototype main .current .suspended:after {
+        position: absolute;
+        top: 0;
+        content: ''; }
+      #pstv > #prototype main .current .suspended:before {
+        left: -.4rem;
+        -webkit-animation-delay: -0.32s;
+        animation-delay: -0.32s; }
+      #pstv > #prototype main .current .suspended {
+        text-indent: -9999rem;
+        position: absolute;
+        top: 16.3rem;
+        left: 16.4rem;
+        -webkit-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-animation-delay: -0.16s;
+        animation-delay: -0.16s; }
+      #pstv > #prototype main .current .suspended:after {
+        left: .4rem; }
+@-webkit-keyframes suspendedAnim {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0 #fafafa;
+    height: .8rem; }
+  40% {
+    box-shadow: 0 -0.6em #fafafa;
+    height: 1rem; } }
+@keyframes suspendedAnim {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0 #fafafa;
+    height: .8rem; }
+  40% {
+    box-shadow: 0 -0.6em #fafafa;
+    height: 1rem; } }
       #pstv > #prototype main .current > footer, #pstv > #prototype main .current > nav {
         opacity: 1;
         transition: opacity 250ms; }
