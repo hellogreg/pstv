@@ -87,6 +87,11 @@ a {
   }
 }
 
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   background-color: #fff;
   color: #4b4b4b;
@@ -102,5 +107,6 @@ a {
 @media (max-width: 600px) {
   .container {
     padding: .5rem 2rem;
+    word-wrap: break-word;
   }
 }
