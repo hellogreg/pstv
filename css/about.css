@@ -77,6 +77,9 @@ img, video {
   h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav, blockquote {
     margin: 2.8rem 0; }
 
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 4.2rem; }
+
   ul li, ol li {
     margin: 1.4rem 2.8rem; }
 

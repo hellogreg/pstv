@@ -35,6 +35,7 @@ $baseFontSize: 1.8rem;
 $baseLineHeight: 3.6rem;
 $mobileFontSize: 1.4rem;
 $mobileLineHeight: 2.8rem;
+$mobileHeaderLineHeight: 4.2rem;
 $sonyBlue: rgba(0, 83, 157, 1);
 $sonyBlueFaded: rgba(0, 83, 157, .5);
 $sonyBlueLight: rgba(0, 83, 157, .25);
@@ -110,6 +111,10 @@ img, video {
 
   h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav, blockquote {
     margin: $mobileLineHeight 0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    line-height: $mobileHeaderLineHeight;
   }
 
   ul li, ol li {
