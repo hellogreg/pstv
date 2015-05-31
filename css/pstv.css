@@ -32,13 +32,13 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
   display: inherit; }
 
 body > header {
-  color: #999;
+  color: #888;
   margin: .5rem auto;
   position: relative;
   width: 96rem; }
   body > header h1 {
     font-size: 1.3rem;
-    font-weight: 300; }
+    font-weight: 400; }
     body > header h1 a {
       color: #5b7b9b;
       text-decoration: none; }
@@ -449,6 +449,39 @@ body > header {
       #controls ul li:last-child {
         padding-right: 0; }
 
+.suspended {
+  position: absolute;
+  left: 15.5rem;
+  top: 15.5rem;
+  text-indent: -9999em;
+  border: 0.2rem solid rgba(255, 255, 255, 0.3);
+  border-left-color: #ffffff;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: suspendAnim 1.1s infinite linear;
+  animation: suspendAnim 1.1s infinite linear; }
+
+.suspended,
+.suspended:after {
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem; }
+
+@-webkit-keyframes suspendAnim {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@keyframes suspendAnim {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
 .preloader {
   background-image: url(../images/bg_tlg4.jpg), url(../images/app_folder_empty.png), url(../images/psx_ridge_smooth.png), url(../images/psx_ridge_scanlines.png), url(../images/psx_xeno_smooth.png), url(../images/psx_xeno_scanlines.png), url(../images/vita_homescreen.jpg);
   background-repeat: no-repeat;

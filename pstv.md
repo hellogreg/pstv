@@ -119,19 +119,19 @@ This process is another artifact from the Vita. The page peeling makes a lot mor
 - How do we easily get to the search button and the ellipses at the bottom right? Again, the interface was made for touch and quick scrolling. Should have a left-hand menu, like the other TV-based PlayStation consoles. You always know moving left takes you back to a higher level in the hierarchy.
 - Only show games I can download in my download list.
 - Highlight the PS+ games and discounts
-- Are there games for sale that I can't actually play!? (Check this to verify.)
+- Are there games for sale that I can't actually play!? (Yes. Verified with Touch My Katamari.)
 
 
 ## Other Feature Additions (And A Couple Subtractions)
 
-### Where's Netflix (and Spotify)?
+### Where's Netflix?
 The PSTV doesn’t need to be an Apple TV or Amazon Fire or even a Chromecast. But it does need to have Netflix.
 
 I've got a half-dozen devices in my house on which I can watch Netflix. So why do I need another?
 
 Maybe I don't. But the PSTV needs it, in part for the same reason some hotels have pools they know will rarely be used. People often make decisions based on what they think they might do. If you take away an option, you could lose potential customers.
 
-Also, it is nice to have -- just in case. Being able to switch right from a game to movie without turning off my device or changing inputs on my TV is a nice little perk. Plus, Sony has the best Netflix interface. I know that it's up to Netflix to make their PSTV app, but I'm sure that Sony, if they wanted, could persuade/pay them to get it done -- even if it's just a matter of making the Vita version compatible.
+Also, it is nice to have -- just in case. Being able to switch right from a game to movie without turning off my device or changing inputs on my TV is a nice little perk. Plus, Sony has the best Netflix interface. I know that it's up to Netflix to make their PSTV app, but I'm sure that Sony, if they wanted, could persuade or pay them to get it done -- even if it's just a matter of making the Vita version compatible.
 
 For my summer vacation, I’m taking one portable media device with me. If the PSTV had Netflix (and/or Spotify and/or YouTube), it’d be a no-brainer to take it. But instead, I’m bringing the Amazon Fire TV Stick, because I can use it to watch Netflix and listen to Prime Music on the road.
 
@@ -141,7 +141,7 @@ For my summer vacation, I’m taking one portable media device with me. If the P
 > To see how a PlayStation retro mode might look, I made a couple of mockup screens for my PSTV prototype to demonstrate current and proposed retro looks for *Xenogears* and *Ridge Racer*:
 > ***http://hellogreg.github.io/pstv***
 
-This is more of a wishlist thing, but I think it would be a natural fit to make the PSTV the best way to experience (or re-experience) PlayStation Classics, since so many of them are available for the platform.
+I think it would be a natural fit to make the PSTV the best way to experience (or re-experience) PlayStation Classics, since so many of them are available for the platform.
 
 Nowadays, more and more people (like me) are spending hundreds of dollars to import devices like [the Framemeister](http://retrogaming.hazard-city.de/framemeister.html), which optimize old CRT-era games for display on HDTVs. Rather than stretching and blurring the games, these devices upscale them faithfully -- maintaining the aspect ratio and keeping all the color and detail that have inspired the new retro-style games of today. These devices even give the option of adding scanlines, to make the game look more like it would have on a classic CRT screen.
 
