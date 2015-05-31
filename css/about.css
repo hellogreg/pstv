@@ -20,8 +20,7 @@
   src: url(merriweather700italic.woff) format("woff"); }
 * {
   box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-transform-style: preserve-3d; }
+  -webkit-tap-highlight-color: transparent; }
 
 html {
   font-size: 62.5%; }
@@ -29,15 +28,49 @@ html {
 body {
   font-family: "Merriweather", Georgia, serif;
   background-color: #ddd;
-  color: #444;
   margin: 0; }
+
+h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav, blockquote {
+  display: block;
+  margin: 3.6rem 0;
+  opacity: 1;
+  padding: 0;
+  vertical-align: baseline; }
+
+ul, ol, blockquote {
+  border-left: 2px solid #ddd; }
+
+li {
+  display: list-item; }
+
+ul li, ol li {
+  margin: 1.8rem 3.6rem; }
+
+blockquote {
+  padding-left: 3.6rem; }
+
+a {
+  color: #00539d;
+  -webkit-text-decoration: underline solid rgba(0, 83, 157, 0.25);
+  text-decoration: underline solid rgba(0, 83, 157, 0.25); }
+  a:hover {
+    -webkit-text-decoration: underline solid rgba(0, 83, 157, 0.5);
+    text-decoration: underline solid rgba(0, 83, 157, 0.5); }
+  a:visited {
+    color: rgba(0, 83, 157, 0.5); }
 
 .container {
   background-color: #fff;
+  color: #4b4b4b;
   font-size: 1.8rem;
   line-height: 3.6rem;
   margin: 0 auto;
   padding: .5rem 8rem;
-  width: 96rem; }
+  width: 96rem;
+  max-width: 98%; }
+
+@media (max-width: 600px) {
+  .container {
+    padding: .5rem 2rem; } }
 
 /*# sourceMappingURL=about.css.map */

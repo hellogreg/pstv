@@ -5,6 +5,8 @@
 
 I've loved the idea of the PlayStation TV from [the moment Sony announced it](https://www.youtube.com/watch?v=rG5l78gbvpU). I was excited to play Persona 4 Golden and Danganronpa: Trigger Happy Havoc. (My wife and I usually play games together, so we rarely use handhelds.) It would finally give me a chance to play early PlayStation games (like Final Fantasy VII) with an analog stick, and not just the directional pad. And it sounded like the perfect device to bring on long trips: a way to bring your games and streaming media accounts on the road and make any hotel or guest room feel a little like home.
 
+*Tell why is HAS succeeded, so they believe I love it -- because I do!*
+
 But Sony never seemed to share my PSTV enthusiasm. The console's operating system hasn't been updated from its last-gen, handheld roots. The gaming library and streaming media options seem arbitrarily limited. It's hardly been marketed in the US. It gets last billing (behind the PS4, PS3, and Vita) under "Systems" at [Sony's own site](https://www.playstation.com/en-us/). And with all the price cuts it's received at various stores since releasing in the US just last fall, the whole thing has just seemed like an inventory dump. Even SCEI President and Group CEO Andrew House already refers to the device as a "[legacy platform](http://www.gamesindustry.biz/articles/2015-05-27-sony-admits-first-party-lineup-a-little-sparse)"
 
 Maybe Sony thought, "We'll put it out there on the off chance it catches on, but otherwise pretend the whole thing never happened." By giving the console no expectations, Sony is inoculated against criticism that the system underperformed. I understand that. And I can see why they think it's a tough sell. It's not the most high-concept of devices. What does it do? What niche does it fill? Who is it for?
@@ -143,7 +145,7 @@ This is more of a wishlist thing, but I think it would be a natural fit to make 
 
 Nowadays, more and more people (like me) are spending hundreds of dollars to import devices like [the Framemeister](http://retrogaming.hazard-city.de/framemeister.html), which optimize old CRT-era games for display on HDTVs. Rather than stretching and blurring the games, these devices upscale them faithfully -- maintaining the aspect ratio and keeping all the color and detail that have inspired the new retro-style games of today. These devices even give the option of adding scanlines, to make the game look more like it would have on a classic CRT screen.
 
-The PSTV could take the old 320x240 pixel PlayStation Classics and upscale them to 960x720 (pillarboxed on a 720p TV) or 1280x960 (windowboxed on a 1080p set), depending on TV resolution. There's obviously a market in appealing to gamers' nostalgia. And I know I'd love to have a way to play digital versions of all my old favorites on a console I already have connected to my main TV.
+The PSTV could take the old 320×240 pixel PlayStation Classics and upscale them to 960×720 (pillarboxed on a 720p TV) or 1280×960 (windowboxed on a 1080p set), depending on TV resolution. There's obviously a market in appealing to gamers' nostalgia. And I know I'd love to have a way to play digital versions of all my old favorites on a console I already have connected to my main TV.
 
 
 ### Dump the PSTV Whitelist

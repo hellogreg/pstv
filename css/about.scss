@@ -29,8 +29,13 @@
 * {
   box-sizing: border-box;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  -webkit-transform-style: preserve-3d;
 }
+
+$baseFontSize: 1.8rem;
+$baseLineHeight: 3.6rem;
+$sonyBlue: rgba(0, 83, 157, 1);
+$sonyBlueFaded: rgba(0, 83, 157, .5);
+$sonyBlueLight: rgba(0, 83, 157, .25);
 
 html {
   font-size: 62.5%; // 10px rem base.
@@ -39,15 +44,63 @@ html {
 body {
   font-family: "Merriweather", Georgia, serif;
   background-color: #ddd;
-  color: #444;
   margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav, blockquote {
+  display: block;
+  margin: $baseLineHeight 0;
+  opacity: 1;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+ul, ol, blockquote {
+  border-left: 2px solid #ddd;
+}
+
+li {
+  display: list-item;
+}
+
+ul li, ol li {
+  margin: $baseFontSize $baseLineHeight;
+}
+
+blockquote {
+  padding-left: $baseLineHeight;
+}
+
+a {
+
+  color: $sonyBlue;
+  -webkit-text-decoration: underline solid $sonyBlueLight;
+  text-decoration: underline solid $sonyBlueLight;
+
+  &:hover {
+    -webkit-text-decoration: underline solid $sonyBlueFaded;
+    text-decoration: underline solid $sonyBlueFaded;
+  }
+
+  &:visited {
+    color: $sonyBlueFaded
+  }
 }
 
 .container {
   background-color: #fff;
-  font-size: 1.8rem;
-  line-height: 3.6rem;
+  color: #4b4b4b;
+  font-size: $baseFontSize;
+  line-height: $baseLineHeight;
   margin: 0 auto;
   padding: .5rem 8rem;
   width: 96rem;
+  max-width: 98%;
+}
+
+
+@media (max-width: 600px) {
+  .container {
+    padding: .5rem 2rem;
+  }
 }
