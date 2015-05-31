@@ -102,12 +102,12 @@ img, video {
   background-image: url(../images/pstvConsole.png);
   background-size: 100% auto;
   background-repeat: no-repeat;
-  background-position: 0 -6rem;
+  background-position: 0 -18rem;
   color: #4b4b4b;
   font-size: $baseFontSize;
   line-height: $baseLineHeight;
   margin: 0 auto;
-  padding: 25rem 8rem .5rem 8rem;
+  padding: 13rem 8rem .5rem 8rem;
   width: 96rem;
   max-width: 98%;
 }
@@ -135,7 +135,7 @@ img, video {
     color: #222;
     font-size: $mobileFontSize;
     line-height: $mobileLineHeight;
-    padding: .5rem 2rem;
+    padding: 5rem 2rem .5rem;
     word-wrap: break-word;
   }
 }
