@@ -3,6 +3,9 @@
 > To skip right to viewing my PSTV homescreen proof of concept, it's here:
 > http://hellogreg.github.io/pstv
 
+*"For us, design is more than just superficial look and feel. It must also be in harmony with both the human intellect and instinct. Reaching beyond the realms of functionality and aesthetics, design must provide both an intuitive and enriching experience."
+-- From the [Sony Design Philosophy](http://www.sony.net/SonyInfo/design/profile/philosophy.html) section on Empathy*
+
 I've loved the idea of the PlayStation TV from [the moment Sony announced it](https://www.youtube.com/watch?v=rG5l78gbvpU). I was excited to play *Persona 4 Golden* and D*anganronpa: Trigger Happy Havoc*. (My wife and I usually play games together, so we rarely use handhelds.) It would finally give me a chance to play early PlayStation games (like *Final Fantasy VII*) with an analog stick, and not just with the directional pad. And it sounded like the perfect device to bring on long trips: a way to bring your games and streaming media accounts on the road and make any hotel or guest room feel a little like home.
 
 *Tell why is HAS succeeded, so they believe I love it -- because I do!*
