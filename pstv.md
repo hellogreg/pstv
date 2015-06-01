@@ -9,6 +9,8 @@ I've loved the idea of the PlayStation TV from [the moment Sony announced it](ht
 
 *Talk about how Sony makes great hardware and pride themselves on interface. But the software in this case is compromised and half-assed, because it's just a straight Vita port.*
 
+*I want to determine **the essence** of the PSTV (from Sony's design philosophy).*
+
 But Sony never seemed to share my PSTV enthusiasm. 
 - The console's operating system hasn't been updated from its last-gen, handheld roots.
 - The gaming library and streaming media options seem arbitrarily limited.
