@@ -1,9 +1,9 @@
 # Reimagining the PSTV (a bit)
 
-> To skip right to my PSTV homescreen proof of concept, it's here:
-> http://hellogreg.github.io/pstv
+*To skip right to my PSTV homescreen proof of concept, it's here:*
+*http://hellogreg.github.io/pstv*
 
-*"For us, design is more than just superficial look and feel. It must also be in harmony with both the human intellect and instinct. Reaching beyond the realms of functionality and aesthetics, design must provide both an intuitive and enriching experience."
+>"For us, design is more than just superficial look and feel. It must also be in harmony with both the human intellect and instinct. Reaching beyond the realms of functionality and aesthetics, design must provide both an intuitive and enriching experience."
 -- [Sony Design Philosophy: Empathy](http://www.sony.net/SonyInfo/design/profile/philosophy.html)*
 
 I've loved the idea of the PlayStation TV from [the moment Sony announced it](https://www.youtube.com/watch?v=rG5l78gbvpU). I was excited to play *Persona 4 Golden* and *Danganronpa: Trigger Happy Havoc*. (My wife and I usually play games together, so we rarely use handhelds.) It would finally give me a chance to play early PlayStation games (like *Final Fantasy VII*) with an analog stick, and not just with the directional pad. And it sounded like the perfect device to bring on long trips: a way to bring your games and streaming media accounts on the road and make any hotel or guest room feel a little like home.
@@ -151,7 +151,7 @@ The simplest solution would be to have a left-hand menu, like the other TV-based
 A few other store suggestions:
 - My download list should only show titles that can be played on the PSTV. It does me no good to scroll through dozens (hundreds?) of other PlayStation games, apps, etc. to see the small percentage that I actually can use on this system.
 - Make a link on the store's homepage that, when followed, shows free games and discounts for PlayStation Plus users. It's near impossible to find them, now.
-- Only offer titles that can actually be played on the PSTV. For example, if I do a search on *Touch My Katamari*, it shows and can be bought and downloaded. But it won't play. I'm sure I'm not the only person who's bought something that wasn't even compatible.
+- Only offer titles that can actually be played on the PSTV. For example, *Touch My Katamari* can be searched, bought, and downloaded. But it won't play. I'm sure I'm not the only person who's bought something that wasn't even compatible.
 
 
 ### Get rid of the “Featured” tab
