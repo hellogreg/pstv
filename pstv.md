@@ -144,10 +144,14 @@ This process is another artifact from the Vita. The page peeling makes a lot mor
 
 ### Update store navigation
 
-- How do we easily get to the search button and the ellipses at the bottom right? Again, the interface was made for touch and quick scrolling. Should have a left-hand menu, like the other TV-based PlayStation consoles. You always know moving left takes you back to a higher level in the hierarchy.
-- Only show games I can download in my download list.
-- Highlight the PS+ games and discounts
-- Are there games for sale that I can't actually play!? (Yes. Verified with *Touch My Katamari*.)
+Like the homescreen, the store needs a complete overhaul to make it more controller-friendly. (Unlike the homescreen, I haven't had a chance to make a prototype for it, yet.) Some of the most important sections -- like the Search area at the top right, and the ellipses at the bottom right -- are the most difficult to access. When they can be tapped, that's not a big deal. But scrolling and maneuvering around the screen in all directions to get to them is a pain.
+
+The simplest solution would be to have a left-hand menu, like the other TV-based PlayStation consoles. You always know going left takes you back a level in the hierarchy.
+
+A few other store suggestions:
+- My download list should only show titles that can be played on the PSTV. It does me no good to scroll through dozens (hundreds?) of other PlayStation games, apps, etc. to see the small percentage that I actually can use on this system.
+- Make a link on the store's homepage that, when followed, shows free games and discounts for PlayStation Plus users. It's near impossible to find them, now.
+- Only offer titles that can actually be played on the PSTV. For example, if I do a search on *Touch My Katamari*, it shows and can be bought and downloaded. But it won't play. I'm sure I'm not the only person who's bought something that wasn't even compatible.
 
 
 ### Get rid of the “Featured” tab
