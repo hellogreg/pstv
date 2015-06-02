@@ -83,7 +83,11 @@ $appTransitionSpeed: 250ms;
   display: inherit;
 }
 
-body > header {
+.container {
+  //max-width: 100%;
+}
+
+.container > header {
   color: #888;
   margin: .5rem auto;
   position: relative;
@@ -539,10 +543,11 @@ body > header {
 }
 
 @media (max-width: 520px) {
+  /*
   @viewport {
     width: 960px;
   }
-
+*/
   #controls {
     font-size: 210%;
 

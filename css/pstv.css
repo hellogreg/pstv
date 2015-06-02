@@ -31,18 +31,18 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
 .visible {
   display: inherit; }
 
-body > header {
+.container > header {
   color: #888;
   margin: .5rem auto;
   position: relative;
   width: 96rem; }
-  body > header h1 {
+  .container > header h1 {
     font-size: 1.3rem;
     font-weight: 400; }
-    body > header h1 a {
+    .container > header h1 a {
       color: #5b7b9b;
       text-decoration: none; }
-      body > header h1 a:hover {
+      .container > header h1 a:hover {
         text-decoration: underline; }
 
 #pstv {
@@ -505,8 +505,11 @@ body > header {
   display: none; }
 
 @media (max-width: 520px) {
+  /*
   @viewport {
-    width: 960px; }
+    width: 960px;
+  }
+*/
   #controls {
     font-size: 210%; }
     #controls ul li {
