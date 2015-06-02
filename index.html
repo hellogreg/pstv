@@ -9,284 +9,295 @@
 </head>
 
 <body>
+<div class="container">
 
-<header>
-  <h1>PlayStation TV homescreen proof of concept by <a href="https://twitter.com/elfneedsfood">@elfneedsfood</a>.
-  Read more about why I made it <a href="about.html">here</a>.
-  </h1></header>
+  <header>
+    <h1>PlayStation TV homescreen proof of concept by <a href="https://twitter.com/elfneedsfood">@elfneedsfood</a>.
+      Read more about why I made it <a href="about.html">here</a>.
+    </h1></header>
 
 
-<div id="pstv">
+  <div id="pstv">
 
-  <section id="mockups" class="invisible"></section>
+    <section id="mockups" class="invisible"></section>
 
-  <section id="prototype" class="bg-grid">
+    <section id="prototype" class="bg-grid">
 
-    <div class="underlay"></div>
+      <div class="underlay"></div>
 
-    <header>
-      <h1 class="system"><img src="images/icon_wifi.png" alt="Wifi"/>MyPSTV</h1>
-      <h1 class="user"><img src="images/icon_avatar.png" alt="User"/>hellogreg
-        <img src="images/icon_plus.png" alt="Plus" class="plus"/>
-      </h1>
-      <h1 class="friends"><img src="images/icon_friends.png" alt="Friends"/>3 online</h1>
-      <h1 class="trophies"><img src="images/icon_trophies.png" alt="Trophies"/>10</h1>
-      <h1 id="clock" class="clock">6:32 PM</h1>
-    </header>
+      <header>
+        <h1 class="system"><img src="images/icon_wifi.png" alt="Wifi"/>MyPSTV</h1>
 
-    <main>
+        <h1 class="user"><img src="images/icon_avatar.png" alt="User"/>hellogreg
+          <img src="images/icon_plus.png" alt="Plus" class="plus"/>
+        </h1>
 
-      <article class="app farthest-left" id="app-ps-store">
-        <header><img src="images/app_store.png" alt="PlayStation Store"/></header>
-        <nav>
-          <ul>
-            <li class="button-x">Enter</li>
-            <li class="button-triangle">Search by Keyword</li>
-            <li class="button-square">Manage Account</li>
+        <h1 class="friends"><img src="images/icon_friends.png" alt="Friends"/>3 online</h1>
+
+        <h1 class="trophies"><img src="images/icon_trophies.png" alt="Trophies"/>10</h1>
+
+        <h1 id="clock" class="clock">6:32 PM</h1>
+      </header>
+
+      <main>
+
+        <article class="app farthest-left" id="app-ps-store">
+          <header><img src="images/app_store.png" alt="PlayStation Store"/></header>
+          <nav>
+            <ul>
+              <li class="button-x">Enter</li>
+              <li class="button-triangle">Search by Keyword</li>
+              <li class="button-square">Manage Account</li>
+            </ul>
+          </nav>
+          <footer><h1>PlayStation Store</h1></footer>
+        </article>
+
+        <article class="app adjacent-left" id="app-danganronpa">
+          <header><img src="images/app_danganronpa.jpg" alt="DanganRonpa"/></header>
+          <nav>
+            <ul>
+              <li class="button-x">Start Game</li>
+              <li class="button-triangle">Options</li>
+              <li class="button-square">View Related Titles</li>
+              <li class="button-circle">Uninstall</li>
+            </ul>
+          </nav>
+          <footer><h1>Danganronpa: Trigger Happy Havoc</h1></footer>
+        </article>
+
+        <article class="app current" id="app-persona">
+          <header><img src="images/app_persona.jpg" alt="P4G"/>
+
+            <div class="suspended"></div>
+          </header>
+          <nav>
+            <ul>
+              <li class="button-x">Resume Game</li>
+              <li class="button-triangle">Options</li>
+              <li class="button-square">View Related Titles</li>
+              <li class="button-circle">Uninstall</li>
+            </ul>
+          </nav>
+          <footer><h1>Persona 4 Golden</h1></footer>
+        </article>
+
+        <article class="app adjacent-right" id="app-ffvii">
+          <header><img src="images/app_ffvii.jpg" alt="FFVII"/></header>
+          <nav>
+            <ul>
+              <li class="button-x">Start Game</li>
+              <li class="button-triangle">Options</li>
+              <li class="button-square">View Related Titles</li>
+              <li class="button-circle">Uninstall</li>
+            </ul>
+          </nav>
+          <footer><h1>Final Fantasy VII</h1></footer>
+        </article>
+
+        <article class="app distant-right-1" id="app-pix">
+          <header><img src="images/app_pix.jpg" alt="Pix"/></header>
+          <nav>
+            <ul>
+              <li class="button-x">Start Game</li>
+              <li class="button-triangle">Options</li>
+              <li class="button-square">View Related Titles</li>
+              <li class="button-circle">Uninstall</li>
+            </ul>
+          </nav>
+          <footer><h1>Pix the Cat</h1></footer>
+        </article>
+
+        <article class="app distant-right-2" id="app-ps1-folder">
+          <header><img src="images/app_folder.png" alt="Folder: PS1 Games"/></header>
+          <nav>
+            <ul>
+              <li class="button-x">Expand Folder</li>
+              <li class="button-triangle">Options</li>
+            </ul>
+          </nav>
+          <footer><h1>PlayStation Classics</h1></footer>
+        </article>
+
+        <article class="app distant-right-3" id="app-hulu">
+          <header><img src="images/app_hulu.jpg" alt="Hulu"/></header>
+          <nav>
+            <ul>
+              <li class="button-x">Start App</li>
+              <li class="button-triangle">Options</li>
+              <li class="button-square">Manage Account</li>
+              <li class="button-circle">Uninstall</li>
+            </ul>
+          </nav>
+          <footer><h1>Hulu Plus</h1></footer>
+        </article>
+
+        <article class="app farthest-right" id="app-ps4">
+          <header><img src="images/app_ps4_connect.png" alt="PlayStation 4  Link"/></header>
+          <nav>
+            <ul>
+              <li class="button-x">Connect to System</li>
+              <li class="button-triangle">Options</li>
+            </ul>
+          </nav>
+          <footer><h1>PlayStation 4 Link</h1></footer>
+        </article>
+
+        <article class="app offscreen-right" id="app-hotline-2">
+          <header><img src="images/app_hotline_2.jpg" alt="Hotline Miami 2"/></header>
+          <nav>
+            <ul>
+              <li class="button-x">Start Game</li>
+              <li class="button-triangle">Options</li>
+              <li class="button-square">View Related Titles</li>
+              <li class="button-circle">Uninstall</li>
+            </ul>
+          </nav>
+          <footer><h1>Hotline Miami 2: Wrong Number</h1></footer>
+        </article>
+
+        <article class="app offscreen-right" id="app-spotify">
+          <header><img src="images/app_spotify.png" alt="Spotify"/></header>
+          <nav>
+            <ul>
+              <li class="button-x">Start App</li>
+              <li class="button-triangle">Options</li>
+              <li class="button-square">Manage Account</li>
+              <li class="button-circle">Uninstall</li>
+            </ul>
+          </nav>
+          <footer><h1>Spotify</h1></footer>
+        </article>
+
+        <article class="app offscreen-right" id="app-grim">
+          <header><img src="images/app_grim_fandango.jpg" alt="Grim Fandango Remastered"/></header>
+          <nav>
+            <ul>
+              <li class="button-x">Start Game</li>
+              <li class="button-triangle">Options</li>
+              <li class="button-square">View Related Titles</li>
+              <li class="button-circle">Uninstall</li>
+            </ul>
+          </nav>
+          <footer><h1>Grim Fandango Remastered</h1></footer>
+        </article>
+
+        <article class="app offscreen-right" id="app-netflix">
+          <header><img src="images/app_netflix.png" alt="Netflix"/></header>
+          <nav>
+            <ul>
+              <li class="button-x">Start App</li>
+              <li class="button-triangle">Options</li>
+              <li class="button-square">Manage Account</li>
+              <li class="button-circle">Uninstall</li>
+            </ul>
+          </nav>
+          <footer><h1>Netflix</h1></footer>
+        </article>
+
+        <article class="app offscreen-right" id="app-settings">
+          <header><img src="images/app_settings.png" alt="Settings"/></header>
+          <nav>
+            <ul>
+              <li class="button-x">Enter</li>
+              <li class="button-triangle">Options</li>
+            </ul>
+          </nav>
+          <footer><h1>PlayStation TV Settings</h1></footer>
+        </article>
+
+      </main>
+
+
+      <footer>
+        <h1 id="announcements"><span>Final Fantasy XII Remastered comes to PlayStation TV&reg; this fall&hellip;
+          &nbsp;&nbsp;Download The Last Guardian theme today&hellip;&nbsp;&nbsp;</span></h1>
+
+        <h1 class="pstvlogo">Playstation TV&reg;</h1>
+      </footer>
+
+
+      <div id="overlay" class="overlay">
+        <section id="folder" class="folder shrink">
+          <h1>PlayStation Classics</h1>
+
+          <div class="icon"></div>
+          <ul class="folder-apps">
+            <li data-image="images/app_chrono.jpg" class="folder-app selected">Chrono Cross</li>
+            <li data-image="images/app_umjammer.jpg" class="folder-app">Umjammer Lammy</li>
+            <li data-image="images/app_vagrant.jpg" class="folder-app">Vagrant Story</li>
+            <li data-image="images/app_tekken2.jpg" class="folder-app">Tekken 2</li>
+            <li data-image="images/app_xenogears.jpg" class="folder-app">Xenogears</li>
+            <li data-image="images/app_parasite.jpg" class="folder-app">Parasite Eve</li>
           </ul>
-        </nav>
-        <footer><h1>PlayStation Store</h1></footer>
-      </article>
+          <nav>
+            <ul>
+              <li class="folder-button-x">Start Game</li>
+              <li class="folder-button-triangle">Edit Folder</li>
+              <li class="folder-button-circle">Close All</li>
+            </ul>
+          </nav>
+        </section>
+      </div>
 
-      <article class="app adjacent-left" id="app-danganronpa">
-        <header><img src="images/app_danganronpa.jpg" alt="DanganRonpa"/></header>
-        <nav>
-          <ul>
-            <li class="button-x">Start Game</li>
-            <li class="button-triangle">Options</li>
-            <li class="button-square">View Related Titles</li>
-            <li class="button-circle">Uninstall</li>
-          </ul>
-        </nav>
-        <footer><h1>Danganronpa: Trigger Happy Havoc</h1></footer>
-      </article>
+    </section>
 
-      <article class="app current" id="app-persona">
-        <header><img src="images/app_persona.jpg" alt="P4G"/><div class="suspended"></div></header>
-        <nav>
-          <ul>
-            <li class="button-x">Resume Game</li>
-            <li class="button-triangle">Options</li>
-            <li class="button-square">View Related Titles</li>
-            <li class="button-circle">Uninstall</li>
-          </ul>
-        </nav>
-        <footer><h1>Persona 4 Golden</h1></footer>
-      </article>
+  </div>
 
-      <article class="app adjacent-right" id="app-ffvii">
-        <header><img src="images/app_ffvii.jpg" alt="FFVII"/></header>
-        <nav>
-          <ul>
-            <li class="button-x">Start Game</li>
-            <li class="button-triangle">Options</li>
-            <li class="button-square">View Related Titles</li>
-            <li class="button-circle">Uninstall</li>
-          </ul>
-        </nav>
-        <footer><h1>Final Fantasy VII</h1></footer>
-      </article>
+  <div id="controls">
+    <ul>
+      <li>Prototype:</li>
+      <li>
+        <button id="move-apps-left">&lt;&lt;</button>
+      </li>
+      <li>
+        <button id="move-apps-right">&gt;&gt;</button>
+      </li>
+      <li>
+        <button id="toggle-folder" disabled="disabled">Open/Close Folder</button>
+      </li>
+      <li>
+        <button id="hide-grid">Plain Background</button>
+      </li>
+      <li>
+        <button id="show-grid-15">Grid BG</button>
+      </li>
+      <li>
+        <button id="show-custom">Custom BG</button>
+      </li>
+      <li>
+        <button id="toggle-marquee">Animated Marquee</button>
+      </li>
+    </ul>
+    <ul>
+      <li>Static Screens:</li>
+      <li>
+        <button id="show-vita">PSTV Homescreen (Current)</button>
+      </li>
+      <li>
+        <button id="show-xeno-smooth">Xenogears (Current)</button>
+      </li>
+      <li>
+        <button id="show-xeno-scanlines">Xenogears (Retro Mode)</button>
+      </li>
+      <li>
+        <button id="show-ridge-smooth">Ridge Racer (Current)</button>
+      </li>
+      <li>
+        <button id="show-ridge-scanlines">Ridge Racer (Retro Mode)</button>
+      </li>
+    </ul>
+  </div>
 
-      <article class="app distant-right-1" id="app-pix">
-        <header><img src="images/app_pix.jpg" alt="Pix"/></header>
-        <nav>
-          <ul>
-            <li class="button-x">Start Game</li>
-            <li class="button-triangle">Options</li>
-            <li class="button-square">View Related Titles</li>
-            <li class="button-circle">Uninstall</li>
-          </ul>
-        </nav>
-        <footer><h1>Pix the Cat</h1></footer>
-      </article>
+  <script src="js/pstv.js"></script>
+  <script type="application/javascript" src="js/Fastclick.js"></script>
+  <script type="application/javascript">
+    window.addEventListener("load", function () {
+      FastClick.attach(document.body);
+    }, false);
+  </script>
 
-      <article class="app distant-right-2" id="app-ps1-folder">
-        <header><img src="images/app_folder.png" alt="Folder: PS1 Games"/></header>
-        <nav>
-          <ul>
-            <li class="button-x">Expand Folder</li>
-            <li class="button-triangle">Options</li>
-          </ul>
-        </nav>
-        <footer><h1>PlayStation Classics</h1></footer>
-      </article>
-
-      <article class="app distant-right-3" id="app-hulu">
-        <header><img src="images/app_hulu.jpg" alt="Hulu"/></header>
-        <nav>
-          <ul>
-            <li class="button-x">Start App</li>
-            <li class="button-triangle">Options</li>
-            <li class="button-square">Manage Account</li>
-            <li class="button-circle">Uninstall</li>
-          </ul>
-        </nav>
-        <footer><h1>Hulu Plus</h1></footer>
-      </article>
-
-      <article class="app farthest-right" id="app-ps4">
-        <header><img src="images/app_ps4_connect.png" alt="PlayStation 4  Link"/></header>
-        <nav>
-          <ul>
-            <li class="button-x">Connect to System</li>
-            <li class="button-triangle">Options</li>
-          </ul>
-        </nav>
-        <footer><h1>PlayStation 4 Link</h1></footer>
-      </article>
-
-      <article class="app offscreen-right" id="app-hotline-2">
-        <header><img src="images/app_hotline_2.jpg" alt="Hotline Miami 2"/></header>
-        <nav>
-          <ul>
-            <li class="button-x">Start Game</li>
-            <li class="button-triangle">Options</li>
-            <li class="button-square">View Related Titles</li>
-            <li class="button-circle">Uninstall</li>
-          </ul>
-        </nav>
-        <footer><h1>Hotline Miami 2: Wrong Number</h1></footer>
-      </article>
-
-      <article class="app offscreen-right" id="app-spotify">
-        <header><img src="images/app_spotify.png" alt="Spotify"/></header>
-        <nav>
-          <ul>
-            <li class="button-x">Start App</li>
-            <li class="button-triangle">Options</li>
-            <li class="button-square">Manage Account</li>
-            <li class="button-circle">Uninstall</li>
-          </ul>
-        </nav>
-        <footer><h1>Spotify</h1></footer>
-      </article>
-
-      <article class="app offscreen-right" id="app-grim">
-        <header><img src="images/app_grim_fandango.jpg" alt="Grim Fandango Remastered"/></header>
-        <nav>
-          <ul>
-            <li class="button-x">Start Game</li>
-            <li class="button-triangle">Options</li>
-            <li class="button-square">View Related Titles</li>
-            <li class="button-circle">Uninstall</li>
-          </ul>
-        </nav>
-        <footer><h1>Grim Fandango Remastered</h1></footer>
-      </article>
-
-      <article class="app offscreen-right" id="app-netflix">
-        <header><img src="images/app_netflix.png" alt="Netflix"/></header>
-        <nav>
-          <ul>
-            <li class="button-x">Start App</li>
-            <li class="button-triangle">Options</li>
-            <li class="button-square">Manage Account</li>
-            <li class="button-circle">Uninstall</li>
-          </ul>
-        </nav>
-        <footer><h1>Netflix</h1></footer>
-      </article>
-
-      <article class="app offscreen-right" id="app-settings">
-        <header><img src="images/app_settings.png" alt="Settings"/></header>
-        <nav>
-          <ul>
-            <li class="button-x">Enter</li>
-            <li class="button-triangle">Options</li>
-          </ul>
-        </nav>
-        <footer><h1>PlayStation TV Settings</h1></footer>
-      </article>
-
-    </main>
-
-
-    <footer>
-      <h1 id="announcements"><span>Final Fantasy XII Remastered comes to PlayStation TV&reg; this fall&hellip;
-        &nbsp;&nbsp;Download The Last Guardian theme today&hellip;&nbsp;&nbsp;</span></h1>
-      <h1 class="pstvlogo">Playstation TV&reg;</h1>
-    </footer>
-
-
-    <div id="overlay" class="overlay">
-      <section id="folder" class="folder shrink">
-        <h1>PlayStation Classics</h1>
-        <div class="icon"></div>
-        <ul class="folder-apps">
-          <li data-image="images/app_chrono.jpg" class="folder-app selected">Chrono Cross</li>
-          <li data-image="images/app_umjammer.jpg" class="folder-app">Umjammer Lammy</li>
-          <li data-image="images/app_vagrant.jpg" class="folder-app">Vagrant Story</li>
-          <li data-image="images/app_tekken2.jpg" class="folder-app">Tekken 2</li>
-          <li data-image="images/app_xenogears.jpg" class="folder-app">Xenogears</li>
-          <li data-image="images/app_parasite.jpg" class="folder-app">Parasite Eve</li>
-        </ul>
-        <nav>
-          <ul>
-            <li class="folder-button-x">Start Game</li>
-            <li class="folder-button-triangle">Edit Folder</li>
-            <li class="folder-button-circle">Close All</li>
-          </ul>
-        </nav>
-      </section>
-    </div>
-
-  </section>
-
+  <div class="preloader"></div>
 </div>
-
-<div id="controls">
-  <ul>
-    <li>Prototype:</li>
-    <li>
-      <button id="move-apps-left">&lt;&lt;</button>
-    </li>
-    <li>
-      <button id="move-apps-right">&gt;&gt;</button>
-    </li>
-    <li>
-      <button id="toggle-folder" disabled="disabled">Open/Close Folder</button>
-    </li>
-    <li>
-      <button id="hide-grid">Plain Background</button>
-    </li>
-    <li>
-      <button id="show-grid-15">Grid BG</button>
-    </li>
-    <li>
-      <button id="show-custom">Custom BG</button>
-    </li>
-    <li>
-      <button id="toggle-marquee">Animated Marquee</button>
-    </li>
-  </ul>
-  <ul>
-    <li>Static Screens:</li>
-    <li>
-      <button id="show-vita">PSTV Homescreen (Current)</button>
-    </li>
-    <li>
-      <button id="show-xeno-smooth">Xenogears (Current)</button>
-    </li>
-    <li>
-      <button id="show-xeno-scanlines">Xenogears (Retro Mode)</button>
-    </li>
-    <li>
-      <button id="show-ridge-smooth">Ridge Racer (Current)</button>
-    </li>
-    <li>
-      <button id="show-ridge-scanlines">Ridge Racer (Retro Mode)</button>
-    </li>
-  </ul>
-</div>
-
-<script src="js/pstv.js"></script>
-<script type="application/javascript" src="js/Fastclick.js"></script>
-<script type="application/javascript">
-  window.addEventListener("load", function () {
-    FastClick.attach(document.body);
-  }, false);
-</script>
-
-<div class="preloader"></div>
 </body>
 </html>
