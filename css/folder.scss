@@ -40,8 +40,8 @@ $folderHeight: 36rem;
   @include centerLocation;
   @include transitionSettings();
   background-color: $bgColor;
-  background-image: url(../images/1920x1080bg.png);
-  background-size: 100% 100%;
+  //background-image: url(../images/1920x1080bg.png); // Performance hit in Firefox...
+  //background-size: 100% 100%; // Performance hit in Firefox...
   height: $folderHeight;
   left: calc(#{$pstvWidth} / 2);
   overflow: hidden;
