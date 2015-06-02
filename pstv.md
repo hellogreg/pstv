@@ -1,12 +1,12 @@
 # Reimagining the PSTV (a bit)
 
-> To skip right to viewing my PSTV homescreen proof of concept, it's here:
+> To skip right to my PSTV homescreen proof of concept, it's here:
 > http://hellogreg.github.io/pstv
 
 *"For us, design is more than just superficial look and feel. It must also be in harmony with both the human intellect and instinct. Reaching beyond the realms of functionality and aesthetics, design must provide both an intuitive and enriching experience."
--- From the [Sony Design Philosophy](http://www.sony.net/SonyInfo/design/profile/philosophy.html) section on Empathy*
+-- [Sony Design Philosophy: Empathy](http://www.sony.net/SonyInfo/design/profile/philosophy.html)*
 
-I've loved the idea of the PlayStation TV from [the moment Sony announced it](https://www.youtube.com/watch?v=rG5l78gbvpU). I was excited to play *Persona 4 Golden* and D*anganronpa: Trigger Happy Havoc*. (My wife and I usually play games together, so we rarely use handhelds.) It would finally give me a chance to play early PlayStation games (like *Final Fantasy VII*) with an analog stick, and not just with the directional pad. And it sounded like the perfect device to bring on long trips: a way to bring your games and streaming media accounts on the road and make any hotel or guest room feel a little like home.
+I've loved the idea of the PlayStation TV from [the moment Sony announced it](https://www.youtube.com/watch?v=rG5l78gbvpU). I was excited to play *Persona 4 Golden* and *Danganronpa: Trigger Happy Havoc*. (My wife and I usually play games together, so we rarely use handhelds.) It would finally give me a chance to play early PlayStation games (like *Final Fantasy VII*) with an analog stick, and not just with the directional pad. And it sounded like the perfect device to bring on long trips: a way to bring your games and streaming media accounts on the road and make any hotel or guest room feel a little like home.
 
 *Tell why is HAS succeeded, so they believe I love it -- because I do!*
 
@@ -77,7 +77,7 @@ I'm sure this saved on design and development costs. But, as a result, its brand
 
 ### It's Too Touchy
 
-My biggest issue with the Vita interface is that it was designed for touchscreen navigation, and not a controller, as the PSTV requires. 
+My biggest issue with the Vita interface is that it was designed for touchscreen navigation, and not a controller, as the PSTV requires. In Sony's own "Feature Design" [profile](http://www.sony.net/Fun/design/activity/product/ps_vita/01.html) of the Vita, the system's designers even say that the d-pad is appropriate for controller navigation (and that the touchscreen is more appropriate for the Vita).
 
 Button and stick functions change from screen to screen, making them seem like their use was tacked on as an afterthought. In no single case does this break functionality on the PSTV. But the cumulative effect is annoying. This becomes an obstacle as soon as you reach the console's homescreen.
 
@@ -111,6 +111,7 @@ I’ve also kept one feature that the PSTV already has that the PS4 doesn’t: f
 
 
 ## A Few More Unsolicited UI Suggestions
+
 
 ### Streamline launching and backing out of apps.
 
@@ -149,7 +150,20 @@ This process is another artifact from the Vita. The page peeling makes a lot mor
 - Are there games for sale that I can't actually play!? (Yes. Verified with *Touch My Katamari*.)
 
 
+### Get rid of the “Featured” tab
+
+I don't know if anyone ever does anything except skip right past this tab. Nobody likes it. It's clearly one of those business decisions that didn't have the user in mind. It also breaks the natural navigational flow; you don't see it when entering apps, but it's always there when you leave them. Plus, it looks like too much like it's the store, even though it's not.
+
+If you have to keep it (and I don't think you do), at least add store search functionality and/or a link to the store's homepage. Honestly, store search functionality wouldn't a bad idea on the PSTV homescreen. Give people to option to go right to the title's they're most likely to buy.
+
+
+### Hell, get rid of *all* the tabs -- and the interstitial start screens that live on them
+
+These "LiveArea" screens are another relic of a touch-based interface. They work well for tapping and swiping, but don't suit controllers. Use multiple buttons (e.g., X to start game, triangle for options, etc.) to replace the functions on the start screens. And use activity spinners like the PS4 does for currently active games and apps.
+
+
 ## Other Additions (And A Couple Subtractions)
+
 
 ### Where's Netflix?
 The PSTV doesn’t need to be an Apple TV or Amazon Fire or even a Chromecast. But it does need to have Netflix.
@@ -180,18 +194,6 @@ Give users an option (maybe as an opt-in, so users know the risks) to render *al
 
 I understand that there could be issues with licensing from third-party publishers. If that's the case, it could be a little trickier to nix the whitelist for those titles. Still, all first-party games should be exempt.
 
-
-### Get Rid of the “Featured” Tab
-
-I don't know if anyone ever does anything except skip right past this tab. It also breaks the natural navigational flow; you don't see it when entering apps, but it's always there when you leave them. Plus, it looks like too much like it's the store, even though it's not. I would prefer if it were, or if it at least had a store search function.
-
-### Hell, Get Rid of All the Tabs...
-
-They work better for swipe-able interfaces. Instead of tabs, use activity spinners like the PS4 does for currently active games and apps.
-
-### ...and the Interstitial Start Screens that live on them.
-
-These are another relic of a touch-based interface, which are unnecessary when you can use multiple controller buttons on the homescreen.
 
 ## Who am I?
 
