@@ -1,40 +1,18 @@
-# Reimagining the PSTV (a bit)
-######by [Greg Gibson](https://twitter.com/elfneedsfood)
+# Reimagining the PlayStation TV (a bit)
+######by Greg Gibson ([@elfneedsfood](https://twitter.com/elfneedsfood)). View my PSTV homescreen prototype [here](index.html)
 
->To skip right to viewing my PSTV homescreen proof of concept and save yourself a bunch of reading (I don't blame you!), it's here:
->http://hellogreg.github.io/pstv
-
-- Overview
- - The PSTV's promise
- - What it is
- - What it still can be (with a little help)
-- Fixing the User Interface
- - Redesign the homescreen
- - Fix the PlayStation Store navigation
- - Streamline launching and exiting apps
- - Get rid of the "Featured" tab
- - Hell, get rid of *all* tabs
-- Other Proposed Updates
- - The PSTV needs Netflix (and maybe some other streaming media)
- - Add a PS1 Retro Mode
- - Dump the Vita whitelist
-
-
-#####*"For us, design is more than just superficial look and feel. It must also be in harmony with both the human intellect and instinct. Reaching beyond the realms of functionality and aesthetics, design must provide both an intuitive and enriching experience."*
-*-- Sony Design Philosophy: Empathy*
-
-
-### The PSTV's Promise
+>"We have always been on the cutting edge, never being held back by fear of failure. By taking such an approach to design we give form to innovative concepts and bring them to fruition; creating new standards that turn ideas into global benchmarks."
+>-- Sony Design Philosophy: Visionary
 
 I loved the PlayStation TV from [the moment Sony announced it](https://www.youtube.com/watch?v=rG5l78gbvpU).
 
 It was poised to be the Swiss Army knife of PlayStations, giving gamers an opportunity to play titles from every Sony console and handheld ever released (via built-in compatibility, Remote Play, or PlayStation Now). As someone who doesn't do much portable gaming, I looked forward to trying some Vita JRPGs on my TV. And I hoped the PSTV would finally give me the option of playing early-era PlayStation games with an analog stick and some decent upscaling.
 
-It also sounded like the perfect device to bring on long trips: a way to play games and streaming media on the road, making any hotel or guest room feel a little like home.
+It also sounded like the perfect device to bring on long trips: a way to enjoy games and streaming media on the road, making any hotel or guest room feel a little like home.
 
 ### What it is
 
-The PSTV has delivered on some of its promise. I really do appreciate what it's given me. I got my money's worth just from the chance to play through *Persona 4 Golden* and *Danganronpa: Trigger Happy Havoc*. And I can indeed play games like *Final Fantasy VII* and *Xenogears* with the analog stick -- though the upscaling looks rough.
+The PSTV has delivered on some of its promise. I really do love what it's given me. I got my money's worth just from the chance to play through *Persona 4 Golden* and *Danganronpa: Trigger Happy Havoc*. And I can indeed play games like *Final Fantasy VII* and *Xenogears* with the analog stick -- though the upscaling looks rough.
 
 *HASN'T BEEN AS SUCCESSFUL WITH... (streaming, etc)*
 
@@ -70,12 +48,28 @@ Where I can help indirectly (or would need help):
 - Get rid of the whitelist
 - Improve PS1 upscaling options
 
+
+- Fixing the User Interface
+ - Redesign the homescreen
+ - Fix the PlayStation Store navigation
+ - Streamline launching and exiting apps
+ - Get rid of the "Featured" tab
+ - Hell, get rid of *all* tabs
+- Other Proposed Updates
+ - The PSTV needs Netflix (and maybe some other streaming media)
+ - Add a PS1 Retro Mode
+ - Dump the Vita whitelist
+
+
 *Note: This isn't a wish list of every change that could or should be made to the PSTV (e.g., support for cheaper memory cards, better remote connections to the PS4). I'm just covering some of the software issues where I think I could help, personally.*
 
 
 ## Fixing the PSTV's User Interface
 
-The user interface is just a part of user experience, and a device's homescreen is just a sliver of the user interface. But you have to start somewhere! So, I've redesigned the PSTV's homescreen to accomplish the following:
+>"For us, design is more than just superficial look and feel. It must also be in harmony with both the human intellect and instinct. Reaching beyond the realms of functionality and aesthetics, design must provide both an intuitive and enriching experience."
+>-- Sony Design Philosophy: Empathy
+
+The user interface is just a part of the user experience, and a device's homescreen is just a sliver of the user interface. But you have to start somewhere! So, I've redesigned the PSTV's homescreen to accomplish the following:
 
 - Update it to share the same visual branding language as the current generation of Sony products (PS4, Bravia TVs, PlayStation mobile app, etc.).
 - Reframe the PSTV as something other than just a Vita on a bigger screen.
@@ -116,7 +110,9 @@ Even though the icons aren’t placed in a strict vertical/horizontal grid, the 
 
 ### The PSTV Homescreen, Redesigned
 
-To address all this, I've designed a PSTV homescreen proof of concept (***[http://hellogreg.github.io/pstv](http://hellogreg.github.io/pstv)***), where the look is much like that of the PS4, though the options for each app have been simplified from their PS4 counterparts. Navigate right or left, and then press the button appropriate for the action you wish to take.
+#####Note: If you want to save yourself a bunch of reading and skip right to viewing the PSTV homescreen proof of concept (I won't blame you!), it's here: http://hellogreg.github.io/pstv
+
+To address all this, I've designed a PSTV homescreen proof of concept ([http://hellogreg.github.io/pstv](http://hellogreg.github.io/pstv)), where the look is much like that of the PS4, though the options for each app have been simplified from their PS4 counterparts. Navigate right or left, and then press the button appropriate for the action you wish to take.
 
 I’ve sized and placed the interface elements on a grid that splits the screen into 64 units horizontally and 36 units vertically. You can view the grid by clicking the “Grid Background” button below the prototype. All the text has line heights that fit the grid. There are a few more aesthetic options for you to play with.
 
@@ -212,9 +208,9 @@ Give users an option (maybe as an opt-in, so users know the risks) to render *al
 I understand that there could be issues with licensing from third-party publishers. If that's the case, it could be a little trickier to nix the whitelist for those titles. Still, all first-party games should be exempt.
 
 
-## Who am I?
 
-I'm Greg Gibson, a developer/designer based in Illinois. Back in the early 2000s, I led the web development and design for Electronic Arts' experimental online game, Majestic. I now run/am the web department for a large school district (30,000 students and 3,000 employees) in the Chicago area. I occasionally provide box office analysis and charts for my wife's Hindi movie site, http://accessbollywood.com. And I sometimes release weird, ambient music and field recordings at https://soundcloud.com/hellogreg.
-
-Resources
+## Resources
 - [Sony Design Philosophy: Empathy](http://www.sony.net/SonyInfo/design/profile/philosophy.html)
+
+## Contact me
+Greg Gibson | hellogreg@gmail.com | @elfneedsfood

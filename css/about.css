@@ -57,7 +57,7 @@ html {
 
 body {
   font-family: "Merriweather", Georgia, serif;
-  background-color: #ccc;
+  background-color: #eee;
   margin: 0; }
 
 h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav, blockquote {
@@ -66,6 +66,38 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav, blockquot
   opacity: 1;
   padding: 0;
   vertical-align: baseline; }
+
+h2, h3, h4, h5, h6 {
+  font-family: "MerriweatherSans", Georgia, serif; }
+
+h1 {
+  font-size: 3.6rem;
+  margin-bottom: 0; }
+
+h2 {
+  font-size: 3rem; }
+
+h3 {
+  font-size: 2.4rem; }
+
+h4 {
+  font-size: 1.8rem; }
+
+h5, h6 {
+  font-style: italic; }
+
+h5 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: rgba(72, 72, 72, 0.5); }
+  h5 a {
+    color: rgba(72, 72, 72, 0.5); }
+
+h6 {
+  font-size: 1.2rem; }
+
+h1 + h6 {
+  margin-top: 0; }
 
 ul, ol {
   border-left: .3rem solid #ccc; }
@@ -79,33 +111,25 @@ ul, ol {
         margin: 1.8rem; }
 
 blockquote {
-  background-color: rgba(0, 83, 157, 0.075);
-  border-left: .3rem solid #ccc;
-  color: #777;
-  font-family: "MerriweatherSans", Georgia, serif;
+  background-color: #8cb1d3;
+  border: 1px solid #8cb1d3;
+  border-radius: 1.8rem;
+  color: #fff;
+  font-size: 1.8rem;
   font-style: italic;
-  font-weight: 700;
   padding: 0 3.6rem; }
 
 a {
-  color: #00539d;
-  -webkit-text-decoration: underline solid rgba(0, 83, 157, 0.25);
-  text-decoration: underline solid rgba(0, 83, 157, 0.25); }
+  color: #484848; }
   a:hover {
-    -webkit-text-decoration: underline solid rgba(0, 83, 157, 0.5);
-    text-decoration: underline solid rgba(0, 83, 157, 0.5); }
+    -webkit-text-decoration: underline solid #8cb1d3;
+    text-decoration: underline solid #8cb1d3; }
   a:visited {
-    color: rgba(0, 83, 157, 0.5); }
+    color: rgba(72, 72, 72, 0.5); }
 
 img, video {
   max-width: 98%;
   height: auto; }
-
-.sony {
-  font-family: "MerriweatherSans", Georgia, serif;
-  font-style: italic;
-  font-weight: 300;
-  color: #999; }
 
 .container {
   background: #fff url(../images/pstvConsole.png) no-repeat 0 -18rem;
