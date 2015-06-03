@@ -67,18 +67,25 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav, blockquot
   padding: 0;
   vertical-align: baseline; }
 
-ul, ol, blockquote {
+ul, ol {
   border-left: .3rem solid #ccc; }
-
-li {
-  display: list-item; }
-
-ul li, ol li {
-  margin: 1.8rem 3.6rem; }
+  ul li, ol li {
+    display: list-item;
+    margin: 1.8rem 3.6rem; }
+    ul li ul, ul li ol, ol li ul, ol li ol {
+      border-left-width: 0;
+      margin: 1.8rem 0; }
+      ul li ul li, ul li ol li, ol li ul li, ol li ol li {
+        margin: 1.8rem; }
 
 blockquote {
   background-color: rgba(0, 83, 157, 0.075);
-  padding-left: 3.6rem; }
+  border-left: .3rem solid #ccc;
+  color: #777;
+  font-family: "MerriweatherSans", Georgia, serif;
+  font-style: italic;
+  font-weight: 700;
+  padding: 0 3.6rem; }
 
 a {
   color: #00539d;

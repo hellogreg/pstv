@@ -101,21 +101,32 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav, blockquot
   vertical-align: baseline;
 }
 
-ul, ol, blockquote {
+ul, ol {
   border-left: .3rem solid #ccc;
-}
 
-li {
-  display: list-item;
-}
+  li {
+    display: list-item;
+    margin: $baseFontSize $baseLineHeight;
 
-ul li, ol li {
-  margin: $baseFontSize $baseLineHeight;
+    ul, ol {
+      border-left-width: 0;
+      margin: $baseFontSize 0;
+
+      li {
+        margin: $baseFontSize;
+      }
+    }
+  }
 }
 
 blockquote {
   background-color: $sonyBlueTranslucent;
-  padding-left: $baseLineHeight;
+  border-left: .3rem solid #ccc;
+  color: #777;
+  font-family: "MerriweatherSans", Georgia, serif;
+  font-style: italic;
+  font-weight: 700;
+  padding: 0 $baseLineHeight;
 }
 
 a {
@@ -139,7 +150,7 @@ img, video {
   height: auto;
 }
 
-.sony{
+.sony {
   font-family: "MerriweatherSans", Georgia, serif;
   font-style: italic;
   font-weight: 300;
@@ -157,7 +168,6 @@ img, video {
   width: 96rem;
   max-width: 98%;
 }
-
 
 @media (max-width: 600px) {
 
