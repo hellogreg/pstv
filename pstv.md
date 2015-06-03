@@ -206,10 +206,10 @@ Give users an option (maybe as an opt-in, so users know the risks) to render *al
 
 I understand that there could be issues with licensing from third-party publishers. If that's the case, it could be a little trickier to nix the whitelist for those titles. Still, all first-party games should be exempt.
 
+## Thanks for reading!
 
-
-## Resources
+### Resources
 - [Sony Design Philosophy: Empathy](http://www.sony.net/SonyInfo/design/profile/philosophy.html)
 
-## Contact me
+### Contact me
 Greg Gibson | hellogreg@gmail.com | @elfneedsfood
