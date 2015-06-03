@@ -11,7 +11,7 @@ It was poised to be the Swiss Army knife of PlayStations, giving gamers an oppor
 
 It also sounded like the perfect device to bring on long trips: a way to enjoy games and streaming media on the road, making any hotel or guest room feel a little like home.
 
-The PSTV has delivered on some of its promise. I really do love what it's given me. I got my money's worth just from the chance to play through *Persona 4 Golden* and *Danganronpa: Trigger Happy Havoc*. And I can indeed play games like *Final Fantasy VII* and *Xenogears* with the analog stick -- though the upscaling looks rough.
+The PSTV has delivered on some of its promise. I know I got my money's worth just for the opportunity to play through *Persona 4 Golden* and *Danganronpa: Trigger Happy Havoc*. With more free games each month, I get even more out of my PlayStation Plus membership than I did with just the PS3 and PS4. And I can indeed play games like *Final Fantasy VII* and *Xenogears* with the analog stick -- though the upscaling looks rough.
 
 *HASN'T BEEN AS SUCCESSFUL WITH... (streaming, etc)*
 
