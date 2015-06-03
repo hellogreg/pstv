@@ -1,37 +1,58 @@
 # Reimagining the PSTV (a bit)
 ######by [Greg Gibson](https://twitter.com/elfneedsfood)
 
->"For us, design is more than just superficial look and feel. It must also be in harmony with both the human intellect and instinct. Reaching beyond the realms of functionality and aesthetics, design must provide both an intuitive and enriching experience."
--- Sony Design Philosophy: Empathy
+>To skip right to viewing my PSTV homescreen proof of concept and save yourself a bunch of reading (I don't blame you!), it's here:
+>http://hellogreg.github.io/pstv
 
-***To skip right to my PSTV homescreen proof of concept, it's here:***
-***http://hellogreg.github.io/pstv***
+- Overview
+ - The PSTV's promise
+ - What it is
+ - What it still can be (with a little help)
+- Fixing the User Interface
+ - Redesign the homescreen
+ - Fix the PlayStation Store navigation
+ - Streamline launching and exiting apps
+ - Get rid of the "Featured" tab
+ - Hell, get rid of *all* tabs
+- Other Proposed Updates
+ - The PSTV needs Netflix (and maybe some other streaming media)
+ - Add a PS1 Retro Mode
+ - Dump the Vita whitelist
 
-I was ready to love the PlayStation TV from [the moment Sony announced it](https://www.youtube.com/watch?v=rG5l78gbvpU).
 
-It looked to be the Swiss Army knife of PlayStations, giving gamers an opportunity to play titles from every Sony console and handheld: PS4 via remote play; PS3 and PS2 via PlayStation Now; and PS1, Vita, and PSP natively. As someone who doesn't do much handheld gaming, I looked forward to finally playing some Vita games. And I hoped the PSTV would finally give me the option of playing early-era PlayStation games with an analog stick and some decent upscaling.
+#####*"For us, design is more than just superficial look and feel. It must also be in harmony with both the human intellect and instinct. Reaching beyond the realms of functionality and aesthetics, design must provide both an intuitive and enriching experience."*
+*-- Sony Design Philosophy: Empathy*
 
-The PSTV also sounded like the perfect device to bring on long trips: a way to bring games and streaming media accounts on the road to make any hotel or guest room feel a little like home.
 
-The PSTV has delivered on some of its promise. I really do love it for what it's given me. I got my money's worth just from the chance to play through *Persona 4 Golden* and *Danganronpa: Trigger Happy Havoc*. And I can play games like *Final Fantasy VII* and *Xenogears* with the analog stick, though the upscaling is rough looking.
+### The PSTV's Promise
+
+I loved the PlayStation TV from [the moment Sony announced it](https://www.youtube.com/watch?v=rG5l78gbvpU).
+
+It was poised to be the Swiss Army knife of PlayStations, giving gamers an opportunity to play titles from every Sony console and handheld ever released (via built-in compatibility, Remote Play, or PlayStation Now). As someone who doesn't do much portable gaming, I looked forward to trying some Vita JRPGs on my TV. And I hoped the PSTV would finally give me the option of playing early-era PlayStation games with an analog stick and some decent upscaling.
+
+It also sounded like the perfect device to bring on long trips: a way to play games and streaming media on the road, making any hotel or guest room feel a little like home.
+
+### What it is
+
+The PSTV has delivered on some of its promise. I really do appreciate what it's given me. I got my money's worth just from the chance to play through *Persona 4 Golden* and *Danganronpa: Trigger Happy Havoc*. And I can indeed play games like *Final Fantasy VII* and *Xenogears* with the analog stick -- though the upscaling looks rough.
 
 *HASN'T BEEN AS SUCCESSFUL WITH... (streaming, etc)*
 
-I like the PSTV, but I can't stop thinking about how it should be *more* than what it is. It seems compromised, unfinished, and abandoned in many ways:
+I like the PSTV, but I can't stop thinking about how it should be *more* than what it is. It seems compromised, underbaked, and even abandoned in various ways. It feels... unloved.
 
 - The console's operating system and interface haven't been updated from the Vita's last-generation, handheld, touchscreen roots.
 - The gaming compatibility and streaming media options are limited, sometimes confusingly (if not arbitrarily) so.
 - It's hardly been marketed in the US. Despite being the newest Sony console, it gets last billing (behind the PS4, PS3, and Vita) under "Systems" at [Sony's own site](https://www.playstation.com/en-us/).
 
-It feels... unloved.
+
 
 With all the price cuts the PSTV has received at various stores since releasing in the US just last fall, the whole thing has just seemed like an inventory dump. SCEI President and Group CEO Andrew House recently referred to the device as a "legacy platform" (though the company later walked that back some).
 
 I get it. By reducing expectations, Sony is inoculated against criticism that the system underperformed. I understand that. Sony doesn't think it's worth spending time or money on something they considered dead on arrival.
 
-But I think it's at least worth the small investment of paying one person to be its champion: someone to make the system better and build a case for it inside and outside the company -- for a couple of years, anyway. Re-frame the PSTV the way the Apple framed the Apple TV. Call it "a hobby" for several years, improving its software and slowly building a loyal userbase, while still remaining mostly free from sales expectations.
+### What it still can be (with a little help)
 
-Instead of letting it languish in its current state, I want to help the PSTV to reach its potential. I want to improve how it looks and works. I want to let people know that it exists, and then show them why they need it. Let's see if the media and the public will give it a shot over time, before writing the whole thing off as a failure.
+But I think it's at least worth the small investment of paying one person (hopefully me) to be its champion: someone to make the system better and build a case for it inside and outside the company -- for a couple of years, anyway. Re-frame the PSTV the way the Apple framed the Apple TV. Call it "a hobby" for a while, improving how it looks and works, and slowly building a loyal userbase, while still remaining mostly free from sales expectations. See if the media and the public will give it a shot over time, before writing the whole thing off as a failure.
 
 Back in the early 2000s, I led the web development and design for Electronic Arts' experimental online game, Majestic. I now run/am the web department for a large school district (30,000 students and 3,000 employees) in the Chicago area.
 
@@ -59,9 +80,6 @@ The user interface is just a part of user experience, and a device's homescreen 
 - Update it to share the same visual branding language as the current generation of Sony products (PS4, Bravia TVs, PlayStation mobile app, etc.).
 - Reframe the PSTV as something other than just a Vita on a bigger screen.
 
-
-### If It Quacks Like a Vita...
-
 The PSTV’s internals are basically those of a Vita. But a device is not what makes it up. A device is how it’s used.
 
 When the iPad was announced, it was ridiculed as just a big iPhone or iPod touch. Technically, that was true. Its internals were about the same, it shared the same OS, and it ran the same apps. But calling it a big iPhone was also wrong. The iPad was something different, because a tablet is used differently from a phone.
@@ -71,8 +89,6 @@ The PSTV is often referred to as just a Vita that plugs into your TV. And again,
 But the PSTV's current visual interface does look like the Vita’s. In fact it *is* the Vita interface, unaltered.
 
 I'm sure this saved on design and development costs. But, as a result, its branding no longer matches the rest of the current generation of Sony’s consumer devices. (For example, the default system typeface is Rodin, the same as on the PlayStation 3.) And the Vita interface was originally designed to display on small screens, meaning that the type size and iconography of the PSTV are often larger than they need to be, when displayed on an HDTV.
-
-### It's Too Touchy
 
 My biggest issue with the Vita interface is that it was designed for touchscreen navigation, and not a controller, as the PSTV requires. In Sony's own "Feature Design" [profile](http://www.sony.net/Fun/design/activity/product/ps_vita/01.html) of the Vita, the system's designers even say that the d-pad is appropriate for controller navigation (and that the touchscreen is more appropriate for the Vita).
 
@@ -107,7 +123,16 @@ I’ve sized and placed the interface elements on a grid that splits the screen 
 I’ve also kept one feature that the PSTV already has that the PS4 doesn’t: folders. When the folder app icon is selected, you can expand it to choose an app within.
 
 
-## A Few More Unsolicited UI Suggestions
+### Update store navigation
+
+Like the homescreen, the store needs a complete overhaul to make it more controller-friendly. (Unlike the homescreen, I haven't had a chance to make a prototype for it, yet.) Some of the most important sections -- like the Search area at the top right, and the ellipses at the bottom right -- are the most difficult to access. When they can be tapped, that's not a big deal. But scrolling and maneuvering around the screen in all directions to get to them is a pain.
+
+The simplest solution would be to have a left-hand menu, like the other TV-based PlayStation consoles. You always know going left takes you back a level in the hierarchy.
+
+A few other store suggestions:
+- My download list should only show titles that can be played on the PSTV. It does me no good to scroll through dozens (hundreds?) of other PlayStation games, apps, etc. to see the small percentage that I actually can use on this system.
+- Make a link on the store's homepage that, when followed, shows free games and discounts for PlayStation Plus users. It's near impossible to find them, now.
+- Only offer titles that can actually be played on the PSTV. For example, *Touch My Katamari* can be searched, bought, and downloaded. But it won't play. I'm sure I'm not the only person who's bought something that wasn't even compatible.
 
 
 ### Streamline launching and backing out of apps.
@@ -139,18 +164,6 @@ The first step is optional, if you don't want to revsit the main Settings page. 
 This process is another artifact from the Vita. The page peeling makes a lot more sense on a touchscreen, as does the swiping left to get back to the homescreen. On a console, the process should be optimized for the controller: X is go forward, and Circle is go back.
 
 
-### Update store navigation
-
-Like the homescreen, the store needs a complete overhaul to make it more controller-friendly. (Unlike the homescreen, I haven't had a chance to make a prototype for it, yet.) Some of the most important sections -- like the Search area at the top right, and the ellipses at the bottom right -- are the most difficult to access. When they can be tapped, that's not a big deal. But scrolling and maneuvering around the screen in all directions to get to them is a pain.
-
-The simplest solution would be to have a left-hand menu, like the other TV-based PlayStation consoles. You always know going left takes you back a level in the hierarchy.
-
-A few other store suggestions:
-- My download list should only show titles that can be played on the PSTV. It does me no good to scroll through dozens (hundreds?) of other PlayStation games, apps, etc. to see the small percentage that I actually can use on this system.
-- Make a link on the store's homepage that, when followed, shows free games and discounts for PlayStation Plus users. It's near impossible to find them, now.
-- Only offer titles that can actually be played on the PSTV. For example, *Touch My Katamari* can be searched, bought, and downloaded. But it won't play. I'm sure I'm not the only person who's bought something that wasn't even compatible.
-
-
 ### Get rid of the “Featured” tab
 
 I don't know if anyone ever does anything except skip right past this tab. Nobody likes it. It's clearly one of those business decisions that didn't have the user in mind. It also breaks the natural navigational flow; you don't see it when entering apps, but it's always there when you leave them. Plus, it looks like too much like it's the store, even though it's not.
@@ -177,6 +190,7 @@ Also, it is nice to have -- just in case. Being able to switch right from a game
 
 For my summer vacation, I’m taking one portable media device with me. If the PSTV had Netflix (and/or Spotify and/or YouTube), it’d be a no-brainer to take it. But instead, I’m bringing the Amazon Fire TV Stick, because I can use it to watch Netflix and listen to Prime Music on the road.
 
+(It also wouldn't hurt to have Spotify, Twitch, and YouTube, even if they're just straight Vita ports.)
 
 ### PlayStation Retro Mode
 
