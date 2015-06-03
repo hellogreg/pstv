@@ -81,8 +81,8 @@ $mobileFontSize: 1.4rem;
 $mobileLineHeight: 2.8rem;
 $mobileHeaderLineHeight: 4.2rem;
 $sonyBlue: rgba(0, 83, 157, 1);
-//$sonyBlueFaded: #7fa9ce;
-$sonyBlueFaded: #8cb1d3;
+$sonyBlueFaded: #7fa9ce;
+//$sonyBlueFaded: #8cb1d3;
 $sonyBlueLight: rgba(0, 83, 157, .25);
 $sonyBlueTranslucent: rgba(0, 83, 157, .075);
 
@@ -139,6 +139,7 @@ h5 {
 
 h6 {
   font-size: 1.2rem;
+  text-transform: lowercase;
 }
 
 h1 + h6 {
@@ -168,12 +169,15 @@ ul, ol {
 
 blockquote {
   background-color: $sonyBlueFaded;
-  border: 1px solid $sonyBlueFaded;
-  border-radius: 1.8rem;
+  border-radius: .9rem;
   color: #fff;
   font-size: 1.8rem;
   font-style: italic;
-  padding: 0 $baseLineHeight;
+  padding: $baseFontSize $baseLineHeight;
+  p {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 a {

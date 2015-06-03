@@ -94,7 +94,8 @@ h5 {
     color: rgba(72, 72, 72, 0.5); }
 
 h6 {
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  text-transform: lowercase; }
 
 h1 + h6 {
   margin-top: 0; }
@@ -111,19 +112,21 @@ ul, ol {
         margin: 1.8rem; }
 
 blockquote {
-  background-color: #8cb1d3;
-  border: 1px solid #8cb1d3;
-  border-radius: 1.8rem;
+  background-color: #7fa9ce;
+  border-radius: .9rem;
   color: #fff;
   font-size: 1.8rem;
   font-style: italic;
-  padding: 0 3.6rem; }
+  padding: 1.8rem 3.6rem; }
+  blockquote p {
+    margin: 0;
+    padding: 0; }
 
 a {
   color: #484848; }
   a:hover {
-    -webkit-text-decoration: underline solid #8cb1d3;
-    text-decoration: underline solid #8cb1d3; }
+    -webkit-text-decoration: underline solid #7fa9ce;
+    text-decoration: underline solid #7fa9ce; }
   a:visited {
     color: rgba(72, 72, 72, 0.5); }
 

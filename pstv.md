@@ -1,16 +1,15 @@
 # Reimagining the PlayStation TV (a bit)
-######by Greg Gibson ([@elfneedsfood](https://twitter.com/elfneedsfood)). View my PSTV homescreen prototype [here](index.html)
+######by Greg Gibson ([@elfneedsfood](https://twitter.com/elfneedsfood)). View my PSTV homescreen prototype [here](index.html).
 
 >"We have always been on the cutting edge, never being held back by fear of failure. By taking such an approach to design we give form to innovative concepts and bring them to fruition; creating new standards that turn ideas into global benchmarks."
 >-- Sony Design Philosophy: Visionary
+>
 
 I loved the PlayStation TV from [the moment Sony announced it](https://www.youtube.com/watch?v=rG5l78gbvpU).
 
 It was poised to be the Swiss Army knife of PlayStations, giving gamers an opportunity to play titles from every Sony console and handheld ever released (via built-in compatibility, Remote Play, or PlayStation Now). As someone who doesn't do much portable gaming, I looked forward to trying some Vita JRPGs on my TV. And I hoped the PSTV would finally give me the option of playing early-era PlayStation games with an analog stick and some decent upscaling.
 
 It also sounded like the perfect device to bring on long trips: a way to enjoy games and streaming media on the road, making any hotel or guest room feel a little like home.
-
-### What it is
 
 The PSTV has delivered on some of its promise. I really do love what it's given me. I got my money's worth just from the chance to play through *Persona 4 Golden* and *Danganronpa: Trigger Happy Havoc*. And I can indeed play games like *Final Fantasy VII* and *Xenogears* with the analog stick -- though the upscaling looks rough.
 
@@ -27,8 +26,6 @@ I like the PSTV, but I can't stop thinking about how it should be *more* than wh
 With all the price cuts the PSTV has received at various stores since releasing in the US just last fall, the whole thing has just seemed like an inventory dump. SCEI President and Group CEO Andrew House recently referred to the device as a "legacy platform" (though the company later walked that back some).
 
 I get it. By reducing expectations, Sony is inoculated against criticism that the system underperformed. I understand that. Sony doesn't think it's worth spending time or money on something they considered dead on arrival.
-
-### What it still can be (with a little help)
 
 But I think it's at least worth the small investment of paying one person (hopefully me) to be its champion: someone to make the system better and build a case for it inside and outside the company -- for a couple of years, anyway. Re-frame the PSTV the way the Apple framed the Apple TV. Call it "a hobby" for a while, improving how it looks and works, and slowly building a loyal userbase, while still remaining mostly free from sales expectations. See if the media and the public will give it a shot over time, before writing the whole thing off as a failure.
 
@@ -108,7 +105,7 @@ As mentioned above, if you pull straight down from the top row, the cursor will 
 
 Even though the icons aren’t placed in a strict vertical/horizontal grid, the PSTV (or Vita) thinks they are. It thinks the leftmost icons from each row are in a vertical line — and the second from each row, and the third. So, even if you pull down and at a bit of an angle, the cursor moves as if you’d just pulled straight down. This makes it extremely difficult to access the fourth icon in the middle row directly from either the top or bottom row (which each only have three icons). It makes more sense to actually put the icons in either a true grid, like the PS3’s XMB had, or a line, like the PS4 has.
 
-### The PSTV Homescreen, Redesigned
+### The PSTV homescreen, redesigned
 
 #####Note: If you want to save yourself a bunch of reading and skip right to viewing the PSTV homescreen proof of concept (I won't blame you!), it's here: http://hellogreg.github.io/pstv
 
@@ -172,8 +169,10 @@ If you have to keep it (and I don't think you do), at least add store search fun
 These "LiveArea" screens are another relic of a touch-based interface. They work well for tapping and swiping, but don't suit controllers. Use multiple buttons (e.g., X to start game, triangle for options, etc.) to replace the functions on the start screens. And use activity spinners like the PS4 does for currently active games and apps.
 
 
-## Other Additions (And A Couple Subtractions)
+## Other Usolicited Additions (And Subtractions)
 
+>"Through a relentless process of considered refinement, we determine the distinct essence. Expressed in its clearest and most beautiful form, this essence symbolizes what we strive to achieve in all our design."
+>-- Sony Design Philosophy: Integrity
 
 ### Where's Netflix?
 The PSTV doesn’t need to be an Apple TV or Amazon Fire or even a Chromecast. But it does need to have Netflix.
@@ -190,7 +189,7 @@ For my summer vacation, I’m taking one portable media device with me. If the P
 
 ### PlayStation Retro Mode
 
-> To see how a PlayStation retro mode might look with nearest-neighbor upscaling and scanlines, I made a couple of mockup screens to demonstrate current and proposed retro looks for *Xenogears* and *Ridge Racer*: http://hellogreg.github.io/pstv
+#####To see how a PlayStation retro mode might look with nearest-neighbor upscaling and scanlines, I made a couple of mockups to demonstrate current and proposed retro looks for *Xenogears* and *Ridge Racer*: http://hellogreg.github.io/pstv
 
 One way to help ensure that the PSTV gains, at the very least, a devoted cult following would be to make it the best way to experience (or re-experience) PlayStation Classics.
 
