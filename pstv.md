@@ -169,7 +169,7 @@ If you have to keep it (and I don't think you do), at least add store search fun
 These "LiveArea" screens are another relic of a touch-based interface. They work well for tapping and swiping, but don't suit controllers. Use multiple buttons (e.g., X to start game, triangle for options, etc.) to replace the functions on the start screens. And use activity spinners like the PS4 does for currently active games and apps.
 
 
-## Other Usolicited Additions (And Subtractions)
+## Other Unsolicited Additions (And Subtractions)
 
 >"Through a relentless process of considered refinement, we determine the distinct essence. Expressed in its clearest and most beautiful form, this essence symbolizes what we strive to achieve in all our design."
 >-- Sony Design Philosophy: Integrity
