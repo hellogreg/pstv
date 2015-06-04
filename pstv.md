@@ -1,4 +1,4 @@
-# Reimagining the PlayStation TV (a bit)
+# Reimagining the PSTV (a bit)
 ######by Greg Gibson ([@elfneedsfood](https://twitter.com/elfneedsfood)). View my PSTV homescreen prototype [here](index.html).
 
 >"We have always been on the cutting edge, never being held back by fear of failure. By taking such an approach to design we give form to innovative concepts and bring them to fruition; creating new standards that turn ideas into global benchmarks."
@@ -12,37 +12,39 @@ It was poised to be the Swiss Army knife of PlayStations, giving gamers an oppor
 It also sounded like the perfect device to bring on long trips: a way to enjoy games and streaming media on the road, making any hotel or guest room feel a little like home.
 
 
-### What it is...
+### What it's been
 
-The PSTV has delivered on some of its promise. I know I got my money's worth just for the opportunity to play through *Persona 4 Golden* and *Danganronpa: Trigger Happy Havoc*. I get even more out of my PlayStation Plus membership, now that I get free Vita games every month. And I can indeed play games like *Final Fantasy VII* and *Xenogears* with the analog stick -- though the upscaling looks rough.
+The PSTV has delivered on some of its promise. I know I got my money's worth just for the opportunity to play through *Persona 4 Golden* and *Danganronpa: Trigger Happy Havoc*. I get more out of my PlayStation Plus membership, now that I receive free Vita games every month. And I can indeed play games like *Final Fantasy VII* and *Xenogears* with the analog stick -- though the upscaling looks rough.
 
-But in other ways, the PSTV has turned out to be less than is should be. Its operating system and interface haven't been updated from the Vita's last-generation, touchscreen roots. The gaming compatibility and streaming media options are limited, sometimes confusingly (if not arbitrarily) so.
+But in other ways, the PSTV has disappointed. Its operating system and interface haven't been updated from the Vita's last-generation, touchscreen roots. And the gaming compatibility and streaming media options are limited, sometimes confusingly (if not arbitrarily) so.
 
 I think Sony's created a great piece of hardware, but I can't help thinking about how it should be *more* than what it is. It seems compromised, underbaked, and even abandoned in various ways. It feels unloved.
 
-It's hardly been pushed in the US, even though it's both a capable standalone console and a first-class PS4 accessory. How much corporate backing did accessories like the PlayStation Move and Eye get for the PS3, compared to what the PSTV is receiving this generation? Recently, SCEI President and Group CEO Andrew House even referred to the device -- which hasn't even been out for a year in the US -- as a "legacy platform" (though the company later walked that back some).
+It's hardly been pushed in the US, even though it's both a capable standalone console and a first-class PS4 accessory. Recently, SCEI President and Group CEO Andrew House even referred to the device -- which hasn't even been out for a year in the US -- as a "legacy platform" (though the company later walked that back some).
 
 
-### What it still can be...
+### What it still can be
 
-I get it. By reducing expectations, Sony is inoculated against criticism that the system underperformed. I understand that. Sony doesn't think it's worth spending time or money on something they considered dead on arrival.
+I get it. By reducing expectations, Sony is inoculated against the perception that the system has underperformed. I understand that. After the PSTV didn't sell well in Asia, the company felt they shouldn't spend much time or money on something they considered dead on arrival in the US.
 
-But I think it's at least worth the small investment of paying one person (hopefully me) to be its champion: someone to make the system better and build a case for it inside and outside the company -- for a couple of years, anyway.
+But I think it's at least worth the small investment of paying one person to be its champion: someone to make the system better and build a case for it inside and outside the company -- for a couple of years, anyway.
 
-Re-frame the PSTV the way the Apple framed the Apple TV. Call it "a hobby" for a while, improving how it looks and works. Gradually build a loyal userbase, while still remaining mostly free from sales expectations. See if the media and the public will give it a shot over time, before writing the whole thing off as a failure.
+Reframe the PSTV the way the Apple framed the Apple TV. Call it "a hobby" for a while, improving how it looks and works. Gradually build a loyal userbase, while still remaining mostly free from sales expectations. See if the media and the public will give it a shot over time, before writing the whole thing off as a failure.
+
+### How I can help
 
 Back in the early 2000s, I led the web development and design for Electronic Arts' experimental online game, Majestic. I now run/am the web department for a large school district (30,000 students and 3,000 employees) in the Chicago area.
 
 I'm used to working as a one-person, low-budget, full-service design and development team. In seeing projects through from concept to conclusion, I'm comfortable working alone, leading small teams, and/or coordinating with other departments. Where I can implement improvements by myself, I'll do so. And when I need to enlist help, I'll do as much up-front work as possible to make everyone else's job easier.
 
-Here are some areas where I think I could help directly:
+Here are some areas where I could help directly:
  - Redesign the homescreen (to improve the user experience and match current Sony branding)
  - Improve the PlayStation Store interface
- - Streamline entering, exiting, and navigating system apps
+ - Streamline launching and leaving apps
  - Get rid of the "Featured" tab
- - Hell, get rid of *all* tabs
+ - Hell, get rid of *all* the tabs
 
-And here are other important upgrades that I'd be want to coordinate:
+And here are other important upgrades that I'd coordinate:
  - Get a Netflix app made (and maybe some other streaming media apps, too)
  - Improve PS1 upscaling options
  - Dump the Vita whitelist
@@ -60,7 +62,7 @@ The user interface is just a part of the user experience, and a device's homescr
 - Update it to share the same visual branding language as the current generation of Sony products (PS4, Bravia TVs, PlayStation mobile app, etc.).
 - Reframe the PSTV as something other than just a Vita on a bigger screen.
 
-The PSTV’s internals are basically those of a Vita. But a device is not what makes it up. A device is how it’s used.
+The PSTV’s internals are basically those of a Vita. But a device is not the sum of its component parts. A device is defined by how it’s used.
 
 When the iPad was announced, it was ridiculed as just a big iPhone or iPod touch. Technically, that was true. Its internals were about the same, it shared the same OS, and it ran the same apps. But calling it a big iPhone was also wrong. The iPad was something different, because a tablet is used differently from a phone.
 
@@ -68,11 +70,11 @@ The PSTV is often referred to as just a Vita that plugs into your TV. And again,
 
 But the PSTV's current visual interface does look like the Vita’s. In fact it *is* the Vita interface, unaltered.
 
-I'm sure this saved on design and development costs. But, as a result, its branding no longer matches the rest of the current generation of Sony’s consumer devices. (For example, the default system typeface is Rodin, the same as on the PlayStation 3.) And the Vita interface was originally designed to display on small screens, meaning that the type size and iconography of the PSTV are often larger than they need to be, when displayed on an HDTV.
+I'm sure this saved on design and development costs. But, as a result, the PSTV's branding no longer matches the rest of the current generation of Sony’s consumer devices. (For example, the default system typeface is Rodin, the same as on the PlayStation 3.) And the Vita interface was originally designed to display on small screens, meaning that the type size and iconography of the PSTV are often larger than they need to be when displayed on a television.
 
-My biggest issue with the Vita interface is that it was designed for touchscreen navigation, and not a controller, as the PSTV requires. In Sony's own "Feature Design" [profile](http://www.sony.net/Fun/design/activity/product/ps_vita/01.html) of the Vita, the system's designers even say that the d-pad is appropriate for controller navigation (and that the touchscreen is more appropriate for the Vita).
+My biggest issue with the current interface is that it was designed for touchscreen navigation, and not a controller, as the PSTV requires. In Sony's own "Feature Design" [profile](http://www.sony.net/Fun/design/activity/product/ps_vita/01.html) of the Vita, the system's designers even say that a d-pad is appropriate for controller navigation (and that the touchscreen is more appropriate for the Vita).
 
-Button and stick functions change from screen to screen, making them seem like their use was tacked on as an afterthought. In no single case does this break functionality on the PSTV. But the cumulative effect is annoying. This becomes an obstacle as soon as you reach the console's homescreen.
+On the PSTV, Button and stick functions change from screen to screen, making them seem like their use was tacked on as an afterthought. In no single case does this break functionality on the PSTV. But the cumulative effect is annoying. This becomes an obstacle as soon as you reach the console's homescreen.
 
 For a controller-navigated interface, items should be in a line or a grid. This makes directional pad and analog stick navigation logical and predictable. Up, down, left, and right all correspond to d-pad button presses or analog movements. 
 
@@ -117,45 +119,44 @@ A few other store suggestions:
 - Only offer titles that can actually be played on the PSTV. For example, *Touch My Katamari* can be searched, bought, and downloaded. But it won't play. I'm sure I'm not the only person who's bought something that wasn't even compatible.
 
 
-### Streamline launching and backing out of apps.
+### Streamline launching and leaving apps.
 
 Say we want to enter the Network section of the PSTV's Settings app. To do so, we'd do the following:
 
-1. Tap X (after selecting the Settings app)
-2. Tap X again (to actually start the app)
-3. Tap X again (to go into Network settings)
+1. Tap X (after selecting the Settings app).
+2. Tap X again (to actually start the app from its LiveArea tab).\*
+3. Tap X again (to go into Network settings).
 
-Simple enough -- except for the Vita-ish requirement to tap X twice to start the app: once to get to a pre-launch page (which should be eliminated on the PSTV), and then again to launch.
+Simple enough. But say we want to back out of this section, completely close the Settings app, and then get back to the homescreen? The process should be something like this:
 
-But say we want to back out of this section, completely close the Settings app, and then get back to the homescreen? The process should be something like this:
-
-1. Tap Circle
-2. Tap Circle
-3. Tap Circle
+1. Tap Circle.
+2. Tap Circle.
+3. Tap Circle.
 
 But what you do is this:
 
-1. Tap Circle
-2. Tap PS Button
-3. *Option A:* Hold Circle, as the pre-launch page "peels" from the screen
-*Option B:* Move left -- from the Settings start tab
-4. Move left -- from the "Featured" tab that now shows onscreen. (More about this unnecessary tab later)
+1. Tap Circle.
+2. Tap the PS Button.
+3. Hold Circle (as the LiveArea tab peels from the screen).\*
+4. Move left (from the "Featured" tab that now shows onscreen).\*
 
-The first step is optional, if you don't want to revsit the main Settings page. But it shouldn't require three or four different actions to do one thing: go back.
+\* -- *I'll have more to say about these unnecessary tabs shortly.*
 
-This process is another artifact from the Vita. The page peeling makes a lot more sense on a touchscreen, as does the swiping left to get back to the homescreen. On a console, the process should be optimized for the controller: X is go forward, and Circle is go back.
+The first step is optional, if you don't want to revisit the main Settings page. But the process still shouldn't require three or four different actions -- tap circle, tap PS, hold circle, move left -- to do one thing: go back.
+
+This process is another artifact from the Vita. The page peeling makes a lot more sense on a touchscreen, as does the swiping left to get back to the homescreen. On a console, the process should be optimized for the controller: X means go forward, and Circle means go back.
 
 
 ### Get rid of the “Featured” tab
 
-I don't know if anyone ever does anything except skip right past this tab. Nobody likes it. It's clearly one of those business decisions that didn't have the user in mind. It also breaks the natural navigational flow; you don't see it when entering apps, but it's always there when you leave them. Plus, it looks like too much like it's the store, even though it's not.
+I don't know if anyone ever does anything except skip right past this tab. Nobody likes it. It feels like one of those business decisions that didn't have the user in mind. It also breaks the natural navigational flow; you don't see it when entering apps, but it's always there when you leave them. Plus, it looks like too much like it's the store, even though it's not.
 
-If you have to keep it (and I don't think you do), at least add store search functionality and/or a link to the store's homepage. Honestly, store search functionality wouldn't a bad idea on the PSTV homescreen. Give people to option to go right to the title's they're most likely to buy.
+If you have to keep it (and I don't think you do), at least add store search functionality and/or a link to the store's homepage. Honestly, store search functionality wouldn't a bad idea on the PSTV homescreen. Give people the option to go right to the products they're most likely to buy.
 
 
 ### Hell, get rid of *all* the tabs
 
-These interstitial "LiveArea" screens are another relic of a touch-based interface. They work well for tapping and swiping, but don't suit controllers. Use multiple buttons (e.g., X to start game, triangle for options, etc.) to replace the functions on the start screens. And use activity spinners like the PS4 does for currently active games and apps.
+These interstitial [LiveArea](http://manuals.playstation.net/document/en/psvita/game/livearea.html) screens are another relic of a touch-based interface. They work well for tapping and swiping, but don't suit controllers. Use multiple buttons (e.g., X to start game, triangle for options, etc.) to replace the LiveArea functions. And use animated icons to signify currently active games and apps, like the PS4 does.
 
 
 ## Other Unsolicited Additions (And Subtractions)
@@ -199,6 +200,8 @@ I understand that there could be issues with licensing from third-party publishe
 
 ### Resources
 - [Sony Design Philosophy](http://www.sony.net/SonyInfo/design/profile/philosophy.html)
+- [PSTV User's Guide](http://manuals.playstation.net/document/en/pstv/)
+- [PS Vita Users Guide](http://manuals.playstation.net/document/en/psvita/)
 
 ### Contact me
 - Greg Gibson | [hellogreg@gmail.com](mailto:hellogreg@gmail.com) | [@elfneedsfood](https://twitter.com/elfneedsfood)
