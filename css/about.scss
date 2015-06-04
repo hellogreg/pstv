@@ -75,6 +75,7 @@
 
 $baseFontSize: 1.8rem;
 $baseLineHeight: 3.6rem;
+$baseFontSizeHalved: .9rem;
 $baseTextColor: rgba(72, 72, 72, 1);
 $baseTextFaded: rgba(72, 72, 72, .5);
 $mobileFontSize: 1.4rem;
@@ -84,7 +85,7 @@ $sonyBlue: rgba(0, 83, 157, 1);
 $sonyBlueFaded: #7fa9ce;
 //$sonyBlueFaded: #8cb1d3;
 $sonyBlueLight: rgba(0, 83, 157, .25);
-$sonyBlueTranslucent: rgba(0, 83, 157, .075);
+$sonyBlueTranslucent: rgba(0, 83, 157, .1);
 
 html {
   font-size: 62.5%; // 10px rem base.
@@ -109,22 +110,18 @@ h1 {
   margin-bottom: 0;
 }
 
-h3, h6 {
+h3, h5, h6 {
   font-family: "MerriweatherSans", Georgia, serif;
 }
 
 h2 {
   font-size: 2.8rem;
+  border-top: 1px solid $sonyBlueTranslucent;
+  padding-top: $baseLineHeight;
 }
 
 h3 {
-  font-size: 2rem;
-  margin-bottom: 0;
-
-  & + * {
-    margin-top: 0;
-  }
-
+  font-size: 2.2rem;
 }
 
 h4 {
@@ -132,20 +129,21 @@ h4 {
 }
 
 h5, h6 {
-  font-style: italic;
 }
 
 h5 {
-  font-size: 1.4rem;
-  font-weight: 400;
+  border: 1px dotted #ddd;
+  border-left-width: 0;
+  border-right-width: 0;
   color: $baseTextFaded;
-  a {
-    color: $baseTextFaded;
-  }
+  font-size: 1.4rem;
+  font-weight: 300;
+  padding: $baseFontSizeHalved 0;
 }
 
 h6 {
   font-size: 1.2rem;
+  font-style: italic;
   text-transform: lowercase;
 }
 
@@ -173,7 +171,7 @@ ul, ol {
 
 blockquote {
   background-color: $sonyBlueFaded;
-  border-radius: .9rem;
+  border-radius: $baseFontSizeHalved;
   color: #fff;
   font-size: 1.8rem;
   font-style: italic;
@@ -186,7 +184,7 @@ blockquote {
 
 a {
 
-  color: $baseTextColor;
+  color: inherit;
 
   &:hover {
     -webkit-text-decoration: underline solid $sonyBlueFaded;
@@ -204,7 +202,7 @@ img, video {
 }
 
 .container {
-  background: #fff url(../images/pstvConsole.png) no-repeat 0 -18rem;
+  background: #fff url(../images/article/pstvConsole.png) no-repeat 0 -18rem;
   background-size: 100% auto;
   color: $baseTextColor;
   font-size: $baseFontSize;

@@ -71,33 +71,32 @@ h1 {
   font-size: 3.6rem;
   margin-bottom: 0; }
 
-h3, h6 {
+h3, h5, h6 {
   font-family: "MerriweatherSans", Georgia, serif; }
 
 h2 {
-  font-size: 2.8rem; }
+  font-size: 2.8rem;
+  border-top: 1px solid rgba(0, 83, 157, 0.1);
+  padding-top: 3.6rem; }
 
 h3 {
-  font-size: 2rem;
-  margin-bottom: 0; }
-  h3 + * {
-    margin-top: 0; }
+  font-size: 2.2rem; }
 
 h4 {
   font-size: 1.8rem; }
 
-h5, h6 {
-  font-style: italic; }
-
 h5 {
+  border: 1px dotted #ddd;
+  border-left-width: 0;
+  border-right-width: 0;
+  color: rgba(72, 72, 72, 0.5);
   font-size: 1.4rem;
-  font-weight: 400;
-  color: rgba(72, 72, 72, 0.5); }
-  h5 a {
-    color: rgba(72, 72, 72, 0.5); }
+  font-weight: 300;
+  padding: 0.9rem 0; }
 
 h6 {
   font-size: 1.2rem;
+  font-style: italic;
   text-transform: lowercase; }
 
 h1 + h6 {
@@ -116,7 +115,7 @@ ul, ol {
 
 blockquote {
   background-color: #7fa9ce;
-  border-radius: .9rem;
+  border-radius: 0.9rem;
   color: #fff;
   font-size: 1.8rem;
   font-style: italic;
@@ -126,7 +125,7 @@ blockquote {
     padding: 0; }
 
 a {
-  color: #484848; }
+  color: inherit; }
   a:hover {
     -webkit-text-decoration: underline solid #7fa9ce;
     text-decoration: underline solid #7fa9ce; }
@@ -138,7 +137,7 @@ img, video {
   height: auto; }
 
 .container {
-  background: #fff url(../images/pstvConsole.png) no-repeat 0 -18rem;
+  background: #fff url(../images/article/pstvConsole.png) no-repeat 0 -18rem;
   background-size: 100% auto;
   color: #484848;
   font-size: 1.8rem;

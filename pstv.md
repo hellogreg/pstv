@@ -57,14 +57,16 @@ And here are other important upgrades that I'd coordinate:
 >"For us, design is more than just superficial look and feel. It must also be in harmony with both the human intellect and instinct. Reaching beyond the realms of functionality and aesthetics, design must provide both an intuitive and enriching experience."
 >-- Sony Design Philosophy: Empathy
 
+#####If you want to save yourself some reading and skip right to viewing my PSTV homescreen proof of concept (I won't blame you!), it's here: http://hellogreg.github.io/pstv
+
 The user interface is just a part of the user experience, and a device's homescreen is just a sliver of the user interface. But you have to start somewhere! So, I've redesigned the PSTV's homescreen to accomplish the following:
 
 - Update it to share the same visual branding language as the current generation of Sony products (PS4, Bravia TVs, PlayStation mobile app, etc.).
 - Reframe the PSTV as something other than just a Vita on a bigger screen.
 
-The PSTV’s internals are basically those of a Vita. But a device is not the sum of its component parts. A device is defined by how it’s used.
+Before we get to the homescreen, I'd like to discuss what the PSTV is -- or, maybe more importantly, what it isn't. Its internals are basically those of a Vita. But a device is not the sum of its component parts. A device is defined by how it’s used.
 
-When the iPad was announced, it was ridiculed as just a big iPhone or iPod touch. Technically, that was true. Its internals were about the same, it shared the same OS, and it ran the same apps. But calling it a big iPhone was also wrong. The iPad was something different, because a tablet is used differently from a phone.
+When the iPad was announced, it was ridiculed as just a big iPhone or iPod touch. Technically, that was true. Its internals were about the same, it shared the same OS, and it ran the same apps. But we now know that calling it a big iPhone was wrong. The iPad was something different, because a tablet is used differently from a phone.
 
 The PSTV is often referred to as just a Vita that plugs into your TV. And again, technically, that’s true, but wrong. Because the PSTV isn’t used in the same places or manner as a Vita, it’s not a Vita. It's not more or less. It's something else.
 
@@ -98,11 +100,13 @@ Even though the icons aren’t placed in a strict vertical/horizontal grid, the 
 
 ### The PSTV homescreen, redesigned
 
-#####Note: If you want to save yourself a bunch of reading and skip right to viewing the PSTV homescreen proof of concept (I won't blame you!), it's here: http://hellogreg.github.io/pstv
+![Alt text](images/article/pstvSideBySide.jpg)
 
-To address all this, I've designed a PSTV homescreen proof of concept ([http://hellogreg.github.io/pstv](http://hellogreg.github.io/pstv)), where the look is much like that of the PS4, though the options for each app have been simplified from their PS4 counterparts. Navigate right or left, and then press the button appropriate for the action you wish to take.
+To address all this, I've designed [a PSTV homescreen proof of concept](index.html), where the look is much like that of the PS4, though with actions for each app mapped to various controller buttons. Navigate right or left to choose an app, and then press the button appropriate for the action you wish to take.
 
-I’ve sized and placed the interface elements on a grid that splits the screen into 64 units horizontally and 36 units vertically. You can view the grid by clicking the “Grid Background” button below the prototype. All the text has line heights that fit the grid. There are a few more aesthetic options for you to play with.
+I’ve sized and placed the interface elements on a grid that splits the screen into 64 units horizontally and 36 units vertically. All the apps are sized and placed to fit the grid, and the text's line heights all fit it, as well. The only items that don't snap to the grid horizontally are those in the header, where (because the text there can vary by user and time) the items are spaced dynamically for visual balance. 
+
+You can view the grid by clicking the “Grid Background” button below the prototype. There are a few more aesthetic options for you to play with.
 
 I’ve also kept one feature that the PSTV already has that the PS4 doesn’t: folders. When the folder app icon is selected, you can expand it to choose an app within.
 
@@ -149,14 +153,23 @@ This process is another artifact from the Vita. The page peeling makes a lot mor
 
 ### Get rid of the “Featured” tab
 
-I don't know if anyone ever does anything except skip right past this tab. Nobody likes it. It feels like one of those business decisions that didn't have the user in mind. It also breaks the natural navigational flow; you don't see it when entering apps, but it's always there when you leave them. Plus, it looks like too much like it's the store, even though it's not.
+I don't know if anyone ever does anything except skip right past this tab. Nobody likes it. It feels like one of those business decisions made without the user in mind. It breaks navigational flow; you don't see it when entering apps, but it's always there when you leave them. Finally, it looks like too much like it's the store, even though it's not.
 
-If you have to keep it (and I don't think you do), at least add store search functionality and/or a link to the store's homepage. Honestly, store search functionality wouldn't a bad idea on the PSTV homescreen. Give people the option to go right to the products they're most likely to buy.
+If you have to keep this tab (though I don't think you do), at least add store search functionality and/or a direct link to the store's homepage. Honestly, store search functionality wouldn't a bad idea right from the PSTV homescreen.
+
+With no "Featured" tab, there are still ways to promote content to users -- a couple of which I incorporated in [my homescreen redesign](index.html): 
+
+1. Add a marquee to the homescreen (like on the PS3 and PS4). 
+2. When a game is highlighted, give users the option to view related titles, themes, and add-ons via a single button press.
+
+Instead of making users dodge a tab they don't want to see, give them rapid access to purchasing content that actually interests them!
 
 
 ### Hell, get rid of *all* the tabs
 
-These interstitial [LiveArea](http://manuals.playstation.net/document/en/psvita/game/livearea.html) screens are another relic of a touch-based interface. They work well for tapping and swiping, but don't suit controllers. Use multiple buttons (e.g., X to start game, triangle for options, etc.) to replace the LiveArea functions. And use animated icons to signify currently active games and apps, like the PS4 does.
+The interstitial LiveArea screens (the screens where you have to click to start an app after you've already clicked to start the app) are another relic of a touch-based interface. They work well for tapping and swiping, but don't suit controllers.
+
+Instead, when an app is selected on the homescreen, use the controller buttons (e.g., X to start game, triangle to bring up a submenu of options, etc.) to replace the LiveArea functions. Also, use animated icons to signify suspended games and apps, like the PS4 does. I incorporated these features into my [homescreen proof of concept](index.html).
 
 
 ## Other Unsolicited Additions (And Subtractions)
