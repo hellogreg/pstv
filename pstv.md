@@ -3,7 +3,7 @@
 
 >"We have always been on the cutting edge, never being held back by fear of failure. By taking such an approach to design we give form to innovative concepts and bring them to fruition; creating new standards that turn ideas into global benchmarks."
 >-- Sony Design Philosophy: Visionary
->
+
 
 I loved the PlayStation TV from [the moment Sony announced it](https://www.youtube.com/watch?v=rG5l78gbvpU).
 
@@ -11,54 +11,43 @@ It was poised to be the Swiss Army knife of PlayStations, giving gamers an oppor
 
 It also sounded like the perfect device to bring on long trips: a way to enjoy games and streaming media on the road, making any hotel or guest room feel a little like home.
 
-The PSTV has delivered on some of its promise. I know I got my money's worth just for the opportunity to play through *Persona 4 Golden* and *Danganronpa: Trigger Happy Havoc*. With more free games each month, I get even more out of my PlayStation Plus membership than I did with just the PS3 and PS4. And I can indeed play games like *Final Fantasy VII* and *Xenogears* with the analog stick -- though the upscaling looks rough.
 
-*HASN'T BEEN AS SUCCESSFUL WITH... (streaming, etc)*
+### What it is...
 
-I like the PSTV, but I can't stop thinking about how it should be *more* than what it is. It seems compromised, underbaked, and even abandoned in various ways. It feels... unloved.
+The PSTV has delivered on some of its promise. I know I got my money's worth just for the opportunity to play through *Persona 4 Golden* and *Danganronpa: Trigger Happy Havoc*. I get even more out of my PlayStation Plus membership, now that I get free Vita games every month. And I can indeed play games like *Final Fantasy VII* and *Xenogears* with the analog stick -- though the upscaling looks rough.
 
-- The console's operating system and interface haven't been updated from the Vita's last-generation, handheld, touchscreen roots.
-- The gaming compatibility and streaming media options are limited, sometimes confusingly (if not arbitrarily) so.
-- It's hardly been marketed in the US. Despite being the newest Sony console, it gets last billing (behind the PS4, PS3, and Vita) under "Systems" at [Sony's own site](https://www.playstation.com/en-us/).
+But in other ways, the PSTV has turned out to be less than is should be. Its operating system and interface haven't been updated from the Vita's last-generation, touchscreen roots. The gaming compatibility and streaming media options are limited, sometimes confusingly (if not arbitrarily) so.
+
+I think Sony's created a great piece of hardware, but I can't help thinking about how it should be *more* than what it is. It seems compromised, underbaked, and even abandoned in various ways. It feels unloved.
+
+It's hardly been pushed in the US, even though it's both a capable standalone console and a first-class PS4 accessory. How much corporate backing did accessories like the PlayStation Move and Eye get for the PS3, compared to what the PSTV is receiving this generation? Recently, SCEI President and Group CEO Andrew House even referred to the device -- which hasn't even been out for a year in the US -- as a "legacy platform" (though the company later walked that back some).
 
 
-
-With all the price cuts the PSTV has received at various stores since releasing in the US just last fall, the whole thing has just seemed like an inventory dump. SCEI President and Group CEO Andrew House recently referred to the device as a "legacy platform" (though the company later walked that back some).
+### What it still can be...
 
 I get it. By reducing expectations, Sony is inoculated against criticism that the system underperformed. I understand that. Sony doesn't think it's worth spending time or money on something they considered dead on arrival.
 
-But I think it's at least worth the small investment of paying one person (hopefully me) to be its champion: someone to make the system better and build a case for it inside and outside the company -- for a couple of years, anyway. Re-frame the PSTV the way the Apple framed the Apple TV. Call it "a hobby" for a while, improving how it looks and works, and slowly building a loyal userbase, while still remaining mostly free from sales expectations. See if the media and the public will give it a shot over time, before writing the whole thing off as a failure.
+But I think it's at least worth the small investment of paying one person (hopefully me) to be its champion: someone to make the system better and build a case for it inside and outside the company -- for a couple of years, anyway.
+
+Re-frame the PSTV the way the Apple framed the Apple TV. Call it "a hobby" for a while, improving how it looks and works. Gradually build a loyal userbase, while still remaining mostly free from sales expectations. See if the media and the public will give it a shot over time, before writing the whole thing off as a failure.
 
 Back in the early 2000s, I led the web development and design for Electronic Arts' experimental online game, Majestic. I now run/am the web department for a large school district (30,000 students and 3,000 employees) in the Chicago area.
 
 I'm used to working as a one-person, low-budget, full-service design and development team. In seeing projects through from concept to conclusion, I'm comfortable working alone, leading small teams, and/or coordinating with other departments. Where I can implement improvements by myself, I'll do so. And when I need to enlist help, I'll do as much up-front work as possible to make everyone else's job easier.
 
-Where I can help directly:
-- Redesign the homescreen interface (to improve the user experience and match current Sony branding)
-- Get rid of the Featured tab
-- Replace the "LiveArea" app start tabs
-- Redesign the store for controller-based use
-- Evangelize for the PSTV
-
-Where I can help indirectly (or would need help):
-- Add Netflix
-- Get rid of the whitelist
-- Improve PS1 upscaling options
-
-
-- Fixing the User Interface
- - Redesign the homescreen
- - Fix the PlayStation Store navigation
- - Streamline launching and exiting apps
+Here are some areas where I think I could help directly:
+ - Redesign the homescreen (to improve the user experience and match current Sony branding)
+ - Improve the PlayStation Store interface
+ - Streamline entering, exiting, and navigating system apps
  - Get rid of the "Featured" tab
  - Hell, get rid of *all* tabs
-- Other Proposed Updates
- - The PSTV needs Netflix (and maybe some other streaming media)
- - Add a PS1 Retro Mode
+
+And here are other important upgrades that I'd be happy to coordinate:
+ - Get a Netflix app made (and maybe some other streaming media apps, too)
+ - Improve PS1 upscaling options
  - Dump the Vita whitelist
 
-
-*Note: This isn't a wish list of every change that could or should be made to the PSTV (e.g., support for cheaper memory cards, better remote connections to the PS4). I'm just covering some of the software issues where I think I could help, personally.*
+*Note: This isn't a wishlist of every change that could or should be made to the PSTV (e.g., support for cheaper memory cards, better remote connections to the PS4). I'm just covering some of the software issues where my professional experience could help most quickly. I'd be happy to push for other changes, too, if hired.*
 
 
 ## Fixing the PSTV's User Interface
@@ -209,7 +198,7 @@ I understand that there could be issues with licensing from third-party publishe
 ## Thanks for Reading!
 
 ### Resources
-- [Sony Design Philosophy: Empathy](http://www.sony.net/SonyInfo/design/profile/philosophy.html)
+- [Sony Design Philosophy](http://www.sony.net/SonyInfo/design/profile/philosophy.html)
 
 ### Contact me
-Greg Gibson | hellogreg@gmail.com | @elfneedsfood
+- Greg Gibson | [hellogreg@gmail.com](mailto:hellogreg@gmail.com) | [@elfneedsfood](https://twitter.com/elfneedsfood)
