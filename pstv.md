@@ -42,7 +42,7 @@ Here are some areas where I think I could help directly:
  - Get rid of the "Featured" tab
  - Hell, get rid of *all* tabs
 
-And here are other important upgrades that I'd be happy to coordinate:
+And here are other important upgrades that I'd be want to coordinate:
  - Get a Netflix app made (and maybe some other streaming media apps, too)
  - Improve PS1 upscaling options
  - Dump the Vita whitelist
@@ -153,9 +153,9 @@ I don't know if anyone ever does anything except skip right past this tab. Nobod
 If you have to keep it (and I don't think you do), at least add store search functionality and/or a link to the store's homepage. Honestly, store search functionality wouldn't a bad idea on the PSTV homescreen. Give people to option to go right to the title's they're most likely to buy.
 
 
-### Hell, get rid of *all* the tabs -- and the interstitial start screens that live on them
+### Hell, get rid of *all* the tabs
 
-These "LiveArea" screens are another relic of a touch-based interface. They work well for tapping and swiping, but don't suit controllers. Use multiple buttons (e.g., X to start game, triangle for options, etc.) to replace the functions on the start screens. And use activity spinners like the PS4 does for currently active games and apps.
+These interstitial "LiveArea" screens are another relic of a touch-based interface. They work well for tapping and swiping, but don't suit controllers. Use multiple buttons (e.g., X to start game, triangle for options, etc.) to replace the functions on the start screens. And use activity spinners like the PS4 does for currently active games and apps.
 
 
 ## Other Unsolicited Additions (And Subtractions)
