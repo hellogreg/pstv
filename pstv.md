@@ -16,7 +16,7 @@ It also sounded like the perfect device to bring on long trips: a way to enjoy g
 
 The PSTV has delivered on some of its promise. I know I got my money's worth just for the opportunity to play through *Persona 4 Golden* and *Danganronpa: Trigger Happy Havoc*. I get more out of my PlayStation Plus membership, now that I receive free Vita games every month. And I can indeed play games like *Final Fantasy VII* and *Xenogears* with the analog stick -- though the upscaling looks rough.
 
-But in other ways, the PSTV has disappointed. Its operating system and interface haven't been updated from the Vita's last-generation, touchscreen roots. And the gaming compatibility and streaming media options are limited, sometimes confusingly (if not arbitrarily) so.
+In other ways, the PSTV has disappointed. Its operating system and interface haven't been updated from the Vita's last-generation, touchscreen roots. And the gaming compatibility and streaming media options are limited, sometimes confusingly (if not arbitrarily) so.
 
 I think Sony's created a great piece of hardware, but I can't help thinking about how it should be *more* than what it is. It seems compromised, underbaked, and even abandoned in various ways. It feels unloved.
 
@@ -25,7 +25,7 @@ It's hardly been pushed in the US, even though it's both a capable standalone co
 
 ### What it still can be
 
-I get it. By reducing expectations, Sony is inoculated against the perception that the system has underperformed. I understand that. After the PSTV didn't sell well in Asia, the company felt they shouldn't spend much time or money on something they considered dead on arrival in the US.
+I get it. By reducing expectations, Sony is inoculated against the perception that the system has underperformed. I understand that. After the PSTV didn't sell well in Asia, the company felt they shouldn't spend much time or money on upgrading something they considered dead on arrival in the US.
 
 But I think it's at least worth the small investment of paying one person to be its champion: someone to make the system better and build a case for it inside and outside the company -- for a couple of years, anyway.
 
@@ -38,18 +38,18 @@ Back in the early 2000s, I led the web development and design for Electronic Art
 I'm used to working as a one-person, low-budget, full-service design and development team. In seeing projects through from concept to conclusion, I'm comfortable working alone, leading small teams, and/or coordinating with other departments. Where I can implement improvements by myself, I'll do so. And when I need to enlist help, I'll do as much up-front work as possible to make everyone else's job easier.
 
 Here are some areas where I could help directly:
- - Redesign the homescreen (to improve the user experience and match current Sony branding)
- - Improve the PlayStation Store interface
- - Streamline launching and leaving apps
- - Get rid of the "Featured" tab
- - Hell, get rid of *all* the tabs
+ - Redesign the homescreen (to improve the user experience and match current Sony branding).
+ - Improve the PlayStation Store interface.
+ - Streamline launching and leaving apps.
+ - Get rid of the "Featured" tab.
+ - Get rid of all the other tabs, too.
 
 And here are other important upgrades that I'd coordinate:
- - Get a Netflix app made (and maybe some other streaming media apps, too)
- - Improve PS1 upscaling options
- - Dump the Vita whitelist
+ - Get a Netflix app made (and maybe some other streaming media apps, too).
+ - Improve upscaling options for PlayStation Classics.
+ - Eliminate the Vita whitelist.
 
-*Note: This isn't a wishlist of every change that could or should be made to the PSTV (e.g., support for cheaper memory cards, better remote connections to the PS4). I'm just covering some of the software issues where my professional experience could help most quickly. I'd be happy to push for other changes, too, if hired.*
+*Note: This isn't a wishlist of every change that could or should be made to the PSTV (e.g., support for cheaper memory cards, improved networking, etc.). I'm just covering some of the software issues where my professional experience could help most quickly. I'd be happy to push for other changes, too, if hired.*
 
 
 ## Fixing the PSTV's User Interface
@@ -64,7 +64,7 @@ The user interface is just a part of the user experience, and a device's homescr
 - Update it to share the same visual branding language as the current generation of Sony products (PS4, Bravia TVs, PlayStation mobile app, etc.).
 - Reframe the PSTV as something other than just a Vita on a bigger screen.
 
-Before we get to the homescreen, I'd like to discuss what the PSTV is -- or, maybe more importantly, what it isn't. Its internals are basically those of a Vita. But a device is not the sum of its component parts. A device is defined by how it’s used.
+Before we get to specifics on the homescreen, I'd like to discuss what the PSTV is -- or, maybe more importantly, what it isn't. Its internals are basically those of a Vita. But a device is not the sum of its component parts. A device is defined by how it’s used.
 
 When the iPad was announced, it was ridiculed as just a big iPhone or iPod touch. Technically, that was true. Its internals were about the same, it shared the same OS, and it ran the same apps. But we now know that calling it a big iPhone was wrong. The iPad was something different, because a tablet is used differently from a phone.
 
@@ -74,9 +74,11 @@ But the PSTV's current visual interface does look like the Vita’s. In fact it 
 
 I'm sure this saved on design and development costs. But, as a result, the PSTV's branding no longer matches the rest of the current generation of Sony’s consumer devices. (For example, the default system typeface is Rodin, the same as on the PlayStation 3.) And the Vita interface was originally designed to display on small screens, meaning that the type size and iconography of the PSTV are often larger than they need to be when displayed on a television.
 
-My biggest issue with the current interface is that it was designed for touchscreen navigation, and not a controller, as the PSTV requires. In Sony's own "Feature Design" [profile](http://www.sony.net/Fun/design/activity/product/ps_vita/01.html) of the Vita, the system's designers even say that a d-pad is appropriate for controller navigation (and that the touchscreen is more appropriate for the Vita).
+My biggest issue with the current interface is that it was designed for the Vita's touchscreen navigation, and not a controller, as the PSTV requires. On the PSTV, Button and stick functions change from screen to screen, making them seem like their use was tacked on as an afterthought.
 
-On the PSTV, Button and stick functions change from screen to screen, making them seem like their use was tacked on as an afterthought. In no single case does this break functionality on the PSTV. But the cumulative effect is annoying. This becomes an obstacle as soon as you reach the console's homescreen.
+In no single case does this break functionality on the PSTV. But the cumulative effect is annoying. This becomes an obstacle as soon as you reach the console's homescreen.
+
+### The PSTV homescreen, now
 
 For a controller-navigated interface, items should be in a line or a grid. This makes directional pad and analog stick navigation logical and predictable. Up, down, left, and right all correspond to d-pad button presses or analog movements. 
 
@@ -100,7 +102,7 @@ Even though the icons aren’t placed in a strict vertical/horizontal grid, the 
 
 ### The PSTV homescreen, redesigned
 
-![Alt text](images/article/pstvSideBySide.jpg)
+![PSTV vs. New PSTV](images/article/pstvSideBySide.jpg)
 
 To address all this, I've designed [a PSTV homescreen proof of concept](index.html), where the look is much like that of the PS4, though with actions for each app mapped to various controller buttons. Navigate right or left to choose an app, and then press the button appropriate for the action you wish to take.
 
@@ -177,30 +179,33 @@ Instead, when an app is selected on the homescreen, use the controller buttons (
 >"Through a relentless process of considered refinement, we determine the distinct essence. Expressed in its clearest and most beautiful form, this essence symbolizes what we strive to achieve in all our design."
 >-- Sony Design Philosophy: Integrity
 
-### Where's Netflix?
+### Add Netflix, ASAP
 The PSTV doesn’t need to be an Apple TV or Amazon Fire or even a Chromecast. But it does need to have Netflix.
 
-I've got a half-dozen devices in my house on which I can watch Netflix. So why do I need another?
+I've probably got about a dozen devices in my house on which I can watch Netflix. So why do I need another?
 
-Maybe I don't. But the PSTV needs it, in part for the same reason some hotels have pools they know will rarely be used. People often make decisions based on what they think they might do. If you take away an option, you could lose potential customers.
+Maybe I don't *need* it. But the PSTV does, in part for the same reason some hotels have pools they know will rarely be used. People often make decisions based on what they think they *might* do. If you take away an option, you could lose potential customers.
 
-Also, it is nice to have -- just in case. Being able to switch right from a game to movie without turning off my device or changing inputs on my TV is a nice little perk. Plus, Sony has the best Netflix interface. I know that it's up to Netflix to make their PSTV app, but I'm sure that Sony, if they wanted, could persuade or pay them to get it done -- even if it's just a matter of making the Vita version compatible.
+Also, it is nice to have -- just in case. Being able to switch right from a game to movie without turning off my device or changing inputs on my TV is a convenient perk. I know that it's up to Netflix to make their PSTV app, but I'm sure that Sony, if they wanted, could persuade or pay them to get it done -- even if it's just a matter of making the Vita version compatible.
 
 For my summer vacation, I’m taking one portable media device with me. If the PSTV had Netflix (and/or Spotify and/or YouTube), it’d be a no-brainer to take it. But instead, I’m bringing the Amazon Fire TV Stick, because I can use it to watch Netflix and listen to Prime Music on the road.
 
-(It also wouldn't hurt to have Spotify, Twitch, and YouTube, even if they're just straight Vita ports.)
+(It wouldn't hurt to have Spotify, Twitch, and YouTube, too. Glad Hulu's already in!)
 
-### PlayStation Retro Mode
 
-#####To see how a PlayStation retro mode might look with nearest-neighbor upscaling and scanlines, I made a couple of mockups to demonstrate current and proposed retro looks for *Xenogears* and *Ridge Racer*: http://hellogreg.github.io/pstv
+### Make the PSTV *the* console for PlayStation Classics
+
+#####To see how a PS1 retro mode might look with nearest-neighbor upscaling and scanlines, [my prototype](index.html) includes a couple of mockups to demonstrate current and proposed looks for *Xenogears* and *Ridge Racer*.
 
 One way to help ensure that the PSTV gains, at the very least, a devoted cult following would be to make it the best way to experience (or re-experience) PlayStation Classics.
 
-Nowadays, more and more people (like me) are spending hundreds of dollars to import devices like [the Framemeister](http://retrogaming.hazard-city.de/framemeister.html), which optimize old CRT-era games for display on HDTVs. Rather than stretching and blurring the games, these devices upscale them faithfully -- maintaining the aspect ratio and keeping all the color and detail that have inspired the new retro-style games of today. These devices even give the option of adding scanlines, to make the game look more like it would have on a classic CRT screen.
+Nowadays, more and more people (like me) are spending hundreds of dollars to import devices like the [Framemeister](http://retrogaming.hazard-city.de/framemeister.html), which optimize old CRT-era games for display on HDTVs. Rather than stretching and blurring the games, these devices upscale them faithfully -- maintaining the aspect ratio and keeping all the color and detail. These devices even offer the option of adding scanlines, to make the game look more like it would have on a classic CRT monitor.
+
+![Final Fantasy VII via PSTV and Framemeister](images/article/ff7shots.jpg)
 
 The PSTV could take the old 320×240 pixel PlayStation Classics and upscale them to 960×720 (pillarboxed on a 720p TV) or 1280×960 (windowboxed on a 1080p set), depending on TV resolution. There's obviously a market in appealing to gamers' nostalgia. And I know I'd love to have a way to play digital versions of all my old favorites on a console I already have connected to my main TV.
 
-One thing the PSTV already has going for it is that -- as I mentioned at the very beginning of this piece -- games that could originally only be controlled with the d-pad are now compatible with the analog stick.
+Something the PSTV already has going for it (even over the PS3's PS1 emulation) is that -- as I mentioned at the very beginning of this piece -- games that could originally only be controlled with the d-pad are now compatible with the analog stick.
 
 
 ### Dump the PSTV Whitelist
@@ -209,12 +214,22 @@ Give users an option (maybe as an opt-in, so users know the risks) to render *al
 
 I understand that there could be issues with licensing from third-party publishers. If that's the case, it could be a little trickier to nix the whitelist for those titles. Still, all first-party games should be exempt.
 
-## Thanks for Reading!
+
+## Colophon
+
+I designed and developed my PSTV proof of concept with HTML, JavaScript, and CSS (via Sass). I do sometimes make chicken scratch sketches to get a rough idea of where I'm headed. But, after that, I prefer prototyping directly in the browser, as opposed to Photoshop or whatever.
+
+With one exception, I didn't use any libraries or frameworks, so almost all the code in that page is mine, from scratch. (The exception is that I used The Financial Times' [FastClick](https://github.com/ftlabs/fastclick) tool, which eliminates delays after link tapping on mobile devices). The demo should work in the latest versions of all major desktop browsers, I hope!
+
+I also designed this page, though that wasn't as much work. Here, I did use [normalize.css](http://necolas.github.io/normalize.css/) as a style reset. I wrote the text in [Haroopad](http://pad.haroopress.com/), an excellent Markdown editor that exports clean, unstyled HTML.
+
+### Contact me
+Greg Gibson | [hellogreg@gmail.com](mailto:hellogreg@gmail.com) | [@elfneedsfood](https://twitter.com/elfneedsfood)
 
 ### Resources
 - [Sony Design Philosophy](http://www.sony.net/SonyInfo/design/profile/philosophy.html)
+- [Sony Feature Design: PS Vita](http://www.sony.net/Fun/design/activity/product/ps_vita/01.html)
 - [PSTV User's Guide](http://manuals.playstation.net/document/en/pstv/)
 - [PS Vita Users Guide](http://manuals.playstation.net/document/en/psvita/)
 
-### Contact me
-- Greg Gibson | [hellogreg@gmail.com](mailto:hellogreg@gmail.com) | [@elfneedsfood](https://twitter.com/elfneedsfood)
+### Thanks for reading!
