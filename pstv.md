@@ -140,7 +140,7 @@ But what you do is this:
 3. Hold Circle (as the LiveArea tab peels from the screen).\*
 4. Move left (from the "Featured" tab that now shows onscreen).\*
 
-\* -- *I'll have more to say about these unnecessary tabs shortly.*
+\* -- *I'll have more to say about these (unnecessary, in my opinion) tabs shortly.*
 
 The first step is optional, if you don't want to revisit the main Settings page. But the process still shouldn't require three or four different actions -- tap circle, tap PS, hold circle, move left -- to do one thing: go back.
 
