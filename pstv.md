@@ -18,7 +18,7 @@ The PSTV has delivered on some of its promise. I know I got my money's worth jus
 
 In other ways, the PSTV has disappointed. Its operating system and interface haven't been updated from the Vita's last-generation, touchscreen roots. And the gaming compatibility and streaming media options are limited, sometimes confusingly (if not arbitrarily) so.
 
-For my summer vacation, I’m taking one portable media device with me. If the PSTV had native Netflix, Spotify, and/or YouTube apps, it’d be a no-brainer to take it. But instead, I’m bringing the Amazon Fire TV Stick, so I can watch Netflix and listen to Prime Music.
+For my summer vacation, I’m taking one portable media device with me. If the PSTV had native Netflix, Spotify, and/or YouTube apps, it’d be a no-brainer to take it. But instead, I’m bringing an Amazon Fire TV Stick, so I can watch Netflix and listen to Prime Music.
 
 I think Sony's created a great piece of hardware, but I can't help thinking about how it should be *more* than what it is. It seems compromised, underbaked, and even abandoned in various ways. It feels unloved.
 
@@ -27,7 +27,7 @@ It's hardly been pushed in the US, even though it's both a capable standalone co
 
 ### What it still can be
 
-I get it. By reducing expectations, Sony is inoculated against the perception that the system has underperformed. I understand that. After the PSTV didn't sell well in Asia, the company felt they shouldn't spend much time or money on upgrading something they considered dead on arrival in the US.
+I get it. By reducing expectations, Sony is inoculated against the perception that the system has underperformed. I understand that. After the PSTV didn't sell well in Asia, the company felt they shouldn't spend much time or money on upgrading and promoting something they considered dead on arrival in the US.
 
 But I think it's at least worth the small investment of paying one person to be its champion: someone to make the system better and build a case for it inside and outside the company -- for a couple of years, anyway.
 
@@ -117,6 +117,8 @@ I’ve also kept one feature that the PSTV already has that the PS4 doesn’t: f
 
 ### Update the PlayStation Store navigation
 
+![PSTV Store](images/article/storeShot.jpg)
+
 Like the homescreen, the store needs a complete overhaul to make it more controller-friendly. (Unlike the homescreen, I haven't designed a prototype for it, yet.) Some of the most important sections -- like the Search area at the top right, and the ellipses at the bottom right -- are the most difficult to access. When they can be tapped on a touchscreen, that's not a big deal. But scrolling and maneuvering around the screen in all directions with a controller to find out how to access them is a pain.
 
 The simplest solution would be to have a left-hand menu, like the other TV-based PlayStation consoles. You always know going left takes you back a level in the hierarchy.
@@ -157,6 +159,8 @@ This process is another artifact from the Vita. The page peeling makes a lot mor
 
 ### Get rid of the “Featured” tab
 
+![PSTV Store](images/article/featuredShot.jpg)
+
 I don't know if anyone ever does anything except skip right past this tab. Nobody likes it. It feels like one of those business decisions made without the user in mind. It breaks navigational flow; you don't see it when entering apps, but it's always there when you leave them. Finally, it looks like too much like it's the store, even though it's not.
 
 If you have to keep this tab (though I don't think you do), at least add store search functionality and/or a direct link to the store's homepage. Honestly, store search functionality wouldn't a bad idea right from the PSTV homescreen.
@@ -173,7 +177,7 @@ Instead of making users dodge a tab they don't want to see, give them rapid acce
 
 The interstitial LiveArea screens (the screens where you have to click to start an app after you've already clicked to start the app) are another relic of a touch-based interface. They work well for tapping and swiping, but don't suit controllers.
 
-Instead, when an app is selected on the homescreen, use the controller buttons (e.g., X to start game, triangle to bring up a submenu of options, etc.) to replace the LiveArea functions. Also, use animated icons to signify suspended games and apps, like the PS4 does. I incorporated these features into my [homescreen proof of concept](index.html).
+Instead, when an app is selected on the homescreen, use the controller buttons (e.g., X to start or resume, triangle to bring up a submenu of options, etc.) to replace the LiveArea functions. Also, use an animated icon to signify suspended games and apps, like the PS4 does. I incorporated these features into my [homescreen proof of concept](index.html).
 
 
 ## Other Unsolicited Additions (And Subtractions)
