@@ -179,7 +179,8 @@ img, video {
     padding-left: 2.8rem; }
 
   .container {
-    background: #fff;
+    background: #fff url(../images/article/pstvConsole.png) no-repeat 0 -18rem;
+    background-size: 100% auto;
     color: #222;
     font-size: 1.4rem;
     line-height: 2.8rem;
