@@ -85,28 +85,27 @@ $appTransitionSpeed: 250ms;
 
 .container {
   margin: 0 auto;
-  width: 98rem;
-}
-
-.container > header {
-  color: #aaa;
-  margin: .5rem auto;
-  position: relative;
   width: 96rem;
 
-  h1 {
+  & > header {
+    color: #aaa;
+    margin: .5rem auto;
+    position: relative;
 
-    font-size: 1.3rem;
-    font-weight: 400;
+    h1 {
 
-    a {
-      color: #5b7b9b;
-      text-decoration: none;
+      font-size: 1.3rem;
+      font-weight: 400;
 
-      &:hover {
-        text-decoration: underline;
+      a {
+        color: #5b7b9b;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+
       }
-
     }
   }
 }

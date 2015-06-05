@@ -33,21 +33,19 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
 
 .container {
   margin: 0 auto;
-  width: 98rem; }
-
-.container > header {
-  color: #aaa;
-  margin: .5rem auto;
-  position: relative;
   width: 96rem; }
-  .container > header h1 {
-    font-size: 1.3rem;
-    font-weight: 400; }
-    .container > header h1 a {
-      color: #5b7b9b;
-      text-decoration: none; }
-      .container > header h1 a:hover {
-        text-decoration: underline; }
+  .container > header {
+    color: #aaa;
+    margin: .5rem auto;
+    position: relative; }
+    .container > header h1 {
+      font-size: 1.3rem;
+      font-weight: 400; }
+      .container > header h1 a {
+        color: #5b7b9b;
+        text-decoration: none; }
+        .container > header h1 a:hover {
+          text-decoration: underline; }
 
 #pstv {
   border: 1px solid #002e6c;
