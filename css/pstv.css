@@ -31,6 +31,10 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
 .visible {
   display: inherit; }
 
+.container {
+  margin: 0 auto;
+  width: 98rem; }
+
 .container > header {
   color: #aaa;
   margin: .5rem auto;
