@@ -169,8 +169,10 @@ img, video {
   h6 {
     line-height: 1.8rem; }
 
-  ul li, ol li {
-    margin: 1.4rem 2rem; }
+  ul, ol {
+    border-left: .2rem solid #eaeaea; }
+    ul li, ol li {
+      margin: 1.4rem 1.8rem; }
 
   blockquote {
     font-size: 1.6rem;

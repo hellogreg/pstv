@@ -243,8 +243,11 @@ img, video {
     line-height: $baseFontSize;
   }
 
-  ul li, ol li {
-    margin: $mobileFontSize 2rem;
+  ul, ol {
+    border-left: .2rem solid #eaeaea;
+    li {
+      margin: $mobileFontSize $baseFontSize;
+    }
   }
 
   blockquote {
