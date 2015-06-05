@@ -18,6 +18,8 @@ The PSTV has delivered on some of its promise. I know I got my money's worth jus
 
 In other ways, the PSTV has disappointed. Its operating system and interface haven't been updated from the Vita's last-generation, touchscreen roots. And the gaming compatibility and streaming media options are limited, sometimes confusingly (if not arbitrarily) so.
 
+For my summer vacation, I’m taking one portable media device with me. If the PSTV had native Netflix, Spotify, and/or YouTube apps, it’d be a no-brainer to take it. But instead, I’m bringing the Amazon Fire TV Stick, so I can watch Netflix and listen to Prime Music.
+
 I think Sony's created a great piece of hardware, but I can't help thinking about how it should be *more* than what it is. It seems compromised, underbaked, and even abandoned in various ways. It feels unloved.
 
 It's hardly been pushed in the US, even though it's both a capable standalone console and a first-class PS4 accessory. Recently, SCEI President and Group CEO Andrew House even referred to the device -- which hasn't even been out for a year in the US -- as a "legacy platform" (though the company later walked that back some).
@@ -80,13 +82,11 @@ In no single case does this break functionality on the PSTV. But the cumulative 
 
 ### The PSTV homescreen, now
 
+![Current PSTV](images/article/retinaPSTV.jpg)
+
 For a controller-navigated interface, items should be in a line or a grid. This makes directional pad and analog stick navigation logical and predictable. Up, down, left, and right all correspond to d-pad button presses or analog movements. 
 
-On a touchscreen like the Vita, a grid is less important. That's how we wound up with the current PSTV homescreen, where application icons appear diagonally, from row to row:
-
--- 0 -- 0 -- 0 --
-0 -- 0 -- 0 -- 0
--- 0 -- 0 -- 0 --
+On a touchscreen like the Vita, a grid is less important. That's how we wound up with the current PSTV homescreen, where application icons appear diagonally, from row to row.
 
 With the apps organized like this, trying to move the cursor from row to row is not only unpredictable, but it actually may move in the opposite horizontal direction from what’s intended.
 
@@ -94,28 +94,30 @@ Say you have the top-left application selected. If you press down on the d-pad o
 
 When moving down from the top row, the cursor moves left. When moving down from the middle row, the cursor then moves right. Moving up from the bottom, the cursor moves left. And moving up from the middle, the cursor moves right.
 
-This means there’s no way to select the middle row's rightmost app directly from either the top or bottom row. “Unless you use the analog stick,” you may think — as I thought. But that’s not the case.
+This means there’s no easy way to select the middle row's rightmost app directly from either the top or bottom row. “Unless you use the analog stick,” you may think — as I thought. But that’s not the case.
 
-As mentioned above, if you pull straight down from the top row, the cursor will move to the app down one row and to the left. But if you pull down and to the right… the cursor will also move down and to the left!
+As mentioned above, if you pull straight down from the top row, the cursor will move to the app down one row and to the left. But if you pull down and to the right… the cursor will still move down and to the left!
 
-Even though the icons aren’t placed in a strict vertical/horizontal grid, the PSTV (or Vita) thinks they are. It thinks the leftmost icons from each row are in a vertical line — and the second from each row, and the third. So, even if you pull down and at a bit of an angle, the cursor moves as if you’d just pulled straight down. This makes it extremely difficult to access the fourth icon in the middle row directly from either the top or bottom row (which each only have three icons). It makes more sense to actually put the icons in either a true grid, like the PS3’s XMB had, or a line, like the PS4 has.
+Even though the icons aren’t placed in a strict vertical/horizontal grid, the PSTV thinks they are. It thinks the leftmost icons from each row are in a vertical line — and the second from each row, and the third. So, even if you pull down and at a bit of an angle, the cursor moves as if you’d just pulled straight down. This makes it extremely difficult (though I've found it is possible) to access the fourth icon in the middle row directly from either the top or bottom row, which each only have three icons.
+
+While the layout is just fine for the Vita, on the PSTV, it makes more sense to put the icons in either a true grid, like the PS3’s XMB had, or a line, like the PS4 has.
 
 ### The PSTV homescreen, redesigned
 
-![PSTV vs. New PSTV](images/article/pstvSideBySide.jpg)
+![Proposed PSTV](images/article/retinaProto.jpg)
 
-To address all this, I've designed [a PSTV homescreen proof of concept](index.html), where the look is much like that of the PS4, though with actions for each app mapped to various controller buttons. Navigate right or left to choose an app, and then press the button appropriate for the action you wish to take.
+To address this, I've designed [a PSTV homescreen proof of concept](index.html), where the look is much like that of the PS4, though with actions for each app mapped to various controller buttons. Navigate right or left to choose an app, and then press the button appropriate for the action you wish to take.
 
-I’ve sized and placed the interface elements on a grid that splits the screen into 64 units horizontally and 36 units vertically. All the apps are sized and placed to fit the grid, and the text's line heights all fit it, as well. The only items that don't snap to the grid horizontally are those in the header, where (because the text there can vary by user and time) the items are spaced dynamically for visual balance. 
+I’ve sized and placed the interface elements on a grid that splits the screen into 64 units horizontally and 36 units vertically. All the apps are sized and placed to fit the grid, and the text's line heights all adhere to it. The only items that don't snap to the grid horizontally are those in the header, where (because the text there can vary by user and time) the items are spaced dynamically for visual balance.
 
-You can view the grid by clicking the “Grid Background” button below the prototype. There are a few more aesthetic options for you to play with.
+You can view the grid by clicking the “Grid Background” button below the prototype. There are also a few more aesthetic options for you to play with.
 
 I’ve also kept one feature that the PSTV already has that the PS4 doesn’t: folders. When the folder app icon is selected, you can expand it to choose an app within.
 
 
-### Update store navigation
+### Update the PlayStation Store navigation
 
-Like the homescreen, the store needs a complete overhaul to make it more controller-friendly. (Unlike the homescreen, I haven't had a chance to make a prototype for it, yet.) Some of the most important sections -- like the Search area at the top right, and the ellipses at the bottom right -- are the most difficult to access. When they can be tapped, that's not a big deal. But scrolling and maneuvering around the screen in all directions to get to them is a pain.
+Like the homescreen, the store needs a complete overhaul to make it more controller-friendly. (Unlike the homescreen, I haven't designed a prototype for it, yet.) Some of the most important sections -- like the Search area at the top right, and the ellipses at the bottom right -- are the most difficult to access. When they can be tapped on a touchscreen, that's not a big deal. But scrolling and maneuvering around the screen in all directions with a controller to find out how to access them is a pain.
 
 The simplest solution would be to have a left-hand menu, like the other TV-based PlayStation consoles. You always know going left takes you back a level in the hierarchy.
 
@@ -188,8 +190,6 @@ Maybe I don't *need* it. But the PSTV does, in part for the same reason some hot
 
 Also, it is nice to have -- just in case. Being able to switch right from a game to movie without turning off my device or changing inputs on my TV is a convenient perk. I know that it's up to Netflix to make their PSTV app, but I'm sure that Sony, if they wanted, could persuade or pay them to get it done -- even if it's just a matter of making the Vita version compatible.
 
-For my summer vacation, I’m taking one portable media device with me. If the PSTV had Netflix (and/or Spotify and/or YouTube), it’d be a no-brainer to take it. But instead, I’m bringing the Amazon Fire TV Stick, because I can use it to watch Netflix and listen to Prime Music on the road.
-
 (It wouldn't hurt to have Spotify, Twitch, and YouTube, too. Glad Hulu's already in!)
 
 
@@ -219,17 +219,21 @@ I understand that there could be issues with licensing from third-party publishe
 
 I designed and developed my PSTV proof of concept with HTML, JavaScript, and CSS (via Sass). I do sometimes make chicken scratch sketches to get a rough idea of where I'm headed. But, after that, I prefer prototyping directly in the browser, as opposed to Photoshop or whatever.
 
-With one exception, I didn't use any libraries or frameworks, so almost all the code in that page is mine, from scratch. (The exception is that I used The Financial Times' [FastClick](https://github.com/ftlabs/fastclick) tool, which eliminates delays after link tapping on mobile devices). The demo should work in the latest versions of all major desktop browsers, I hope!
+With one exception, I didn't use any libraries or frameworks, so almost all the code in that page is mine, from scratch. (The exception is that I used The Financial Times' [FastClick](https://github.com/ftlabs/fastclick) tool, which eliminates delays after tapping links/buttons on mobile devices). The demo should work in the latest versions of all major desktop browsers, I hope!
 
 I also designed this page, though that wasn't as much work. Here, I did use [normalize.css](http://necolas.github.io/normalize.css/) as a style reset. I wrote the text in [Haroopad](http://pad.haroopress.com/), an excellent Markdown editor that exports clean, unstyled HTML.
 
 ### Contact me
-Greg Gibson | [hellogreg@gmail.com](mailto:hellogreg@gmail.com) | [@elfneedsfood](https://twitter.com/elfneedsfood)
+- **Greg Gibson**
+- Email: [hellogreg@gmail.com](mailto:hellogreg@gmail.com)
+- Twitter: [@elfneedsfood](https://twitter.com/elfneedsfood)
+- NeoGAF: flyover
+- PSN: hellogreg
 
 ### Resources
 - [Sony Design Philosophy](http://www.sony.net/SonyInfo/design/profile/philosophy.html)
 - [Sony Feature Design: PS Vita](http://www.sony.net/Fun/design/activity/product/ps_vita/01.html)
 - [PSTV User's Guide](http://manuals.playstation.net/document/en/pstv/)
-- [PS Vita Users Guide](http://manuals.playstation.net/document/en/psvita/)
+- [PS Vita User's Guide](http://manuals.playstation.net/document/en/psvita/)
 
 ### Thanks for reading!
