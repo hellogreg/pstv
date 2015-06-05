@@ -33,12 +33,12 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
 
 .container {
   margin: 0 auto;
-  width: 96rem;
-  max-width: 100%; }
+  width: 96rem; }
   .container > header {
     color: #aaa;
     margin: .5rem auto;
-    position: relative; }
+    position: relative;
+    width: 100%; }
     .container > header h1 {
       font-size: 1.3rem;
       font-weight: 400; }
@@ -472,7 +472,7 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
   margin: .5rem auto;
   padding: 0 3rem .2rem 3rem;
   position: relative;
-  width: 96rem; }
+  width: 100%; }
   #controls ul {
     -webkit-align-items: center;
     align-items: center;

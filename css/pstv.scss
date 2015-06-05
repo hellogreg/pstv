@@ -86,12 +86,12 @@ $appTransitionSpeed: 250ms;
 .container {
   margin: 0 auto;
   width: 96rem;
-  max-width: 100%;
 
   & > header {
     color: #aaa;
     margin: .5rem auto;
     position: relative;
+    width: 100%;
 
     h1 {
 
@@ -495,7 +495,7 @@ $appTransitionSpeed: 250ms;
   margin: .5rem auto;
   padding: 0 3rem .2rem 3rem;
   position: relative;
-  width: 96rem;
+  width: 100%;
 
   ul {
     @include flex-basic-row;
