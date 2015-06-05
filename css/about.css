@@ -157,6 +157,9 @@ img, video {
   h1 {
     font-size: 3rem; }
 
+  h6 {
+    line-height: 3.6rem; }
+
   ul li, ol li {
     margin: 1.4rem 2.8rem; }
 

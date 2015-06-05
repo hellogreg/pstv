@@ -227,6 +227,10 @@ img, video {
     font-size: 3rem;
   }
 
+  h6 {
+    line-height: $baseLineHeight;
+  }
+
   ul li, ol li {
     margin: $mobileFontSize $mobileLineHeight;
   }
