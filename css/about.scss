@@ -219,7 +219,7 @@ img, video {
     margin: $mobileLineHeight 0;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1, h2 {
     line-height: $mobileHeaderLineHeight;
   }
 
@@ -231,11 +231,15 @@ img, video {
     font-size: 2.4rem;
   }
 
+  h3, h4, h5 {
+    line-height: $mobileLineHeight;
+  }
+
   h3 {
     font-size: 1.8rem;
   }
 
-  h5, h6 {
+  h6 {
     line-height: $baseFontSize;
   }
 
