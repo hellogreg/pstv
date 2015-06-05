@@ -173,7 +173,7 @@ img, video {
   ul, ol {
     border-left: .2rem solid #eaeaea; }
     ul li, ol li {
-      margin: 1.4rem 1.8rem; }
+      margin: 1.4rem 2.2rem; }
 
   blockquote {
     font-size: 1.4rem;
@@ -185,7 +185,7 @@ img, video {
     color: #222;
     font-size: 1.4rem;
     line-height: 2.8rem;
-    padding: 4rem 1rem .5rem;
+    padding: 4rem 1.4rem .5rem;
     word-wrap: break-word; } }
 
 /*# sourceMappingURL=about.css.map */
