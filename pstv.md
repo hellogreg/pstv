@@ -70,7 +70,7 @@ Before we get to specifics on the homescreen, I'd like to discuss what the PSTV 
 
 When the iPad was announced, it was ridiculed as just a big iPhone or iPod touch. Technically, that was true. Its internals were about the same, it shared the same OS, and it ran the same apps. But we now know that calling it a big iPhone was wrong. The iPad was something different, because a tablet is used differently from a phone.
 
-The PSTV is often referred to as just a Vita that plugs into your TV. And again, technically, that’s true, but wrong. Because the PSTV isn’t used in the same places or manner as a Vita, it’s not a Vita. It's not more or less. It's something else.
+The PSTV is often referred to as just a Vita that plugs into your TV. And again, technically, that’s true. But because the PSTV isn’t used in the same places or manner as a Vita, it’s not a Vita. It's not more or less. It's something else.
 
 But the PSTV's current visual interface does look like the Vita’s. In fact it *is* the Vita interface, unaltered.
 
@@ -119,7 +119,7 @@ I’ve also kept one feature that the PSTV already has that the PS4 doesn’t: f
 
 ![PSTV Store](images/article/storeShot.jpg)
 
-Like the homescreen, the store needs a complete overhaul to make it more controller-friendly. (Unlike the homescreen, I haven't designed a prototype for it, yet.) Some of the most important sections -- like the Search area at the top right, and the ellipses at the bottom right -- are the most difficult to access. When they can be tapped on a touchscreen, that's not a big deal. But scrolling and maneuvering around the screen in all directions with a controller to find out how to access them is a pain.
+Like the homescreen, the store needs a complete overhaul to make it more controller-friendly. (Unlike the homescreen, I haven't designed a prototype for it, yet.) Some of the most important sections -- like the Search area at the top right, and the ellipses at the bottom right -- are the most difficult to access. When they can be tapped on a touchscreen, that's not a big deal. But scrolling and maneuvering around the screen in all directions with a controller to find them is a pain.
 
 The simplest solution would be to have a left-hand menu, like the other TV-based PlayStation consoles. You always know going left takes you back a level in the hierarchy.
 
@@ -159,7 +159,7 @@ This process is another artifact from the Vita. The page peeling makes a lot mor
 
 ### Get rid of the “Featured” tab
 
-![PSTV Store](images/article/featuredShot.jpg)
+![Featured Tab](images/article/featuredShot.jpg)
 
 I don't know if anyone ever does anything except skip right past this tab. Nobody likes it. It feels like one of those business decisions made without the user in mind. It breaks navigational flow; you don't see it when entering apps, but it's always there when you leave them. Finally, it looks like too much like it's the store, even though it's not.
 
