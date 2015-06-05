@@ -154,10 +154,14 @@ img, video {
   h1, h2, h3, h4, h5, h6 {
     line-height: 4.2rem; }
 
+  h1 {
+    font-size: 3rem; }
+
   ul li, ol li {
     margin: 1.4rem 2.8rem; }
 
   blockquote {
+    font-size: 1.6rem;
     padding-left: 2.8rem; }
 
   .container {

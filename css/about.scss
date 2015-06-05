@@ -223,11 +223,16 @@ img, video {
     line-height: $mobileHeaderLineHeight;
   }
 
+  h1 {
+    font-size: 3rem;
+  }
+
   ul li, ol li {
     margin: $mobileFontSize $mobileLineHeight;
   }
 
   blockquote {
+    font-size: 1.6rem;
     padding-left: $mobileLineHeight;
   }
 
