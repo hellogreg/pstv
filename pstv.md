@@ -1,8 +1,9 @@
 # Reimagining the PSTV (a bit)
-######by Greg Gibson ([@elfneedsfood](https://twitter.com/elfneedsfood)). View my PSTV homescreen prototype [here](index.html).
+######by Greg Gibson ([@elfneedsfood](https://twitter.com/elfneedsfood)).
+######View my PSTV homescreen prototype [here](index.html).
 
 >"We have always been on the cutting edge, never being held back by fear of failure. By taking such an approach to design we give form to innovative concepts and bring them to fruition; creating new standards that turn ideas into global benchmarks."
->-- Sony Design Philosophy: Visionary
+>-- Sony Design Philosophy: Visionary<sup>1</sup>
 
 
 I loved the PlayStation TV from [the moment Sony announced it](https://www.youtube.com/watch?v=rG5l78gbvpU).
@@ -31,7 +32,8 @@ I get it. By reducing expectations, Sony is inoculated against the perception th
 
 But I think it's at least worth the small investment of paying one person to be its champion: someone to make the system better and build a case for it inside and outside the company -- for a couple of years, anyway.
 
-Reframe the PSTV the way the Apple framed the Apple TV. Call it "a hobby" for a while, improving how it looks and works. Gradually build a loyal userbase, while still remaining mostly free from sales expectations. See if the media and the public will give it a shot over time, before writing the whole thing off as a failure.
+Reframe the PSTV the way the Apple has framed the Apple TV: calling it a "hobby." Improve how the PSTV looks and works, and gradually build a loyal userbase -- while still remaining mostly free from sales expectations. (Apple's own hobby has now surpassed 25M unit sales over eight years.<sup>2</sup>) It can even function as an R&D testbed for gauging public response to new features that may make it into future Sony products.
+
 
 ### How I can help
 
@@ -84,11 +86,11 @@ In no single case does this break functionality on the PSTV. But the cumulative 
 
 ![Current PSTV](images/article/retinaPSTV.jpg)
 
-For a controller-navigated interface, items should be in a line or a grid. This makes directional pad and analog stick navigation logical and predictable. Up, down, left, and right all correspond to d-pad button presses or analog movements. 
+For a controller-navigated interface, items should usually be in a line or a grid. This makes directional pad and analog stick navigation logical and predictable. Up, down, left, and right all correspond to d-pad button presses or analog movements.
 
-On a touchscreen like the Vita, a grid is less important. That's how we wound up with the current PSTV homescreen, where application icons appear diagonally, from row to row.
+On a touchscreen like the Vita, a grid is less important.<sup>3</sup> That's how we wound up with the current PSTV homescreen, where application icons are arranged diagonally, from row to row.
 
-With the apps organized like this, trying to move the cursor from row to row is not only unpredictable, but it actually may move in the opposite horizontal direction from what’s intended.
+With the apps organized like this, trying to move the cursor across rows is not only unpredictable, but it actually may move in the opposite horizontal direction from what’s intended.
 
 Say you have the top-left application selected. If you press down on the d-pad or analog stick, which second-row app will be selected? It’s the leftmost one, but you’d have no way of knowing that until you actually tried it.
 
@@ -96,9 +98,9 @@ When moving down from the top row, the cursor moves left. When moving down from 
 
 This means there’s no easy way to select the middle row's rightmost app directly from either the top or bottom row. “Unless you use the analog stick,” you may think — as I thought. But that’s not the case.
 
-As mentioned above, if you pull straight down from the top row, the cursor will move to the app down one row and to the left. But if you pull down and to the right… the cursor will still move down and to the left!
+As mentioned above, if you pull straight down from the top row, the cursor will move to the app down one row and to the left. But if you pull down and to the right… the cursor will still usually move down and to the left! (I've found that it is possible to go the other way, but there's a very narrow range for doing so.)
 
-Even though the icons aren’t placed in a strict vertical/horizontal grid, the PSTV thinks they are. It thinks the leftmost icons from each row are in a vertical line — and the second from each row, and the third. So, even if you pull down and at a bit of an angle, the cursor moves as if you’d just pulled straight down.
+Even though the icons aren’t placed in a strict vertical/horizontal grid, the PSTV thinks they are. It thinks the leftmost icons from each row are in a vertical line — and the second from each row, and the third. So, even if you pull down and at a bit of an angle to either side, the cursor moves as if you’d just pulled straight down.
 
 While the layout is just fine for the Vita, on the PSTV, it makes more sense to put the icons in either a true grid, like the PS3’s XMB had, or a line, like the PS4 has.
 
@@ -124,7 +126,7 @@ Like the homescreen, the store needs a complete overhaul to make it more control
 The simplest solution would be to have a left-hand menu, like the other TV-based PlayStation consoles. You always know going left takes you back a level in the hierarchy.
 
 A few other store suggestions:
-- My download list should only show titles that can be played on the PSTV. It does me no good to scroll through dozens (hundreds?) of other PlayStation games, apps, etc. to see the small percentage that I actually can use on this system.
+- My download list should only show titles that can be played on the PSTV. It does me no good to scroll through dozens (hundreds?) of my other PlayStation games, apps, etc. to see the small percentage that I actually can use on this system.
 - Make a link on the store's homepage that, when followed, shows free games and discounts for PlayStation Plus users. It's near impossible to find them, now.
 - Only offer titles that can actually be played on the PSTV. For example, *Touch My Katamari* can be searched, bought, and downloaded. But it won't play. I'm sure I'm not the only person who's bought something that wasn't even compatible.
 
@@ -203,7 +205,7 @@ Also, it is nice to have -- just in case. Being able to switch right from a game
 
 One way to help ensure that the PSTV gains, at the very least, a devoted cult following would be to make it the best way to experience (or re-experience) PlayStation Classics.
 
-Nowadays, more and more people (like me) are spending hundreds of dollars to import devices like the [Framemeister](http://retrogaming.hazard-city.de/framemeister.html), which optimize old CRT-era games for display on HDTVs. Rather than stretching and blurring the games, these devices upscale them faithfully -- maintaining the aspect ratio and keeping all the color and detail. These devices even offer the option of adding scanlines, to make the game look more like it would have on a classic CRT monitor.
+Nowadays, more and more people (like me) are spending hundreds of dollars to import devices like the Framemeister<sup>4</sup>, which optimize old CRT-era games for display on HDTVs. Rather than stretching and blurring the games, these devices upscale them faithfully -- maintaining the aspect ratio and keeping all the color and detail. These devices even offer the option of adding scanlines, to make the game look more like it would have on a classic CRT monitor.
 
 ![Final Fantasy VII via PSTV and Framemeister](images/article/ff7shots.jpg)
 
@@ -231,13 +233,12 @@ I also designed this page, though that wasn't as much work. Here, I did use [nor
 - **Greg Gibson**
 - Email: [hellogreg@gmail.com](mailto:hellogreg@gmail.com)
 - Twitter: [@elfneedsfood](https://twitter.com/elfneedsfood)
-- NeoGAF: flyover
 - PSN: hellogreg
 
-### Resources
-- [Sony Design Philosophy](http://www.sony.net/SonyInfo/design/profile/philosophy.html)
-- [Sony Feature Design: PS Vita](http://www.sony.net/Fun/design/activity/product/ps_vita/01.html)
-- [PSTV User's Guide](http://manuals.playstation.net/document/en/pstv/)
-- [PS Vita User's Guide](http://manuals.playstation.net/document/en/psvita/)
+### References
+1. [Sony Design Philosophy](http://www.sony.net/SonyInfo/design/profile/philosophy.html)
+2. [Apple TV Sales](http://en.wikipedia.org/wiki/Apple_TV#3rd_generation_2)
+3. [Sony Feature Design: PS Vita](http://www.sony.net/Fun/design/activity/product/ps_vita/01.html)
+4. [Framemeister Overview](http://retrogaming.hazard-city.de/framemeister.html)
 
 ### Thanks for reading!

@@ -95,12 +95,13 @@ h5 {
   padding: 0.9rem 0; }
 
 h6 {
+  display: inline-block;
   font-size: 1.2rem;
   font-style: italic;
   text-transform: lowercase; }
 
-h1 + h6 {
-  margin-top: 0; }
+h1 + h6, h6 + h6 {
+  margin: 0; }
 
 ul, ol {
   border-left: .3rem solid #ccc; }
@@ -136,6 +137,15 @@ img, video {
   max-width: 98%;
   height: auto; }
 
+sup {
+  font-size: 50%;
+  left: .1em;
+  line-height: 0;
+  opacity: .75;
+  position: relative;
+  top: -0.9em;
+  vertical-align: baseline; }
+
 .container {
   background: #fff url(../images/article/pstvConsole.png) no-repeat 0 -18rem;
   background-size: 100% auto;
@@ -168,7 +178,8 @@ img, video {
     font-size: 1.8rem; }
 
   h6 {
-    line-height: 1.8rem; }
+    line-height: 1.8rem;
+    display: block; }
 
   ul, ol {
     border-left: .2rem solid #eaeaea; }

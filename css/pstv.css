@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
   margin: 0 auto;
   width: 96rem; }
   .container > header {
-    color: #aaa;
+    color: #999;
     margin: .5rem auto;
     position: relative;
     width: 100%; }
@@ -43,8 +43,7 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
       font-size: 1.3rem;
       font-weight: 400; }
       .container > header h1 a {
-        color: #5b7b9b;
-        text-decoration: none; }
+        color: inherit; }
         .container > header h1 a:hover {
           text-decoration: underline; }
 

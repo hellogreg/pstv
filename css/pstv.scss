@@ -88,7 +88,7 @@ $appTransitionSpeed: 250ms;
   width: 96rem;
 
   & > header {
-    color: #aaa;
+    color: #999;
     margin: .5rem auto;
     position: relative;
     width: 100%;
@@ -99,8 +99,7 @@ $appTransitionSpeed: 250ms;
       font-weight: 400;
 
       a {
-        color: #5b7b9b;
-        text-decoration: none;
+        color: inherit;
 
         &:hover {
           text-decoration: underline;
