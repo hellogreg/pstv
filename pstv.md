@@ -3,7 +3,7 @@
 ######View my PSTV homescreen prototype [here](index.html).
 
 >"We have always been on the cutting edge, never being held back by fear of failure. By taking such an approach to design we give form to innovative concepts and bring them to fruition; creating new standards that turn ideas into global benchmarks."
->-- Sony Design Philosophy: Visionary<sup>1</sup>
+>-- Sony Design Philosophy: Visionary
 
 
 I loved the PlayStation TV from [the moment Sony announced it](https://www.youtube.com/watch?v=rG5l78gbvpU).
@@ -32,7 +32,7 @@ I get it. By reducing expectations, Sony is inoculated against the perception th
 
 But I think it's at least worth the small investment of paying one person to be its champion: someone to make the system better and build a case for it inside and outside the company -- for a couple of years, anyway.
 
-Reframe the PSTV the way the Apple has framed the Apple TV: calling it a "hobby." Improve how the PSTV looks and works, and gradually build a loyal userbase -- while still remaining mostly free from sales expectations. (Apple's own hobby has now surpassed 25M unit sales over eight years.<sup>2</sup>) It can even function as an R&D testbed for gauging public response to new features that may make it into future Sony products.
+Reframe the PSTV the way the Apple has framed the Apple TV: calling it a "hobby." Improve how the PSTV looks and works, and gradually build a loyal userbase -- while still remaining mostly free from sales expectations. (Apple's own hobby has now surpassed 25M unit sales over eight years.) It can even function as an R&D testbed for gauging public response to new features that may make it into future Sony products.
 
 
 ### How I can help
@@ -88,7 +88,7 @@ In no single case does this break functionality on the PSTV. But the cumulative 
 
 For a controller-navigated interface, items should usually be in a line or a grid. This makes directional pad and analog stick navigation logical and predictable. Up, down, left, and right all correspond to d-pad button presses or analog movements.
 
-On a touchscreen like the Vita, a grid is less important.<sup>3</sup> That's how we wound up with the current PSTV homescreen, where application icons are arranged diagonally, from row to row.
+On a touchscreen like the Vita, a grid is less important. That's how we wound up with the current PSTV homescreen, where application icons are arranged diagonally, from row to row.
 
 With the apps organized like this, trying to move the cursor across rows is not only unpredictable, but it actually may move in the opposite horizontal direction from what’s intended.
 
@@ -205,7 +205,7 @@ Also, it is nice to have -- just in case. Being able to switch right from a game
 
 One way to help ensure that the PSTV gains, at the very least, a devoted cult following would be to make it the best way to experience (or re-experience) PlayStation Classics.
 
-Nowadays, more and more people (like me) are spending hundreds of dollars to import devices like the Framemeister<sup>4</sup>, which optimize old CRT-era games for display on HDTVs. Rather than stretching and blurring the games, these devices upscale them faithfully -- maintaining the aspect ratio and keeping all the color and detail. These devices even offer the option of adding scanlines, to make the game look more like it would have on a classic CRT monitor.
+Nowadays, more and more people (like me) are spending hundreds of dollars to import devices like the Framemeister, which optimize old CRT-era games for display on HDTVs. Rather than stretching and blurring the games, these devices upscale them faithfully -- maintaining the aspect ratio and keeping all the color and detail. These devices even offer the option of adding scanlines, to make the game look more like it would have on a classic CRT monitor.
 
 ![Final Fantasy VII via PSTV and Framemeister](images/article/ff7shots.jpg)
 
@@ -236,9 +236,11 @@ I also designed this page, though that wasn't as much work. Here, I did use [nor
 - PSN: hellogreg
 
 ### References
+1. [Vita TV "Global Announcement" video](https://www.youtube.com/watch?v=rG5l78gbvpU)
 1. [Sony Design Philosophy](http://www.sony.net/SonyInfo/design/profile/philosophy.html)
-2. [Apple TV Sales](http://en.wikipedia.org/wiki/Apple_TV#3rd_generation_2)
-3. [Sony Feature Design: PS Vita](http://www.sony.net/Fun/design/activity/product/ps_vita/01.html)
-4. [Framemeister Overview](http://retrogaming.hazard-city.de/framemeister.html)
+1. [Apple TV Sales (through January 2015)](http://en.wikipedia.org/wiki/Apple_TV#3rd_generation_2)
+1. [Majestic (the game I worked on at EA)](https://goo.gl/pqF4F2)
+1. [Sony Feature Design: PS Vita](http://www.sony.net/Fun/design/activity/product/ps_vita/01.html)
+1. [Framemeister Overview/Review](http://retrogaming.hazard-city.de/framemeister.html)
 
 ### Thanks for reading!
