@@ -105,7 +105,7 @@ Things get especially weird when trying to select the middle row's rightmost app
 
 ![Proposed PSTV](images/article/retinaProto.jpg)
 
-To address this, I've designed [a PSTV homescreen proof of concept](index.html), where the look is much like that of the PS4, though with actions for each app mapped to various controller buttons. Navigate right or left to choose an app, and then press the button appropriate for the action you wish to take.
+To address all this, I've designed [a PSTV homescreen proof of concept](index.html), where the look is in line with that of the PS4. Actions for each app are mapped to various controller buttons. Navigate right or left to choose an app, and then press the button appropriate for the action you wish to take.
 
 I’ve sized and placed the interface elements on a grid that splits the screen into 64 units horizontally and 36 units vertically. All the apps are sized and placed to fit the grid, and the text's line heights all adhere to it. The only items that don't snap to the grid horizontally are those in the header, where (because the text there can vary by user and time) the items are spaced dynamically for visual balance.
 
