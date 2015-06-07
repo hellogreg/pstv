@@ -98,7 +98,7 @@ When moving down from the top row, the cursor moves left. When moving down from 
 
 Even though the icons aren’t visually placed in a vertical/horizontal grid, the PSTV thinks they are. It thinks the leftmost icons from each row are in a vertical line — and the second from each row, and the third. So, even if you pull at an angle down and to the right from the top row, the cursor will move down and to the left!
 
-Things get especially weird when trying to select the middle row's rightmost app from either the top or bottom row. In order to do this, you have to tap directly to the *right* on the analog stick or d-pad. If you try this with the analog stick, you must let go of it immediately, or you'll accidentally swipe to the Featured tab. This process probably is the least bad solution for getting to that rightmost app, but it's still bad.
+Things get especially weird when trying to select the middle row's rightmost app from either the top or bottom row. In order to do this, you have to tap *directly to the right* on the analog stick or d-pad. If you try this with the analog stick, you must let go of it immediately, or you'll accidentally swipe to the Featured tab. This process probably is the least bad solution for getting to that rightmost app, but it's still bad.
 
 
 ### The PSTV homescreen, redesigned
