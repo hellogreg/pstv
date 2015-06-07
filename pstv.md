@@ -88,7 +88,7 @@ In no single case does this break functionality on the PSTV. But the cumulative 
 
 For a controller-navigated interface, items should usually be in a line or a grid. This makes directional pad and analog stick navigation logical and predictable. Up, down, left, and right all correspond to d-pad button presses or analog movements.
 
-On a touchscreen like the Vita, a grid is less important. That's how we wound up with the current PSTV homescreen, where application icons are arranged diagonally, from row to row.
+On a touchscreen like the Vita, a grid is less important. That's how we wound up with the current PSTV homescreen, where application icons are arranged diagonally, row to row.
 
 With the apps organized like this, trying to move the cursor across rows is not only unpredictable, but it actually may move in the opposite horizontal direction from what’s intended.
 
@@ -96,13 +96,10 @@ Say you have the top-left application selected. If you press down on the d-pad o
 
 When moving down from the top row, the cursor moves left. When moving down from the middle row, the cursor then moves right. Moving up from the bottom, the cursor moves left. And moving up from the middle, the cursor moves right.
 
-This means there’s no easy way to select the middle row's rightmost app directly from either the top or bottom row. “Unless you use the analog stick,” you may think — as I thought. But that’s not the case.
+Even though the icons aren’t visually placed in a vertical/horizontal grid, the PSTV thinks they are. It thinks the leftmost icons from each row are in a vertical line — and the second from each row, and the third. So, even if you pull at an angle down and to the right from the top row, the cursor will move down and to the left!
 
-As mentioned above, if you pull straight down from the top row, the cursor will move to the app down one row and to the left. But if you pull down and to the right… the cursor will still usually move down and to the left! (I've found that it is possible to go the other way, but there's a very narrow range for doing so.)
+Things get especially weird when trying to select the middle row's rightmost app from either the top or bottom row. In order to do this, you have to tap directly to the *right* on the analog stick or d-pad. If you try this with the analog stick, you must let go of it immediately, or you'll accidentally swipe to the Featured tab. This process probably is the least bad solution for getting to that rightmost app, but it's still bad.
 
-Even though the icons aren’t placed in a strict vertical/horizontal grid, the PSTV thinks they are. It thinks the leftmost icons from each row are in a vertical line — and the second from each row, and the third. So, even if you pull down and at a bit of an angle to either side, the cursor moves as if you’d just pulled straight down.
-
-While the layout is just fine for the Vita, on the PSTV, it makes more sense to put the icons in either a true grid, like the PS3’s XMB had, or a line, like the PS4 has.
 
 ### The PSTV homescreen, redesigned
 
@@ -121,14 +118,15 @@ I’ve also kept one feature that the PSTV already has that the PS4 doesn’t: f
 
 ![PSTV Store](images/article/storeShot.jpg)
 
-Like the homescreen, the store needs a complete overhaul to make it more controller-friendly. (Unlike the homescreen, I haven't designed a prototype for it, yet.) Some of the most important sections -- like the Search area at the top right, and the ellipses at the bottom right -- are the most difficult to access. When they can be tapped on a touchscreen, that's not a big deal. But scrolling and maneuvering around the screen in all directions with a controller to find them is a pain.
+Like the homescreen, the store needs a complete overhaul to make it more controller-friendly. Again, most of its problems result from not having been redesigned from its Vita roots. I won't cover everything I'd upgrade here (maybe that'll be my next project!), but here's a list of some suggestions I'd prioritize in the PSTV version of the store:
 
-The simplest solution would be to have a left-hand menu, like the other TV-based PlayStation consoles. You always know going left takes you back a level in the hierarchy.
-
-A few other store suggestions:
+- Some of the most important sections of the store -- like the Search area at the top right, and the ellipses at the bottom right -- are the most difficult to access. They're well-placed for touchscreen access. But scrolling and maneuvering around the screen in all directions with a controller to find them is a pain. The simplest solution may be to place the store's various sections in a hierarchical, left-hand menu, like the other TV-based PlayStation consoles.
+- Use the store's screen real estate more efficiently. The Vita needs elements to be large enough for accurate finger taps on a small screen. But on the PSTV, text and tappable areas can be reduced in size, allowing room for more content.
+- Organize the "PS Vita Games" section by some means other than long lists (A-K, L-Z), which is great for inertial touchscreen scrolling, but cumbersome with a controller.
 - My download list should only show titles that can be played on the PSTV. It does me no good to scroll through dozens (hundreds?) of my other PlayStation games, apps, etc. to see the small percentage that I actually can use on this system.
-- Make a link on the store's homepage that, when followed, shows free games and discounts for PlayStation Plus users. It's near impossible to find them, now.
+- Make a link on the store's homepage that, when followed, shows free games and discounts for PlayStation Plus users. There's currently no way to single out this content.
 - Only offer titles that can actually be played on the PSTV. For example, *Touch My Katamari* can be searched, bought, and downloaded. But it won't play. I'm sure I'm not the only person who's bought something that wasn't even compatible.
+- If you choose a game from the Store's LiveArea tab (e.g, Oreshika: Tainted Bloodlines), you may be brought to a page in the store where you can view the game's description, but can't actually buy the game!
 
 
 ### Streamline launching and leaving apps.
@@ -237,8 +235,9 @@ I also designed this page, though that wasn't as much work. Here, I did use [nor
 
 ### References
 1. [Vita TV "Global Announcement" video](https://www.youtube.com/watch?v=rG5l78gbvpU)
+2. ["A Day in the Life of Playstation" video](https://www.youtube.com/watch?v=ULmDYVSX9tY)
 1. [Sony Design Philosophy](http://www.sony.net/SonyInfo/design/profile/philosophy.html)
-1. [Apple TV Sales (through January 2015)](http://en.wikipedia.org/wiki/Apple_TV#3rd_generation_2)
+1. [Apple TV Sales](http://en.wikipedia.org/wiki/Apple_TV#3rd_generation_2)
 1. [Majestic (the game I worked on at EA)](https://goo.gl/pqF4F2)
 1. [Sony Feature Design: PS Vita](http://www.sony.net/Fun/design/activity/product/ps_vita/01.html)
 1. [Framemeister Overview/Review](http://retrogaming.hazard-city.de/framemeister.html)
