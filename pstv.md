@@ -207,7 +207,7 @@ Nowadays, more and more people (like me) are spending hundreds of dollars to imp
 
 ![Final Fantasy VII via PSTV and Framemeister](images/article/ff7shots.jpg)
 
-The PSTV could take the old 320×240 pixel PlayStation Classics and upscale them to 960×720 (pillarboxed on a 720p TV) or 1280×960 (windowboxed on a 1080p set), depending on TV resolution. There's obviously a market in appealing to gamers' nostalgia. And I know I'd love to have a way to play digital versions of all my old favorites on a console I already have connected to my main TV.
+The PSTV could take the old 320×240 pixel PlayStation Classics and upscale them to 960×720 (pillarboxed on a 720 TV) or 1280×960 (windowboxed on a 1080 set), depending on TV resolution. There's obviously a market in appealing to gamers' nostalgia. And I know I'd love to have a way to play digital versions of all my old favorites on a console I already have connected to my main TV.
 
 Something the PSTV already has going for it (even over the PS3's PS1 emulation) is that -- as I mentioned at the very beginning of this piece -- games that could originally only be controlled with the d-pad are now compatible with the analog stick.
 
