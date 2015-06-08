@@ -507,15 +507,14 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
   height: 0;
   display: none; }
 
-@media (max-width: 520px) {
-  /*
-  @viewport {
-    width: 960px;
-  }
+/*
+@viewport {
+  width: 960px;
+}
 */
-  #controls {
-    font-size: 210%; }
-    #controls ul li {
-      min-width: 30rem; } }
+#controls.big-buttons {
+  font-size: 210%; }
+  #controls.big-buttons ul li {
+    min-width: 30rem; }
 
 /*# sourceMappingURL=pstv.css.map */

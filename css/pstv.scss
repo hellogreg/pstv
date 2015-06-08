@@ -124,7 +124,7 @@ $appTransitionSpeed: 250ms;
   position: relative;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
   width: 96rem;
-  max-width:100%;
+  max-width: 100%;
 
   &.border-neutral {
     border: 1px solid #333;
@@ -543,17 +543,18 @@ $appTransitionSpeed: 250ms;
 }
 
 @media (max-width: 520px) {
-  /*
-  @viewport {
-    width: 960px;
-  }
+}
+
+/*
+@viewport {
+  width: 960px;
+}
 */
-  #controls {
-    font-size: 210%;
+#controls.big-buttons {
+  font-size: 210%;
 
-    ul li {
-      min-width: 30rem;
-    }
-
+  ul li {
+    min-width: 30rem;
   }
+
 }

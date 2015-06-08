@@ -83,8 +83,6 @@
 
   dir({"status": "dir() ready."});
 
-  alert(screen.width);
-
   //
   // Page-wide, non-self-executing helper functions
   //
@@ -249,6 +247,13 @@
     setTimeout(function () {
       updateClock();
     }, 5000);
+  }());
+
+  (function enlargeControlButtonsForMobile() {
+    var w = screen.width;
+    if (w && w <= 520) {
+      $controls.classList.add("big-buttons");
+    }
   }());
 
 
