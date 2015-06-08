@@ -19,7 +19,7 @@ The PSTV has delivered on some of its promise. I know I got my money's worth jus
 
 In other ways, the PSTV has disappointed. Its operating system and interface haven't been updated from the Vita's last-generation, touchscreen roots. And the gaming compatibility and streaming media options are limited, sometimes confusingly (if not arbitrarily) so.
 
-For my summer vacation, I’m taking one portable media device with me. If the PSTV had native Netflix, Spotify, and/or YouTube apps, it’d be a no-brainer to take it. But instead, I’m bringing an Amazon Fire TV Stick, so I can watch Netflix and listen to Prime Music.
+For my summer vacation, I’m taking one portable media device with me. If the PSTV had native Netflix and Spotify apps, it’d be a no-brainer to take it. But instead, I’m bringing an Amazon Fire TV Stick, so I can watch Netflix and listen to Prime Music.
 
 I think Sony's created a great piece of hardware, but I can't help thinking about how it should be *more* than what it is. It seems compromised, underbaked, and even abandoned in various ways. It feels unloved.
 
@@ -88,9 +88,9 @@ In no single case does this break functionality on the PSTV. But the cumulative 
 
 For a controller-navigated interface, items should usually be in a line or a grid. This makes directional pad and analog stick navigation logical and predictable. Up, down, left, and right all correspond to d-pad button presses or analog movements.
 
-On a touchscreen like the Vita, a grid is less important. That's how we wound up with the current PSTV homescreen, where application icons are arranged diagonally, row to row.
+On a touchscreen like the Vita's, a grid is less important. That's how we wound up with the current PSTV homescreen, where application icons are arranged diagonally across rows.
 
-With the apps organized like this, trying to move the cursor across rows is not only unpredictable, but it actually may move in the opposite horizontal direction from what’s intended.
+With the apps organized like this, trying to move the cursor from row to row is not only unpredictable, but it actually may move in the opposite horizontal direction from what’s intended.
 
 Say you have the top-left application selected. If you press down on the d-pad or analog stick, which second-row app will be selected? It’s the leftmost one, but you’d have no way of knowing that until you actually tried it.
 
@@ -186,15 +186,15 @@ Instead, when an app is selected on the homescreen, use the controller buttons (
 >-- Sony Design Philosophy: Integrity
 
 ### Add Netflix, ASAP
-The PSTV doesn’t need to be an Apple TV or Amazon Fire or even a Chromecast. But it does need to have Netflix.
+The PSTV doesn’t need to be an Apple TV or Amazon Fire or even a Chromecast. But it does need to have Netflix. Its absence may be the most common complaint in reviews and on social sites. In Gizmodo's PSTV review, the lack of Netflix was the very first reason given for not buying a PSTV.
 
 I've probably got about a dozen devices in my house on which I can watch Netflix. So why do I need another?
 
-Maybe I don't *need* it. But the PSTV does, in part for the same reason some hotels have pools they know will rarely be used. People often make decisions based on what they think they *might* do. If you take away an option, you could lose potential customers.
+Maybe I don't *need* it. But the PSTV does, in part for the same reason hotels have pools they know might rarely be used. People often make decisions based on what they think they *might* do. I'll stay at this hotel with a pool, just in case I decide want to swim. If you take away an option, you lose potential customers.
 
-Also, it is nice to have -- just in case. Being able to switch right from a game to movie without turning off my device or changing inputs on my TV is a convenient perk. I know that it's up to Netflix to make their PSTV app, but I'm sure that Sony, if they wanted, could persuade or pay them to get it done -- even if it's just a matter of making the Vita version compatible.
+Being able to switch right from a game to movie without turning off my current device or changing inputs on my TV is a convenient (if minor) perk. I often use whatever device I've already got on to watch movies. And having Netflix would also be a big step in making the PSTV an essential travel companion, as I mentioned earlier.
 
-(It wouldn't hurt to have Spotify, Twitch, and YouTube, too. Glad Hulu's already in!)
+I know that it's up to Netflix to make their PSTV app, but I'd wager that Sony, if they wanted, could persuade or pay them to get it done -- even if it's just a matter of making the Vita version compatible. (It wouldn't hurt to have Spotify, Twitch, and YouTube, too. Glad Hulu's already in!)
 
 
 ### Make the PSTV *the* console for PlayStation Classics
@@ -207,9 +207,9 @@ Nowadays, more and more people (like me) are spending hundreds of dollars to imp
 
 ![Final Fantasy VII via PSTV and Framemeister](images/article/ff7shots.jpg)
 
-The PSTV could take the old 320×240 pixel PlayStation Classics and upscale them to 960×720 (pillarboxed on a 720 TV) or 1280×960 (windowboxed on a 1080 set), depending on TV resolution. There's obviously a market in appealing to gamers' nostalgia. And I know I'd love to have a way to play digital versions of all my old favorites on a console I already have connected to my main TV.
+I propose that the PSTV take the old 320×240 pixel PlayStation Classics and upscale them to 960×720 (pillarboxed on a 720 TV) or 1280×960 (windowboxed on a 1080 set), depending on TV resolution. There's obviously a market in appealing to gamers' nostalgia. And I know I'd love to have a way to play digital versions of all my old favorites on a console I already have connected to my main TV.
 
-Something the PSTV already has going for it (even over the PS3's PS1 emulation) is that -- as I mentioned at the very beginning of this piece -- games that could originally only be controlled with the d-pad are now compatible with the analog stick.
+Something the PSTV already has going for it (even over the PS3's PS1 emulation) is that -- as I wrote near the very beginning of this piece -- games that could originally only be controlled with the d-pad are now compatible with the analog stick.
 
 
 ### Dump the PSTV Whitelist
@@ -233,13 +233,14 @@ I also designed this page, though that wasn't as much work. Here, I did use [nor
 - Twitter: [@elfneedsfood](https://twitter.com/elfneedsfood)
 - PSN: hellogreg
 
-### References
-1. [Vita TV "Global Announcement" video](https://www.youtube.com/watch?v=rG5l78gbvpU)
-2. ["A Day in the Life of Playstation" video](https://www.youtube.com/watch?v=ULmDYVSX9tY)
+### Resources
 1. [Sony Design Philosophy](http://www.sony.net/SonyInfo/design/profile/philosophy.html)
-1. [Apple TV Sales](http://en.wikipedia.org/wiki/Apple_TV#3rd_generation_2)
-1. [Majestic (the game I worked on at EA)](https://goo.gl/pqF4F2)
+1. ["PlayStation Vita TV Global Announcement" video](https://www.youtube.com/watch?v=rG5l78gbvpU)
+2. ["A Day in the Life of Playstation" video](https://www.youtube.com/watch?v=ULmDYVSX9tY)
+1. [Apple TV Sales](http://en.wikipedia.org/wiki/Apple_TV#3rd_generation_2) (through January 2015)
+1. [Majestic](https://goo.gl/pqF4F2) (the game I worked on at EA)
 1. [Sony Feature Design: PS Vita](http://www.sony.net/Fun/design/activity/product/ps_vita/01.html)
+1. [Gizmodo: "PlayStation TV Isn't What You Want It To Be"](http://gizmodo.com/playstation-tv-isnt-what-you-want-it-to-be-1646323968)
 1. [Framemeister Overview/Review](http://retrogaming.hazard-city.de/framemeister.html)
 
 ### Thanks for reading!

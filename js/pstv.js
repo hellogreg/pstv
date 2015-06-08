@@ -83,6 +83,7 @@
 
   dir({"status": "dir() ready."});
 
+  alert(screen.width);
 
   //
   // Page-wide, non-self-executing helper functions
