@@ -199,13 +199,6 @@
 
   // Stop showing the static mockup screen and show the interactive prototype instead.
   function showPrototype(bgClass) {
-    if (bgClass != "bg-custom") {
-      $pstv.classList.remove("border-neutral");
-      $folder.classList.remove("bg-neutral");
-    } else {
-      $pstv.classList.add("border-neutral");
-      $folder.classList.add("bg-neutral");
-    }
     $mockups.classList.add("invisible");
     $prototype.className = "";
     $prototype.classList.add(bgClass);

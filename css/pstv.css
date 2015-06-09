@@ -7,7 +7,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  background-color: #050505;
+  background-color: #012450;
   color: #fff;
   font-family: "sst-w01", sans-serif;
   font-size: 1.5rem;
@@ -35,17 +35,54 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
   margin: 0 auto;
   width: 96rem; }
   .container > footer {
-    color: #999;
-    margin: .5rem auto;
+    color: #fff;
+    margin: 0 auto;
     position: relative;
     width: 100%; }
     .container > footer h1 {
       font-size: 1.3rem;
-      font-weight: 400; }
+      font-style: italic;
+      font-weight: 400;
+      opacity: .65; }
       .container > footer h1 a {
         color: inherit; }
         .container > footer h1 a:hover {
           text-decoration: underline; }
+    .container > footer > #controls {
+      background-color: inherit;
+      border: 0;
+      border-radius: .5rem;
+      margin: .5rem auto 0;
+      padding: 0;
+      position: relative;
+      width: 100%; }
+      .container > footer > #controls ul {
+        -webkit-align-items: center;
+        align-items: center;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row;
+        flex-flow: row;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+        font-size: 1.3rem;
+        -webkit-justify-content: flex-start;
+        justify-content: flex-start; }
+        .container > footer > #controls ul li {
+          flex: 0 1 auto;
+          min-width: 10rem;
+          padding: 0 .25rem; }
+          .container > footer > #controls ul li button {
+            background: #eee;
+            border: 1px solid #060606;
+            border-radius: 5px;
+            font-family: "sst-w01", sans-serif;
+            font-size: 1.1rem;
+            width: 100%; }
+          .container > footer > #controls ul li:first-child {
+            padding-left: 0; }
+          .container > footer > #controls ul li:last-child {
+            padding-right: 0; }
 
 #pstv {
   border: 1px solid #002e6c;
@@ -60,8 +97,6 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
   width: 96rem;
   max-width: 100%; }
-  #pstv.border-neutral {
-    border: 1px solid #333; }
   #pstv > #mockups {
     height: 100%;
     width: 100%; }
@@ -463,42 +498,6 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
       #pstv > #prototype main .offscreen-right {
         -webkit-transform: translate(102rem, 7.5rem) scale(0.66667);
         transform: translate(102rem, 7.5rem) scale(0.66667); }
-
-#controls {
-  background-color: #222;
-  border: 0;
-  border-radius: .5rem;
-  margin: .5rem auto;
-  padding: 0 3rem .2rem 3rem;
-  position: relative;
-  width: 100%; }
-  #controls ul {
-    -webkit-align-items: center;
-    align-items: center;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-flow: row;
-    flex-flow: row;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
-    font-size: 1.3rem;
-    -webkit-justify-content: flex-start;
-    justify-content: flex-start; }
-    #controls ul li {
-      flex: 0 1 auto;
-      min-width: 10rem;
-      padding: 0 .25rem; }
-      #controls ul li button {
-        background: #eee;
-        border: 1px solid #060606;
-        border-radius: 5px;
-        font-family: "sst-w01", sans-serif;
-        font-size: 1.1rem;
-        width: 100%; }
-      #controls ul li:first-child {
-        padding-left: 0; }
-      #controls ul li:last-child {
-        padding-right: 0; }
 
 .preloader {
   background-image: url(../images/bg_tlg4.jpg), url(../images/app_folder_empty.png), url(../images/psx_ridge_smooth.png), url(../images/psx_ridge_scanlines.png), url(../images/psx_xeno_smooth.png), url(../images/psx_xeno_scanlines.png), url(../images/vita_homescreen.jpg);

@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  background-color: #050505;
+  background-color: #012450;
   color: #fff;
   font-family: "sst-w01", sans-serif;
   font-size: 1.5rem;
@@ -87,27 +87,8 @@ $appTransitionSpeed: 250ms;
   margin: 0 auto;
   width: 96rem;
 
-  & > footer {
-    color: #999;
-    margin: .5rem auto;
-    position: relative;
-    width: 100%;
+  @import "footer";
 
-    h1 {
-
-      font-size: 1.3rem;
-      font-weight: 400;
-
-      a {
-        color: inherit;
-
-        &:hover {
-          text-decoration: underline;
-        }
-
-      }
-    }
-  }
 }
 
 // #pstv is the "screen" of the console
@@ -125,10 +106,6 @@ $appTransitionSpeed: 250ms;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
   width: 96rem;
   max-width: 100%;
-
-  &.border-neutral {
-    border: 1px solid #333;
-  }
 
   > #mockups {
     height: 100%;
@@ -487,45 +464,7 @@ $appTransitionSpeed: 250ms;
 
 }
 
-#controls {
-  background-color: #222;
-  border: 0;
-  border-radius: .5rem;
-  margin: .5rem auto;
-  padding: 0 3rem .2rem 3rem;
-  position: relative;
-  width: 100%;
 
-  ul {
-    @include flex-basic-row;
-    font-size: 1.3rem;
-    -webkit-justify-content: flex-start;
-    justify-content: flex-start;
-
-    li {
-      flex: 0 1 auto;
-      min-width: 10rem;
-      padding: 0 .25rem;
-
-      button {
-        background: #eee;
-        border: 1px solid #060606;
-        border-radius: 5px;
-        font-family: "sst-w01", sans-serif;
-        font-size: 1.1rem;
-        width: 100%;
-      }
-
-      &:first-child {
-        padding-left: 0;
-      }
-
-      &:last-child {
-        padding-right: 0;
-      }
-    }
-  }
-}
 
 // Lazy loading for our bigger background images.
 .preloader {

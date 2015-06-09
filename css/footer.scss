@@ -1,0 +1,64 @@
+
+& > footer {
+  color: #fff;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+
+  h1 {
+
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: 400;
+    opacity: .65;
+
+    a {
+      color: inherit;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+    }
+  }
+
+  & > #controls {
+    background-color: inherit;
+    border: 0;
+    border-radius: .5rem;
+    margin: .5rem auto 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+
+    ul {
+      @include flex-basic-row;
+      font-size: 1.3rem;
+      -webkit-justify-content: flex-start;
+      justify-content: flex-start;
+
+      li {
+        flex: 0 1 auto;
+        min-width: 10rem;
+        padding: 0 .25rem;
+
+        button {
+          background: #eee;
+          border: 1px solid #060606;
+          border-radius: 5px;
+          font-family: "sst-w01", sans-serif;
+          font-size: 1.1rem;
+          width: 100%;
+        }
+
+        &:first-child {
+          padding-left: 0;
+        }
+
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
