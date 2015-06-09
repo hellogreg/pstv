@@ -34,17 +34,17 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
 .container {
   margin: 0 auto;
   width: 96rem; }
-  .container > header {
+  .container > footer {
     color: #999;
     margin: .5rem auto;
     position: relative;
     width: 100%; }
-    .container > header h1 {
+    .container > footer h1 {
       font-size: 1.3rem;
       font-weight: 400; }
-      .container > header h1 a {
+      .container > footer h1 a {
         color: inherit; }
-        .container > header h1 a:hover {
+        .container > footer h1 a:hover {
           text-decoration: underline; }
 
 #pstv {
