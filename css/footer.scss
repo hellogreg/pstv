@@ -61,8 +61,10 @@
     &.big-buttons {
 
       ul {
+        -webkit-flex-wrap: wrap;
         flex-wrap: wrap;
         font-size: 2rem;
+        max-width: 100%;
 
         li {
           min-width: 31rem;
