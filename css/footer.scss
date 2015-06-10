@@ -23,7 +23,6 @@
   & > #controls {
     background-color: inherit;
     border: 0;
-    border-radius: .5rem;
     margin: .5rem auto 0;
     padding: 0;
     position: relative;
@@ -60,15 +59,19 @@
     }
 
     &.big-buttons {
-      background-color: #fc3 !important;
-      font-size: 210%;
 
       ul {
         flex-wrap: wrap;
+        font-size: 2rem;
+
+      li {
+        min-width: 30rem;
+
+        button {
+          font-size: 2rem;
+        }
       }
 
-      ul li {
-        min-width: 30rem;
       }
 
     }
