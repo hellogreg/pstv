@@ -94,7 +94,7 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
             text-align: center; }
           .container > footer > #controls.big-buttons ul li button {
             background: #eaeaea;
-            border-radius: 2rem;
+            border-radius: 3rem;
             font-size: 2.4rem;
             height: 12rem; }
 
