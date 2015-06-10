@@ -93,6 +93,7 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
           .container > footer > #controls.big-buttons ul li h1 {
             font-size: 3rem; }
           .container > footer > #controls.big-buttons ul li button {
+            background: #ccc;
             font-size: 2rem;
             font-weight: 700;
             height: 12rem; }
