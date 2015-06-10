@@ -87,7 +87,9 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
         font-size: 2rem;
         max-width: 100%; }
         .container > footer > #controls.big-buttons ul li {
-          min-width: 31rem; }
+          margin: 1rem;
+          min-width: 30rem;
+          max-width: 30rem; }
           .container > footer > #controls.big-buttons ul li h1 {
             font-size: 2.4rem; }
           .container > footer > #controls.big-buttons ul li button {

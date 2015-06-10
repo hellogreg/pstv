@@ -67,7 +67,9 @@
         max-width: 100%;
 
         li {
-          min-width: 31rem;
+          margin: 1rem;
+          min-width: 30rem;
+          max-width: 30rem;
 
           h1 {
             font-size: 2.4rem;
