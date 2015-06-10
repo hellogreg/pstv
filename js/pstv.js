@@ -244,7 +244,7 @@
 
   (function enlargeControlButtonsForMobile() {
     var w = screen.width;
-    if (w && w <= 5000) {
+    if (w && w <= 480) {
       $controls.classList.add("big-buttons");
     }
   }());
