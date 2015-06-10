@@ -244,8 +244,10 @@
 
   (function enlargeControlButtonsForMobile() {
     var w = screen.width;
+    var footerText = document.querySelector(".container > footer > h1");
     if (w && w <= 480) {
       $controls.classList.add("big-buttons");
+      (footerText) && footerText.classList.add("big-text");
     }
   }());
 
