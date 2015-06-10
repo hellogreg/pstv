@@ -63,7 +63,6 @@
       ul {
         -webkit-flex-wrap: wrap;
         flex-wrap: wrap;
-        font-size: 2rem;
         max-width: 100%;
 
         li {
@@ -73,12 +72,12 @@
 
           h1 {
             font-size: 3rem;
+            text-align: center;
           }
 
           button {
             background: #ccc;
-            font-size: 2rem;
-            font-weight: 700;
+            font-size: 2.4rem;
             height: 12rem;
           }
         }
