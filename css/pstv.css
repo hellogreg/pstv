@@ -48,7 +48,7 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
         .container > footer h1 a:hover {
           text-decoration: underline; }
     .container > footer > h1.big-text {
-      font-size: 3rem; }
+      font-size: 2.4rem; }
     .container > footer > #controls {
       background-color: inherit;
       border: 0;
