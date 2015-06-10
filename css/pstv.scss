@@ -6,43 +6,10 @@
 // @import "folder";
 // @import "suspendedAnimation";
 
-// Bare bones reset and pagewide styles
-
-* {
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  -webkit-transform-style: preserve-3d;
-}
-
-html {
-  font-size: 62.5%; // 10px rem base.
-}
-
-body {
-  background-color: #012450;
-  color: #fff;
-  font-family: "sst-w01", sans-serif;
-  font-size: 1.5rem;
-  line-height: 3rem;
-  margin: 0;
-}
-
-h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
-  display: block;
-  font-size: inherit;
-  font-weight: normal;
-  font-style: normal;
-  line-height: inherit;
-  margin: 0;
-  opacity: 1;
-  padding: 0;
-  vertical-align: baseline;
-}
-
 // Sass pagewide variables.
 
 $bgColor: rgba(0, 83, 157, 1);
-$borderColor: rgba(0, 46, 108, 1);
+$borderColor: #222; //rgba(0, 46, 108, 1);
 $appTransitionSpeed: 250ms;
 
 // Sass pagewide mixins
@@ -74,6 +41,43 @@ $appTransitionSpeed: 250ms;
   opacity: 1;
   transition: opacity $appTransitionSpeed;
 }
+
+
+// Bare bones reset and pagewide styles
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform-style: preserve-3d;
+}
+
+html {
+  font-size: 62.5%; // 10px rem base.
+}
+
+body {
+  background-color: #171717;
+  color: #fff;
+  font-family: "sst-w01", sans-serif;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
+  display: block;
+  font-size: inherit;
+  font-weight: normal;
+  font-style: normal;
+  line-height: inherit;
+  margin: 0;
+  opacity: 1;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+// End reset and base styles.
+
 
 .invisible {
   display: none;

@@ -7,7 +7,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  background-color: #012450;
+  background-color: #171717;
   color: #fff;
   font-family: "sst-w01", sans-serif;
   font-size: 1.5rem;
@@ -35,15 +35,14 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
   margin: 0 auto;
   width: 96rem; }
   .container > footer {
-    color: #fff;
+    color: #fafafb;
     margin: 0 auto;
     position: relative;
     width: 100%; }
     .container > footer h1 {
       font-size: 1.3rem;
-      font-style: italic;
       font-weight: 400;
-      opacity: .65; }
+      opacity: .6; }
       .container > footer h1 a {
         color: inherit; }
         .container > footer h1 a:hover {
@@ -85,7 +84,7 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
             padding-right: 0; }
 
 #pstv {
-  border: 1px solid #002e6c;
+  border: 1px solid #222;
   border-radius: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
