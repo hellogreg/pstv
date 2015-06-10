@@ -28,7 +28,7 @@ It's hardly been pushed in the US, even though it's both a capable standalone co
 
 ### What it still can be
 
-I get it. By reducing expectations, Sony is inoculated against the perception that the system has underperformed. I understand that. After the PSTV didn't sell well in Asia, the company felt they shouldn't spend much time or money on upgrading and promoting something they considered dead on arrival in the US.
+I get it. By reducing expectations, Sony is inoculated against the perception that the system has underperformed. After the PSTV didn't do well in Asia, the company felt they shouldn't spend much time or money on upgrading and promoting something they considered dead on arrival in the US.
 
 But I think it's at least worth the small investment of paying one person to be its champion: someone to make the system better and build a case for it inside and outside the company -- for a couple of years, anyway.
 
@@ -37,7 +37,7 @@ Reframe the PSTV the way the Apple has framed the Apple TV: calling it a "hobby.
 
 ### How I can help
 
-Back in the early 2000s, I led the web development and design for Electronic Arts' experimental online game, Majestic. I now run/am the web department for a large school district (30,000 students and 3,000 employees) in the Chicago area.
+Back in the early 2000s, I led the web development and design for Electronic Arts' experimental online game, Majestic. I now run/am the web department for a large school district in the Chicago area.
 
 I'm used to working as a one-person, low-budget, full-service design and development team. In seeing projects through from concept to conclusion, I'm comfortable working alone, leading small teams, and/or coordinating with other departments. Where I can implement improvements by myself, I'll do so. And when I need to enlist help, I'll do as much up-front work as possible to make everyone else's job easier.
 
@@ -53,7 +53,7 @@ And here are other important upgrades that I'd coordinate:
  - Improve upscaling options for PlayStation Classics.
  - Eliminate the Vita whitelist.
 
-*Note: This isn't a wishlist of every change that could or should be made to the PSTV (e.g., support for cheaper memory cards, improved networking, etc.). I'm just covering some of the software issues where my professional experience could help most quickly. I'd be happy to push for other changes, too, if hired.*
+*Note: This isn't a wishlist of every change that could or should be made to the PSTV (e.g., support for cheaper memory cards). I'm just covering some of the software issues where my professional experience could help most quickly. I'd be happy to push for other changes, too, if hired.*
 
 
 ## Fixing the PSTV's User Interface
@@ -74,13 +74,13 @@ When the iPad was announced, it was ridiculed as just a big iPhone or iPod touch
 
 The PSTV is often referred to as just a Vita that plugs into your TV. And again, technically, that’s true. But because the PSTV isn’t used in the same places or manner as a Vita, it’s not a Vita. It's not more or less. It's something else.
 
-But the PSTV's current visual interface does look like the Vita’s. In fact it *is* the Vita interface, unaltered.
+However, the PSTV's current visual interface does look like the Vita’s. In fact it *is* the Vita interface, unaltered.
 
 I'm sure this saved on design and development costs. But, as a result, the PSTV's branding no longer matches the rest of the current generation of Sony’s consumer devices. (For example, the default system typeface is Rodin, the same as on the PlayStation 3.) And the Vita interface was originally designed to display on small screens, meaning that the type size and iconography of the PSTV are often larger than they need to be when displayed on a television.
 
-My biggest issue with the current interface is that it was designed for the Vita's touchscreen navigation, and not a controller, as the PSTV requires. On the PSTV, Button and stick functions change from screen to screen, making them seem like their use was tacked on as an afterthought.
+My biggest issue with the current interface is that it was designed for the Vita's touchscreen navigation, and not a controller, as the PSTV requires. On the PSTV, button presses and stick movements lead to inconsistent results, because the design wasn't originally created with them in mind.
 
-In no single case does this break functionality on the PSTV. But the cumulative effect is annoying. This becomes an obstacle as soon as you reach the console's homescreen.
+In no single case does this break functionality on the PSTV. But the cumulative effect is annoying. The interface becomes an obstacle as soon as you start up and reach the console's homescreen.
 
 ### The PSTV homescreen, now
 
@@ -161,7 +161,7 @@ This process is another artifact from the Vita. The page peeling makes a lot mor
 
 ![Featured Tab](images/article/featuredShot.jpg)
 
-I don't know if anyone ever does anything except skip right past this tab. Nobody likes it. It feels like one of those business decisions made without the user in mind. It breaks navigational flow; you don't see it when entering apps, but it's always there when you leave them. Finally, it looks like too much like it's the store, even though it's not.
+I don't know if anyone ever does anything except skip right past this tab. It feels like one of those business decisions made without the user in mind. It breaks navigational flow; you don't see it when entering apps, but it's always there when you leave them. Finally, it looks like too much like it's the store, even though it's not.
 
 If you have to keep this tab (though I don't think you do), at least add store search functionality and/or a direct link to the store's homepage. Honestly, store search functionality wouldn't a bad idea right from the PSTV homescreen.
 
@@ -190,7 +190,7 @@ The PSTV doesn’t need to be an Apple TV or Amazon Fire or even a Chromecast. B
 
 I've probably got about a dozen devices in my house on which I can watch Netflix. So why do I need another?
 
-Maybe I don't *need* it. But the PSTV does, in part for the same reason hotels have pools they know might rarely be used. People often make decisions based on what they think they *might* do. I'll stay at this hotel with a pool, just in case I decide want to swim. If you take away an option, you lose potential customers.
+Maybe I don't *need* it. But the PSTV does, in part for the same reason hotels have pools they know might rarely be used. People often make decisions based on what they think they *might* do. "Let's stay at a hotel with a pool, just in case the kids want to swim." If you take away an option, you lose potential customers.
 
 Being able to switch right from a game to movie without turning off my current device or changing inputs on my TV is a convenient (if minor) perk. I often use whatever device I've already got on to watch movies. And having Netflix would also be a big step in making the PSTV an essential travel companion, as I mentioned earlier.
 
