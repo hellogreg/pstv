@@ -218,6 +218,7 @@ Give users an option (maybe as an opt-in, so users know the risks) to render *al
 
 I understand that there could be issues with licensing from third-party publishers. If that's the case, it could be a little trickier to nix the whitelist for those titles. Still, all first-party games should be exempt.
 
+# *Thanks for reading!*
 
 ## Colophon
 
@@ -242,5 +243,3 @@ I also designed this page, though that wasn't as much work. Here, I did use [nor
 1. [Sony Feature Design: PS Vita](http://www.sony.net/Fun/design/activity/product/ps_vita/01.html)
 1. [Gizmodo: "PlayStation TV Isn't What You Want It To Be"](http://gizmodo.com/playstation-tv-isnt-what-you-want-it-to-be-1646323968)
 1. [Framemeister Overview/Review](http://retrogaming.hazard-city.de/framemeister.html)
-
-### Thanks for reading!

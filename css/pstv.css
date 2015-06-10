@@ -82,6 +82,10 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
             padding-left: 0; }
           .container > footer > #controls ul li:last-child {
             padding-right: 0; }
+      .container > footer > #controls.big-buttons {
+        font-size: 210%; }
+        .container > footer > #controls.big-buttons ul li {
+          min-width: 30rem; }
 
 #pstv {
   border: 1px solid #222;
@@ -510,9 +514,5 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
   width: 960px;
 }
 */
-#controls.big-buttons {
-  font-size: 210%; }
-  #controls.big-buttons ul li {
-    min-width: 30rem; }
 
 /*# sourceMappingURL=pstv.css.map */

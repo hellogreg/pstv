@@ -58,5 +58,15 @@
         }
       }
     }
+
+    &.big-buttons {
+      font-size: 210%;
+
+      ul li {
+        min-width: 30rem;
+      }
+
+    }
+
   }
 }
