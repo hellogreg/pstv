@@ -92,7 +92,8 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
             font-size: 2.4rem; }
           .container > footer > #controls.big-buttons ul li button {
             font-size: 2rem;
-            height: 6rem; }
+            font-weight: 700;
+            height: 12rem; }
 
 #pstv {
   border: 1px solid #222;
