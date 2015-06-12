@@ -28,7 +28,7 @@ It's hardly been pushed in the US, even though it's both a capable standalone co
 
 ### What it still can be
 
-I get it. By reducing expectations, Sony is inoculated against the perception that the system has underperformed. After the PSTV didn't do well in Asia, the company felt they shouldn't spend much time or money on upgrading and promoting something they considered dead on arrival in the US.
+I get it. By reducing expectations, Sony is inoculated against the perception that the system has underperformed. After the PSTV didn't do well in Asia, maybe the company felt they shouldn't spend much time or money on upgrading and promoting something they considered dead on arrival in the US.
 
 But I think it's at least worth the small investment of paying one person to be its champion: someone to make the system better and build a case for it inside and outside the company -- for a couple of years, anyway.
 
