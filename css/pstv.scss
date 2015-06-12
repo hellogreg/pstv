@@ -150,12 +150,12 @@ h1, h2, h3, h4, h5, h6, p, ol, ul, li, div, header, footer, main, nav {
     }
 
     &.bg-xeno-noscan {
-      @include mockup-bg(true);
+      @include mockup-bg();
       background-image: url("../images/psx_xeno_noscan.png");
     }
 
     &.bg-ridge-noscan {
-      @include mockup-bg(true);
+      @include mockup-bg();
       background-image: url("../images/psx_ridge_noscan.png");
     }
 
