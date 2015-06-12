@@ -317,7 +317,7 @@
         break;
 
       case "show-xeno-scanlines":
-        showMockups("bg-xeno-scanlines");
+        showMockups("bg-xeno-noscan");
         break;
 
       case "show-xeno-smooth":
@@ -325,7 +325,7 @@
         break;
 
       case "show-ridge-scanlines":
-        showMockups("bg-ridge-scanlines");
+        showMockups("bg-ridge-noscan");
         break;
 
       case "show-ridge-smooth":
