@@ -19,7 +19,7 @@ The PSTV has delivered on some of its promise. I know I got my money's worth jus
 
 In other ways, the PSTV has disappointed. Its operating system and interface haven't been updated from the Vita's last-generation, touchscreen roots. And the gaming compatibility and streaming media options are limited, sometimes confusingly (if not arbitrarily) so.
 
-For our summer vacation, my wife and I are taking one portable media device with us. If the PSTV had native Netflix and Spotify apps, it’d be a no-brainer to take it. But instead, we're bringing an Amazon Fire TV Stick, so we can watch Netflix and listen to Prime Music.
+For our summer vacation, my wife and I took one portable media device with us. If the PSTV had native Netflix and Spotify apps, it would've been a no-brainer to take it. But instead, we brought an Amazon Fire TV Stick, so we could watch Netflix and listen to Prime Music.
 
 I think Sony's created a great piece of hardware, but I can't help thinking about how it should be *more* than what it is. It seems compromised, underbaked, and even abandoned in various ways. It feels unloved.
 
