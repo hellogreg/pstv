@@ -1,5 +1,5 @@
 # Reimagining the PSTV (a bit)
-######by Greg Gibson ([@elfneedsfood](https://twitter.com/elfneedsfood)).
+######by Greg Gibson ([@hellogreg](https://twitter.com/hellogreg)).
 ######View my PSTV homescreen prototype [here](index.html).
 
 >"We have always been on the cutting edge, never being held back by fear of failure. By taking such an approach to design we give form to innovative concepts and bring them to fruition; creating new standards that turn ideas into global benchmarks."
@@ -231,7 +231,7 @@ I also designed this page, though that wasn't as much work. Here, I did use [nor
 ### Contact me
 - **Greg Gibson**
 - Email: [hellogreg@gmail.com](mailto:hellogreg@gmail.com)
-- Twitter: [@elfneedsfood](https://twitter.com/elfneedsfood)
+- Twitter: [@hellogreg](https://twitter.com/hellogreg)
 - PSN: hellogreg
 
 ### Resources
