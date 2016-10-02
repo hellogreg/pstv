@@ -1,3 +1,8 @@
+// STACKING CONTEXT BUG FIREFOX
+// https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context
+// Firefox accepts -webkit-transform-style. https://developer.mozilla.org/en-US/docs/Web/CSS/transform-style
+// Affects .pagefoot/#controls stacking if "-webkit-transform-style: preserve-3d" is used.
+
 & > footer {
   color: #fafafb;
   margin: 0 auto;
@@ -24,13 +29,21 @@
     margin-top: .5rem;
   }
 
+  &:hover {
+    //background-color: #cde;
+  }
+
   & > #controls {
-    background-color: inherit;
+    //background-color: #fc3;
     border: 0;
     margin: .5rem auto 0;
     padding: 0;
     position: relative;
     width: 100%;
+
+    &:hover {
+      //background-color: #cde;
+    }
 
     ul {
       @include flex-basic-row;
@@ -92,4 +105,5 @@
     }
 
   }
+
 }

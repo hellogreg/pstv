@@ -277,6 +277,7 @@
 
   // On load, start event listeners for all buttons in the #controls element.
   $controls.addEventListener("click", function (e) {
+  //document.querySelector(".pagefoot").addEventListener("click", function (e) {
 
     var target = e.target || e.srcElement;
     e.preventDefault();
